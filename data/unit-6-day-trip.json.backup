@@ -1,0 +1,529 @@
+{
+  "unitId": "unit-6-day-trip",
+  "title": "Unit 6: Day Trip",
+  "grammarTopics": ["Be going to for Plans and Intentions", "Be going to for Predictions"],
+  "theory": {
+    "brief": "'Be going to' dùng để nói về kế hoạch/ý định đã quyết định trước, hoặc dự đoán dựa trên bằng chứng hiện tại. Khác với 'will' (dự đoán chung) và present continuous (kế hoạch đã sắp xếp cụ thể).",
+    "examples": [
+      "I'm going to visit the elephant house. (plan)",
+      "Look at those clouds! It's going to rain. (prediction with evidence)",
+      "What are you going to do first?"
+    ]
+  },
+  "exercises": [
+    {
+      "id": 1,
+      "type": "fill-blank",
+      "question": "I __________ (visit) the elephant house first.",
+      "wordHint": "(visit)",
+      "answer": "am going to visit",
+      "acceptedAnswers": ["am going to visit", "'m going to visit"],
+      "hints": ["Use: am going to + base verb"],
+      "points": 10
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "Ryan __________ (see) the reptile house.",
+      "wordHint": "(see)",
+      "answer": "is going to see",
+      "acceptedAnswers": ["is going to see", "'s going to see"],
+      "hints": ["Subject 'Ryan' uses 'is going to'"],
+      "points": 10
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "They __________ (feed) the snakes soon.",
+      "wordHint": "(feed)",
+      "answer": "are going to feed",
+      "acceptedAnswers": ["are going to feed", "'re going to feed"],
+      "hints": ["Subject 'They' uses 'are going to'"],
+      "points": 10
+    },
+    {
+      "id": 4,
+      "type": "fill-blank",
+      "question": "Martin __________ (see) the lions.",
+      "wordHint": "(see)",
+      "answer": "is going to see",
+      "acceptedAnswers": ["is going to see", "'s going to see"],
+      "hints": ["is going to + base verb"],
+      "points": 10
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "We __________ (learn) what reptiles eat.",
+      "wordHint": "(learn)",
+      "answer": "are going to learn",
+      "acceptedAnswers": ["are going to learn", "'re going to learn"],
+      "hints": ["are going to + base verb"],
+      "points": 10
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Martin __________ (not visit) the reptile house.",
+      "wordHint": "(not visit)",
+      "answer": "is not going to visit",
+      "acceptedAnswers": ["is not going to visit", "isn't going to visit"],
+      "hints": ["Negative: is not going to + base verb"],
+      "points": 10
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "I __________ (not see) the snakes.",
+      "wordHint": "(not see)",
+      "answer": "am not going to see",
+      "acceptedAnswers": ["am not going to see", "'m not going to see"],
+      "hints": ["Negative: am not going to"],
+      "points": 10
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "We __________ (not go) to the beach today.",
+      "wordHint": "(not go)",
+      "answer": "are not going to go",
+      "acceptedAnswers": ["are not going to go", "aren't going to go"],
+      "hints": ["Negative: are not going to"],
+      "points": 10
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "They __________ (not watch) TV tonight.",
+      "wordHint": "(not watch)",
+      "answer": "are not going to watch",
+      "acceptedAnswers": ["are not going to watch", "aren't going to watch"],
+      "hints": ["Negative form"],
+      "points": 10
+    },
+    {
+      "id": 10,
+      "type": "sentence-build",
+      "prompt": "What / Mum / do / on Monday?",
+      "instructions": "Write a question with 'be going to'",
+      "answer": "What is Mum going to do on Monday?",
+      "acceptedAnswers": [
+        "What is Mum going to do on Monday?",
+        "What is Mum going to do on Monday",
+        "What's Mum going to do on Monday?"
+      ],
+      "hints": ["Question: What + is + subject + going to + verb?"],
+      "points": 10
+    },
+    {
+      "id": 11,
+      "type": "sentence-build",
+      "prompt": "What / the family / do / on Tuesday?",
+      "instructions": "Write a question with 'be going to'",
+      "answer": "What is the family going to do on Tuesday?",
+      "acceptedAnswers": [
+        "What is the family going to do on Tuesday?",
+        "What is the family going to do on Tuesday",
+        "What's the family going to do on Tuesday?"
+      ],
+      "hints": ["'The family' is singular, use 'is'"],
+      "points": 10
+    },
+    {
+      "id": 12,
+      "type": "sentence-build",
+      "prompt": "How / Dad / travel to Newcastle / on Wednesday?",
+      "instructions": "Write a question with 'be going to'",
+      "answer": "How is Dad going to travel to Newcastle on Wednesday?",
+      "acceptedAnswers": [
+        "How is Dad going to travel to Newcastle on Wednesday?",
+        "How is Dad going to travel to Newcastle on Wednesday",
+        "How's Dad going to travel to Newcastle on Wednesday?"
+      ],
+      "hints": ["How + is + subject + going to + verb?"],
+      "points": 10
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Are you going to visit the zoo? → Yes, __________",
+      "wordHint": "",
+      "answer": "I am",
+      "acceptedAnswers": ["I am", "we are"],
+      "hints": ["Short answer: Yes, + subject + am/is/are (NO contractions)"],
+      "points": 10
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Is she going to study tonight? → No, __________",
+      "wordHint": "",
+      "answer": "she isn't",
+      "acceptedAnswers": ["she isn't", "she is not"],
+      "hints": ["Negative short answer"],
+      "points": 10
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Are they going to play football? → Yes, __________",
+      "wordHint": "",
+      "answer": "they are",
+      "acceptedAnswers": ["they are"],
+      "hints": ["Yes, they are (no contraction in affirmative short answers)"],
+      "points": 10
+    },
+    {
+      "id": 16,
+      "type": "sentence-build",
+      "prompt": "They've got a football.",
+      "instructions": "Make a prediction about what is going to happen",
+      "answer": "They are going to play football.",
+      "acceptedAnswers": [
+        "They are going to play football.",
+        "They are going to play football",
+        "They're going to play football.",
+        "They're going to play football"
+      ],
+      "hints": ["Predict based on what you see now"],
+      "points": 10
+    },
+    {
+      "id": 17,
+      "type": "sentence-build",
+      "prompt": "Dad looks tired.",
+      "instructions": "Make a prediction about what is going to happen",
+      "answer": "He is going to sit down.",
+      "acceptedAnswers": [
+        "He is going to sit down.",
+        "He is going to sit down",
+        "He's going to sit down.",
+        "He is going to rest.",
+        "He's going to rest."
+      ],
+      "hints": ["What will a tired person do?"],
+      "points": 10
+    },
+    {
+      "id": 18,
+      "type": "sentence-build",
+      "prompt": "There are black clouds in the sky.",
+      "instructions": "Make a prediction about what is going to happen",
+      "answer": "It is going to rain.",
+      "acceptedAnswers": [
+        "It is going to rain.",
+        "It is going to rain",
+        "It's going to rain.",
+        "It's going to rain"
+      ],
+      "hints": ["Black clouds = sign of rain"],
+      "points": 10
+    },
+    {
+      "id": 19,
+      "type": "sentence-build",
+      "prompt": "This programme's boring.",
+      "instructions": "Make a prediction about what is going to happen",
+      "answer": "She is going to turn off the TV.",
+      "acceptedAnswers": [
+        "She is going to turn off the TV.",
+        "She's going to turn off the TV.",
+        "I am going to turn off the TV.",
+        "I'm going to turn off the TV.",
+        "We're going to turn off the TV."
+      ],
+      "hints": ["What do you do with a boring programme?"],
+      "points": 10
+    },
+    {
+      "id": 20,
+      "type": "sentence-build",
+      "prompt": "He's dirty after playing in the garden.",
+      "instructions": "Make a prediction about what is going to happen",
+      "answer": "He is going to have a shower.",
+      "acceptedAnswers": [
+        "He is going to have a shower.",
+        "He's going to have a shower.",
+        "He is going to take a shower.",
+        "He's going to take a shower.",
+        "He is going to wash.",
+        "He's going to have a bath."
+      ],
+      "hints": ["What does a dirty person do?"],
+      "points": 10
+    },
+    {
+      "id": 21,
+      "type": "multiple-choice",
+      "question": "Look at those clouds! It __________.",
+      "options": ["will rain", "is going to rain", "rains", "rained"],
+      "correctIndex": 1,
+      "explanation": "Use 'be going to' for predictions based on present evidence (clouds)",
+      "hints": ["You can see evidence now (clouds)"],
+      "points": 10
+    },
+    {
+      "id": 22,
+      "type": "multiple-choice",
+      "question": "I think I __________ to bed early tonight. I'm tired.",
+      "options": ["will go", "am going to go", "go", "went"],
+      "correctIndex": 1,
+      "explanation": "Intention/decision already made because of being tired",
+      "hints": ["Already decided because tired"],
+      "points": 10
+    },
+    {
+      "id": 23,
+      "type": "multiple-choice",
+      "question": "We __________ the zoo tomorrow. We bought the tickets yesterday.",
+      "options": ["will visit", "are going to visit", "visit", "visited"],
+      "correctIndex": 1,
+      "explanation": "Already planned and prepared (bought tickets)",
+      "hints": ["Tickets already bought = plan"],
+      "points": 10
+    },
+    {
+      "id": 24,
+      "type": "multiple-choice",
+      "question": "A: The phone's ringing! B: Don't worry. I __________ it.",
+      "options": ["will answer", "am going to answer", "answer", "answered"],
+      "correctIndex": 0,
+      "explanation": "Instant decision made at the moment of speaking, use 'will'",
+      "hints": ["Deciding right now = will"],
+      "points": 10
+    },
+    {
+      "id": 25,
+      "type": "multiple-choice",
+      "question": "Watch out! You __________ those plates!",
+      "options": ["will drop", "are going to drop", "drop", "dropped"],
+      "correctIndex": 1,
+      "explanation": "Prediction based on what you see now (about to fall)",
+      "hints": ["You can see it's about to happen"],
+      "points": 10
+    },
+    {
+      "id": 26,
+      "type": "multiple-choice",
+      "question": "They __________ to Spain next summer. They've already booked it.",
+      "options": ["will travel", "are going to travel", "travel", "travelled"],
+      "correctIndex": 1,
+      "explanation": "Already booked = arranged plan, use 'be going to'",
+      "hints": ["Already booked = plan"],
+      "points": 10
+    },
+    {
+      "id": 27,
+      "type": "error-correct",
+      "wrongSentence": "I going to visit the zoo tomorrow.",
+      "correctSentence": "I am going to visit the zoo tomorrow.",
+      "errorWord": "I going",
+      "correction": "I am going",
+      "explanation": "Need 'am' before 'going to'",
+      "hints": ["Missing the verb 'be'"],
+      "points": 10
+    },
+    {
+      "id": 28,
+      "type": "error-correct",
+      "wrongSentence": "She is go to study English.",
+      "correctSentence": "She is going to study English.",
+      "errorWord": "is go",
+      "correction": "is going",
+      "explanation": "Need 'going' after 'is'",
+      "hints": ["is + going to + verb"],
+      "points": 10
+    },
+    {
+      "id": 29,
+      "type": "error-correct",
+      "wrongSentence": "Are you going visit the museum?",
+      "correctSentence": "Are you going to visit the museum?",
+      "errorWord": "going visit",
+      "correction": "going to visit",
+      "explanation": "Missing 'to' after 'going'",
+      "hints": ["going to + base verb"],
+      "points": 10
+    },
+    {
+      "id": 30,
+      "type": "error-correct",
+      "wrongSentence": "They not going to play football.",
+      "correctSentence": "They are not going to play football.",
+      "errorWord": "They not",
+      "correction": "They are not",
+      "explanation": "Need 'are' before 'not going to'",
+      "hints": ["They + are + not going to"],
+      "points": 10
+    },
+    {
+      "id": 31,
+      "type": "error-correct",
+      "wrongSentence": "What you are going to do?",
+      "correctSentence": "What are you going to do?",
+      "errorWord": "you are",
+      "correction": "are you",
+      "explanation": "In questions, 'are' comes before subject",
+      "hints": ["Question word order: What + are + you"],
+      "points": 10
+    },
+    {
+      "id": 32,
+      "type": "error-correct",
+      "wrongSentence": "We're going to watching a film tonight.",
+      "correctSentence": "We're going to watch a film tonight.",
+      "errorWord": "watching",
+      "correction": "watch",
+      "explanation": "After 'going to', use base verb (not -ing)",
+      "hints": ["going to + base verb"],
+      "points": 10
+    },
+    {
+      "id": 33,
+      "type": "dialogue-complete",
+      "title": "Complete the dialogue about zoo plans",
+      "lines": [
+        {
+          "speaker": "Mum",
+          "text": "What _____ you _____ (do) at the zoo today?",
+          "blank": true,
+          "blankId": "b1",
+          "wordHint": "(do)",
+          "answer": "are you going to do",
+          "acceptedAnswers": ["are you going to do", "are...going to do"]
+        },
+        {
+          "speaker": "Ryan",
+          "text": "I _____ (see) the reptile house first.",
+          "blank": true,
+          "blankId": "b2",
+          "wordHint": "(see)",
+          "answer": "am going to see",
+          "acceptedAnswers": ["am going to see", "'m going to see"]
+        },
+        {
+          "speaker": "Maddy",
+          "text": "I _____ (visit) the elephant house.",
+          "blank": true,
+          "blankId": "b3",
+          "wordHint": "(visit)",
+          "answer": "am going to visit",
+          "acceptedAnswers": ["am going to visit", "'m going to visit"]
+        },
+        {
+          "speaker": "Martin",
+          "text": "I _____ (not go) to the reptile house. I _____ (see) the lions instead.",
+          "blank": true,
+          "blankId": "b4",
+          "wordHint": "(not go), (see)",
+          "answer": "am not going to go, am going to see",
+          "acceptedAnswers": ["am not going to go, am going to see", "'m not going to go, 'm going to see"]
+        },
+        {
+          "speaker": "Mum",
+          "text": "_____ we _____ (stay) all day?",
+          "blank": true,
+          "blankId": "b5",
+          "wordHint": "(stay)",
+          "answer": "Are we going to stay",
+          "acceptedAnswers": ["Are we going to stay", "Are...going to stay"]
+        }
+      ],
+      "points": 20
+    },
+    {
+      "id": 34,
+      "type": "translation",
+      "vietnamese": "Tôi sẽ thăm sở thú vào cuối tuần này.",
+      "answer": "I am going to visit the zoo this weekend.",
+      "acceptedAnswers": [
+        "I am going to visit the zoo this weekend.",
+        "I am going to visit the zoo this weekend",
+        "I'm going to visit the zoo this weekend.",
+        "I'm going to visit the zoo this weekend"
+      ],
+      "hints": ["Use 'be going to' for plans"],
+      "points": 10
+    },
+    {
+      "id": 35,
+      "type": "translation",
+      "vietnamese": "Trời sắp mưa rồi. Nhìn những đám mây kia kìa!",
+      "answer": "It's going to rain. Look at those clouds!",
+      "acceptedAnswers": [
+        "It's going to rain. Look at those clouds!",
+        "It's going to rain. Look at those clouds",
+        "It is going to rain. Look at those clouds!",
+        "It's going to rain soon. Look at those clouds!"
+      ],
+      "hints": ["Prediction based on evidence"],
+      "points": 10
+    },
+    {
+      "id": 36,
+      "type": "translation",
+      "vietnamese": "Họ sẽ không đi xem phim tối nay.",
+      "answer": "They are not going to go to the cinema tonight.",
+      "acceptedAnswers": [
+        "They are not going to go to the cinema tonight.",
+        "They are not going to go to the cinema tonight",
+        "They aren't going to go to the cinema tonight.",
+        "They're not going to go to the cinema tonight.",
+        "They aren't going to watch a film tonight."
+      ],
+      "hints": ["Negative: are not going to"],
+      "points": 10
+    },
+    {
+      "id": 37,
+      "type": "translation",
+      "vietnamese": "Bạn sẽ làm gì vào thứ Bảy?",
+      "answer": "What are you going to do on Saturday?",
+      "acceptedAnswers": [
+        "What are you going to do on Saturday?",
+        "What are you going to do on Saturday",
+        "What're you going to do on Saturday?"
+      ],
+      "hints": ["Question with be going to"],
+      "points": 10
+    },
+    {
+      "id": 38,
+      "type": "translation",
+      "vietnamese": "Chúng tôi sẽ ăn tối ở nhà hàng Trung Hoa.",
+      "answer": "We are going to have dinner at a Chinese restaurant.",
+      "acceptedAnswers": [
+        "We are going to have dinner at a Chinese restaurant.",
+        "We are going to have dinner at a Chinese restaurant",
+        "We're going to have dinner at a Chinese restaurant.",
+        "We are going to eat dinner at a Chinese restaurant."
+      ],
+      "hints": ["Plan for the future"],
+      "points": 10
+    },
+    {
+      "id": 39,
+      "type": "open-ended",
+      "title": "Write about your weekend plans",
+      "instruction": "Write a short paragraph (6-8 sentences) about your plans for the next weekend. Use 'be going to' to talk about what you are going to do. Include: where you're going to go, who you're going to see, what activities you're going to do, and what time you're going to start/finish.",
+      "example": "Example: Next weekend I'm going to visit my grandparents. I'm going to leave home at 9am. We're going to have lunch together...",
+      "minSentences": 6,
+      "maxWords": 150,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    },
+    {
+      "id": 40,
+      "type": "open-ended",
+      "title": "Make predictions",
+      "instruction": "Look at these situations and write predictions using 'be going to'. Explain why you think these things are going to happen: 1) Your friend didn't study for the exam. 2) The football team is winning 5-0 with 2 minutes left. 3) Someone is carrying too many bags and they're falling.",
+      "example": "Example: 1) My friend is going to fail the exam because he didn't study...",
+      "minSentences": 3,
+      "maxWords": 100,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    }
+  ]
+}

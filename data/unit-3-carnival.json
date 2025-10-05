@@ -42,8 +42,8 @@
     {
       "type": "fill-blank-table",
       "id": "ex1",
-      "title": "Complete the table with comparative and superlative forms",
-      "instructions": "Fill in the missing adjective forms",
+      "title": "Hoàn thành bảng với dạng so sánh hơn và so sánh nhất",
+      "instructions": "Điền vào các dạng tính từ còn thiếu",
       "headers": ["Adjective", "Comparative", "Superlative"],
       "rows": [
         {
@@ -84,16 +84,16 @@
       ],
       "points": 25,
       "hints": [
-        "Short adjectives (1-2 syllables) add -er and -est",
-        "Long adjectives (3+ syllables) use more/most",
-        "Remember irregular forms: good-better-best"
+        "Tính từ ngắn (1-2 âm tiết) thêm -er và -est",
+        "Tính từ dài (3+ âm tiết) dùng more/most",
+        "Nhớ dạng bất quy tắc: good-better-best"
       ]
     },
     {
       "type": "sentence-build",
       "id": "ex2-q1",
       "prompt": "Mount Everest / high / Mount Fuji",
-      "instructions": "Write a comparative sentence using the words provided",
+      "instructions": "Viết câu so sánh hơn sử dụng các từ cho sẵn",
       "answer": "Mount Everest is higher than Mount Fuji.",
       "acceptedAnswers": [
         "Mount Everest is higher than Mount Fuji",
@@ -102,9 +102,9 @@
         "Mount Everest's higher than Mount Fuji."
       ],
       "hints": [
-        "Use comparative form of 'high'",
-        "Don't forget 'than'",
-        "Structure: Subject + is + comparative adjective + than + object"
+        "Dùng dạng so sánh hơn của 'high'",
+        "Đừng quên 'than'",
+        "Cấu trúc: Chủ ngữ + is + tính từ so sánh hơn + than + tân ngữ"
       ],
       "points": 10
     },
@@ -112,7 +112,7 @@
       "type": "sentence-build",
       "id": "ex2-q2",
       "prompt": "A car / fast / a bicycle",
-      "instructions": "Write a comparative sentence using the words provided",
+      "instructions": "Viết câu so sánh hơn sử dụng các từ cho sẵn",
       "answer": "A car is faster than a bicycle.",
       "acceptedAnswers": [
         "A car is faster than a bicycle",
@@ -120,14 +120,14 @@
         "A car's faster than a bicycle",
         "A car's faster than a bicycle."
       ],
-      "hints": ["Use comparative form of 'fast'"],
+      "hints": ["Dùng dạng so sánh hơn của 'fast'"],
       "points": 10
     },
     {
       "type": "sentence-build",
       "id": "ex3-q1",
       "prompt": "The blue whale / large / animal / in the world",
-      "instructions": "Write a superlative sentence using the words provided",
+      "instructions": "Viết câu so sánh nhất sử dụng các từ cho sẵn",
       "answer": "The blue whale is the largest animal in the world.",
       "acceptedAnswers": [
         "The blue whale is the largest animal in the world",
@@ -136,8 +136,8 @@
         "The blue whale's the largest animal in the world."
       ],
       "hints": [
-        "Use superlative form of 'large'",
-        "Don't forget 'the' before the superlative"
+        "Dùng dạng so sánh nhất của 'large'",
+        "Đừng quên 'the' trước dạng so sánh nhất"
       ],
       "points": 10
     },
@@ -149,8 +149,8 @@
       "answer": "as dangerous as",
       "acceptedAnswers": ["as dangerous as", "not as dangerous as"],
       "hints": [
-        "Use 'as...as' pattern for equality comparisons",
-        "Both answers are grammatically correct here"
+        "Dùng cấu trúc 'as...as' cho so sánh bằng",
+        "Cả hai đáp án đều đúng ngữ pháp"
       ],
       "points": 10
     },
@@ -162,8 +162,8 @@
       "answer": "not as popular as",
       "acceptedAnswers": ["not as popular as"],
       "hints": [
-        "Tea is more popular in England than coffee",
-        "Use 'not as...as' for inequality"
+        "Trà phổ biến hơn cà phê ở Anh",
+        "Dùng 'not as...as' cho so sánh không bằng"
       ],
       "points": 10
     },
@@ -173,8 +173,8 @@
       "question": "This exercise is _____ than the last one.",
       "options": ["easier", "the easiest", "more easy", "most easy"],
       "correctIndex": 0,
-      "explanation": "Use comparative form 'easier' with 'than'. 'Easy' is a short adjective.",
-      "hints": ["Look for the word 'than' in the sentence - this indicates comparative form"],
+      "explanation": "Dùng dạng so sánh hơn 'easier' với 'than'. 'Easy' là tính từ ngắn.",
+      "hints": ["Tìm từ 'than' trong câu - đây là dấu hiệu của so sánh hơn"],
       "points": 10
     },
     {
@@ -183,8 +183,8 @@
       "question": "She is _____ girl in the school.",
       "options": ["more intelligent", "the most intelligent", "intelligenter", "most intelligent"],
       "correctIndex": 1,
-      "explanation": "Use superlative form 'the most intelligent' when comparing with a group ('in the school').",
-      "hints": ["Comparing with a whole group needs superlative", "Don't forget 'the'"],
+      "explanation": "Dùng dạng so sánh nhất 'the most intelligent' khi so sánh với cả nhóm ('in the school').",
+      "hints": ["So sánh với cả nhóm cần dùng so sánh nhất", "Đừng quên 'the'"],
       "points": 10
     },
     {
@@ -195,8 +195,8 @@
       "answer": "too",
       "acceptedAnswers": ["too"],
       "hints": [
-        "The sentence says 'I can't drink it' - this is negative",
-        "Too = more than necessary (negative meaning)"
+        "Câu nói 'I can't drink it' - đây là nghĩa phủ định",
+        "Too = quá mức cần thiết (nghĩa phủ định)"
       ],
       "points": 10
     },
@@ -208,8 +208,8 @@
       "answer": "enough",
       "acceptedAnswers": ["enough"],
       "hints": [
-        "Enough = sufficient amount",
-        "Enough comes AFTER the adjective"
+        "Enough = đủ",
+        "Enough đứng SAU tính từ"
       ],
       "points": 10
     },
@@ -217,7 +217,7 @@
       "type": "sentence-rewrite",
       "id": "ex7-q1",
       "original": "The shoes are very small. I can't wear them.",
-      "instruction": "Rewrite using 'too'",
+      "instruction": "Viết lại câu sử dụng 'too'",
       "starterText": "The shoes are",
       "answer": "The shoes are too small for me to wear.",
       "acceptedAnswers": [
@@ -227,8 +227,8 @@
         "The shoes are too small to wear."
       ],
       "hints": [
-        "Structure: too + adjective + to + verb",
-        "Too indicates something is more than necessary"
+        "Cấu trúc: too + tính từ + to + động từ",
+        "Too chỉ điều gì đó quá mức cần thiết"
       ],
       "points": 10
     },
@@ -251,8 +251,8 @@
         }
       ],
       "hints": [
-        "First blank: comparing two people (Sarah and her sister) - use comparative",
-        "Second blank: comparing with whole class - use superlative"
+        "Chỗ trống 1: so sánh hai người (Sarah và chị/em gái) - dùng so sánh hơn",
+        "Chỗ trống 2: so sánh với cả lớp - dùng so sánh nhất"
       ],
       "points": 15
     },
@@ -263,10 +263,10 @@
       "correctSentence": "She is taller than her brother.",
       "errorWord": "more tall",
       "correction": "taller",
-      "explanation": "'Tall' is a short adjective (1 syllable), so use -er form, not 'more'.",
+      "explanation": "'Tall' là tính từ ngắn (1 âm tiết), nên dùng dạng -er, không dùng 'more'.",
       "hints": [
-        "Check the adjective form - is it short or long?",
-        "Short adjectives don't use 'more'"
+        "Kiểm tra dạng tính từ - ngắn hay dài?",
+        "Tính từ ngắn không dùng 'more'"
       ],
       "points": 10
     },
@@ -277,8 +277,8 @@
       "correctSentence": "This is the cheapest restaurant in town.",
       "errorWord": "most cheap",
       "correction": "cheapest",
-      "explanation": "'Cheap' is a short adjective, so use -est form, not 'most'.",
-      "hints": ["Short adjectives don't use 'most'"],
+      "explanation": "'Cheap' là tính từ ngắn, nên dùng dạng -est, không dùng 'most'.",
+      "hints": ["Tính từ ngắn không dùng 'most'"],
       "points": 10
     },
     {
@@ -295,17 +295,17 @@
         "This shirt's too small for me."
       ],
       "hints": [
-        "Use 'too' + adjective",
-        "'Chiếc áo' can be 'shirt' or 'dress'"
+        "Dùng 'too' + tính từ",
+        "'Chiếc áo' có thể là 'shirt' hoặc 'dress'"
       ],
       "points": 10
     },
     {
       "type": "open-ended",
       "id": "ex14",
-      "title": "Writing Exercise - Compare Two Cities",
-      "instruction": "Write 5 sentences comparing two cities you know. Use comparative adjectives, superlative adjectives, and 'as...as'.",
-      "example": "Example: Hanoi is bigger than Hue. Ho Chi Minh City is the largest city in Vietnam. Hue is not as crowded as Hanoi.",
+      "title": "Bài tập viết - So sánh hai thành phố",
+      "instruction": "Viết 5 câu so sánh hai thành phố bạn biết. Sử dụng tính từ so sánh hơn, so sánh nhất và 'as...as'.",
+      "example": "Ví dụ: Hanoi is bigger than Hue. Ho Chi Minh City is the largest city in Vietnam. Hue is not as crowded as Hanoi.",
       "minSentences": 5,
       "maxWords": 200,
       "scored": false,

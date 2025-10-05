@@ -1,0 +1,439 @@
+{
+  "unitId": "unit-10-indefinite-pronouns",
+  "title": "Unit 10: Indefinite Pronouns & Question Tags",
+  "grammarTopics": ["Indefinite Pronouns", "Question Tags"],
+  "theory": {
+    "brief": "Indefinite pronouns (someone, anyone, no one, everyone, something, anything, nothing, everything, somewhere, anywhere, nowhere, everywhere) dùng để nói về người/vật/nơi không xác định. Question tags là câu hỏi đuôi để xác nhận thông tin.",
+    "examples": [
+      "Someone is at the door. (indefinite pronoun)",
+      "There isn't anything in the box. (negative + anything)",
+      "You're happy, aren't you? (question tag)"
+    ]
+  },
+  "exercises": [
+    {
+      "id": 1,
+      "type": "fill-blank",
+      "question": "Who's there? __________ is knocking on the door.",
+      "wordHint": "",
+      "answer": "Someone",
+      "acceptedAnswers": ["Someone", "Somebody"],
+      "hints": ["Person (not specific): someone/somebody"],
+      "points": 10
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "Who's going to be there? __________, the whole class.",
+      "wordHint": "",
+      "answer": "Everyone",
+      "acceptedAnswers": ["Everyone", "Everybody"],
+      "hints": ["All people: everyone/everybody"],
+      "points": 10
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "It was very quiet. There was __________ at the park.",
+      "wordHint": "",
+      "answer": "no one",
+      "acceptedAnswers": ["no one", "nobody"],
+      "hints": ["No people: no one/nobody"],
+      "points": 10
+    },
+    {
+      "id": 4,
+      "type": "fill-blank",
+      "question": "What's that noise? __________ is talking in the garden.",
+      "wordHint": "",
+      "answer": "Someone",
+      "acceptedAnswers": ["Someone", "Somebody"],
+      "hints": ["Unspecified person"],
+      "points": 10
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "I haven't got __________ nice to wear for the party.",
+      "wordHint": "",
+      "answer": "anything",
+      "acceptedAnswers": ["anything"],
+      "hints": ["Negative sentence uses 'anything'"],
+      "points": 10
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "What's on TV? __________. It's boring.",
+      "wordHint": "",
+      "answer": "Nothing",
+      "acceptedAnswers": ["Nothing"],
+      "hints": ["No thing: nothing"],
+      "points": 10
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Are you ready? Yes, I've packed __________.",
+      "wordHint": "",
+      "answer": "everything",
+      "acceptedAnswers": ["everything"],
+      "hints": ["All things: everything"],
+      "points": 10
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "It's boring here. There isn't __________ to go.",
+      "wordHint": "",
+      "answer": "anywhere",
+      "acceptedAnswers": ["anywhere"],
+      "hints": ["Negative + anywhere"],
+      "points": 10
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Where are you going? __________. I'm staying home.",
+      "wordHint": "",
+      "answer": "Nowhere",
+      "acceptedAnswers": ["Nowhere"],
+      "hints": ["No place: nowhere"],
+      "points": 10
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "The famous explorer has travelled almost __________ in Africa.",
+      "options": ["somewhere", "nowhere", "everywhere", "anywhere"],
+      "correctIndex": 2,
+      "explanation": "'Everywhere' means all places",
+      "hints": ["All places in Africa"],
+      "points": 10
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "We saw __________ very exciting at the zoo yesterday.",
+      "options": ["something", "everything", "anything", "nothing"],
+      "correctIndex": 0,
+      "explanation": "Affirmative sentence uses 'something'",
+      "hints": ["Positive statement = something"],
+      "points": 10
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "__________ was very quiet before the storm.",
+      "options": ["Everything", "Everywhere", "Something", "Somewhere"],
+      "correctIndex": 0,
+      "explanation": "'Everything' refers to all things/the whole situation",
+      "hints": ["All things were quiet"],
+      "points": 10
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "I've never been __________ really cold.",
+      "options": ["anywhere", "nowhere", "somewhere", "everywhere"],
+      "correctIndex": 0,
+      "explanation": "Negative sentence (never) uses 'anywhere'",
+      "hints": ["'never' is negative, use 'anywhere'"],
+      "points": 10
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "I looked for the keys __________, but I couldn't find them __________.",
+      "options": ["somewhere, somewhere", "everywhere, anywhere", "anywhere, somewhere", "everywhere, everywhere"],
+      "correctIndex": 1,
+      "explanation": "First blank: looked in all places (everywhere). Second blank: negative sentence (couldn't) uses anywhere",
+      "hints": ["Looked in all places, couldn't find in any place"],
+      "points": 10
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "__________ had a great time at Zoe's party.",
+      "options": ["Everyone", "Someone", "Anyone", "No one"],
+      "correctIndex": 0,
+      "explanation": "All people had a great time",
+      "hints": ["All people at the party"],
+      "points": 10
+    },
+    {
+      "id": 16,
+      "type": "multiple-choice",
+      "question": "Is there __________ there?",
+      "options": ["anywhere", "no one", "anyone", "everyone"],
+      "correctIndex": 2,
+      "explanation": "Question uses 'anyone' for people",
+      "hints": ["Questions use 'anyone'"],
+      "points": 10
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "You were happy at school today, __________?",
+      "wordHint": "",
+      "answer": "weren't you",
+      "acceptedAnswers": ["weren't you", "were not you"],
+      "hints": ["Positive statement → negative tag"],
+      "points": 10
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "They're lucky to see the pyramids, __________?",
+      "wordHint": "",
+      "answer": "aren't they",
+      "acceptedAnswers": ["aren't they", "are not they"],
+      "hints": ["They're (positive) → aren't they?"],
+      "points": 10
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "The class is visiting a museum next week, __________?",
+      "wordHint": "",
+      "answer": "isn't it",
+      "acceptedAnswers": ["isn't it", "is not it"],
+      "hints": ["is (positive) → isn't?"],
+      "points": 10
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "They haven't visited the school before, __________?",
+      "wordHint": "",
+      "answer": "have they",
+      "acceptedAnswers": ["have they"],
+      "hints": ["haven't (negative) → have they?"],
+      "points": 10
+    },
+    {
+      "id": 21,
+      "type": "fill-blank",
+      "question": "We didn't make any smoothies, __________?",
+      "wordHint": "",
+      "answer": "did we",
+      "acceptedAnswers": ["did we"],
+      "hints": ["didn't (negative) → did we?"],
+      "points": 10
+    },
+    {
+      "id": 22,
+      "type": "fill-blank",
+      "question": "You know the test is today, __________?",
+      "wordHint": "",
+      "answer": "don't you",
+      "acceptedAnswers": ["don't you", "do not you"],
+      "hints": ["know (positive) → don't you?"],
+      "points": 10
+    },
+    {
+      "id": 23,
+      "type": "fill-blank",
+      "question": "You didn't go on holiday last year, __________?",
+      "wordHint": "",
+      "answer": "did you",
+      "acceptedAnswers": ["did you"],
+      "hints": ["didn't (negative) → did you?"],
+      "points": 10
+    },
+    {
+      "id": 24,
+      "type": "fill-blank",
+      "question": "Annie didn't live in Rome, __________?",
+      "wordHint": "",
+      "answer": "did she",
+      "acceptedAnswers": ["did she"],
+      "hints": ["didn't (negative) → did she?"],
+      "points": 10
+    },
+    {
+      "id": 25,
+      "type": "fill-blank",
+      "question": "Her sister speaks English, __________?",
+      "wordHint": "",
+      "answer": "doesn't she",
+      "acceptedAnswers": ["doesn't she", "does not she"],
+      "hints": ["speaks (positive) → doesn't she?"],
+      "points": 10
+    },
+    {
+      "id": 26,
+      "type": "fill-blank",
+      "question": "You're going to read that book, __________?",
+      "wordHint": "",
+      "answer": "aren't you",
+      "acceptedAnswers": ["aren't you", "are not you"],
+      "hints": ["are going (positive) → aren't you?"],
+      "points": 10
+    },
+    {
+      "id": 27,
+      "type": "fill-blank",
+      "question": "She can swim, __________?",
+      "wordHint": "",
+      "answer": "can't she",
+      "acceptedAnswers": ["can't she", "cannot she"],
+      "hints": ["can (positive) → can't she?"],
+      "points": 10
+    },
+    {
+      "id": 28,
+      "type": "fill-blank",
+      "question": "They won't come tomorrow, __________?",
+      "wordHint": "",
+      "answer": "will they",
+      "acceptedAnswers": ["will they"],
+      "hints": ["won't (negative) → will they?"],
+      "points": 10
+    },
+    {
+      "id": 29,
+      "type": "error-correct",
+      "wrongSentence": "There is anybody at the door.",
+      "correctSentence": "There is somebody at the door.",
+      "errorWord": "anybody",
+      "correction": "somebody",
+      "explanation": "Affirmative sentences use 'somebody', not 'anybody'",
+      "hints": ["Positive statement uses somebody/someone"],
+      "points": 10
+    },
+    {
+      "id": 30,
+      "type": "error-correct",
+      "wrongSentence": "I don't have nothing to do.",
+      "correctSentence": "I don't have anything to do.",
+      "errorWord": "nothing",
+      "correction": "anything",
+      "explanation": "Don't use double negative. Use 'anything' with 'don't'",
+      "hints": ["Don't + anything (NOT nothing)"],
+      "points": 10
+    },
+    {
+      "id": 31,
+      "type": "error-correct",
+      "wrongSentence": "You are happy, are you?",
+      "correctSentence": "You are happy, aren't you?",
+      "errorWord": "are you",
+      "correction": "aren't you",
+      "explanation": "Positive statement needs negative question tag",
+      "hints": ["Positive → negative tag"],
+      "points": 10
+    },
+    {
+      "id": 32,
+      "type": "error-correct",
+      "wrongSentence": "She doesn't like coffee, doesn't she?",
+      "correctSentence": "She doesn't like coffee, does she?",
+      "errorWord": "doesn't she",
+      "correction": "does she",
+      "explanation": "Negative statement needs positive question tag",
+      "hints": ["Negative → positive tag"],
+      "points": 10
+    },
+    {
+      "id": 33,
+      "type": "translation",
+      "vietnamese": "Có ai ở đó không?",
+      "answer": "Is there anyone there?",
+      "acceptedAnswers": [
+        "Is there anyone there?",
+        "Is there anyone there",
+        "Is anyone there?"
+      ],
+      "hints": ["Questions use 'anyone'"],
+      "points": 10
+    },
+    {
+      "id": 34,
+      "type": "translation",
+      "vietnamese": "Tôi không có gì để ăn cả.",
+      "answer": "I don't have anything to eat.",
+      "acceptedAnswers": [
+        "I don't have anything to eat.",
+        "I don't have anything to eat",
+        "I have nothing to eat."
+      ],
+      "hints": ["don't + anything OR nothing"],
+      "points": 10
+    },
+    {
+      "id": 35,
+      "type": "translation",
+      "vietnamese": "Mọi người đều vui vẻ ở bữa tiệc.",
+      "answer": "Everyone was happy at the party.",
+      "acceptedAnswers": [
+        "Everyone was happy at the party.",
+        "Everyone was happy at the party",
+        "Everybody was happy at the party."
+      ],
+      "hints": ["All people = everyone/everybody"],
+      "points": 10
+    },
+    {
+      "id": 36,
+      "type": "translation",
+      "vietnamese": "Bạn thích âm nhạc, phải không?",
+      "answer": "You like music, don't you?",
+      "acceptedAnswers": [
+        "You like music, don't you?",
+        "You like music, don't you"
+      ],
+      "hints": ["Positive + negative tag"],
+      "points": 10
+    },
+    {
+      "id": 37,
+      "type": "translation",
+      "vietnamese": "Họ không đến bữa tiệc, phải không?",
+      "answer": "They didn't come to the party, did they?",
+      "acceptedAnswers": [
+        "They didn't come to the party, did they?",
+        "They didn't come to the party, did they"
+      ],
+      "hints": ["Negative + positive tag"],
+      "points": 10
+    },
+    {
+      "id": 38,
+      "type": "translation",
+      "vietnamese": "Có ai đó đang gọi bạn.",
+      "answer": "Someone is calling you.",
+      "acceptedAnswers": [
+        "Someone is calling you.",
+        "Someone is calling you",
+        "Somebody is calling you."
+      ],
+      "hints": ["Unspecified person = someone/somebody"],
+      "points": 10
+    },
+    {
+      "id": 39,
+      "type": "open-ended",
+      "title": "Complete sentences with indefinite pronouns",
+      "instruction": "Complete these sentences with the correct indefinite pronouns: 1) I looked _____ for my keys but couldn't find them _____. 2) There's _____ at the door. Can you see who it is? 3) _____ was at the party - it was completely empty. 4) I need _____ to help me with this heavy box.",
+      "example": "Example: I looked everywhere for my keys but couldn't find them anywhere.",
+      "minSentences": 4,
+      "maxWords": 100,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    },
+    {
+      "id": 40,
+      "type": "open-ended",
+      "title": "Write sentences with question tags",
+      "instruction": "Write 5 sentences about yourself or your friends, using question tags at the end. Remember: positive statement → negative tag, negative statement → positive tag.",
+      "example": "Example: You're a student, aren't you? Your friend doesn't like sports, does he?",
+      "minSentences": 5,
+      "maxWords": 100,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    }
+  ]
+}
