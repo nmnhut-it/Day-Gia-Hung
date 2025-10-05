@@ -1,0 +1,517 @@
+{
+  "unitId": "unit-12-famous-inventions",
+  "title": "Unit 12: Famous Inventions",
+  "grammarTopics": ["The Passive: Past Simple", "Passive Questions"],
+  "theory": {
+    "brief": "Câu bị động thì quá khứ đơn: was/were + past participle (V3). Dùng để nói về hành động đã hoàn thành trong quá khứ khi không biết/không quan trọng ai làm. Câu hỏi: Was/Were + S + V3? Hoặc dùng Who/When/Where/What.",
+    "examples": [
+      "The first aeroplane was flown by the Wright Brothers.",
+      "Television was invented in 1927.",
+      "Who was the film directed by?"
+    ]
+  },
+  "exercises": [
+    {
+      "id": 1,
+      "type": "sentence-rewrite",
+      "original": "Orville and Wilbur Wright flew the first aeroplane. (active)",
+      "instruction": "Change to passive (past simple)",
+      "starterText": "The first aeroplane",
+      "answer": "The first aeroplane was flown by Orville and Wilbur Wright.",
+      "acceptedAnswers": [
+        "The first aeroplane was flown by Orville and Wilbur Wright.",
+        "The first aeroplane was flown by Orville and Wilbur Wright",
+        "The first aeroplane was flown by the Wright Brothers."
+      ],
+      "hints": ["was + flown"],
+      "points": 10
+    },
+    {
+      "id": 2,
+      "type": "sentence-rewrite",
+      "original": "John Logie Baird invented television in 1927. (active)",
+      "instruction": "Change to passive",
+      "starterText": "Television",
+      "answer": "Television was invented in 1927 by John Logie Baird.",
+      "acceptedAnswers": [
+        "Television was invented in 1927 by John Logie Baird.",
+        "Television was invented in 1927 by John Logie Baird",
+        "Television was invented by John Logie Baird in 1927."
+      ],
+      "hints": ["was + invented"],
+      "points": 10
+    },
+    {
+      "id": 3,
+      "type": "sentence-rewrite",
+      "original": "Karl Benz made the first car in Germany. (active)",
+      "instruction": "Change to passive",
+      "starterText": "The first car",
+      "answer": "The first car was made by Karl Benz in Germany.",
+      "acceptedAnswers": [
+        "The first car was made by Karl Benz in Germany.",
+        "The first car was made by Karl Benz in Germany",
+        "The first car was made in Germany by Karl Benz."
+      ],
+      "hints": ["was + made"],
+      "points": 10
+    },
+    {
+      "id": 4,
+      "type": "sentence-rewrite",
+      "original": "Ferdinand Magellan named the Pacific Ocean. (active)",
+      "instruction": "Change to passive",
+      "starterText": "The Pacific Ocean",
+      "answer": "The Pacific Ocean was named by Ferdinand Magellan.",
+      "acceptedAnswers": [
+        "The Pacific Ocean was named by Ferdinand Magellan.",
+        "The Pacific Ocean was named by Ferdinand Magellan"
+      ],
+      "hints": ["was + named"],
+      "points": 10
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "The first aeroplane __________ flown by the Wright Brothers.",
+      "wordHint": "",
+      "answer": "was",
+      "acceptedAnswers": ["was"],
+      "hints": ["Singular subject uses 'was'"],
+      "points": 10
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Many inventions __________ made in the 20th century.",
+      "wordHint": "",
+      "answer": "were",
+      "acceptedAnswers": ["were"],
+      "hints": ["Plural subject uses 'were'"],
+      "points": 10
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Television __________ invented in 1927.",
+      "wordHint": "",
+      "answer": "was",
+      "acceptedAnswers": ["was"],
+      "hints": ["Singular: was"],
+      "points": 10
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "The first cars __________ built in Germany.",
+      "wordHint": "",
+      "answer": "were",
+      "acceptedAnswers": ["were"],
+      "hints": ["Plural: were"],
+      "points": 10
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "The first aeroplane __________ (fly) by Orville and Wilbur Wright.",
+      "wordHint": "(fly)",
+      "answer": "was flown",
+      "acceptedAnswers": ["was flown"],
+      "hints": ["was + past participle (flown)"],
+      "points": 10
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Television __________ (invent) in 1927 by John Logie Baird.",
+      "wordHint": "(invent)",
+      "answer": "was invented",
+      "acceptedAnswers": ["was invented"],
+      "hints": ["was + invented"],
+      "points": 10
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "The first car __________ (make) by Karl Benz in Germany.",
+      "wordHint": "(make)",
+      "answer": "was made",
+      "acceptedAnswers": ["was made"],
+      "hints": ["was + made"],
+      "points": 10
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "The Pacific Ocean __________ (name) by Ferdinand Magellan.",
+      "wordHint": "(name)",
+      "answer": "was named",
+      "acceptedAnswers": ["was named"],
+      "hints": ["was + named"],
+      "points": 10
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "The first rocket __________ (send) to the moon in 1969.",
+      "wordHint": "(send)",
+      "answer": "was sent",
+      "acceptedAnswers": ["was sent"],
+      "hints": ["send → sent → sent"],
+      "points": 10
+    },
+    {
+      "id": 14,
+      "type": "sentence-build",
+      "prompt": "films / make / in the United Kingdom?",
+      "instructions": "Write a passive question (past simple)",
+      "answer": "Were films made in the United Kingdom?",
+      "acceptedAnswers": [
+        "Were films made in the United Kingdom?",
+        "Were films made in the United Kingdom"
+      ],
+      "hints": ["Were + films + made...?"],
+      "points": 10
+    },
+    {
+      "id": 15,
+      "type": "sentence-build",
+      "prompt": "the film / make / last year?",
+      "instructions": "Write a passive question",
+      "answer": "Was the film made last year?",
+      "acceptedAnswers": [
+        "Was the film made last year?",
+        "Was the film made last year"
+      ],
+      "hints": ["Was + the film + made...?"],
+      "points": 10
+    },
+    {
+      "id": 16,
+      "type": "sentence-build",
+      "prompt": "television / invent / in 1927?",
+      "instructions": "Write a passive question",
+      "answer": "Was television invented in 1927?",
+      "acceptedAnswers": [
+        "Was television invented in 1927?",
+        "Was television invented in 1927"
+      ],
+      "hints": ["Was + television + invented...?"],
+      "points": 10
+    },
+    {
+      "id": 17,
+      "type": "sentence-build",
+      "prompt": "the first plane / invent? (WHO)",
+      "instructions": "Write a passive question with 'Who'",
+      "answer": "Who was the first plane invented by?",
+      "acceptedAnswers": [
+        "Who was the first plane invented by?",
+        "Who was the first plane invented by"
+      ],
+      "hints": ["Who was + subject + invented by?"],
+      "points": 10
+    },
+    {
+      "id": 18,
+      "type": "sentence-build",
+      "prompt": "television / invent? (WHO)",
+      "instructions": "Write a passive question with 'Who'",
+      "answer": "Who was television invented by?",
+      "acceptedAnswers": [
+        "Who was television invented by?",
+        "Who was television invented by"
+      ],
+      "hints": ["Who was + television + invented by?"],
+      "points": 10
+    },
+    {
+      "id": 19,
+      "type": "sentence-build",
+      "prompt": "the Mona Lisa / paint? (WHO)",
+      "instructions": "Write a passive question with 'Who'",
+      "answer": "Who was the Mona Lisa painted by?",
+      "acceptedAnswers": [
+        "Who was the Mona Lisa painted by?",
+        "Who was the Mona Lisa painted by"
+      ],
+      "hints": ["Who was + subject + painted by?"],
+      "points": 10
+    },
+    {
+      "id": 20,
+      "type": "sentence-build",
+      "prompt": "television / invent? (WHEN)",
+      "instructions": "Write a passive question with 'When'",
+      "answer": "When was television invented?",
+      "acceptedAnswers": [
+        "When was television invented?",
+        "When was television invented"
+      ],
+      "hints": ["When was + television + invented?"],
+      "points": 10
+    },
+    {
+      "id": 21,
+      "type": "sentence-build",
+      "prompt": "the first telephone call / make? (WHEN)",
+      "instructions": "Write a passive question with 'When'",
+      "answer": "When was the first telephone call made?",
+      "acceptedAnswers": [
+        "When was the first telephone call made?",
+        "When was the first telephone call made"
+      ],
+      "hints": ["When was + subject + made?"],
+      "points": 10
+    },
+    {
+      "id": 22,
+      "type": "sentence-build",
+      "prompt": "the pyramids / build? (WHEN)",
+      "instructions": "Write a passive question with 'When'",
+      "answer": "When were the pyramids built?",
+      "acceptedAnswers": [
+        "When were the pyramids built?",
+        "When were the pyramids built"
+      ],
+      "hints": ["When were + the pyramids + built?"],
+      "points": 10
+    },
+    {
+      "id": 23,
+      "type": "sentence-build",
+      "prompt": "the first car / invent? (WHERE)",
+      "instructions": "Write a passive question with 'Where'",
+      "answer": "Where was the first car invented?",
+      "acceptedAnswers": [
+        "Where was the first car invented?",
+        "Where was the first car invented"
+      ],
+      "hints": ["Where was + subject + invented?"],
+      "points": 10
+    },
+    {
+      "id": 24,
+      "type": "sentence-build",
+      "prompt": "the film / make? (WHERE)",
+      "instructions": "Write a passive question with 'Where'",
+      "answer": "Where was the film made?",
+      "acceptedAnswers": [
+        "Where was the film made?",
+        "Where was the film made"
+      ],
+      "hints": ["Where was + the film + made?"],
+      "points": 10
+    },
+    {
+      "id": 25,
+      "type": "sentence-build",
+      "prompt": "what / invent / on 10th March 1876?",
+      "instructions": "Write a passive question with 'What'",
+      "answer": "What was invented on 10th March 1876?",
+      "acceptedAnswers": [
+        "What was invented on 10th March 1876?",
+        "What was invented on 10th March 1876"
+      ],
+      "hints": ["What was + invented...?"],
+      "points": 10
+    },
+    {
+      "id": 26,
+      "type": "sentence-build",
+      "prompt": "what / discover / in 1492?",
+      "instructions": "Write a passive question with 'What'",
+      "answer": "What was discovered in 1492?",
+      "acceptedAnswers": [
+        "What was discovered in 1492?",
+        "What was discovered in 1492"
+      ],
+      "hints": ["What was + discovered...?"],
+      "points": 10
+    },
+    {
+      "id": 27,
+      "type": "multiple-choice",
+      "question": "(Is / Are / Was) films made in the United Kingdom?",
+      "options": ["Is", "Are", "Was", "Were"],
+      "correctIndex": 3,
+      "explanation": "Past simple passive with plural subject uses 'Were'",
+      "hints": ["Past + plural = Were"],
+      "points": 10
+    },
+    {
+      "id": 28,
+      "type": "multiple-choice",
+      "question": "(Was / Is / Are) the film made last year?",
+      "options": ["Was", "Is", "Are", "Were"],
+      "correctIndex": 0,
+      "explanation": "'last year' = past, singular subject uses 'Was'",
+      "hints": ["Past + singular = Was"],
+      "points": 10
+    },
+    {
+      "id": 29,
+      "type": "error-correct",
+      "wrongSentence": "The first aeroplane was flew by the Wright Brothers.",
+      "correctSentence": "The first aeroplane was flown by the Wright Brothers.",
+      "errorWord": "flew",
+      "correction": "flown",
+      "explanation": "Past participle of fly is 'flown', not 'flew'",
+      "hints": ["fly → flew → flown"],
+      "points": 10
+    },
+    {
+      "id": 30,
+      "type": "error-correct",
+      "wrongSentence": "Television was invent in 1927.",
+      "correctSentence": "Television was invented in 1927.",
+      "errorWord": "invent",
+      "correction": "invented",
+      "explanation": "Need past participle 'invented'",
+      "hints": ["was + past participle"],
+      "points": 10
+    },
+    {
+      "id": 31,
+      "type": "error-correct",
+      "wrongSentence": "The first car were made by Karl Benz.",
+      "correctSentence": "The first car was made by Karl Benz.",
+      "errorWord": "were",
+      "correction": "was",
+      "explanation": "Singular subject 'car' needs 'was', not 'were'",
+      "hints": ["Singular = was"],
+      "points": 10
+    },
+    {
+      "id": 32,
+      "type": "error-correct",
+      "wrongSentence": "When the telephone was invented?",
+      "correctSentence": "When was the telephone invented?",
+      "errorWord": "When the telephone was",
+      "correction": "When was the telephone",
+      "explanation": "In questions, 'was' comes after question word and before subject",
+      "hints": ["When + was + subject + V3?"],
+      "points": 10
+    },
+    {
+      "id": 33,
+      "type": "error-correct",
+      "wrongSentence": "Who was the film directed?",
+      "correctSentence": "Who was the film directed by?",
+      "errorWord": "directed?",
+      "correction": "directed by?",
+      "explanation": "Need 'by' at the end when asking 'who' in passive",
+      "hints": ["Who was + subject + V3 + by?"],
+      "points": 10
+    },
+    {
+      "id": 34,
+      "type": "error-correct",
+      "wrongSentence": "The picture was paint with oil paints.",
+      "correctSentence": "The picture was painted with oil paints.",
+      "errorWord": "paint",
+      "correction": "painted",
+      "explanation": "Need past participle 'painted'",
+      "hints": ["was + painted"],
+      "points": 10
+    },
+    {
+      "id": 35,
+      "type": "translation",
+      "vietnamese": "Máy bay đầu tiên được bay bởi anh em nhà Wright.",
+      "answer": "The first aeroplane was flown by the Wright Brothers.",
+      "acceptedAnswers": [
+        "The first aeroplane was flown by the Wright Brothers.",
+        "The first aeroplane was flown by the Wright Brothers",
+        "The first airplane was flown by the Wright Brothers."
+      ],
+      "hints": ["was flown by"],
+      "points": 10
+    },
+    {
+      "id": 36,
+      "type": "translation",
+      "vietnamese": "Truyền hình được phát minh vào năm 1927.",
+      "answer": "Television was invented in 1927.",
+      "acceptedAnswers": [
+        "Television was invented in 1927.",
+        "Television was invented in 1927"
+      ],
+      "hints": ["was invented"],
+      "points": 10
+    },
+    {
+      "id": 37,
+      "type": "translation",
+      "vietnamese": "Chiếc xe hơi đầu tiên được làm ở Đức.",
+      "answer": "The first car was made in Germany.",
+      "acceptedAnswers": [
+        "The first car was made in Germany.",
+        "The first car was made in Germany"
+      ],
+      "hints": ["was made"],
+      "points": 10
+    },
+    {
+      "id": 38,
+      "type": "translation",
+      "vietnamese": "Điện thoại được phát minh bởi ai?",
+      "answer": "Who was the telephone invented by?",
+      "acceptedAnswers": [
+        "Who was the telephone invented by?",
+        "Who was the telephone invented by"
+      ],
+      "hints": ["Who was + subject + invented by?"],
+      "points": 10
+    },
+    {
+      "id": 39,
+      "type": "translation",
+      "vietnamese": "Truyền hình được phát minh khi nào?",
+      "answer": "When was television invented?",
+      "acceptedAnswers": [
+        "When was television invented?",
+        "When was television invented"
+      ],
+      "hints": ["When was + subject + invented?"],
+      "points": 10
+    },
+    {
+      "id": 40,
+      "type": "translation",
+      "vietnamese": "Chiếc xe hơi đầu tiên được làm ở đâu?",
+      "answer": "Where was the first car made?",
+      "acceptedAnswers": [
+        "Where was the first car made?",
+        "Where was the first car made"
+      ],
+      "hints": ["Where was + subject + made?"],
+      "points": 10
+    },
+    {
+      "id": 41,
+      "type": "translation",
+      "vietnamese": "Cái gì được phát minh vào ngày 10 tháng 3 năm 1876?",
+      "answer": "What was invented on 10th March 1876?",
+      "acceptedAnswers": [
+        "What was invented on 10th March 1876?",
+        "What was invented on 10th March 1876",
+        "What was invented on March 10th, 1876?"
+      ],
+      "hints": ["What was + invented...?"],
+      "points": 10
+    },
+    {
+      "id": 42,
+      "type": "open-ended",
+      "title": "Famous inventions or discoveries",
+      "instruction": "Write a paragraph (6-8 sentences) about famous inventions or discoveries using the passive voice (past simple). Include information about who invented/discovered them, when, and where.",
+      "example": "Example: The telephone was invented by Alexander Graham Bell in 1876. The light bulb was created by Thomas Edison. Penicillin was discovered by Alexander Fleming...",
+      "minSentences": 6,
+      "maxWords": 150,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    }
+  ]
+}

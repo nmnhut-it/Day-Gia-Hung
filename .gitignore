@@ -1,0 +1,35 @@
+# Exercise markdown files (source material, not for deployment)
+exercises/*.md
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# Build
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp

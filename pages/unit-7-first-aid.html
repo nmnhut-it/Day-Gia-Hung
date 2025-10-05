@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 7: First Aid - Reported Speech | English Grammar Games</title>
+  <meta name="description" content="Practice reported speech with said and told, changing tenses and time words">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="../css/shared.css">
+</head>
+<body>
+  <!-- Game Header -->
+  <header class="game-header">
+    <div class="container">
+      <div class="game-header__container">
+        <div class="game-header__info-section">
+          <h1 class="game-header__title">Unit 7: First Aid</h1>
+          <p class="game-header__subtitle">Reported Speech</p>
+          <div class="game-info">
+            <div class="game-info__item">
+              <span class="game-info__label">Giáo viên:</span>
+              <span class="game-info__value">Nguyễn Minh Nhựt</span>
+            </div>
+            <div class="game-info__item">
+              <span class="game-info__label">Học sinh:</span>
+              <span class="game-info__value">Trần Gia Hưng</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-header__stats">
+          <div class="stat">
+            <span class="stat__label">Điểm</span>
+            <span class="stat__value stat__value--primary" id="current-score">⭐ 0</span>
+          </div>
+
+          <div class="stat">
+            <span class="stat__label">Tiến độ</span>
+            <span class="stat__value" id="progress-count">0 / 0</span>
+          </div>
+
+          <div class="stat" id="combo-display" style="display: none;">
+            <span class="stat__label">Combo</span>
+            <span class="stat__value" id="combo-count">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress">
+        <div class="progress__bar" id="progress-bar" style="width: 0%;"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Theory Panel (Collapsible) -->
+    <div class="theory-panel" id="theory-panel">
+      <button class="theory-panel__toggle" id="theory-toggle">
+        <span>📖 Tài liệu ngữ pháp</span>
+        <span class="theory-panel__icon" id="theory-icon">▼</span>
+      </button>
+
+      <div class="theory-panel__content" id="theory-content">
+        <div class="theory-panel__section">
+          <h3 class="theory-panel__heading">Direct Speech vs Reported Speech</h3>
+          <p><strong>Direct Speech:</strong> Quote exactly what someone said (use quotation marks)</p>
+          <p><strong>Reported Speech:</strong> Report what someone said (no quotation marks, change tense)</p>
+          <div class="theory-panel__example">
+            Direct: "It's broken."<br>
+            Reported: The doctor said it <strong>was</strong> broken.
+          </div>
+        </div>
+
+        <div class="theory-panel__section">
+          <h3 class="theory-panel__heading">Tense Changes in Reported Speech</h3>
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr style="background: var(--bg-light);">
+              <th style="padding: 8px; text-align: left;">Direct Speech</th>
+              <th style="padding: 8px; text-align: left;">Reported Speech</th>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">am/is/are</td>
+              <td style="padding: 8px;">was/were</td>
+            </tr>
+            <tr style="background: var(--bg-light);">
+              <td style="padding: 8px;">can</td>
+              <td style="padding: 8px;">could</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">will</td>
+              <td style="padding: 8px;">would</td>
+            </tr>
+            <tr style="background: var(--bg-light);">
+              <td style="padding: 8px;">have to</td>
+              <td style="padding: 8px;">had to</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="theory-panel__section">
+          <h3 class="theory-panel__heading">Said vs Told</h3>
+          <p><strong>SAID:</strong> No object mentioned</p>
+          <ul>
+            <li>S + said + (that) + clause</li>
+            <li>Example: She <strong>said</strong> she was tired.</li>
+          </ul>
+          <p><strong>TOLD:</strong> With object (me/you/him/her/us/them)</p>
+          <ul>
+            <li>S + told + object + (that) + clause</li>
+            <li>Example: She <strong>told me</strong> she was tired.</li>
+          </ul>
+          <div class="theory-panel__example">
+            ❌ He said me... (WRONG)<br>
+            ✓ He told me... (CORRECT)<br>
+            ✓ He said... (CORRECT)
+          </div>
+        </div>
+
+        <div class="theory-panel__section">
+          <h3 class="theory-panel__heading">Time Word Changes</h3>
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr style="background: var(--bg-light);">
+              <th style="padding: 8px; text-align: left;">Direct</th>
+              <th style="padding: 8px; text-align: left;">Reported</th>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">today</td>
+              <td style="padding: 8px;">that day</td>
+            </tr>
+            <tr style="background: var(--bg-light);">
+              <td style="padding: 8px;">tonight</td>
+              <td style="padding: 8px;">that night</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">tomorrow</td>
+              <td style="padding: 8px;">the next day</td>
+            </tr>
+            <tr style="background: var(--bg-light);">
+              <td style="padding: 8px;">now</td>
+              <td style="padding: 8px;">then</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise Container -->
+    <div id="exercise-container">
+      <!-- Exercises will be rendered here dynamically -->
+      <div class="card text-center">
+        <h2>Loading...</h2>
+        <p>Please wait while we load the exercises.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Core JavaScript (loaded first) -->
+  <script src="../js/core/utils.js"></script>
+  <script src="../js/core/storage.js"></script>
+  <script src="../js/core/game-engine.js"></script>
+
+  <!-- Exercise Type Handlers (only load what's needed for this unit) -->
+  <script src="../js/exercises/sentence-rewrite.js"></script>
+  <script src="../js/exercises/multiple-choice.js"></script>
+  <script src="../js/exercises/fill-blank.js"></script>
+  <script src="../js/exercises/fill-blank-mixed.js"></script>
+  <script src="../js/exercises/error-correct.js"></script>
+  <script src="../js/exercises/translation.js"></script>
+  <script src="../js/exercises/dialogue-complete.js"></script>
+  <script src="../js/exercises/open-ended.js"></script>
+
+  <!-- Initialize Game -->
+  <script>
+    const UNIT_ID = 'unit-7-first-aid';
+    const DATA_PATH = '../data/unit-7-first-aid.json';
+
+    // Theory panel toggle
+    const theoryToggle = document.getElementById('theory-toggle');
+    const theoryContent = document.getElementById('theory-content');
+    const theoryIcon = document.getElementById('theory-icon');
+
+    theoryToggle.addEventListener('click', () => {
+      const isExpanded = theoryContent.classList.contains('theory-panel__content--expanded');
+
+      if (isExpanded) {
+        theoryContent.classList.remove('theory-panel__content--expanded');
+        theoryIcon.classList.remove('theory-panel__icon--rotated');
+      } else {
+        theoryContent.classList.add('theory-panel__content--expanded');
+        theoryIcon.classList.add('theory-panel__icon--rotated');
+      }
+    });
+
+    // Combo display logic
+    function updateComboDisplay() {
+      const comboDisplay = document.getElementById('combo-display');
+      const comboCount = document.getElementById('combo-count');
+      const state = GameEngine.getState();
+
+      if (state.comboCount >= 3) {
+        comboDisplay.style.display = 'flex';
+        comboCount.textContent = state.comboCount + 'x 🔥';
+      } else {
+        comboDisplay.style.display = 'none';
+      }
+    }
+
+    // Override GameEngine.updateUI to include combo display
+    const originalUpdateUI = GameEngine.updateUI.bind(GameEngine);
+    GameEngine.updateUI = function() {
+      originalUpdateUI();
+      updateComboDisplay();
+    };
+
+    // Load unit data and start game
+    async function loadAndStartGame() {
+      try {
+        const response = await fetch(DATA_PATH);
+
+        if (!response.ok) {
+          throw new Error(`Failed to load data: ${response.status}`);
+        }
+
+        const unitData = await response.json();
+
+        console.log('Unit data loaded:', unitData);
+        console.log('Registered exercise handlers:', Object.keys(GameEngine.exerciseHandlers));
+
+        GameEngine.init(unitData, UNIT_ID);
+
+      } catch (error) {
+        console.error('Error loading game data:', error);
+
+        const container = document.getElementById('exercise-container');
+        container.innerHTML = `
+          <div class="card">
+            <h2 style="color: var(--danger);">Error Loading Game</h2>
+            <p>Sorry, we couldn't load the exercise data. Please try refreshing the page.</p>
+            <p style="font-size: var(--font-size-sm); color: var(--text-light);">Error: ${error.message}</p>
+            <button class="btn btn--primary mt-2" onclick="location.reload()">Reload Page</button>
+          </div>
+        `;
+      }
+    }
+
+    // Start game when page loads
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadAndStartGame);
+    } else {
+      loadAndStartGame();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+{
+  "unitId": "unit-4-world-around-us",
+  "title": "Unit 4: The World Around Us",
+  "grammarTopics": ["Past Continuous", "Past Simple", "Used to"],
+  "theory": {
+    "brief": "Thì Quá khứ tiếp diễn (Past Continuous) diễn tả hành động đang xảy ra trong quá khứ. Thì Quá khứ đơn (Past Simple) diễn tả hành động đã hoàn thành. 'Used to' diễn tả thói quen trong quá khứ không còn nữa.",
+    "examples": [
+      "I was walking home when I saw a new house.",
+      "We used to spend a lot of money.",
+      "The phone rang while I was having dinner."
+    ]
+  },
+  "exercises": [
+    {
+      "id": 1,
+      "type": "fill-blank",
+      "question": "Mr Smith __________ (drive) home when the storm started.",
+      "wordHint": "(drive)",
+      "answer": "was driving",
+      "acceptedAnswers": ["was driving"],
+      "hints": ["Use past continuous: was/were + V-ing"],
+      "points": 10
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "I __________ (watch) a DVD on my computer when it stopped working.",
+      "wordHint": "(watch)",
+      "answer": "was watching",
+      "acceptedAnswers": ["was watching"],
+      "hints": ["Subject 'I' uses 'was' + V-ing"],
+      "points": 10
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "We __________ (travel) on the bus when we saw the new shops.",
+      "wordHint": "(travel)",
+      "answer": "were travelling",
+      "acceptedAnswers": ["were travelling", "were traveling"],
+      "hints": ["Subject 'We' uses 'were' + V-ing"],
+      "points": 10
+    },
+    {
+      "id": 4,
+      "type": "fill-blank",
+      "question": "What __________ you __________ (do) when the phone rang?",
+      "wordHint": "(do)",
+      "answer": "were you doing",
+      "acceptedAnswers": ["were you doing", "were...doing"],
+      "hints": ["Question form: Were you + V-ing?"],
+      "points": 10
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "We were walking home when we __________ (find) a bag of rubbish.",
+      "wordHint": "(find)",
+      "answer": "found",
+      "acceptedAnswers": ["found"],
+      "hints": ["Use past simple for the short action"],
+      "points": 10
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "I was cycling home when I __________ (see) a new house.",
+      "wordHint": "(see)",
+      "answer": "saw",
+      "acceptedAnswers": ["saw"],
+      "hints": ["Past simple of 'see' is irregular"],
+      "points": 10
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "They __________ (watch) TV when the lights __________ (go) out.",
+      "wordHint": "(watch), (go)",
+      "answer": "were watching, went",
+      "acceptedAnswers": ["were watching, went", "were watching...went"],
+      "hints": ["First blank: past continuous, second blank: past simple"],
+      "points": 10
+    },
+    {
+      "id": 8,
+      "type": "sentence-build",
+      "prompt": "We / have lunch // someone / knock on the door",
+      "instructions": "Write a sentence using past continuous and past simple with 'when'",
+      "answer": "We were having lunch when someone knocked on the door.",
+      "acceptedAnswers": [
+        "We were having lunch when someone knocked on the door.",
+        "We were having lunch when someone knocked on the door",
+        "When someone knocked on the door, we were having lunch.",
+        "When someone knocked on the door, we were having lunch"
+      ],
+      "hints": ["Use 'were having' for the long action", "Use 'knocked' for the short action"],
+      "points": 10
+    },
+    {
+      "id": 9,
+      "type": "sentence-build",
+      "prompt": "She / read a book // her phone / ring",
+      "instructions": "Write a sentence using past continuous and past simple with 'when'",
+      "answer": "She was reading a book when her phone rang.",
+      "acceptedAnswers": [
+        "She was reading a book when her phone rang.",
+        "She was reading a book when her phone rang",
+        "When her phone rang, she was reading a book.",
+        "When her phone rang, she was reading a book"
+      ],
+      "hints": ["Use 'was reading' for the long action"],
+      "points": 10
+    },
+    {
+      "id": 10,
+      "type": "sentence-build",
+      "prompt": "I / do my homework // the lights / go out",
+      "instructions": "Write a sentence using past continuous and past simple with 'when'",
+      "answer": "I was doing my homework when the lights went out.",
+      "acceptedAnswers": [
+        "I was doing my homework when the lights went out.",
+        "I was doing my homework when the lights went out",
+        "When the lights went out, I was doing my homework.",
+        "When the lights went out, I was doing my homework"
+      ],
+      "hints": ["Use 'was doing' for the ongoing action"],
+      "points": 10
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "While I (walked / was walking) to school, I (met / was meeting) my friend.",
+      "options": ["walked, met", "was walking, met", "walked, was meeting", "was walking, was meeting"],
+      "correctIndex": 1,
+      "explanation": "Use past continuous for the longer action and past simple for the short action",
+      "hints": ["The long action (walking) uses past continuous"],
+      "points": 10
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What (did you do / were you doing) when I (called / was calling) you?",
+      "options": ["did you do, called", "were you doing, called", "did you do, was calling", "were you doing, was calling"],
+      "correctIndex": 1,
+      "explanation": "Use past continuous for the ongoing action and past simple for the interrupting action",
+      "hints": ["'When I called' is the short action"],
+      "points": 10
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "The children (played / were playing) in the garden when it (started / was starting) to rain.",
+      "options": ["played, started", "were playing, started", "played, was starting", "were playing, was starting"],
+      "correctIndex": 1,
+      "explanation": "Children playing is the longer action, rain starting is the interruption",
+      "hints": ["Rain starting is a sudden event"],
+      "points": 10
+    },
+    {
+      "id": 14,
+      "type": "sentence-build",
+      "prompt": "they / watch TV / when / you / arrive?",
+      "instructions": "Write a question and provide a short answer",
+      "answer": "Were they watching TV when you arrived? Yes, they were.",
+      "acceptedAnswers": [
+        "Were they watching TV when you arrived? Yes, they were.",
+        "Were they watching TV when you arrived? Yes, they were",
+        "Were they watching TV when you arrived?",
+        "Q: Were they watching TV when you arrived? A: Yes, they were."
+      ],
+      "hints": ["Question starts with 'Were they...'"],
+      "points": 10
+    },
+    {
+      "id": 15,
+      "type": "sentence-build",
+      "prompt": "she / study / when / the phone / ring?",
+      "instructions": "Write a question and provide a short answer",
+      "answer": "Was she studying when the phone rang? Yes, she was.",
+      "acceptedAnswers": [
+        "Was she studying when the phone rang? Yes, she was.",
+        "Was she studying when the phone rang? Yes, she was",
+        "Was she studying when the phone rang?",
+        "Q: Was she studying when the phone rang? A: Yes, she was."
+      ],
+      "hints": ["Question starts with 'Was she...'"],
+      "points": 10
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "The energy bills __________ (be) expensive.",
+      "wordHint": "(be)",
+      "answer": "used to be",
+      "acceptedAnswers": ["used to be"],
+      "hints": ["Use 'used to' + base verb"],
+      "points": 10
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "We __________ (spend) a lot of money.",
+      "wordHint": "(spend)",
+      "answer": "used to spend",
+      "acceptedAnswers": ["used to spend"],
+      "hints": ["Used to + base form of verb"],
+      "points": 10
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Simon and Alice's family __________ (throw) a lot of rubbish away.",
+      "wordHint": "(throw)",
+      "answer": "used to throw",
+      "acceptedAnswers": ["used to throw"],
+      "hints": ["Past habit: used to + base verb"],
+      "points": 10
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "The old owner __________ (look after) the garden.",
+      "wordHint": "(look after)",
+      "answer": "didn't use to look after",
+      "acceptedAnswers": ["didn't use to look after", "did not use to look after"],
+      "hints": ["Negative form: didn't use to + base verb"],
+      "points": 10
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "Mum __________ (go) to a drama club.",
+      "wordHint": "(go)",
+      "answer": "didn't use to go",
+      "acceptedAnswers": ["didn't use to go", "did not use to go"],
+      "hints": ["Negative: didn't use to + verb"],
+      "points": 10
+    },
+    {
+      "id": 21,
+      "type": "fill-blank",
+      "question": "I __________ (like) vegetables when I was young.",
+      "wordHint": "(like)",
+      "answer": "didn't use to like",
+      "acceptedAnswers": ["didn't use to like", "did not use to like"],
+      "hints": ["Negative past habit"],
+      "points": 10
+    },
+    {
+      "id": 22,
+      "type": "sentence-build",
+      "prompt": "they / use a lot of energy?",
+      "instructions": "Write a question with 'Did ... use to ...?'",
+      "answer": "Did they use to use a lot of energy?",
+      "acceptedAnswers": [
+        "Did they use to use a lot of energy?",
+        "Did they use to use a lot of energy"
+      ],
+      "hints": ["Question: Did + subject + use to + verb?"],
+      "points": 10
+    },
+    {
+      "id": 23,
+      "type": "sentence-build",
+      "prompt": "you / like school when you were five?",
+      "instructions": "Write a question with 'Did ... use to ...?'",
+      "answer": "Did you use to like school when you were five?",
+      "acceptedAnswers": [
+        "Did you use to like school when you were five?",
+        "Did you use to like school when you were five"
+      ],
+      "hints": ["Did you use to + base verb?"],
+      "points": 10
+    },
+    {
+      "id": 24,
+      "type": "sentence-build",
+      "prompt": "people / travel by car 100 years ago?",
+      "instructions": "Write a question with 'Did ... use to ...?'",
+      "answer": "Did people use to travel by car 100 years ago?",
+      "acceptedAnswers": [
+        "Did people use to travel by car 100 years ago?",
+        "Did people use to travel by car 100 years ago"
+      ],
+      "hints": ["Question about past habits"],
+      "points": 10
+    },
+    {
+      "id": 25,
+      "type": "fill-blank-mixed",
+      "template": "I __________ (drink) a lot of fruit juice, but now I drink water.",
+      "blanks": [
+        {
+          "blankId": 1,
+          "hint": "(drink)",
+          "answer": "used to drink",
+          "acceptedAnswers": ["used to drink"]
+        }
+      ],
+      "points": 10
+    },
+    {
+      "id": 26,
+      "type": "fill-blank-mixed",
+      "template": "__________ you __________ (tidy) your own room when you were five?",
+      "blanks": [
+        {
+          "blankId": 1,
+          "hint": "",
+          "answer": "Did you use to tidy",
+          "acceptedAnswers": ["Did you use to tidy", "Did...use to tidy"]
+        }
+      ],
+      "points": 10
+    },
+    {
+      "id": 27,
+      "type": "fill-blank",
+      "question": "People __________ (use) mobile phones 50 years ago.",
+      "wordHint": "(use)",
+      "answer": "didn't use to use",
+      "acceptedAnswers": ["didn't use to use", "did not use to use"],
+      "hints": ["Negative: didn't use to + verb"],
+      "points": 10
+    },
+    {
+      "id": 28,
+      "type": "error-correct",
+      "wrongSentence": "I was study when you called me.",
+      "correctSentence": "I was studying when you called me.",
+      "errorWord": "was study",
+      "correction": "was studying",
+      "explanation": "Past continuous needs: was/were + V-ing",
+      "hints": ["Past continuous form is missing -ing"],
+      "points": 10
+    },
+    {
+      "id": 29,
+      "type": "error-correct",
+      "wrongSentence": "Did you used to like vegetables?",
+      "correctSentence": "Did you use to like vegetables?",
+      "errorWord": "used to",
+      "correction": "use to",
+      "explanation": "In questions with 'Did', use 'use to' not 'used to'",
+      "hints": ["After 'Did', use base form 'use to'"],
+      "points": 10
+    },
+    {
+      "id": 30,
+      "type": "error-correct",
+      "wrongSentence": "They were play football when it started raining.",
+      "correctSentence": "They were playing football when it started raining.",
+      "errorWord": "were play",
+      "correction": "were playing",
+      "explanation": "Past continuous: were + V-ing",
+      "hints": ["Add -ing to the verb"],
+      "points": 10
+    },
+    {
+      "id": 31,
+      "type": "error-correct",
+      "wrongSentence": "She didn't used to wear glasses.",
+      "correctSentence": "She didn't use to wear glasses.",
+      "errorWord": "didn't used to",
+      "correction": "didn't use to",
+      "explanation": "After 'didn't', use 'use to' not 'used to'",
+      "hints": ["Negative form: didn't use to"],
+      "points": 10
+    },
+    {
+      "id": 32,
+      "type": "error-correct",
+      "wrongSentence": "What was you doing at 8 o'clock?",
+      "correctSentence": "What were you doing at 8 o'clock?",
+      "errorWord": "was you",
+      "correction": "were you",
+      "explanation": "Subject 'you' uses 'were' not 'was'",
+      "hints": ["'You' always uses 'were' in past continuous"],
+      "points": 10
+    },
+    {
+      "id": 33,
+      "type": "error-correct",
+      "wrongSentence": "We use to live in Paris.",
+      "correctSentence": "We used to live in Paris.",
+      "errorWord": "use to",
+      "correction": "used to",
+      "explanation": "Affirmative form: used to (with -d)",
+      "hints": ["Affirmative needs 'used to' with -d"],
+      "points": 10
+    },
+    {
+      "id": 34,
+      "type": "translation",
+      "vietnamese": "Tôi đang xem TV thì điện thoại reo.",
+      "answer": "I was watching TV when the phone rang.",
+      "acceptedAnswers": [
+        "I was watching TV when the phone rang.",
+        "I was watching TV when the phone rang",
+        "I was watching television when the phone rang.",
+        "When the phone rang, I was watching TV."
+      ],
+      "hints": ["Use past continuous + past simple with 'when'"],
+      "points": 10
+    },
+    {
+      "id": 35,
+      "type": "translation",
+      "vietnamese": "Họ đã từng sống ở Luân Đôn.",
+      "answer": "They used to live in London.",
+      "acceptedAnswers": [
+        "They used to live in London.",
+        "They used to live in London"
+      ],
+      "hints": ["Use 'used to' for past habits"],
+      "points": 10
+    },
+    {
+      "id": 36,
+      "type": "translation",
+      "vietnamese": "Bạn đang làm gì khi tôi gọi cho bạn?",
+      "answer": "What were you doing when I called you?",
+      "acceptedAnswers": [
+        "What were you doing when I called you?",
+        "What were you doing when I called you",
+        "What were you doing when I called?"
+      ],
+      "hints": ["Question with past continuous"],
+      "points": 10
+    },
+    {
+      "id": 37,
+      "type": "translation",
+      "vietnamese": "Mẹ tôi không từng đi làm khi tôi còn nhỏ.",
+      "answer": "My mum didn't use to go to work when I was young.",
+      "acceptedAnswers": [
+        "My mum didn't use to go to work when I was young.",
+        "My mum didn't use to go to work when I was young",
+        "My mother didn't use to go to work when I was young.",
+        "My mom didn't use to go to work when I was young."
+      ],
+      "hints": ["Negative: didn't use to"],
+      "points": 10
+    },
+    {
+      "id": 38,
+      "type": "translation",
+      "vietnamese": "Bạn có từng chơi bóng đá không?",
+      "answer": "Did you use to play football?",
+      "acceptedAnswers": [
+        "Did you use to play football?",
+        "Did you use to play football",
+        "Did you use to play soccer?"
+      ],
+      "hints": ["Question: Did ... use to ...?"],
+      "points": 10
+    },
+    {
+      "id": 39,
+      "type": "open-ended",
+      "title": "Write about your past",
+      "instruction": "Answer these questions about yourself using 'used to' or 'didn't use to': 1) What did you use to do when you were 5 years old? 2) Did you use to like school? 3) What food didn't you use to like?",
+      "example": "Example: I used to play with dolls when I was 5. I didn't use to like school. I didn't use to like vegetables.",
+      "minSentences": 3,
+      "maxWords": 100,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    },
+    {
+      "id": 40,
+      "type": "open-ended",
+      "title": "Story writing",
+      "instruction": "Write a short story (5-7 sentences) about something that happened to you. Use at least 2 sentences with past continuous + past simple with 'when', and at least 1 sentence with 'used to'.",
+      "example": "Example: When I was younger, I used to visit my grandparents every weekend. One day, while I was walking to their house, I saw a beautiful bird...",
+      "minSentences": 5,
+      "maxWords": 150,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    }
+  ]
+}

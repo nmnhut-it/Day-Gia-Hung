@@ -1,0 +1,600 @@
+{
+  "unitId": "unit-9-possibilities",
+  "title": "Unit 9: Possibilities",
+  "grammarTopics": ["Modals for Possibility: May, Might, Could", "Have to"],
+  "theory": {
+    "brief": "May, might, could diễn tả khả năng (không chắc chắn). Have to diễn tả sự bắt buộc/cần thiết. Cấu trúc: may/might/could + base verb, have/has to + base verb. Don't have to = không cần thiết.",
+    "examples": [
+      "He might win! (possibility)",
+      "If you practice, you could win the race. (possibility in conditional)",
+      "I have to study hard. (obligation)"
+    ]
+  },
+  "exercises": [
+    {
+      "id": 1,
+      "type": "fill-blank",
+      "question": "He __________ win the competition!",
+      "wordHint": "",
+      "answer": "might",
+      "acceptedAnswers": ["might", "may", "could"],
+      "hints": ["Use may, might, or could for possibility"],
+      "points": 10
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "I __________ study art at a special art school next year.",
+      "wordHint": "",
+      "answer": "might",
+      "acceptedAnswers": ["might", "may", "could"],
+      "hints": ["All three modals work for possibility"],
+      "points": 10
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "She __________ become a famous artist one day.",
+      "wordHint": "",
+      "answer": "might",
+      "acceptedAnswers": ["might", "may", "could"],
+      "hints": ["Possibility in the future"],
+      "points": 10
+    },
+    {
+      "id": 4,
+      "type": "fill-blank",
+      "question": "It __________ rain tomorrow.",
+      "wordHint": "",
+      "answer": "might",
+      "acceptedAnswers": ["might", "may", "could"],
+      "hints": ["Possible future event"],
+      "points": 10
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "They __________ not come to the party.",
+      "wordHint": "",
+      "answer": "might",
+      "acceptedAnswers": ["might", "may", "could"],
+      "hints": ["Negative possibility"],
+      "points": 10
+    },
+    {
+      "id": 6,
+      "type": "sentence-rewrite",
+      "original": "Perhaps it will rain.",
+      "instruction": "Rewrite using may, might, or could",
+      "starterText": "It",
+      "answer": "It might rain.",
+      "acceptedAnswers": [
+        "It might rain.",
+        "It might rain",
+        "It may rain.",
+        "It could rain."
+      ],
+      "hints": ["Use modal + base verb"],
+      "points": 10
+    },
+    {
+      "id": 7,
+      "type": "sentence-rewrite",
+      "original": "Perhaps she'll win the race.",
+      "instruction": "Rewrite using may, might, or could",
+      "starterText": "She",
+      "answer": "She might win the race.",
+      "acceptedAnswers": [
+        "She might win the race.",
+        "She might win the race",
+        "She may win the race.",
+        "She could win the race."
+      ],
+      "hints": ["Replace 'will' with modal of possibility"],
+      "points": 10
+    },
+    {
+      "id": 8,
+      "type": "sentence-rewrite",
+      "original": "Maybe they'll come to the party.",
+      "instruction": "Rewrite using may, might, or could",
+      "starterText": "They",
+      "answer": "They might come to the party.",
+      "acceptedAnswers": [
+        "They might come to the party.",
+        "They might come to the party",
+        "They may come to the party.",
+        "They could come to the party."
+      ],
+      "hints": ["Maybe = possibility"],
+      "points": 10
+    },
+    {
+      "id": 9,
+      "type": "sentence-rewrite",
+      "original": "Maybe it won't be difficult.",
+      "instruction": "Rewrite using may not, might not, or could not",
+      "starterText": "It",
+      "answer": "It might not be difficult.",
+      "acceptedAnswers": [
+        "It might not be difficult.",
+        "It might not be difficult",
+        "It may not be difficult.",
+        "It could not be difficult."
+      ],
+      "hints": ["Negative possibility"],
+      "points": 10
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "If you do lots of running, you __________ (win) the race.",
+      "wordHint": "(win)",
+      "answer": "might win",
+      "acceptedAnswers": ["might win", "may win", "could win"],
+      "hints": ["First conditional with possibility modal"],
+      "points": 10
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "If I have more time to practice, I __________ (be) better at art.",
+      "wordHint": "(be)",
+      "answer": "might be",
+      "acceptedAnswers": ["might be", "may be", "could be"],
+      "hints": ["Possibility, not certainty"],
+      "points": 10
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "If the weather is good, we __________ (go) to the beach.",
+      "wordHint": "(go)",
+      "answer": "might go",
+      "acceptedAnswers": ["might go", "may go", "could go"],
+      "hints": ["If-clause + possibility modal"],
+      "points": 10
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "If it rains, we __________ (not go) to the park.",
+      "wordHint": "(not go)",
+      "answer": "might not go",
+      "acceptedAnswers": ["might not go", "may not go", "could not go"],
+      "hints": ["Negative possibility"],
+      "points": 10
+    },
+    {
+      "id": 14,
+      "type": "sentence-rewrite",
+      "original": "We'll go to France next year. (might)",
+      "instruction": "Rewrite using 'might' instead of 'will'",
+      "starterText": "We",
+      "answer": "We might go to France next year.",
+      "acceptedAnswers": [
+        "We might go to France next year.",
+        "We might go to France next year"
+      ],
+      "hints": ["Replace 'will' with 'might'"],
+      "points": 10
+    },
+    {
+      "id": 15,
+      "type": "sentence-rewrite",
+      "original": "I won't get 100% in the maths test. (may not)",
+      "instruction": "Rewrite using 'may not' instead of 'won't'",
+      "starterText": "I",
+      "answer": "I may not get 100% in the maths test.",
+      "acceptedAnswers": [
+        "I may not get 100% in the maths test.",
+        "I may not get 100% in the maths test"
+      ],
+      "hints": ["Replace 'won't' with 'may not'"],
+      "points": 10
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "You __________ help your mum with the housework.",
+      "wordHint": "",
+      "answer": "have to",
+      "acceptedAnswers": ["have to"],
+      "hints": ["Obligation: have to"],
+      "points": 10
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "Molly and Bella __________ study hard.",
+      "wordHint": "",
+      "answer": "have to",
+      "acceptedAnswers": ["have to"],
+      "hints": ["Plural subject: have to"],
+      "points": 10
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "George __________ go to the doctor last week.",
+      "wordHint": "",
+      "answer": "had to",
+      "acceptedAnswers": ["had to"],
+      "hints": ["Past obligation: had to"],
+      "points": 10
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "Olly __________ do a lot of homework yesterday.",
+      "wordHint": "",
+      "answer": "had to",
+      "acceptedAnswers": ["had to"],
+      "hints": ["Past: had to"],
+      "points": 10
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "She __________ wear a uniform to school.",
+      "wordHint": "",
+      "answer": "has to",
+      "acceptedAnswers": ["has to"],
+      "hints": ["Third person singular: has to"],
+      "points": 10
+    },
+    {
+      "id": 21,
+      "type": "fill-blank",
+      "question": "I __________ play every day, but I have to stay healthy.",
+      "wordHint": "",
+      "answer": "don't have to",
+      "acceptedAnswers": ["don't have to", "do not have to"],
+      "hints": ["Not necessary: don't have to"],
+      "points": 10
+    },
+    {
+      "id": 22,
+      "type": "fill-blank",
+      "question": "She __________ eat special food.",
+      "wordHint": "",
+      "answer": "doesn't have to",
+      "acceptedAnswers": ["doesn't have to", "does not have to"],
+      "hints": ["Third person negative: doesn't have to"],
+      "points": 10
+    },
+    {
+      "id": 23,
+      "type": "fill-blank",
+      "question": "He __________ study last night because he finished his homework.",
+      "wordHint": "",
+      "answer": "didn't have to",
+      "acceptedAnswers": ["didn't have to", "did not have to"],
+      "hints": ["Past negative: didn't have to"],
+      "points": 10
+    },
+    {
+      "id": 24,
+      "type": "sentence-build",
+      "prompt": "you / help your mum / with the housework?",
+      "instructions": "Write a question with 'have to'",
+      "answer": "Do you have to help your mum with the housework?",
+      "acceptedAnswers": [
+        "Do you have to help your mum with the housework?",
+        "Do you have to help your mum with the housework"
+      ],
+      "hints": ["Do + subject + have to + verb?"],
+      "points": 10
+    },
+    {
+      "id": 25,
+      "type": "sentence-build",
+      "prompt": "footballers / eat / special food?",
+      "instructions": "Write a question with 'have to'",
+      "answer": "Do footballers have to eat special food?",
+      "acceptedAnswers": [
+        "Do footballers have to eat special food?",
+        "Do footballers have to eat special food"
+      ],
+      "hints": ["Do + plural subject + have to?"],
+      "points": 10
+    },
+    {
+      "id": 26,
+      "type": "sentence-build",
+      "prompt": "Ahmed / work / hard to get there? (past)",
+      "instructions": "Write a past question with 'have to'",
+      "answer": "Did Ahmed have to work hard to get there?",
+      "acceptedAnswers": [
+        "Did Ahmed have to work hard to get there?",
+        "Did Ahmed have to work hard to get there"
+      ],
+      "hints": ["Did + subject + have to?"],
+      "points": 10
+    },
+    {
+      "id": 27,
+      "type": "fill-blank",
+      "question": "Do you have to eat special food? → Yes, __________",
+      "wordHint": "",
+      "answer": "I do",
+      "acceptedAnswers": ["I do", "we do"],
+      "hints": ["Short answer with 'do'"],
+      "points": 10
+    },
+    {
+      "id": 28,
+      "type": "fill-blank",
+      "question": "Did you have to work hard to get there? → No, __________",
+      "wordHint": "",
+      "answer": "I didn't",
+      "acceptedAnswers": ["I didn't", "I did not"],
+      "hints": ["Past negative short answer"],
+      "points": 10
+    },
+    {
+      "id": 29,
+      "type": "fill-blank",
+      "question": "Does she have to wear a uniform? → Yes, __________",
+      "wordHint": "",
+      "answer": "she does",
+      "acceptedAnswers": ["she does"],
+      "hints": ["Third person: she does"],
+      "points": 10
+    },
+    {
+      "id": 30,
+      "type": "multiple-choice",
+      "question": "I __________ go to the doctor tomorrow. I feel ill.",
+      "options": ["may", "have to", "could", "might"],
+      "correctIndex": 0,
+      "explanation": "Possibility (not certain yet), use may/might/could",
+      "hints": ["Not certain = possibility modal"],
+      "points": 10
+    },
+    {
+      "id": 31,
+      "type": "multiple-choice",
+      "question": "You __________ wear a helmet when you ride a bike.",
+      "options": ["might", "have to", "could", "may"],
+      "correctIndex": 1,
+      "explanation": "Obligation/rule, use have to",
+      "hints": ["Safety rule = obligation"],
+      "points": 10
+    },
+    {
+      "id": 32,
+      "type": "multiple-choice",
+      "question": "She __________ become a teacher one day.",
+      "options": ["has to", "could", "have to", "must"],
+      "correctIndex": 1,
+      "explanation": "Possibility in the future, use could/may/might",
+      "hints": ["Future possibility"],
+      "points": 10
+    },
+    {
+      "id": 33,
+      "type": "multiple-choice",
+      "question": "We __________ go to school on Saturdays.",
+      "options": ["may not", "don't have to", "might not", "could not"],
+      "correctIndex": 1,
+      "explanation": "Not necessary, use don't have to",
+      "hints": ["Not necessary = don't have to"],
+      "points": 10
+    },
+    {
+      "id": 34,
+      "type": "error-correct",
+      "wrongSentence": "He mights win the competition.",
+      "correctSentence": "He might win the competition.",
+      "errorWord": "mights",
+      "correction": "might",
+      "explanation": "Modal verbs don't take -s in third person",
+      "hints": ["No -s on modal verbs"],
+      "points": 10
+    },
+    {
+      "id": 35,
+      "type": "error-correct",
+      "wrongSentence": "She may goes to university.",
+      "correctSentence": "She may go to university.",
+      "errorWord": "goes",
+      "correction": "go",
+      "explanation": "After modals, use base verb (no -s)",
+      "hints": ["may + base verb"],
+      "points": 10
+    },
+    {
+      "id": 36,
+      "type": "error-correct",
+      "wrongSentence": "They have study hard.",
+      "correctSentence": "They have to study hard.",
+      "errorWord": "have study",
+      "correction": "have to study",
+      "explanation": "Missing 'to' after have for obligation",
+      "hints": ["have to + base verb"],
+      "points": 10
+    },
+    {
+      "id": 37,
+      "type": "error-correct",
+      "wrongSentence": "I could to become a doctor.",
+      "correctSentence": "I could become a doctor.",
+      "errorWord": "could to",
+      "correction": "could",
+      "explanation": "Don't use 'to' after modal verbs",
+      "hints": ["No 'to' after could"],
+      "points": 10
+    },
+    {
+      "id": 38,
+      "type": "error-correct",
+      "wrongSentence": "Does she has to wear a uniform?",
+      "correctSentence": "Does she have to wear a uniform?",
+      "errorWord": "has to",
+      "correction": "have to",
+      "explanation": "After 'does', use base form 'have to'",
+      "hints": ["Does + have to (not has to)"],
+      "points": 10
+    },
+    {
+      "id": 39,
+      "type": "error-correct",
+      "wrongSentence": "It might rains tomorrow.",
+      "correctSentence": "It might rain tomorrow.",
+      "errorWord": "rains",
+      "correction": "rain",
+      "explanation": "After modals, use base verb",
+      "hints": ["might + base verb (no -s)"],
+      "points": 10
+    },
+    {
+      "id": 40,
+      "type": "translation",
+      "vietnamese": "Anh ấy có thể thắng cuộc thi.",
+      "answer": "He might win the competition.",
+      "acceptedAnswers": [
+        "He might win the competition.",
+        "He might win the competition",
+        "He may win the competition.",
+        "He could win the competition."
+      ],
+      "hints": ["Use may/might/could for possibility"],
+      "points": 10
+    },
+    {
+      "id": 41,
+      "type": "translation",
+      "vietnamese": "Tôi phải học chăm chỉ mỗi ngày.",
+      "answer": "I have to study hard every day.",
+      "acceptedAnswers": [
+        "I have to study hard every day.",
+        "I have to study hard every day"
+      ],
+      "hints": ["Obligation: have to"],
+      "points": 10
+    },
+    {
+      "id": 42,
+      "type": "translation",
+      "vietnamese": "Họ có thể không đến bữa tiệc.",
+      "answer": "They might not come to the party.",
+      "acceptedAnswers": [
+        "They might not come to the party.",
+        "They might not come to the party",
+        "They may not come to the party.",
+        "They could not come to the party."
+      ],
+      "hints": ["Negative possibility"],
+      "points": 10
+    },
+    {
+      "id": 43,
+      "type": "translation",
+      "vietnamese": "Bạn có phải đi học vào Chủ nhật không?",
+      "answer": "Do you have to go to school on Sundays?",
+      "acceptedAnswers": [
+        "Do you have to go to school on Sundays?",
+        "Do you have to go to school on Sundays",
+        "Do you have to go to school on Sunday?"
+      ],
+      "hints": ["Question: Do you have to...?"],
+      "points": 10
+    },
+    {
+      "id": 44,
+      "type": "translation",
+      "vietnamese": "Nếu bạn tập luyện nhiều, bạn có thể trở thành vận động viên giỏi.",
+      "answer": "If you practice a lot, you could become a good athlete.",
+      "acceptedAnswers": [
+        "If you practice a lot, you could become a good athlete.",
+        "If you practice a lot, you could become a good athlete",
+        "If you practice a lot, you might become a good athlete.",
+        "If you train hard, you could become a good athlete."
+      ],
+      "hints": ["If-clause + possibility modal"],
+      "points": 10
+    },
+    {
+      "id": 45,
+      "type": "translation",
+      "vietnamese": "Tôi không cần phải làm bài tập về nhà tối qua.",
+      "answer": "I didn't have to do homework last night.",
+      "acceptedAnswers": [
+        "I didn't have to do homework last night.",
+        "I didn't have to do homework last night",
+        "I didn't have to do my homework last night."
+      ],
+      "hints": ["Past: didn't have to"],
+      "points": 10
+    },
+    {
+      "id": 46,
+      "type": "translation",
+      "vietnamese": "Cô ấy phải mặc đồng phục đến trường.",
+      "answer": "She has to wear a uniform to school.",
+      "acceptedAnswers": [
+        "She has to wear a uniform to school.",
+        "She has to wear a uniform to school"
+      ],
+      "hints": ["Third person: has to"],
+      "points": 10
+    },
+    {
+      "id": 47,
+      "type": "dialogue-complete",
+      "title": "Complete the interview with Ahmed",
+      "lines": [
+        {
+          "speaker": "Duncan",
+          "text": "Did you _____ (have to) work hard to get there?",
+          "blank": true,
+          "blankId": "b1",
+          "wordHint": "(have to)",
+          "answer": "have to",
+          "acceptedAnswers": ["have to"]
+        },
+        {
+          "speaker": "Ahmed",
+          "text": "Yes! I _____ (have to) practise every day.",
+          "blank": true,
+          "blankId": "b2",
+          "wordHint": "(have to)",
+          "answer": "had to",
+          "acceptedAnswers": ["had to"]
+        },
+        {
+          "speaker": "Duncan",
+          "text": "_____ you still _____ (have to) practise every day?",
+          "blank": true,
+          "blankId": "b3",
+          "wordHint": "(have to)",
+          "answer": "Do you have to",
+          "acceptedAnswers": ["Do you have to", "Do...have to"]
+        },
+        {
+          "speaker": "Ahmed",
+          "text": "I _____ (don't have to) play every day, but I _____ (have to) stay healthy.",
+          "blank": true,
+          "blankId": "b4",
+          "wordHint": "(don't have to), (have to)",
+          "answer": "don't have to, have to",
+          "acceptedAnswers": ["don't have to, have to", "don't have to...have to"]
+        }
+      ],
+      "points": 20
+    },
+    {
+      "id": 48,
+      "type": "open-ended",
+      "title": "Your future possibilities",
+      "instruction": "Write a paragraph (6-8 sentences) about what might happen in your future. Use may, might, and could to talk about possibilities. Also include what you have to do to achieve your goals using have to. Think about: your career, where you might live, what you might study, what you have to do now.",
+      "example": "Example: In the future, I might become a doctor. I could work in a big hospital. To achieve this, I have to study hard now...",
+      "minSentences": 6,
+      "maxWords": 150,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    }
+  ]
+}

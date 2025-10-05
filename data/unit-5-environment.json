@@ -1,0 +1,542 @@
+{
+  "unitId": "unit-5-environment",
+  "title": "Unit 5: The Environment",
+  "grammarTopics": ["Will and Won't", "Present Continuous with Future Meaning"],
+  "theory": {
+    "brief": "Will/Won't dùng để đưa ra dự đoán về tương lai. Present Continuous (am/is/are + V-ing) dùng để nói về kế hoạch đã sắp xếp trong tương lai.",
+    "examples": [
+      "The earth will be a better place in the future.",
+      "We won't drive big cars.",
+      "We're going on holiday next week. (arranged plan)"
+    ]
+  },
+  "exercises": [
+    {
+      "id": 1,
+      "type": "fill-blank",
+      "question": "In the future, we __________ use so much energy.",
+      "wordHint": "",
+      "answer": "won't",
+      "acceptedAnswers": ["won't", "will not"],
+      "hints": ["Negative prediction about the future"],
+      "points": 10
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "Mum __________ stop driving the car to work.",
+      "wordHint": "",
+      "answer": "will",
+      "acceptedAnswers": ["will", "'ll"],
+      "hints": ["Affirmative prediction: will + base verb"],
+      "points": 10
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "Instead she __________ walk.",
+      "wordHint": "",
+      "answer": "will",
+      "acceptedAnswers": ["will", "'ll"],
+      "hints": ["Future prediction"],
+      "points": 10
+    },
+    {
+      "id": 4,
+      "type": "fill-blank",
+      "question": "Dad __________ grow more vegetables in the garden.",
+      "wordHint": "",
+      "answer": "will",
+      "acceptedAnswers": ["will", "'ll"],
+      "hints": ["Affirmative future"],
+      "points": 10
+    },
+    {
+      "id": 5,
+      "type": "fill-blank-mixed",
+      "template": "My friends and I __________ throw bottles away – instead we __________ recycle them.",
+      "blanks": [
+        {
+          "blankId": 1,
+          "hint": "",
+          "answer": "won't",
+          "acceptedAnswers": ["won't", "will not"]
+        },
+        {
+          "blankId": 2,
+          "hint": "",
+          "answer": "will",
+          "acceptedAnswers": ["will", "'ll"]
+        }
+      ],
+      "points": 10
+    },
+    {
+      "id": 6,
+      "type": "fill-blank-mixed",
+      "template": "I __________ print my emails – that way I __________ save paper.",
+      "blanks": [
+        {
+          "blankId": 1,
+          "hint": "",
+          "answer": "won't",
+          "acceptedAnswers": ["won't", "will not"]
+        },
+        {
+          "blankId": 2,
+          "hint": "",
+          "answer": "will",
+          "acceptedAnswers": ["will", "'ll"]
+        }
+      ],
+      "points": 10
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "The earth __________ be a better place in the future.",
+      "wordHint": "",
+      "answer": "will",
+      "acceptedAnswers": ["will", "'ll"],
+      "hints": ["Positive prediction"],
+      "points": 10
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "We __________ have cleaner streets.",
+      "wordHint": "",
+      "answer": "will",
+      "acceptedAnswers": ["will", "'ll"],
+      "hints": ["Future prediction"],
+      "points": 10
+    },
+    {
+      "id": 9,
+      "type": "sentence-build",
+      "prompt": "people / live / on Mars (✓)",
+      "instructions": "Write a prediction using 'will'",
+      "answer": "People will live on Mars.",
+      "acceptedAnswers": [
+        "People will live on Mars.",
+        "People will live on Mars",
+        "People'll live on Mars.",
+        "People'll live on Mars"
+      ],
+      "hints": ["Use will + base verb"],
+      "points": 10
+    },
+    {
+      "id": 10,
+      "type": "sentence-build",
+      "prompt": "cars / use / electricity (✓)",
+      "instructions": "Write a prediction using 'will'",
+      "answer": "Cars will use electricity.",
+      "acceptedAnswers": [
+        "Cars will use electricity.",
+        "Cars will use electricity",
+        "Cars'll use electricity.",
+        "Cars'll use electricity"
+      ],
+      "hints": ["Positive prediction with will"],
+      "points": 10
+    },
+    {
+      "id": 11,
+      "type": "sentence-build",
+      "prompt": "schools / exist / in 50 years (✗)",
+      "instructions": "Write a prediction using 'won't'",
+      "answer": "Schools won't exist in 50 years.",
+      "acceptedAnswers": [
+        "Schools won't exist in 50 years.",
+        "Schools won't exist in 50 years",
+        "Schools will not exist in 50 years.",
+        "Schools will not exist in 50 years"
+      ],
+      "hints": ["Negative prediction: won't + base verb"],
+      "points": 10
+    },
+    {
+      "id": 12,
+      "type": "sentence-build",
+      "prompt": "robots / do / all the housework (✓)",
+      "instructions": "Write a prediction using 'will'",
+      "answer": "Robots will do all the housework.",
+      "acceptedAnswers": [
+        "Robots will do all the housework.",
+        "Robots will do all the housework",
+        "Robots'll do all the housework."
+      ],
+      "hints": ["Future prediction"],
+      "points": 10
+    },
+    {
+      "id": 13,
+      "type": "sentence-build",
+      "prompt": "people / speak / only English (✗)",
+      "instructions": "Write a prediction using 'won't'",
+      "answer": "People won't speak only English.",
+      "acceptedAnswers": [
+        "People won't speak only English.",
+        "People won't speak only English",
+        "People will not speak only English."
+      ],
+      "hints": ["Negative: won't"],
+      "points": 10
+    },
+    {
+      "id": 14,
+      "type": "sentence-build",
+      "prompt": "the earth / be / a better place?",
+      "instructions": "Write a question with 'will' and provide a short answer",
+      "answer": "Will the earth be a better place? Yes, it will.",
+      "acceptedAnswers": [
+        "Will the earth be a better place? Yes, it will.",
+        "Will the earth be a better place? Yes, it will",
+        "Will the earth be a better place?",
+        "Q: Will the earth be a better place? A: Yes, it will."
+      ],
+      "hints": ["Question: Will + subject + base verb?"],
+      "points": 10
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "We __________ (go) on our holiday next week.",
+      "wordHint": "(go)",
+      "answer": "are going",
+      "acceptedAnswers": ["are going", "'re going"],
+      "hints": ["Present continuous for future plan: are + V-ing"],
+      "points": 10
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "My Dad and I __________ (travel) to my grandma's house.",
+      "wordHint": "(travel)",
+      "answer": "are travelling",
+      "acceptedAnswers": ["are travelling", "'re travelling", "are traveling", "'re traveling"],
+      "hints": ["Arranged plan: are + V-ing"],
+      "points": 10
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "We __________ (not drive) by car.",
+      "wordHint": "(not drive)",
+      "answer": "aren't driving",
+      "acceptedAnswers": ["aren't driving", "are not driving"],
+      "hints": ["Negative present continuous: aren't + V-ing"],
+      "points": 10
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "We __________ (walk) there.",
+      "wordHint": "(walk)",
+      "answer": "are walking",
+      "acceptedAnswers": ["are walking", "'re walking"],
+      "hints": ["Future plan"],
+      "points": 10
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "We __________ (leave) our house at 8 o'clock in the morning.",
+      "wordHint": "(leave)",
+      "answer": "are leaving",
+      "acceptedAnswers": ["are leaving", "'re leaving"],
+      "hints": ["Specific arranged time"],
+      "points": 10
+    },
+    {
+      "id": 20,
+      "type": "sentence-build",
+      "prompt": "I / meet / my friends / tomorrow",
+      "instructions": "Write a sentence about an arranged plan using present continuous",
+      "answer": "I am meeting my friends tomorrow.",
+      "acceptedAnswers": [
+        "I am meeting my friends tomorrow.",
+        "I am meeting my friends tomorrow",
+        "I'm meeting my friends tomorrow.",
+        "I'm meeting my friends tomorrow"
+      ],
+      "hints": ["Use am + V-ing for arranged plan"],
+      "points": 10
+    },
+    {
+      "id": 21,
+      "type": "sentence-build",
+      "prompt": "We / have / dinner / at 7pm / tonight",
+      "instructions": "Write a sentence about an arranged plan",
+      "answer": "We are having dinner at 7pm tonight.",
+      "acceptedAnswers": [
+        "We are having dinner at 7pm tonight.",
+        "We are having dinner at 7pm tonight",
+        "We're having dinner at 7pm tonight.",
+        "We're having dinner at 7pm tonight"
+      ],
+      "hints": ["Present continuous for arranged plan"],
+      "points": 10
+    },
+    {
+      "id": 22,
+      "type": "sentence-build",
+      "prompt": "She / visit / her grandmother / next weekend",
+      "instructions": "Write a sentence about an arranged plan",
+      "answer": "She is visiting her grandmother next weekend.",
+      "acceptedAnswers": [
+        "She is visiting her grandmother next weekend.",
+        "She is visiting her grandmother next weekend",
+        "She's visiting her grandmother next weekend."
+      ],
+      "hints": ["is + V-ing"],
+      "points": 10
+    },
+    {
+      "id": 23,
+      "type": "multiple-choice",
+      "question": "I think it __________ tomorrow.",
+      "options": ["will rain", "is raining", "rains", "rained"],
+      "correctIndex": 0,
+      "explanation": "Use 'will' for predictions about the future",
+      "hints": ["'I think' suggests a prediction"],
+      "points": 10
+    },
+    {
+      "id": 24,
+      "type": "multiple-choice",
+      "question": "We __________ to the cinema tonight. I've already bought the tickets.",
+      "options": ["will go", "are going", "went", "goes"],
+      "correctIndex": 1,
+      "explanation": "Already bought tickets = arranged plan, use present continuous",
+      "hints": ["Tickets already bought = arranged plan"],
+      "points": 10
+    },
+    {
+      "id": 25,
+      "type": "multiple-choice",
+      "question": "Don't worry! I __________ you with your homework.",
+      "options": ["will help", "am helping", "helped", "helps"],
+      "correctIndex": 0,
+      "explanation": "Instant decision to help, use 'will'",
+      "hints": ["Spontaneous decision uses will"],
+      "points": 10
+    },
+    {
+      "id": 26,
+      "type": "multiple-choice",
+      "question": "They __________ a party on Saturday. Would you like to come?",
+      "options": ["will have", "are having", "had", "have"],
+      "correctIndex": 1,
+      "explanation": "Party already planned, use present continuous",
+      "hints": ["Already planned party"],
+      "points": 10
+    },
+    {
+      "id": 27,
+      "type": "multiple-choice",
+      "question": "In the future, people __________ longer.",
+      "options": ["will live", "are living", "lived", "lives"],
+      "correctIndex": 0,
+      "explanation": "Prediction about the future uses 'will'",
+      "hints": ["'In the future' = prediction"],
+      "points": 10
+    },
+    {
+      "id": 28,
+      "type": "multiple-choice",
+      "question": "I __________ Tom at 5 o'clock. We arranged it yesterday.",
+      "options": ["will meet", "am meeting", "met", "meets"],
+      "correctIndex": 1,
+      "explanation": "Already arranged = present continuous",
+      "hints": ["Already arranged yesterday"],
+      "points": 10
+    },
+    {
+      "id": 29,
+      "type": "error-correct",
+      "wrongSentence": "I think he will wins the race.",
+      "correctSentence": "I think he will win the race.",
+      "errorWord": "will wins",
+      "correction": "will win",
+      "explanation": "After 'will', use base verb (not -s form)",
+      "hints": ["Will + base verb (no -s)"],
+      "points": 10
+    },
+    {
+      "id": 30,
+      "type": "error-correct",
+      "wrongSentence": "We are go to the beach tomorrow.",
+      "correctSentence": "We are going to the beach tomorrow.",
+      "errorWord": "are go",
+      "correction": "are going",
+      "explanation": "Present continuous: are + V-ing",
+      "hints": ["Need -ing form after are"],
+      "points": 10
+    },
+    {
+      "id": 31,
+      "type": "error-correct",
+      "wrongSentence": "She will be goes to university next year.",
+      "correctSentence": "She will go to university next year.",
+      "errorWord": "will be goes",
+      "correction": "will go",
+      "explanation": "Will + base verb (not 'will be goes')",
+      "hints": ["Remove 'be' and use base verb"],
+      "points": 10
+    },
+    {
+      "id": 32,
+      "type": "error-correct",
+      "wrongSentence": "They are going visit Paris next month.",
+      "correctSentence": "They are going to visit Paris next month.",
+      "errorWord": "going visit",
+      "correction": "going to visit",
+      "explanation": "Present continuous needs: are going to visit OR are visiting",
+      "hints": ["Add 'to' or change to 'visiting'"],
+      "points": 10
+    },
+    {
+      "id": 33,
+      "type": "error-correct",
+      "wrongSentence": "Will people lives on Mars in the future?",
+      "correctSentence": "Will people live on Mars in the future?",
+      "errorWord": "lives",
+      "correction": "live",
+      "explanation": "After 'will', use base verb (no -s)",
+      "hints": ["Base verb after will"],
+      "points": 10
+    },
+    {
+      "id": 34,
+      "type": "error-correct",
+      "wrongSentence": "I'm meet my teacher at 3pm today.",
+      "correctSentence": "I'm meeting my teacher at 3pm today.",
+      "errorWord": "I'm meet",
+      "correction": "I'm meeting",
+      "explanation": "Present continuous: I'm + V-ing",
+      "hints": ["Need -ing form"],
+      "points": 10
+    },
+    {
+      "id": 35,
+      "type": "translation",
+      "vietnamese": "Tôi nghĩ trời sẽ mưa vào chiều nay.",
+      "answer": "I think it will rain this afternoon.",
+      "acceptedAnswers": [
+        "I think it will rain this afternoon.",
+        "I think it will rain this afternoon",
+        "I think it'll rain this afternoon.",
+        "I think it will rain today."
+      ],
+      "hints": ["Use 'will' for predictions"],
+      "points": 10
+    },
+    {
+      "id": 36,
+      "type": "translation",
+      "vietnamese": "Chúng tôi sẽ gặp bạn bè vào tối mai.",
+      "answer": "We are meeting our friends tomorrow evening.",
+      "acceptedAnswers": [
+        "We are meeting our friends tomorrow evening.",
+        "We are meeting our friends tomorrow evening",
+        "We're meeting our friends tomorrow evening.",
+        "We are meeting friends tomorrow evening."
+      ],
+      "hints": ["Arranged plan: present continuous"],
+      "points": 10
+    },
+    {
+      "id": 37,
+      "type": "translation",
+      "vietnamese": "Trái đất sẽ nóng hơn trong tương lai.",
+      "answer": "The earth will be hotter in the future.",
+      "acceptedAnswers": [
+        "The earth will be hotter in the future.",
+        "The earth will be hotter in the future",
+        "The Earth will be hotter in the future.",
+        "The earth will get hotter in the future."
+      ],
+      "hints": ["Prediction about future"],
+      "points": 10
+    },
+    {
+      "id": 38,
+      "type": "dialogue-complete",
+      "title": "Complete the dialogue about future plans",
+      "lines": [
+        {
+          "speaker": "Sarah",
+          "text": "What _____ you _____ (do) this summer?",
+          "blank": true,
+          "blankId": "b1",
+          "wordHint": "(do)",
+          "answer": "are you doing",
+          "acceptedAnswers": ["are you doing", "are...doing"]
+        },
+        {
+          "speaker": "Tom",
+          "text": "My family and I _____ (go) to Spain.",
+          "blank": true,
+          "blankId": "b2",
+          "wordHint": "(go)",
+          "answer": "are going",
+          "acceptedAnswers": ["are going", "'re going"]
+        },
+        {
+          "speaker": "Sarah",
+          "text": "_____ you _____ (fly) there?",
+          "blank": true,
+          "blankId": "b3",
+          "wordHint": "(fly)",
+          "answer": "Are you flying",
+          "acceptedAnswers": ["Are you flying", "Are...flying"]
+        },
+        {
+          "speaker": "Tom",
+          "text": "No, we _____ (not fly).",
+          "blank": true,
+          "blankId": "b4",
+          "wordHint": "(not fly)",
+          "answer": "aren't flying",
+          "acceptedAnswers": ["aren't flying", "are not flying"]
+        },
+        {
+          "speaker": "Sarah",
+          "text": "I think you _____ (have) a wonderful time!",
+          "blank": true,
+          "blankId": "b5",
+          "wordHint": "(have)",
+          "answer": "will have",
+          "acceptedAnswers": ["will have", "'ll have"]
+        }
+      ],
+      "points": 20
+    },
+    {
+      "id": 39,
+      "type": "open-ended",
+      "title": "Write predictions about your city/town",
+      "instruction": "Write 5 sentences about how you think your city/town will change in the future. Use 'will' or 'won't'.",
+      "example": "Example: My city will have more parks. There won't be so much traffic. People will use electric cars...",
+      "minSentences": 5,
+      "maxWords": 150,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    },
+    {
+      "id": 40,
+      "type": "open-ended",
+      "title": "Write about your plans",
+      "instruction": "Write 5 sentences about your plans for next week. Use the present continuous (am/is/are + V-ing) to talk about arranged plans.",
+      "example": "Example: I'm meeting my friends on Monday. We're going to the cinema. I'm studying for my exam on Tuesday...",
+      "minSentences": 5,
+      "maxWords": 150,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    }
+  ]
+}

@@ -1,0 +1,527 @@
+{
+  "unitId": "unit-11-making-a-film",
+  "title": "Unit 11: Making a Film",
+  "grammarTopics": ["The Passive: Present Simple", "With and By"],
+  "theory": {
+    "brief": "Câu bị động dùng khi không biết ai làm hành động hoặc không quan trọng. Cấu trúc: am/is/are + past participle (V3). 'By' nói ai làm hành động, 'with' nói dùng công cụ/vật liệu gì.",
+    "examples": [
+      "Films are made in Hollywood. (passive)",
+      "French is spoken here. (general truth)",
+      "The film is directed by Spielberg. (by = who)"
+    ]
+  },
+  "exercises": [
+    {
+      "id": 1,
+      "type": "fill-blank-table",
+      "title": "Complete the irregular verbs table",
+      "instructions": "Fill in the missing forms",
+      "headers": ["Base form", "Past simple", "Past participle"],
+      "rows": [
+        {
+          "rowId": "r1",
+          "cells": ["speak", "spoke", "___"],
+          "answers": ["spoken"],
+          "cellsToFill": [2],
+          "points": 5
+        },
+        {
+          "rowId": "r2",
+          "cells": ["make", "made", "___"],
+          "answers": ["made"],
+          "cellsToFill": [2],
+          "points": 5
+        },
+        {
+          "rowId": "r3",
+          "cells": ["give", "___", "given"],
+          "answers": ["gave"],
+          "cellsToFill": [1],
+          "points": 5
+        },
+        {
+          "rowId": "r4",
+          "cells": ["write", "___", "written"],
+          "answers": ["wrote"],
+          "cellsToFill": [1],
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "sentence-rewrite",
+      "original": "They make lots of films in London. (active)",
+      "instruction": "Change to passive",
+      "starterText": "Lots of films",
+      "answer": "Lots of films are made in London.",
+      "acceptedAnswers": [
+        "Lots of films are made in London.",
+        "Lots of films are made in London"
+      ],
+      "hints": ["are + past participle (made)"],
+      "points": 10
+    },
+    {
+      "id": 3,
+      "type": "sentence-rewrite",
+      "original": "People speak French here. (active)",
+      "instruction": "Change to passive",
+      "starterText": "French",
+      "answer": "French is spoken here.",
+      "acceptedAnswers": [
+        "French is spoken here.",
+        "French is spoken here"
+      ],
+      "hints": ["is + spoken"],
+      "points": 10
+    },
+    {
+      "id": 4,
+      "type": "sentence-rewrite",
+      "original": "They grow rice in Asia. (active)",
+      "instruction": "Change to passive",
+      "starterText": "Rice",
+      "answer": "Rice is grown in Asia.",
+      "acceptedAnswers": [
+        "Rice is grown in Asia.",
+        "Rice is grown in Asia"
+      ],
+      "hints": ["is + grown"],
+      "points": 10
+    },
+    {
+      "id": 5,
+      "type": "sentence-rewrite",
+      "original": "People produce coffee in Brazil. (active)",
+      "instruction": "Change to passive",
+      "starterText": "Coffee",
+      "answer": "Coffee is produced in Brazil.",
+      "acceptedAnswers": [
+        "Coffee is produced in Brazil.",
+        "Coffee is produced in Brazil"
+      ],
+      "hints": ["is + produced"],
+      "points": 10
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Lots of films __________ (make) in London.",
+      "wordHint": "(make)",
+      "answer": "are made",
+      "acceptedAnswers": ["are made"],
+      "hints": ["Passive: are + past participle"],
+      "points": 10
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "French __________ (speak) here.",
+      "wordHint": "(speak)",
+      "answer": "is spoken",
+      "acceptedAnswers": ["is spoken"],
+      "hints": ["is + spoken"],
+      "points": 10
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Our clothes __________ (make) from more modern material.",
+      "wordHint": "(make)",
+      "answer": "are made",
+      "acceptedAnswers": ["are made"],
+      "hints": ["Plural: are + made"],
+      "points": 10
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Rice __________ (grow) in many Asian countries.",
+      "wordHint": "(grow)",
+      "answer": "is grown",
+      "acceptedAnswers": ["is grown"],
+      "hints": ["Singular: is + grown"],
+      "points": 10
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "These books __________ (sell) in bookshops everywhere.",
+      "wordHint": "(sell)",
+      "answer": "are sold",
+      "acceptedAnswers": ["are sold"],
+      "hints": ["are + sold"],
+      "points": 10
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Coffee __________ (produce) in Brazil and Colombia.",
+      "wordHint": "(produce)",
+      "answer": "is produced",
+      "acceptedAnswers": ["is produced"],
+      "hints": ["is + produced"],
+      "points": 10
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "English __________ (teach) in schools around the world.",
+      "wordHint": "(teach)",
+      "answer": "is taught",
+      "acceptedAnswers": ["is taught"],
+      "hints": ["teach → taught → taught"],
+      "points": 10
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Guitars are played __________ musicians all over the world.",
+      "wordHint": "",
+      "answer": "by",
+      "acceptedAnswers": ["by"],
+      "hints": ["Who does it? Use 'by'"],
+      "points": 10
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Libraries are filled __________ books.",
+      "wordHint": "",
+      "answer": "with",
+      "acceptedAnswers": ["with"],
+      "hints": ["What fills it? Use 'with'"],
+      "points": 10
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Tennis is played __________ rackets and a ball.",
+      "wordHint": "",
+      "answer": "with",
+      "acceptedAnswers": ["with"],
+      "hints": ["Tool/instrument: use 'with'"],
+      "points": 10
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "The food is brought __________ a waiter.",
+      "wordHint": "",
+      "answer": "by",
+      "acceptedAnswers": ["by"],
+      "hints": ["Person who does it: 'by'"],
+      "points": 10
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "Bread is cut __________ a knife.",
+      "wordHint": "",
+      "answer": "with",
+      "acceptedAnswers": ["with"],
+      "hints": ["Tool: use 'with'"],
+      "points": 10
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Ancient places are found __________ archaeologists.",
+      "wordHint": "",
+      "answer": "by",
+      "acceptedAnswers": ["by"],
+      "hints": ["People who do it: 'by'"],
+      "points": 10
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "Hollywood is filled __________ famous people.",
+      "wordHint": "",
+      "answer": "with",
+      "acceptedAnswers": ["with"],
+      "hints": ["What it contains: 'with'"],
+      "points": 10
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "The main streets are decorated __________ bright lights.",
+      "wordHint": "",
+      "answer": "with",
+      "acceptedAnswers": ["with"],
+      "hints": ["Materials/objects: 'with'"],
+      "points": 10
+    },
+    {
+      "id": 21,
+      "type": "sentence-build",
+      "prompt": "these books / sell / in bookshops",
+      "instructions": "Write a passive sentence",
+      "answer": "These books are sold in bookshops.",
+      "acceptedAnswers": [
+        "These books are sold in bookshops.",
+        "These books are sold in bookshops"
+      ],
+      "hints": ["are + sold"],
+      "points": 10
+    },
+    {
+      "id": 22,
+      "type": "sentence-build",
+      "prompt": "the movie / direct / by Steven Spielberg",
+      "instructions": "Write a passive sentence with 'by'",
+      "answer": "The movie is directed by Steven Spielberg.",
+      "acceptedAnswers": [
+        "The movie is directed by Steven Spielberg.",
+        "The movie is directed by Steven Spielberg"
+      ],
+      "hints": ["is directed by"],
+      "points": 10
+    },
+    {
+      "id": 23,
+      "type": "sentence-build",
+      "prompt": "the houses / build / with bricks",
+      "instructions": "Write a passive sentence with 'with'",
+      "answer": "The houses are built with bricks.",
+      "acceptedAnswers": [
+        "The houses are built with bricks.",
+        "The houses are built with bricks"
+      ],
+      "hints": ["are built with"],
+      "points": 10
+    },
+    {
+      "id": 24,
+      "type": "sentence-build",
+      "prompt": "films / make / in Hollywood?",
+      "instructions": "Write a passive question",
+      "answer": "Are films made in Hollywood?",
+      "acceptedAnswers": [
+        "Are films made in Hollywood?",
+        "Are films made in Hollywood"
+      ],
+      "hints": ["Are + films + made...?"],
+      "points": 10
+    },
+    {
+      "id": 25,
+      "type": "sentence-build",
+      "prompt": "French / speak / in Canada?",
+      "instructions": "Write a passive question",
+      "answer": "Is French spoken in Canada?",
+      "acceptedAnswers": [
+        "Is French spoken in Canada?",
+        "Is French spoken in Canada"
+      ],
+      "hints": ["Is + French + spoken...?"],
+      "points": 10
+    },
+    {
+      "id": 26,
+      "type": "multiple-choice",
+      "question": "They (make / are made) lots of films in Hollywood.",
+      "options": ["make", "are made"],
+      "correctIndex": 0,
+      "explanation": "'They' is the subject doing the action, so active voice",
+      "hints": ["Who makes films? They do = active"],
+      "points": 10
+    },
+    {
+      "id": 27,
+      "type": "multiple-choice",
+      "question": "French (speaks / is spoken) in many countries.",
+      "options": ["speaks", "is spoken"],
+      "correctIndex": 1,
+      "explanation": "French doesn't speak itself, it is spoken = passive",
+      "hints": ["French receives the action = passive"],
+      "points": 10
+    },
+    {
+      "id": 28,
+      "type": "multiple-choice",
+      "question": "These books (sell / are sold) in bookshops.",
+      "options": ["sell", "are sold"],
+      "correctIndex": 1,
+      "explanation": "Books don't sell themselves, they are sold = passive",
+      "hints": ["Books receive the action = passive"],
+      "points": 10
+    },
+    {
+      "id": 29,
+      "type": "multiple-choice",
+      "question": "The film (directs / is directed) by a famous director.",
+      "options": ["directs", "is directed"],
+      "correctIndex": 1,
+      "explanation": "The film receives the action, passive voice",
+      "hints": ["by a director = passive"],
+      "points": 10
+    },
+    {
+      "id": 30,
+      "type": "error-correct",
+      "wrongSentence": "The film is make in London.",
+      "correctSentence": "The film is made in London.",
+      "errorWord": "make",
+      "correction": "made",
+      "explanation": "Passive needs past participle (made), not base form",
+      "hints": ["is + past participle (made)"],
+      "points": 10
+    },
+    {
+      "id": 31,
+      "type": "error-correct",
+      "wrongSentence": "French is spoke here.",
+      "correctSentence": "French is spoken here.",
+      "errorWord": "spoke",
+      "correction": "spoken",
+      "explanation": "Past participle of speak is spoken, not spoke",
+      "hints": ["speak → spoke → spoken"],
+      "points": 10
+    },
+    {
+      "id": 32,
+      "type": "error-correct",
+      "wrongSentence": "The houses are build by bricks.",
+      "correctSentence": "The houses are built with bricks.",
+      "errorWord": "build by bricks",
+      "correction": "built with bricks",
+      "explanation": "Past participle is 'built', and materials use 'with' not 'by'",
+      "hints": ["built (not build), with (not by) for materials"],
+      "points": 10
+    },
+    {
+      "id": 33,
+      "type": "error-correct",
+      "wrongSentence": "Rice is grew in Asia.",
+      "correctSentence": "Rice is grown in Asia.",
+      "errorWord": "grew",
+      "correction": "grown",
+      "explanation": "Past participle of grow is grown, not grew",
+      "hints": ["grow → grew → grown"],
+      "points": 10
+    },
+    {
+      "id": 34,
+      "type": "error-correct",
+      "wrongSentence": "The food is brought with a waiter.",
+      "correctSentence": "The food is brought by a waiter.",
+      "errorWord": "with",
+      "correction": "by",
+      "explanation": "Person who does action uses 'by', not 'with'",
+      "hints": ["People use 'by', not 'with'"],
+      "points": 10
+    },
+    {
+      "id": 35,
+      "type": "error-correct",
+      "wrongSentence": "Books is sold in bookshops.",
+      "correctSentence": "Books are sold in bookshops.",
+      "errorWord": "is",
+      "correction": "are",
+      "explanation": "Plural subject 'books' needs 'are', not 'is'",
+      "hints": ["Books (plural) = are"],
+      "points": 10
+    },
+    {
+      "id": 36,
+      "type": "translation",
+      "vietnamese": "Tiếng Anh được nói ở nhiều quốc gia.",
+      "answer": "English is spoken in many countries.",
+      "acceptedAnswers": [
+        "English is spoken in many countries.",
+        "English is spoken in many countries"
+      ],
+      "hints": ["is spoken"],
+      "points": 10
+    },
+    {
+      "id": 37,
+      "type": "translation",
+      "vietnamese": "Những bộ phim này được làm ở Hollywood.",
+      "answer": "These films are made in Hollywood.",
+      "acceptedAnswers": [
+        "These films are made in Hollywood.",
+        "These films are made in Hollywood",
+        "These movies are made in Hollywood."
+      ],
+      "hints": ["are made"],
+      "points": 10
+    },
+    {
+      "id": 38,
+      "type": "translation",
+      "vietnamese": "Lúa được trồng ở châu Á.",
+      "answer": "Rice is grown in Asia.",
+      "acceptedAnswers": [
+        "Rice is grown in Asia.",
+        "Rice is grown in Asia"
+      ],
+      "hints": ["is grown"],
+      "points": 10
+    },
+    {
+      "id": 39,
+      "type": "translation",
+      "vietnamese": "Những ngôi nhà này được xây dựng bằng gạch.",
+      "answer": "These houses are built with bricks.",
+      "acceptedAnswers": [
+        "These houses are built with bricks.",
+        "These houses are built with bricks"
+      ],
+      "hints": ["are built with (material)"],
+      "points": 10
+    },
+    {
+      "id": 40,
+      "type": "translation",
+      "vietnamese": "Bức tranh được vẽ bằng sơn dầu.",
+      "answer": "The picture is painted with oil paints.",
+      "acceptedAnswers": [
+        "The picture is painted with oil paints.",
+        "The picture is painted with oil paints",
+        "The painting is painted with oil paints."
+      ],
+      "hints": ["is painted with"],
+      "points": 10
+    },
+    {
+      "id": 41,
+      "type": "translation",
+      "vietnamese": "Hollywood được thăm bởi hàng nghìn khách du lịch.",
+      "answer": "Hollywood is visited by thousands of tourists.",
+      "acceptedAnswers": [
+        "Hollywood is visited by thousands of tourists.",
+        "Hollywood is visited by thousands of tourists"
+      ],
+      "hints": ["is visited by (people)"],
+      "points": 10
+    },
+    {
+      "id": 42,
+      "type": "open-ended",
+      "title": "Describe your school",
+      "instruction": "Write 6-8 sentences about your school using the passive voice. Use 'by' and 'with' where appropriate. Describe what is taught, where things are located, how classrooms are decorated, etc.",
+      "example": "Example: English is taught by Ms. Smith. The classrooms are decorated with posters. Lunch is served in the cafeteria...",
+      "minSentences": 6,
+      "maxWords": 150,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    },
+    {
+      "id": 43,
+      "type": "open-ended",
+      "title": "Famous places",
+      "instruction": "Write a paragraph (6-8 sentences) about a famous place (city, building, or landmark) using the passive voice. Describe what is made, built, visited, etc. there.",
+      "example": "Example: Paris is visited by millions of tourists every year. The Eiffel Tower is located in the center. French food is served in many restaurants...",
+      "minSentences": 6,
+      "maxWords": 150,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    }
+  ]
+}

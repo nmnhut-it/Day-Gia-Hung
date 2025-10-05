@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Grammar Games - Interactive Learning Platform</title>
+  <meta name="description" content="Learn English grammar through interactive games and exercises. Practice comparatives, past tense, present perfect, and more!">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="css/shared.css">
+
+  <style>
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--info) 100%);
+      color: var(--text-white);
+      padding: var(--spacing-xxl) var(--spacing-md);
+      text-align: center;
+      margin-bottom: var(--spacing-xxl);
+    }
+
+    .hero__title {
+      font-size: 2.5rem;
+      margin-bottom: var(--spacing-md);
+    }
+
+    .hero__subtitle {
+      font-size: var(--font-size-lg);
+      opacity: 0.9;
+    }
+
+    .unit-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+      margin-bottom: var(--spacing-xxl);
+    }
+
+    @media (min-width: 768px) {
+      .unit-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .unit-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .unit-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-xl);
+      box-shadow: 0 4px 6px var(--shadow-color);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--text-dark);
+      display: block;
+    }
+
+    .unit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 12px var(--shadow-color);
+    }
+
+    .unit-card__badge {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--text-white);
+      padding: var(--spacing-xs) var(--spacing-sm);
+      border-radius: var(--radius-sm);
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      margin-bottom: var(--spacing-md);
+    }
+
+    .unit-card__title {
+      font-size: var(--font-size-xl);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .unit-card__description {
+      color: var(--text-light);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .unit-card__stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: var(--spacing-md);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .unit-card__stars {
+      display: flex;
+      gap: var(--spacing-xs);
+    }
+
+    .unit-card__progress {
+      font-size: var(--font-size-sm);
+      color: var(--text-light);
+    }
+
+    .unit-card--locked {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .unit-card--locked:hover {
+      transform: none;
+    }
+
+    .stats-overview {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-xl);
+      margin-bottom: var(--spacing-xxl);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: var(--spacing-lg);
+      margin-top: var(--spacing-lg);
+    }
+
+    .stat-box {
+      text-align: center;
+    }
+
+    .stat-box__value {
+      font-size: var(--font-size-xxl);
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .stat-box__label {
+      font-size: var(--font-size-sm);
+      color: var(--text-light);
+      margin-top: var(--spacing-xs);
+    }
+
+    .footer {
+      text-align: center;
+      padding: var(--spacing-xl);
+      color: var(--text-light);
+      font-size: var(--font-size-sm);
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <h1 class="hero__title">🎮 English Grammar Games</h1>
+      <p class="hero__subtitle">Learn English grammar through fun, interactive exercises!</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Overall Statistics -->
+    <div class="stats-overview" id="stats-overview">
+      <h2 style="text-align: center; margin-bottom: 0;">Your Progress</h2>
+      <div class="stats-grid" id="stats-grid">
+        <div class="stat-box">
+          <div class="stat-box__value" id="total-units">0</div>
+          <div class="stat-box__label">Units Played</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box__value" id="total-stars">0</div>
+          <div class="stat-box__label">Total Stars</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box__value" id="avg-score">0</div>
+          <div class="stat-box__label">Avg Score</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box__value" id="total-attempts">0</div>
+          <div class="stat-box__label">Total Attempts</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Units Section -->
+    <div style="margin-bottom: var(--spacing-lg);">
+      <h2>Available Units</h2>
+      <p style="color: var(--text-light);">Select a unit to start practicing</p>
+    </div>
+
+    <div class="unit-grid" id="unit-grid">
+      <!-- Units will be loaded here dynamically -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>English Grammar Games &copy; 2025 | Built for students to practice English grammar</p>
+    <p style="margin-top: var(--spacing-sm);">
+      <button class="btn btn--small btn--secondary" id="clear-progress-btn">Clear All Progress</button>
+    </p>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="js/core/utils.js"></script>
+  <script src="js/core/storage.js"></script>
+
+  <script>
+    const UNITS = [
+      {
+        id: 'unit-3-carnival',
+        title: 'Unit 3: Carnival',
+        description: 'Comparative and superlative adjectives, too and enough',
+        topics: ['Comparatives', 'Superlatives', 'Too & Enough'],
+        path: 'pages/unit-3-carnival.html',
+        available: true
+      },
+      {
+        id: 'unit-4-world-around-us',
+        title: 'Unit 4: The World Around Us',
+        description: 'Past continuous, past simple, and used to',
+        topics: ['Past Continuous', 'Past Simple', 'Used To'],
+        path: 'pages/unit-4-world-around-us.html',
+        available: true
+      },
+      {
+        id: 'unit-5-environment',
+        title: 'Unit 5: The Environment',
+        description: 'Will and won\'t for predictions, present continuous for future plans',
+        topics: ['Will/Won\'t', 'Future Plans', 'Predictions'],
+        path: 'pages/unit-5-environment.html',
+        available: true
+      },
+      {
+        id: 'unit-6-day-trip',
+        title: 'Unit 6: Day Trip',
+        description: 'Be going to for plans, intentions, and predictions with evidence',
+        topics: ['Be Going To', 'Plans', 'Predictions'],
+        path: 'pages/unit-6-day-trip.html',
+        available: true
+      },
+      {
+        id: 'unit-7-first-aid',
+        title: 'Unit 7: First Aid',
+        description: 'Reported speech with said and told, changing tenses and time words',
+        topics: ['Reported Speech', 'Said vs Told', 'Time Changes'],
+        path: 'pages/unit-7-first-aid.html',
+        available: true
+      },
+      {
+        id: 'unit-8-our-favourite-food',
+        title: 'Unit 8: Our Favourite Food',
+        description: 'First conditional with if-clauses, questions and short answers',
+        topics: ['First Conditional', 'If-clauses', 'Will/Won\'t'],
+        path: 'pages/unit-8-our-favourite-food.html',
+        available: true
+      },
+      {
+        id: 'unit-9-possibilities',
+        title: 'Unit 9: Possibilities',
+        description: 'Modals for possibility (may, might, could) and have to for obligation',
+        topics: ['May/Might/Could', 'Have To', 'Modals'],
+        path: 'pages/unit-9-possibilities.html',
+        available: true
+      },
+      {
+        id: 'unit-10-indefinite-pronouns',
+        title: 'Unit 10: Indefinite Pronouns & Question Tags',
+        description: 'Indefinite pronouns (someone, anyone, nothing) and question tags',
+        topics: ['Indefinite Pronouns', 'Question Tags', 'Someone/Anyone'],
+        path: 'pages/unit-10-indefinite-pronouns.html',
+        available: true
+      },
+      {
+        id: 'unit-11-making-a-film',
+        title: 'Unit 11: Making a Film',
+        description: 'The passive voice (present simple) with by and with',
+        topics: ['Passive Voice', 'By & With', 'Past Participle'],
+        path: 'pages/unit-11-making-a-film.html',
+        available: true
+      },
+      {
+        id: 'unit-12-famous-inventions',
+        title: 'Unit 12: Famous Inventions',
+        description: 'The passive voice in past simple and passive questions',
+        topics: ['Passive Past', 'Was/Were', 'Passive Questions'],
+        path: 'pages/unit-12-famous-inventions.html',
+        available: true
+      }
+      // More units can be added here as they are developed
+    ];
+
+    function renderOverallStats() {
+      const stats = Storage.getOverallStats();
+
+      document.getElementById('total-units').textContent = stats.totalUnits || 0;
+      document.getElementById('total-stars').textContent = stats.totalStars || 0;
+      document.getElementById('avg-score').textContent = stats.averageScore || 0;
+      document.getElementById('total-attempts').textContent = stats.totalAttempts || 0;
+    }
+
+    function renderStars(count) {
+      let html = '';
+      for (let i = 0; i < 3; i++) {
+        html += `<span class="${i < count ? 'star star--filled' : 'star'}">★</span>`;
+      }
+      return html;
+    }
+
+    function renderUnits() {
+      const grid = document.getElementById('unit-grid');
+      grid.innerHTML = '';
+
+      UNITS.forEach(unit => {
+        const unitStats = Storage.getUnitStats(unit.id);
+
+        const card = document.createElement('a');
+        card.href = unit.available ? unit.path : '#';
+        card.className = `unit-card ${!unit.available ? 'unit-card--locked' : ''}`;
+
+        if (!unit.available) {
+          card.onclick = (e) => {
+            e.preventDefault();
+            Utils.showToast('This unit is not available yet', 'info');
+          };
+        }
+
+        const badge = document.createElement('div');
+        badge.className = 'unit-card__badge';
+        badge.textContent = unit.available ? 'Available' : 'Coming Soon';
+        badge.style.background = unit.available ? 'var(--primary)' : 'var(--text-light)';
+
+        const title = document.createElement('h3');
+        title.className = 'unit-card__title';
+        title.textContent = unit.title;
+
+        const description = document.createElement('p');
+        description.className = 'unit-card__description';
+        description.textContent = unit.description;
+
+        const topics = document.createElement('div');
+        topics.style.marginBottom = 'var(--spacing-md)';
+        topics.innerHTML = unit.topics.map(topic =>
+          `<span style="display: inline-block; background: var(--bg-light); padding: 2px 8px; border-radius: var(--radius-sm); font-size: var(--font-size-sm); margin-right: var(--spacing-xs); margin-bottom: var(--spacing-xs);">${topic}</span>`
+        ).join('');
+
+        const stats = document.createElement('div');
+        stats.className = 'unit-card__stats';
+
+        const stars = document.createElement('div');
+        stars.className = 'unit-card__stars';
+        stars.innerHTML = renderStars(unitStats.stars || 0);
+
+        const progress = document.createElement('div');
+        progress.className = 'unit-card__progress';
+        if (unitStats.played) {
+          progress.innerHTML = `
+            <strong>Best Score:</strong> ${unitStats.bestScore}<br>
+            <strong>Attempts:</strong> ${unitStats.attempts}
+          `;
+        } else {
+          progress.textContent = 'Not started yet';
+        }
+
+        stats.appendChild(stars);
+        stats.appendChild(progress);
+
+        card.appendChild(badge);
+        card.appendChild(title);
+        card.appendChild(description);
+        card.appendChild(topics);
+        card.appendChild(stats);
+
+        grid.appendChild(card);
+      });
+    }
+
+    document.getElementById('clear-progress-btn').addEventListener('click', () => {
+      if (confirm('Are you sure you want to clear all your progress? This cannot be undone.')) {
+        Storage.clearAll();
+        renderOverallStats();
+        renderUnits();
+        Utils.showToast('All progress cleared', 'info');
+      }
+    });
+
+    renderOverallStats();
+    renderUnits();
+  </script>
+</body>
+</html>

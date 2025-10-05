@@ -1,0 +1,316 @@
+{
+  "unitId": "unit-3-carnival",
+  "title": "Unit 3: Carnival - Comparatives & Superlatives",
+  "subtitle": "Learn comparative and superlative adjectives, plus too and enough",
+  "grammarTopics": [
+    "Comparative Adjectives",
+    "Superlative Adjectives",
+    "As...as comparisons",
+    "Too and Enough"
+  ],
+  "theory": {
+    "sections": [
+      {
+        "title": "Comparative Adjectives",
+        "content": "Use comparative adjectives to compare two people or things. Short adjectives (1-2 syllables): add -er + than. Long adjectives (3+ syllables): use more + adjective + than.",
+        "examples": [
+          "tall → taller than",
+          "happy → happier than",
+          "expensive → more expensive than"
+        ]
+      },
+      {
+        "title": "Superlative Adjectives",
+        "content": "Use superlative adjectives to compare one person or thing with a whole group. Short adjectives: the + adjective + -est. Long adjectives: the most + adjective.",
+        "examples": [
+          "tall → the tallest",
+          "happy → the happiest",
+          "expensive → the most expensive"
+        ]
+      },
+      {
+        "title": "Too and Enough",
+        "content": "TOO = more than necessary (negative meaning). ENOUGH = sufficient amount (positive meaning). Position: too + adjective, but adjective + enough.",
+        "examples": [
+          "This coffee is too hot. (I can't drink it)",
+          "Are you tall enough to reach the shelf?"
+        ]
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "type": "fill-blank-table",
+      "id": "ex1",
+      "title": "Complete the table with comparative and superlative forms",
+      "instructions": "Fill in the missing adjective forms",
+      "headers": ["Adjective", "Comparative", "Superlative"],
+      "rows": [
+        {
+          "rowId": "r1",
+          "cells": ["tall", "___", "___"],
+          "answers": ["taller", "the tallest"],
+          "cellsToFill": [1, 2],
+          "points": 5
+        },
+        {
+          "rowId": "r2",
+          "cells": ["happy", "___", "___"],
+          "answers": ["happier", "the happiest"],
+          "cellsToFill": [1, 2],
+          "points": 5
+        },
+        {
+          "rowId": "r3",
+          "cells": ["expensive", "___", "___"],
+          "answers": ["more expensive", "the most expensive"],
+          "cellsToFill": [1, 2],
+          "points": 5
+        },
+        {
+          "rowId": "r4",
+          "cells": ["good", "___", "___"],
+          "answers": ["better", "the best"],
+          "cellsToFill": [1, 2],
+          "points": 5
+        },
+        {
+          "rowId": "r5",
+          "cells": ["hot", "___", "___"],
+          "answers": ["hotter", "the hottest"],
+          "cellsToFill": [1, 2],
+          "points": 5
+        }
+      ],
+      "points": 25,
+      "hints": [
+        "Short adjectives (1-2 syllables) add -er and -est",
+        "Long adjectives (3+ syllables) use more/most",
+        "Remember irregular forms: good-better-best"
+      ]
+    },
+    {
+      "type": "sentence-build",
+      "id": "ex2-q1",
+      "prompt": "Mount Everest / high / Mount Fuji",
+      "instructions": "Write a comparative sentence using the words provided",
+      "answer": "Mount Everest is higher than Mount Fuji.",
+      "acceptedAnswers": [
+        "Mount Everest is higher than Mount Fuji",
+        "Mount Everest is higher than Mount Fuji.",
+        "Mount Everest's higher than Mount Fuji",
+        "Mount Everest's higher than Mount Fuji."
+      ],
+      "hints": [
+        "Use comparative form of 'high'",
+        "Don't forget 'than'",
+        "Structure: Subject + is + comparative adjective + than + object"
+      ],
+      "points": 10
+    },
+    {
+      "type": "sentence-build",
+      "id": "ex2-q2",
+      "prompt": "A car / fast / a bicycle",
+      "instructions": "Write a comparative sentence using the words provided",
+      "answer": "A car is faster than a bicycle.",
+      "acceptedAnswers": [
+        "A car is faster than a bicycle",
+        "A car is faster than a bicycle.",
+        "A car's faster than a bicycle",
+        "A car's faster than a bicycle."
+      ],
+      "hints": ["Use comparative form of 'fast'"],
+      "points": 10
+    },
+    {
+      "type": "sentence-build",
+      "id": "ex3-q1",
+      "prompt": "The blue whale / large / animal / in the world",
+      "instructions": "Write a superlative sentence using the words provided",
+      "answer": "The blue whale is the largest animal in the world.",
+      "acceptedAnswers": [
+        "The blue whale is the largest animal in the world",
+        "The blue whale is the largest animal in the world.",
+        "The blue whale's the largest animal in the world",
+        "The blue whale's the largest animal in the world."
+      ],
+      "hints": [
+        "Use superlative form of 'large'",
+        "Don't forget 'the' before the superlative"
+      ],
+      "points": 10
+    },
+    {
+      "type": "fill-blank",
+      "id": "ex4-q1",
+      "question": "A tiger is __________ (dangerous) a lion.",
+      "wordHint": "(dangerous)",
+      "answer": "as dangerous as",
+      "acceptedAnswers": ["as dangerous as", "not as dangerous as"],
+      "hints": [
+        "Use 'as...as' pattern for equality comparisons",
+        "Both answers are grammatically correct here"
+      ],
+      "points": 10
+    },
+    {
+      "type": "fill-blank",
+      "id": "ex4-q2",
+      "question": "Coffee is __________ (popular) tea in England.",
+      "wordHint": "(popular)",
+      "answer": "not as popular as",
+      "acceptedAnswers": ["not as popular as"],
+      "hints": [
+        "Tea is more popular in England than coffee",
+        "Use 'not as...as' for inequality"
+      ],
+      "points": 10
+    },
+    {
+      "type": "multiple-choice",
+      "id": "ex5-q1",
+      "question": "This exercise is _____ than the last one.",
+      "options": ["easier", "the easiest", "more easy", "most easy"],
+      "correctIndex": 0,
+      "explanation": "Use comparative form 'easier' with 'than'. 'Easy' is a short adjective.",
+      "hints": ["Look for the word 'than' in the sentence - this indicates comparative form"],
+      "points": 10
+    },
+    {
+      "type": "multiple-choice",
+      "id": "ex5-q2",
+      "question": "She is _____ girl in the school.",
+      "options": ["more intelligent", "the most intelligent", "intelligenter", "most intelligent"],
+      "correctIndex": 1,
+      "explanation": "Use superlative form 'the most intelligent' when comparing with a group ('in the school').",
+      "hints": ["Comparing with a whole group needs superlative", "Don't forget 'the'"],
+      "points": 10
+    },
+    {
+      "type": "fill-blank",
+      "id": "ex6-q1",
+      "question": "This coffee is __________ hot. I can't drink it.",
+      "wordHint": null,
+      "answer": "too",
+      "acceptedAnswers": ["too"],
+      "hints": [
+        "The sentence says 'I can't drink it' - this is negative",
+        "Too = more than necessary (negative meaning)"
+      ],
+      "points": 10
+    },
+    {
+      "type": "fill-blank",
+      "id": "ex6-q2",
+      "question": "Are you tall __________ to reach the top shelf?",
+      "wordHint": null,
+      "answer": "enough",
+      "acceptedAnswers": ["enough"],
+      "hints": [
+        "Enough = sufficient amount",
+        "Enough comes AFTER the adjective"
+      ],
+      "points": 10
+    },
+    {
+      "type": "sentence-rewrite",
+      "id": "ex7-q1",
+      "original": "The shoes are very small. I can't wear them.",
+      "instruction": "Rewrite using 'too'",
+      "starterText": "The shoes are",
+      "answer": "The shoes are too small for me to wear.",
+      "acceptedAnswers": [
+        "The shoes are too small for me to wear",
+        "The shoes are too small to wear",
+        "The shoes are too small for me to wear.",
+        "The shoes are too small to wear."
+      ],
+      "hints": [
+        "Structure: too + adjective + to + verb",
+        "Too indicates something is more than necessary"
+      ],
+      "points": 10
+    },
+    {
+      "type": "fill-blank-mixed",
+      "id": "ex8-q1",
+      "template": "Sarah is _1_ (tall) her sister, but Maria is _2_ (tall) girl in the class.",
+      "blanks": [
+        {
+          "blankId": 1,
+          "hint": "(tall)",
+          "answer": "taller than",
+          "acceptedAnswers": ["taller than"]
+        },
+        {
+          "blankId": 2,
+          "hint": "(tall)",
+          "answer": "the tallest",
+          "acceptedAnswers": ["the tallest"]
+        }
+      ],
+      "hints": [
+        "First blank: comparing two people (Sarah and her sister) - use comparative",
+        "Second blank: comparing with whole class - use superlative"
+      ],
+      "points": 15
+    },
+    {
+      "type": "error-correct",
+      "id": "ex9-q1",
+      "wrongSentence": "She is more tall than her brother.",
+      "correctSentence": "She is taller than her brother.",
+      "errorWord": "more tall",
+      "correction": "taller",
+      "explanation": "'Tall' is a short adjective (1 syllable), so use -er form, not 'more'.",
+      "hints": [
+        "Check the adjective form - is it short or long?",
+        "Short adjectives don't use 'more'"
+      ],
+      "points": 10
+    },
+    {
+      "type": "error-correct",
+      "id": "ex9-q2",
+      "wrongSentence": "This is the most cheap restaurant in town.",
+      "correctSentence": "This is the cheapest restaurant in town.",
+      "errorWord": "most cheap",
+      "correction": "cheapest",
+      "explanation": "'Cheap' is a short adjective, so use -est form, not 'most'.",
+      "hints": ["Short adjectives don't use 'most'"],
+      "points": 10
+    },
+    {
+      "type": "translation",
+      "id": "ex13-q1",
+      "vietnamese": "Chiếc áo này quá nhỏ đối với tôi.",
+      "answer": "This shirt is too small for me.",
+      "acceptedAnswers": [
+        "This shirt is too small for me",
+        "This shirt is too small for me.",
+        "This dress is too small for me",
+        "This dress is too small for me.",
+        "This shirt's too small for me",
+        "This shirt's too small for me."
+      ],
+      "hints": [
+        "Use 'too' + adjective",
+        "'Chiếc áo' can be 'shirt' or 'dress'"
+      ],
+      "points": 10
+    },
+    {
+      "type": "open-ended",
+      "id": "ex14",
+      "title": "Writing Exercise - Compare Two Cities",
+      "instruction": "Write 5 sentences comparing two cities you know. Use comparative adjectives, superlative adjectives, and 'as...as'.",
+      "example": "Example: Hanoi is bigger than Hue. Ho Chi Minh City is the largest city in Vietnam. Hue is not as crowded as Hanoi.",
+      "minSentences": 5,
+      "maxWords": 200,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    }
+  ]
+}
