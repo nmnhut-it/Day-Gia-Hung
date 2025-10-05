@@ -18,7 +18,7 @@
       "wordHint": "(drive)",
       "answer": "was driving",
       "acceptedAnswers": ["was driving"],
-      "hints": ["Use past continuous: was/were + V-ing"],
+      "hints": ["Dùng quá khứ tiếp diễn (past continuous): was/were + V-ing"],
       "points": 10
     },
     {
@@ -28,7 +28,7 @@
       "wordHint": "(watch)",
       "answer": "was watching",
       "acceptedAnswers": ["was watching"],
-      "hints": ["Subject 'I' uses 'was' + V-ing"],
+      "hints": ["Chủ ngữ 'I' dùng 'was' + V-ing"],
       "points": 10
     },
     {
@@ -38,7 +38,7 @@
       "wordHint": "(travel)",
       "answer": "were travelling",
       "acceptedAnswers": ["were travelling", "were traveling"],
-      "hints": ["Subject 'We' uses 'were' + V-ing"],
+      "hints": ["Chủ ngữ 'We' dùng 'were' + V-ing"],
       "points": 10
     },
     {
@@ -48,7 +48,7 @@
       "wordHint": "(do)",
       "answer": "were you doing",
       "acceptedAnswers": ["were you doing", "were...doing"],
-      "hints": ["Question form: Were you + V-ing?"],
+      "hints": ["Dạng câu hỏi: Were you + V-ing?"],
       "points": 10
     },
     {
@@ -58,7 +58,7 @@
       "wordHint": "(find)",
       "answer": "found",
       "acceptedAnswers": ["found"],
-      "hints": ["Use past simple for the short action"],
+      "hints": ["Dùng quá khứ đơn (past simple) cho hành động ngắn"],
       "points": 10
     },
     {
@@ -68,7 +68,7 @@
       "wordHint": "(see)",
       "answer": "saw",
       "acceptedAnswers": ["saw"],
-      "hints": ["Past simple of 'see' is irregular"],
+      "hints": ["Quá khứ đơn của 'see' là động từ bất quy tắc"],
       "points": 10
     },
     {
@@ -78,14 +78,14 @@
       "wordHint": "(watch), (go)",
       "answer": "were watching, went",
       "acceptedAnswers": ["were watching, went", "were watching...went"],
-      "hints": ["First blank: past continuous, second blank: past simple"],
+      "hints": ["Chỗ trống đầu: quá khứ tiếp diễn, chỗ trống thứ hai: quá khứ đơn"],
       "points": 10
     },
     {
       "id": 8,
       "type": "sentence-build",
       "prompt": "We / have lunch // someone / knock on the door",
-      "instructions": "Write a sentence using past continuous and past simple with 'when'",
+      "instructions": "Viết câu sử dụng quá khứ tiếp diễn và quá khứ đơn với 'when'",
       "answer": "We were having lunch when someone knocked on the door.",
       "acceptedAnswers": [
         "We were having lunch when someone knocked on the door.",
@@ -93,14 +93,14 @@
         "When someone knocked on the door, we were having lunch.",
         "When someone knocked on the door, we were having lunch"
       ],
-      "hints": ["Use 'were having' for the long action", "Use 'knocked' for the short action"],
+      "hints": ["Dùng 'were having' cho hành động dài", "Dùng 'knocked' cho hành động ngắn"],
       "points": 10
     },
     {
       "id": 9,
       "type": "sentence-build",
       "prompt": "She / read a book // her phone / ring",
-      "instructions": "Write a sentence using past continuous and past simple with 'when'",
+      "instructions": "Viết câu sử dụng quá khứ tiếp diễn và quá khứ đơn với 'when'",
       "answer": "She was reading a book when her phone rang.",
       "acceptedAnswers": [
         "She was reading a book when her phone rang.",
@@ -108,14 +108,14 @@
         "When her phone rang, she was reading a book.",
         "When her phone rang, she was reading a book"
       ],
-      "hints": ["Use 'was reading' for the long action"],
+      "hints": ["Dùng 'was reading' cho hành động dài"],
       "points": 10
     },
     {
       "id": 10,
       "type": "sentence-build",
       "prompt": "I / do my homework // the lights / go out",
-      "instructions": "Write a sentence using past continuous and past simple with 'when'",
+      "instructions": "Viết câu sử dụng quá khứ tiếp diễn và quá khứ đơn với 'when'",
       "answer": "I was doing my homework when the lights went out.",
       "acceptedAnswers": [
         "I was doing my homework when the lights went out.",
@@ -123,7 +123,7 @@
         "When the lights went out, I was doing my homework.",
         "When the lights went out, I was doing my homework"
       ],
-      "hints": ["Use 'was doing' for the ongoing action"],
+      "hints": ["Dùng 'was doing' cho hành động đang diễn ra"],
       "points": 10
     },
     {
@@ -132,8 +132,8 @@
       "question": "While I (walked / was walking) to school, I (met / was meeting) my friend.",
       "options": ["walked, met", "was walking, met", "walked, was meeting", "was walking, was meeting"],
       "correctIndex": 1,
-      "explanation": "Use past continuous for the longer action and past simple for the short action",
-      "hints": ["The long action (walking) uses past continuous"],
+      "explanation": "Dùng quá khứ tiếp diễn cho hành động dài hơn và quá khứ đơn cho hành động ngắn",
+      "hints": ["Hành động dài (walking) dùng quá khứ tiếp diễn"],
       "points": 10
     },
     {
@@ -142,8 +142,8 @@
       "question": "What (did you do / were you doing) when I (called / was calling) you?",
       "options": ["did you do, called", "were you doing, called", "did you do, was calling", "were you doing, was calling"],
       "correctIndex": 1,
-      "explanation": "Use past continuous for the ongoing action and past simple for the interrupting action",
-      "hints": ["'When I called' is the short action"],
+      "explanation": "Dùng quá khứ tiếp diễn cho hành động đang diễn ra và quá khứ đơn cho hành động ngắt quãng",
+      "hints": ["'When I called' là hành động ngắn"],
       "points": 10
     },
     {
@@ -152,15 +152,15 @@
       "question": "The children (played / were playing) in the garden when it (started / was starting) to rain.",
       "options": ["played, started", "were playing, started", "played, was starting", "were playing, was starting"],
       "correctIndex": 1,
-      "explanation": "Children playing is the longer action, rain starting is the interruption",
-      "hints": ["Rain starting is a sudden event"],
+      "explanation": "Trẻ em chơi là hành động dài hơn, mưa bắt đầu là hành động ngắt quãng",
+      "hints": ["Mưa bắt đầu là sự kiện đột ngột"],
       "points": 10
     },
     {
       "id": 14,
       "type": "sentence-build",
       "prompt": "they / watch TV / when / you / arrive?",
-      "instructions": "Write a question and provide a short answer",
+      "instructions": "Viết câu hỏi và trả lời ngắn",
       "answer": "Were they watching TV when you arrived? Yes, they were.",
       "acceptedAnswers": [
         "Were they watching TV when you arrived? Yes, they were.",
@@ -168,14 +168,14 @@
         "Were they watching TV when you arrived?",
         "Q: Were they watching TV when you arrived? A: Yes, they were."
       ],
-      "hints": ["Question starts with 'Were they...'"],
+      "hints": ["Câu hỏi bắt đầu bằng 'Were they...'"],
       "points": 10
     },
     {
       "id": 15,
       "type": "sentence-build",
       "prompt": "she / study / when / the phone / ring?",
-      "instructions": "Write a question and provide a short answer",
+      "instructions": "Viết câu hỏi và trả lời ngắn",
       "answer": "Was she studying when the phone rang? Yes, she was.",
       "acceptedAnswers": [
         "Was she studying when the phone rang? Yes, she was.",
@@ -183,7 +183,7 @@
         "Was she studying when the phone rang?",
         "Q: Was she studying when the phone rang? A: Yes, she was."
       ],
-      "hints": ["Question starts with 'Was she...'"],
+      "hints": ["Câu hỏi bắt đầu bằng 'Was she...'"],
       "points": 10
     },
     {
@@ -193,7 +193,7 @@
       "wordHint": "(be)",
       "answer": "used to be",
       "acceptedAnswers": ["used to be"],
-      "hints": ["Use 'used to' + base verb"],
+      "hints": ["Dùng 'used to' + động từ nguyên mẫu"],
       "points": 10
     },
     {
@@ -203,7 +203,7 @@
       "wordHint": "(spend)",
       "answer": "used to spend",
       "acceptedAnswers": ["used to spend"],
-      "hints": ["Used to + base form of verb"],
+      "hints": ["Used to + dạng nguyên mẫu của động từ"],
       "points": 10
     },
     {
@@ -213,7 +213,7 @@
       "wordHint": "(throw)",
       "answer": "used to throw",
       "acceptedAnswers": ["used to throw"],
-      "hints": ["Past habit: used to + base verb"],
+      "hints": ["Thói quen quá khứ: used to + động từ nguyên mẫu"],
       "points": 10
     },
     {
@@ -223,7 +223,7 @@
       "wordHint": "(look after)",
       "answer": "didn't use to look after",
       "acceptedAnswers": ["didn't use to look after", "did not use to look after"],
-      "hints": ["Negative form: didn't use to + base verb"],
+      "hints": ["Dạng phủ định: didn't use to + động từ nguyên mẫu"],
       "points": 10
     },
     {
@@ -233,7 +233,7 @@
       "wordHint": "(go)",
       "answer": "didn't use to go",
       "acceptedAnswers": ["didn't use to go", "did not use to go"],
-      "hints": ["Negative: didn't use to + verb"],
+      "hints": ["Phủ định: didn't use to + động từ"],
       "points": 10
     },
     {
@@ -243,46 +243,46 @@
       "wordHint": "(like)",
       "answer": "didn't use to like",
       "acceptedAnswers": ["didn't use to like", "did not use to like"],
-      "hints": ["Negative past habit"],
+      "hints": ["Thói quen quá khứ ở dạng phủ định"],
       "points": 10
     },
     {
       "id": 22,
       "type": "sentence-build",
       "prompt": "they / use a lot of energy?",
-      "instructions": "Write a question with 'Did ... use to ...?'",
+      "instructions": "Viết câu hỏi với 'Did ... use to ...?'",
       "answer": "Did they use to use a lot of energy?",
       "acceptedAnswers": [
         "Did they use to use a lot of energy?",
         "Did they use to use a lot of energy"
       ],
-      "hints": ["Question: Did + subject + use to + verb?"],
+      "hints": ["Câu hỏi: Did + chủ ngữ + use to + động từ?"],
       "points": 10
     },
     {
       "id": 23,
       "type": "sentence-build",
       "prompt": "you / like school when you were five?",
-      "instructions": "Write a question with 'Did ... use to ...?'",
+      "instructions": "Viết câu hỏi với 'Did ... use to ...?'",
       "answer": "Did you use to like school when you were five?",
       "acceptedAnswers": [
         "Did you use to like school when you were five?",
         "Did you use to like school when you were five"
       ],
-      "hints": ["Did you use to + base verb?"],
+      "hints": ["Did you use to + động từ nguyên mẫu?"],
       "points": 10
     },
     {
       "id": 24,
       "type": "sentence-build",
       "prompt": "people / travel by car 100 years ago?",
-      "instructions": "Write a question with 'Did ... use to ...?'",
+      "instructions": "Viết câu hỏi với 'Did ... use to ...?'",
       "answer": "Did people use to travel by car 100 years ago?",
       "acceptedAnswers": [
         "Did people use to travel by car 100 years ago?",
         "Did people use to travel by car 100 years ago"
       ],
-      "hints": ["Question about past habits"],
+      "hints": ["Câu hỏi về thói quen quá khứ"],
       "points": 10
     },
     {
@@ -320,7 +320,7 @@
       "wordHint": "(use)",
       "answer": "didn't use to use",
       "acceptedAnswers": ["didn't use to use", "did not use to use"],
-      "hints": ["Negative: didn't use to + verb"],
+      "hints": ["Phủ định: didn't use to + động từ"],
       "points": 10
     },
     {
@@ -330,8 +330,8 @@
       "correctSentence": "I was studying when you called me.",
       "errorWord": "was study",
       "correction": "was studying",
-      "explanation": "Past continuous needs: was/were + V-ing",
-      "hints": ["Past continuous form is missing -ing"],
+      "explanation": "Quá khứ tiếp diễn cần: was/were + V-ing",
+      "hints": ["Dạng quá khứ tiếp diễn thiếu -ing"],
       "points": 10
     },
     {
@@ -341,8 +341,8 @@
       "correctSentence": "Did you use to like vegetables?",
       "errorWord": "used to",
       "correction": "use to",
-      "explanation": "In questions with 'Did', use 'use to' not 'used to'",
-      "hints": ["After 'Did', use base form 'use to'"],
+      "explanation": "Trong câu hỏi với 'Did', dùng 'use to' không phải 'used to'",
+      "hints": ["Sau 'Did', dùng dạng nguyên mẫu 'use to'"],
       "points": 10
     },
     {
@@ -352,8 +352,8 @@
       "correctSentence": "They were playing football when it started raining.",
       "errorWord": "were play",
       "correction": "were playing",
-      "explanation": "Past continuous: were + V-ing",
-      "hints": ["Add -ing to the verb"],
+      "explanation": "Quá khứ tiếp diễn: were + V-ing",
+      "hints": ["Thêm -ing vào động từ"],
       "points": 10
     },
     {
@@ -363,8 +363,8 @@
       "correctSentence": "She didn't use to wear glasses.",
       "errorWord": "didn't used to",
       "correction": "didn't use to",
-      "explanation": "After 'didn't', use 'use to' not 'used to'",
-      "hints": ["Negative form: didn't use to"],
+      "explanation": "Sau 'didn't', dùng 'use to' không phải 'used to'",
+      "hints": ["Dạng phủ định: didn't use to"],
       "points": 10
     },
     {
@@ -374,8 +374,8 @@
       "correctSentence": "What were you doing at 8 o'clock?",
       "errorWord": "was you",
       "correction": "were you",
-      "explanation": "Subject 'you' uses 'were' not 'was'",
-      "hints": ["'You' always uses 'were' in past continuous"],
+      "explanation": "Chủ ngữ 'you' dùng 'were' không phải 'was'",
+      "hints": ["'You' luôn dùng 'were' trong quá khứ tiếp diễn"],
       "points": 10
     },
     {
@@ -385,8 +385,8 @@
       "correctSentence": "We used to live in Paris.",
       "errorWord": "use to",
       "correction": "used to",
-      "explanation": "Affirmative form: used to (with -d)",
-      "hints": ["Affirmative needs 'used to' with -d"],
+      "explanation": "Dạng khẳng định: used to (có -d)",
+      "hints": ["Khẳng định cần 'used to' có -d"],
       "points": 10
     },
     {
@@ -400,7 +400,7 @@
         "I was watching television when the phone rang.",
         "When the phone rang, I was watching TV."
       ],
-      "hints": ["Use past continuous + past simple with 'when'"],
+      "hints": ["Dùng quá khứ tiếp diễn + quá khứ đơn với 'when'"],
       "points": 10
     },
     {
@@ -412,7 +412,7 @@
         "They used to live in London.",
         "They used to live in London"
       ],
-      "hints": ["Use 'used to' for past habits"],
+      "hints": ["Dùng 'used to' cho thói quen quá khứ"],
       "points": 10
     },
     {
@@ -425,7 +425,7 @@
         "What were you doing when I called you",
         "What were you doing when I called?"
       ],
-      "hints": ["Question with past continuous"],
+      "hints": ["Câu hỏi với quá khứ tiếp diễn"],
       "points": 10
     },
     {
@@ -439,7 +439,7 @@
         "My mother didn't use to go to work when I was young.",
         "My mom didn't use to go to work when I was young."
       ],
-      "hints": ["Negative: didn't use to"],
+      "hints": ["Phủ định: didn't use to"],
       "points": 10
     },
     {
@@ -452,14 +452,14 @@
         "Did you use to play football",
         "Did you use to play soccer?"
       ],
-      "hints": ["Question: Did ... use to ...?"],
+      "hints": ["Câu hỏi: Did ... use to ...?"],
       "points": 10
     },
     {
       "id": 39,
       "type": "open-ended",
-      "title": "Write about your past",
-      "instruction": "Answer these questions about yourself using 'used to' or 'didn't use to': 1) What did you use to do when you were 5 years old? 2) Did you use to like school? 3) What food didn't you use to like?",
+      "title": "Viết về quá khứ của bạn",
+      "instruction": "Trả lời các câu hỏi sau về bản thân bạn sử dụng 'used to' hoặc 'didn't use to': 1) Bạn đã thường làm gì khi 5 tuổi? 2) Bạn có thích trường học không? 3) Món ăn nào bạn không thích?",
       "example": "Example: I used to play with dolls when I was 5. I didn't use to like school. I didn't use to like vegetables.",
       "minSentences": 3,
       "maxWords": 100,
@@ -470,8 +470,8 @@
     {
       "id": 40,
       "type": "open-ended",
-      "title": "Story writing",
-      "instruction": "Write a short story (5-7 sentences) about something that happened to you. Use at least 2 sentences with past continuous + past simple with 'when', and at least 1 sentence with 'used to'.",
+      "title": "Viết truyện ngắn",
+      "instruction": "Viết một câu chuyện ngắn (5-7 câu) về điều gì đó đã xảy ra với bạn. Dùng ít nhất 2 câu với quá khứ tiếp diễn + quá khứ đơn với 'when', và ít nhất 1 câu với 'used to'.",
       "example": "Example: When I was younger, I used to visit my grandparents every weekend. One day, while I was walking to their house, I saw a beautiful bird...",
       "minSentences": 5,
       "maxWords": 150,

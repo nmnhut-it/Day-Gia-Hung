@@ -18,7 +18,7 @@
       "wordHint": "",
       "answer": "won't",
       "acceptedAnswers": ["won't", "will not"],
-      "hints": ["Negative prediction about the future"],
+      "hints": ["Dự đoán phủ định về tương lai"],
       "points": 10
     },
     {
@@ -28,7 +28,7 @@
       "wordHint": "",
       "answer": "will",
       "acceptedAnswers": ["will", "'ll"],
-      "hints": ["Affirmative prediction: will + base verb"],
+      "hints": ["Dự đoán khẳng định: will + động từ nguyên mẫu"],
       "points": 10
     },
     {
@@ -48,7 +48,7 @@
       "wordHint": "",
       "answer": "will",
       "acceptedAnswers": ["will", "'ll"],
-      "hints": ["Affirmative future"],
+      "hints": ["Tương lai khẳng định"],
       "points": 10
     },
     {
@@ -98,7 +98,7 @@
       "wordHint": "",
       "answer": "will",
       "acceptedAnswers": ["will", "'ll"],
-      "hints": ["Positive prediction"],
+      "hints": ["Dự đoán tích cực"],
       "points": 10
     },
     {
@@ -123,7 +123,7 @@
         "People'll live on Mars.",
         "People'll live on Mars"
       ],
-      "hints": ["Use will + base verb"],
+      "hints": ["Dùng will + động từ nguyên mẫu"],
       "points": 10
     },
     {
@@ -138,7 +138,7 @@
         "Cars'll use electricity.",
         "Cars'll use electricity"
       ],
-      "hints": ["Positive prediction with will"],
+      "hints": ["Dự đoán tích cực với will"],
       "points": 10
     },
     {
@@ -153,7 +153,7 @@
         "Schools will not exist in 50 years.",
         "Schools will not exist in 50 years"
       ],
-      "hints": ["Negative prediction: won't + base verb"],
+      "hints": ["Dự đoán phủ định: won't + động từ nguyên mẫu"],
       "points": 10
     },
     {
@@ -181,14 +181,14 @@
         "People won't speak only English",
         "People will not speak only English."
       ],
-      "hints": ["Negative: won't"],
+      "hints": ["Phủ định: won't"],
       "points": 10
     },
     {
       "id": 14,
       "type": "sentence-build",
       "prompt": "the earth / be / a better place?",
-      "instructions": "Write a question with 'will' and provide a short answer",
+      "instructions": "Viết câu hỏi với 'will' và đưa ra câu trả lời ngắn",
       "answer": "Will the earth be a better place? Yes, it will.",
       "acceptedAnswers": [
         "Will the earth be a better place? Yes, it will.",
@@ -196,7 +196,7 @@
         "Will the earth be a better place?",
         "Q: Will the earth be a better place? A: Yes, it will."
       ],
-      "hints": ["Question: Will + subject + base verb?"],
+      "hints": ["Câu hỏi: Will + chủ ngữ + động từ nguyên mẫu?"],
       "points": 10
     },
     {
@@ -206,7 +206,7 @@
       "wordHint": "(go)",
       "answer": "are going",
       "acceptedAnswers": ["are going", "'re going"],
-      "hints": ["Present continuous for future plan: are + V-ing"],
+      "hints": ["Thì hiện tại tiếp diễn cho kế hoạch tương lai: are + V-ing"],
       "points": 10
     },
     {
@@ -216,7 +216,7 @@
       "wordHint": "(travel)",
       "answer": "are travelling",
       "acceptedAnswers": ["are travelling", "'re travelling", "are traveling", "'re traveling"],
-      "hints": ["Arranged plan: are + V-ing"],
+      "hints": ["Kế hoạch đã sắp xếp: are + V-ing"],
       "points": 10
     },
     {
@@ -226,7 +226,7 @@
       "wordHint": "(not drive)",
       "answer": "aren't driving",
       "acceptedAnswers": ["aren't driving", "are not driving"],
-      "hints": ["Negative present continuous: aren't + V-ing"],
+      "hints": ["Hiện tại tiếp diễn phủ định: aren't + V-ing"],
       "points": 10
     },
     {
@@ -236,7 +236,7 @@
       "wordHint": "(walk)",
       "answer": "are walking",
       "acceptedAnswers": ["are walking", "'re walking"],
-      "hints": ["Future plan"],
+      "hints": ["Kế hoạch tương lai"],
       "points": 10
     },
     {
@@ -246,14 +246,14 @@
       "wordHint": "(leave)",
       "answer": "are leaving",
       "acceptedAnswers": ["are leaving", "'re leaving"],
-      "hints": ["Specific arranged time"],
+      "hints": ["Thời gian cụ thể đã sắp xếp"],
       "points": 10
     },
     {
       "id": 20,
       "type": "sentence-build",
       "prompt": "I / meet / my friends / tomorrow",
-      "instructions": "Write a sentence about an arranged plan using present continuous",
+      "instructions": "Viết câu về kế hoạch đã sắp xếp sử dụng thì hiện tại tiếp diễn",
       "answer": "I am meeting my friends tomorrow.",
       "acceptedAnswers": [
         "I am meeting my friends tomorrow.",
@@ -261,7 +261,7 @@
         "I'm meeting my friends tomorrow.",
         "I'm meeting my friends tomorrow"
       ],
-      "hints": ["Use am + V-ing for arranged plan"],
+      "hints": ["Dùng am + V-ing cho kế hoạch đã sắp xếp"],
       "points": 10
     },
     {
@@ -276,7 +276,7 @@
         "We're having dinner at 7pm tonight.",
         "We're having dinner at 7pm tonight"
       ],
-      "hints": ["Present continuous for arranged plan"],
+      "hints": ["Thì hiện tại tiếp diễn cho kế hoạch đã sắp xếp"],
       "points": 10
     },
     {
@@ -299,8 +299,8 @@
       "question": "I think it __________ tomorrow.",
       "options": ["will rain", "is raining", "rains", "rained"],
       "correctIndex": 0,
-      "explanation": "Use 'will' for predictions about the future",
-      "hints": ["'I think' suggests a prediction"],
+      "explanation": "Dùng 'will' cho dự đoán về tương lai",
+      "hints": ["'I think' gợi ý một dự đoán"],
       "points": 10
     },
     {
@@ -309,8 +309,8 @@
       "question": "We __________ to the cinema tonight. I've already bought the tickets.",
       "options": ["will go", "are going", "went", "goes"],
       "correctIndex": 1,
-      "explanation": "Already bought tickets = arranged plan, use present continuous",
-      "hints": ["Tickets already bought = arranged plan"],
+      "explanation": "Đã mua vé = kế hoạch đã sắp xếp, dùng thì hiện tại tiếp diễn",
+      "hints": ["Đã mua vé = kế hoạch đã sắp xếp"],
       "points": 10
     },
     {
@@ -319,8 +319,8 @@
       "question": "Don't worry! I __________ you with your homework.",
       "options": ["will help", "am helping", "helped", "helps"],
       "correctIndex": 0,
-      "explanation": "Instant decision to help, use 'will'",
-      "hints": ["Spontaneous decision uses will"],
+      "explanation": "Quyết định ngay lập tức để giúp đỡ, dùng 'will'",
+      "hints": ["Quyết định tức thời dùng will"],
       "points": 10
     },
     {
@@ -329,8 +329,8 @@
       "question": "They __________ a party on Saturday. Would you like to come?",
       "options": ["will have", "are having", "had", "have"],
       "correctIndex": 1,
-      "explanation": "Party already planned, use present continuous",
-      "hints": ["Already planned party"],
+      "explanation": "Bữa tiệc đã lên kế hoạch, dùng thì hiện tại tiếp diễn",
+      "hints": ["Bữa tiệc đã lên kế hoạch"],
       "points": 10
     },
     {
@@ -339,8 +339,8 @@
       "question": "In the future, people __________ longer.",
       "options": ["will live", "are living", "lived", "lives"],
       "correctIndex": 0,
-      "explanation": "Prediction about the future uses 'will'",
-      "hints": ["'In the future' = prediction"],
+      "explanation": "Dự đoán về tương lai dùng 'will'",
+      "hints": ["'In the future' = dự đoán"],
       "points": 10
     },
     {
@@ -349,8 +349,8 @@
       "question": "I __________ Tom at 5 o'clock. We arranged it yesterday.",
       "options": ["will meet", "am meeting", "met", "meets"],
       "correctIndex": 1,
-      "explanation": "Already arranged = present continuous",
-      "hints": ["Already arranged yesterday"],
+      "explanation": "Đã sắp xếp = thì hiện tại tiếp diễn",
+      "hints": ["Đã sắp xếp từ hôm qua"],
       "points": 10
     },
     {
@@ -360,8 +360,8 @@
       "correctSentence": "I think he will win the race.",
       "errorWord": "will wins",
       "correction": "will win",
-      "explanation": "After 'will', use base verb (not -s form)",
-      "hints": ["Will + base verb (no -s)"],
+      "explanation": "Sau 'will', dùng động từ nguyên mẫu (không có -s)",
+      "hints": ["Will + động từ nguyên mẫu (không -s)"],
       "points": 10
     },
     {
@@ -371,8 +371,8 @@
       "correctSentence": "We are going to the beach tomorrow.",
       "errorWord": "are go",
       "correction": "are going",
-      "explanation": "Present continuous: are + V-ing",
-      "hints": ["Need -ing form after are"],
+      "explanation": "Thì hiện tại tiếp diễn: are + V-ing",
+      "hints": ["Cần dạng -ing sau are"],
       "points": 10
     },
     {
@@ -382,8 +382,8 @@
       "correctSentence": "She will go to university next year.",
       "errorWord": "will be goes",
       "correction": "will go",
-      "explanation": "Will + base verb (not 'will be goes')",
-      "hints": ["Remove 'be' and use base verb"],
+      "explanation": "Will + động từ nguyên mẫu (không phải 'will be goes')",
+      "hints": ["Bỏ 'be' và dùng động từ nguyên mẫu"],
       "points": 10
     },
     {
@@ -393,8 +393,8 @@
       "correctSentence": "They are going to visit Paris next month.",
       "errorWord": "going visit",
       "correction": "going to visit",
-      "explanation": "Present continuous needs: are going to visit OR are visiting",
-      "hints": ["Add 'to' or change to 'visiting'"],
+      "explanation": "Thì hiện tại tiếp diễn cần: are going to visit HOẶC are visiting",
+      "hints": ["Thêm 'to' hoặc đổi thành 'visiting'"],
       "points": 10
     },
     {
@@ -404,8 +404,8 @@
       "correctSentence": "Will people live on Mars in the future?",
       "errorWord": "lives",
       "correction": "live",
-      "explanation": "After 'will', use base verb (no -s)",
-      "hints": ["Base verb after will"],
+      "explanation": "Sau 'will', dùng động từ nguyên mẫu (không -s)",
+      "hints": ["Động từ nguyên mẫu sau will"],
       "points": 10
     },
     {
@@ -415,8 +415,8 @@
       "correctSentence": "I'm meeting my teacher at 3pm today.",
       "errorWord": "I'm meet",
       "correction": "I'm meeting",
-      "explanation": "Present continuous: I'm + V-ing",
-      "hints": ["Need -ing form"],
+      "explanation": "Thì hiện tại tiếp diễn: I'm + V-ing",
+      "hints": ["Cần dạng -ing"],
       "points": 10
     },
     {
@@ -430,7 +430,7 @@
         "I think it'll rain this afternoon.",
         "I think it will rain today."
       ],
-      "hints": ["Use 'will' for predictions"],
+      "hints": ["Dùng 'will' cho dự đoán"],
       "points": 10
     },
     {
@@ -444,7 +444,7 @@
         "We're meeting our friends tomorrow evening.",
         "We are meeting friends tomorrow evening."
       ],
-      "hints": ["Arranged plan: present continuous"],
+      "hints": ["Kế hoạch đã sắp xếp: thì hiện tại tiếp diễn"],
       "points": 10
     },
     {
@@ -458,13 +458,13 @@
         "The Earth will be hotter in the future.",
         "The earth will get hotter in the future."
       ],
-      "hints": ["Prediction about future"],
+      "hints": ["Dự đoán về tương lai"],
       "points": 10
     },
     {
       "id": 38,
       "type": "dialogue-complete",
-      "title": "Complete the dialogue about future plans",
+      "title": "Hoàn thành đoạn hội thoại về kế hoạch tương lai",
       "lines": [
         {
           "speaker": "Sarah",
@@ -517,8 +517,8 @@
     {
       "id": 39,
       "type": "open-ended",
-      "title": "Write predictions about your city/town",
-      "instruction": "Write 5 sentences about how you think your city/town will change in the future. Use 'will' or 'won't'.",
+      "title": "Viết dự đoán về thành phố/thị trấn của bạn",
+      "instruction": "Viết 5 câu về bạn nghĩ thành phố/thị trấn của bạn sẽ thay đổi như thế nào trong tương lai. Dùng 'will' hoặc 'won't'.",
       "example": "Example: My city will have more parks. There won't be so much traffic. People will use electric cars...",
       "minSentences": 5,
       "maxWords": 150,
@@ -529,8 +529,8 @@
     {
       "id": 40,
       "type": "open-ended",
-      "title": "Write about your plans",
-      "instruction": "Write 5 sentences about your plans for next week. Use the present continuous (am/is/are + V-ing) to talk about arranged plans.",
+      "title": "Viết về kế hoạch của bạn",
+      "instruction": "Viết 5 câu về kế hoạch của bạn cho tuần tới. Dùng thì hiện tại tiếp diễn (am/is/are + V-ing) để nói về kế hoạch đã sắp xếp.",
       "example": "Example: I'm meeting my friends on Monday. We're going to the cinema. I'm studying for my exam on Tuesday...",
       "minSentences": 5,
       "maxWords": 150,

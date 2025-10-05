@@ -275,8 +275,60 @@ const GameEngine = {
 
     Storage.saveUnitProgress(this.state.unitId, progressData);
 
+    this.sendResultsToTelegram(percentage, stars, timeSpent);
+
     this.showCompletionScreen(percentage, stars, timeSpent);
     Utils.playSound('complete');
+  },
+
+  /**
+   * Send results to Telegram
+   * @param {number} percentage - Score percentage
+   * @param {number} stars - Number of stars earned
+   * @param {number} timeSpent - Time spent in seconds
+   */
+  async sendResultsToTelegram(percentage, stars, timeSpent) {
+    if (typeof TelegramSender === 'undefined') {
+      console.warn('TelegramSender not loaded, skipping result submission');
+      return;
+    }
+
+    try {
+      const resultData = {
+        studentName: TelegramSender.getStudentName(),
+        teacherName: TelegramSender.getTeacherName(),
+        unitTitle: this.state.unitData.title || this.state.unitId,
+        grammarTopics: this.state.unitData.grammarTopics || [],
+        score: this.state.score,
+        correctAnswers: this.state.correctAnswers,
+        totalQuestions: this.state.totalQuestions,
+        percentage: percentage,
+        stars: stars,
+        timeSpent: timeSpent,
+        hintsUsed: this.state.hintsUsed,
+        timeBonusEarned: this.state.timeBonusEarned,
+        comboBonusEarned: this.state.comboBonusEarned,
+        answerHistory: this.state.answerHistory,
+        completedAt: new Date().toLocaleString('vi-VN', {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit'
+        })
+      };
+
+      const success = await TelegramSender.sendResults(resultData);
+
+      if (success) {
+        console.log('Results sent to Telegram successfully');
+      } else {
+        console.warn('Failed to send results to Telegram');
+      }
+    } catch (error) {
+      console.error('Error sending results to Telegram:', error);
+    }
   },
 
   /**

@@ -1,0 +1,316 @@
+{
+  "unitId": "unit-3-carnival",
+  "title": "Unit 3: Carnival - Comparatives & Superlatives",
+  "subtitle": "Learn comparative and superlative adjectives, plus too and enough",
+  "grammarTopics": [
+    "Comparative Adjectives",
+    "Superlative Adjectives",
+    "As...as comparisons",
+    "Too and Enough"
+  ],
+  "theory": {
+    "sections": [
+      {
+        "title": "Comparative Adjectives",
+        "content": "Use comparative adjectives to compare two people or things. Short adjectives (1-2 syllables): add -er + than. Long adjectives (3+ syllables): use more + adjective + than.",
+        "examples": [
+          "tall → taller than",
+          "happy → happier than",
+          "expensive → more expensive than"
+        ]
+      },
+      {
+        "title": "Superlative Adjectives",
+        "content": "Use superlative adjectives to compare one person or thing with a whole group. Short adjectives: the + adjective + -est. Long adjectives: the most + adjective.",
+        "examples": [
+          "tall → the tallest",
+          "happy → the happiest",
+          "expensive → the most expensive"
+        ]
+      },
+      {
+        "title": "Too and Enough",
+        "content": "TOO = more than necessary (negative meaning). ENOUGH = sufficient amount (positive meaning). Position: too + adjective, but adjective + enough.",
+        "examples": [
+          "This coffee is too hot. (I can't drink it)",
+          "Are you tall enough to reach the shelf?"
+        ]
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "type": "fill-blank-table",
+      "id": "ex1",
+      "title": "Hoàn thành bảng với dạng so sánh hơn và so sánh nhất",
+      "instructions": "Điền vào các dạng tính từ còn thiếu",
+      "headers": ["Adjective", "Comparative", "Superlative"],
+      "rows": [
+        {
+          "rowId": "r1",
+          "cells": ["tall", "___", "___"],
+          "answers": ["taller", "the tallest"],
+          "cellsToFill": [1, 2],
+          "points": 5
+        },
+        {
+          "rowId": "r2",
+          "cells": ["happy", "___", "___"],
+          "answers": ["happier", "the happiest"],
+          "cellsToFill": [1, 2],
+          "points": 5
+        },
+        {
+          "rowId": "r3",
+          "cells": ["expensive", "___", "___"],
+          "answers": ["more expensive", "the most expensive"],
+          "cellsToFill": [1, 2],
+          "points": 5
+        },
+        {
+          "rowId": "r4",
+          "cells": ["good", "___", "___"],
+          "answers": ["better", "the best"],
+          "cellsToFill": [1, 2],
+          "points": 5
+        },
+        {
+          "rowId": "r5",
+          "cells": ["hot", "___", "___"],
+          "answers": ["hotter", "the hottest"],
+          "cellsToFill": [1, 2],
+          "points": 5
+        }
+      ],
+      "points": 25,
+      "hints": [
+        "Tính từ ngắn (1-2 âm tiết) thêm -er và -est",
+        "Tính từ dài (3+ âm tiết) dùng more/most",
+        "Nhớ dạng bất quy tắc: good-better-best"
+      ]
+    },
+    {
+      "type": "sentence-build",
+      "id": "ex2-q1",
+      "prompt": "Mount Everest / high / Mount Fuji",
+      "instructions": "Viết câu so sánh hơn sử dụng các từ cho sẵn",
+      "answer": "Mount Everest is higher than Mount Fuji.",
+      "acceptedAnswers": [
+        "Mount Everest is higher than Mount Fuji",
+        "Mount Everest is higher than Mount Fuji.",
+        "Mount Everest's higher than Mount Fuji",
+        "Mount Everest's higher than Mount Fuji."
+      ],
+      "hints": [
+        "Dùng dạng so sánh hơn của 'high'",
+        "Đừng quên 'than'",
+        "Cấu trúc: Chủ ngữ + is + tính từ so sánh hơn + than + tân ngữ"
+      ],
+      "points": 10
+    },
+    {
+      "type": "sentence-build",
+      "id": "ex2-q2",
+      "prompt": "A car / fast / a bicycle",
+      "instructions": "Viết câu so sánh hơn sử dụng các từ cho sẵn",
+      "answer": "A car is faster than a bicycle.",
+      "acceptedAnswers": [
+        "A car is faster than a bicycle",
+        "A car is faster than a bicycle.",
+        "A car's faster than a bicycle",
+        "A car's faster than a bicycle."
+      ],
+      "hints": ["Dùng dạng so sánh hơn của 'fast'"],
+      "points": 10
+    },
+    {
+      "type": "sentence-build",
+      "id": "ex3-q1",
+      "prompt": "The blue whale / large / animal / in the world",
+      "instructions": "Viết câu so sánh nhất sử dụng các từ cho sẵn",
+      "answer": "The blue whale is the largest animal in the world.",
+      "acceptedAnswers": [
+        "The blue whale is the largest animal in the world",
+        "The blue whale is the largest animal in the world.",
+        "The blue whale's the largest animal in the world",
+        "The blue whale's the largest animal in the world."
+      ],
+      "hints": [
+        "Dùng dạng so sánh nhất của 'large'",
+        "Đừng quên 'the' trước dạng so sánh nhất"
+      ],
+      "points": 10
+    },
+    {
+      "type": "fill-blank",
+      "id": "ex4-q1",
+      "question": "A tiger is __________ (dangerous) a lion.",
+      "wordHint": "(dangerous)",
+      "answer": "as dangerous as",
+      "acceptedAnswers": ["as dangerous as", "not as dangerous as"],
+      "hints": [
+        "Dùng cấu trúc 'as...as' cho so sánh bằng",
+        "Cả hai đáp án đều đúng ngữ pháp"
+      ],
+      "points": 10
+    },
+    {
+      "type": "fill-blank",
+      "id": "ex4-q2",
+      "question": "Coffee is __________ (popular) tea in England.",
+      "wordHint": "(popular)",
+      "answer": "not as popular as",
+      "acceptedAnswers": ["not as popular as"],
+      "hints": [
+        "Trà phổ biến hơn cà phê ở Anh",
+        "Dùng 'not as...as' cho so sánh không bằng"
+      ],
+      "points": 10
+    },
+    {
+      "type": "multiple-choice",
+      "id": "ex5-q1",
+      "question": "This exercise is _____ than the last one.",
+      "options": ["easier", "the easiest", "more easy", "most easy"],
+      "correctIndex": 0,
+      "explanation": "Dùng dạng so sánh hơn 'easier' với 'than'. 'Easy' là tính từ ngắn.",
+      "hints": ["Tìm từ 'than' trong câu - đây là dấu hiệu của so sánh hơn"],
+      "points": 10
+    },
+    {
+      "type": "multiple-choice",
+      "id": "ex5-q2",
+      "question": "She is _____ girl in the school.",
+      "options": ["more intelligent", "the most intelligent", "intelligenter", "most intelligent"],
+      "correctIndex": 1,
+      "explanation": "Dùng dạng so sánh nhất 'the most intelligent' khi so sánh với cả nhóm ('in the school').",
+      "hints": ["So sánh với cả nhóm cần dùng so sánh nhất", "Đừng quên 'the'"],
+      "points": 10
+    },
+    {
+      "type": "fill-blank",
+      "id": "ex6-q1",
+      "question": "This coffee is __________ hot. I can't drink it.",
+      "wordHint": null,
+      "answer": "too",
+      "acceptedAnswers": ["too"],
+      "hints": [
+        "Câu nói 'I can't drink it' - đây là nghĩa phủ định",
+        "Too = quá mức cần thiết (nghĩa phủ định)"
+      ],
+      "points": 10
+    },
+    {
+      "type": "fill-blank",
+      "id": "ex6-q2",
+      "question": "Are you tall __________ to reach the top shelf?",
+      "wordHint": null,
+      "answer": "enough",
+      "acceptedAnswers": ["enough"],
+      "hints": [
+        "Enough = đủ",
+        "Enough đứng SAU tính từ"
+      ],
+      "points": 10
+    },
+    {
+      "type": "sentence-rewrite",
+      "id": "ex7-q1",
+      "original": "The shoes are very small. I can't wear them.",
+      "instruction": "Viết lại câu sử dụng 'too'",
+      "starterText": "The shoes are",
+      "answer": "The shoes are too small for me to wear.",
+      "acceptedAnswers": [
+        "The shoes are too small for me to wear",
+        "The shoes are too small to wear",
+        "The shoes are too small for me to wear.",
+        "The shoes are too small to wear."
+      ],
+      "hints": [
+        "Cấu trúc: too + tính từ + to + động từ",
+        "Too chỉ điều gì đó quá mức cần thiết"
+      ],
+      "points": 10
+    },
+    {
+      "type": "fill-blank-mixed",
+      "id": "ex8-q1",
+      "template": "Sarah is _1_ (tall) her sister, but Maria is _2_ (tall) girl in the class.",
+      "blanks": [
+        {
+          "blankId": 1,
+          "hint": "(tall)",
+          "answer": "taller than",
+          "acceptedAnswers": ["taller than"]
+        },
+        {
+          "blankId": 2,
+          "hint": "(tall)",
+          "answer": "the tallest",
+          "acceptedAnswers": ["the tallest"]
+        }
+      ],
+      "hints": [
+        "Chỗ trống 1: so sánh hai người (Sarah và chị/em gái) - dùng so sánh hơn",
+        "Chỗ trống 2: so sánh với cả lớp - dùng so sánh nhất"
+      ],
+      "points": 15
+    },
+    {
+      "type": "error-correct",
+      "id": "ex9-q1",
+      "wrongSentence": "She is more tall than her brother.",
+      "correctSentence": "She is taller than her brother.",
+      "errorWord": "more tall",
+      "correction": "taller",
+      "explanation": "'Tall' là tính từ ngắn (1 âm tiết), nên dùng dạng -er, không dùng 'more'.",
+      "hints": [
+        "Kiểm tra dạng tính từ - ngắn hay dài?",
+        "Tính từ ngắn không dùng 'more'"
+      ],
+      "points": 10
+    },
+    {
+      "type": "error-correct",
+      "id": "ex9-q2",
+      "wrongSentence": "This is the most cheap restaurant in town.",
+      "correctSentence": "This is the cheapest restaurant in town.",
+      "errorWord": "most cheap",
+      "correction": "cheapest",
+      "explanation": "'Cheap' là tính từ ngắn, nên dùng dạng -est, không dùng 'most'.",
+      "hints": ["Tính từ ngắn không dùng 'most'"],
+      "points": 10
+    },
+    {
+      "type": "translation",
+      "id": "ex13-q1",
+      "vietnamese": "Chiếc áo này quá nhỏ đối với tôi.",
+      "answer": "This shirt is too small for me.",
+      "acceptedAnswers": [
+        "This shirt is too small for me",
+        "This shirt is too small for me.",
+        "This dress is too small for me",
+        "This dress is too small for me.",
+        "This shirt's too small for me",
+        "This shirt's too small for me."
+      ],
+      "hints": [
+        "Dùng 'too' + tính từ",
+        "'Chiếc áo' có thể là 'shirt' hoặc 'dress'"
+      ],
+      "points": 10
+    },
+    {
+      "type": "open-ended",
+      "id": "ex14",
+      "title": "Bài tập viết - So sánh hai thành phố",
+      "instruction": "Viết 5 câu so sánh hai thành phố bạn biết. Sử dụng tính từ so sánh hơn, so sánh nhất và 'as...as'.",
+      "example": "Ví dụ: Hanoi is bigger than Hue. Ho Chi Minh City is the largest city in Vietnam. Hue is not as crowded as Hanoi.",
+      "minSentences": 5,
+      "maxWords": 200,
+      "scored": false,
+      "displayOnly": true,
+      "points": 0
+    }
+  ]
+}

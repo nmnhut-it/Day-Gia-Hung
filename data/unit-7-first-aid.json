@@ -13,124 +13,131 @@
   "exercises": [
     {
       "id": 1,
-      "type": "sentence-rewrite",
-      "original": "\"It's broken.\" (The doctor)",
-      "instruction": "Change to reported speech using 'said'",
-      "starterText": "The doctor",
-      "answer": "The doctor said it was broken.",
+      "type": "word-rearrange",
+      "instruction": "Câu trực tiếp: \"It's broken.\" (The doctor) → Viết lại thành câu tường thuật",
+      "words": ["The", "doctor", "said", "it", "was", "broken"],
+      "distractors": ["is", "says", "that"],
+      "correctSentence": "The doctor said it was broken",
       "acceptedAnswers": [
-        "The doctor said it was broken.",
         "The doctor said it was broken",
+        "The doctor said it was broken.",
+        "The doctor said that it was broken",
         "The doctor said that it was broken."
       ],
-      "hints": ["Change 'is' to 'was'"],
+      "hints": ["Đổi 'is' thành 'was'", "Dùng 'said' (không có tân ngữ)"],
       "points": 10
     },
     {
       "id": 2,
-      "type": "sentence-rewrite",
-      "original": "\"I'm not staying at home.\" (Tommy)",
-      "instruction": "Change to reported speech using 'said'",
-      "starterText": "Tommy",
-      "answer": "Tommy said he wasn't staying at home.",
+      "type": "word-rearrange",
+      "instruction": "Câu trực tiếp: \"I'm not staying at home.\" (Tommy) → Viết lại thành câu tường thuật",
+      "words": ["Tommy", "said", "he", "wasn't", "staying", "at", "home"],
+      "distractors": ["I'm", "am", "was", "that"],
+      "correctSentence": "Tommy said he wasn't staying at home",
       "acceptedAnswers": [
-        "Tommy said he wasn't staying at home.",
         "Tommy said he wasn't staying at home",
-        "Tommy said he was not staying at home.",
+        "Tommy said he wasn't staying at home.",
+        "Tommy said he was not staying at home",
         "Tommy said that he wasn't staying at home."
       ],
-      "hints": ["Change 'I'm' to 'he was'", "Change 'am not' to 'wasn't'"],
+      "hints": ["Đổi 'I'm' thành 'he was'", "Dùng 'wasn't' thay 'am not'"],
       "points": 10
     },
     {
       "id": 3,
-      "type": "sentence-rewrite",
-      "original": "\"I'm hungry.\" (He)",
-      "instruction": "Change to reported speech using 'said'",
-      "starterText": "He",
-      "answer": "He said he was hungry.",
+      "type": "word-rearrange",
+      "instruction": "Câu trực tiếp: \"I'm hungry.\" (He) → Viết lại thành câu tường thuật",
+      "words": ["He", "said", "he", "was", "hungry"],
+      "distractors": ["am", "is", "I'm", "that"],
+      "correctSentence": "He said he was hungry",
       "acceptedAnswers": [
-        "He said he was hungry.",
         "He said he was hungry",
+        "He said he was hungry.",
+        "He said that he was hungry",
         "He said that he was hungry."
       ],
-      "hints": ["Change 'I'm' to 'he was'"],
+      "hints": ["Đổi 'I'm' thành 'he was'"],
       "points": 10
     },
     {
       "id": 4,
-      "type": "sentence-rewrite",
-      "original": "\"I feel ill.\" (She)",
-      "instruction": "Change to reported speech using 'said'",
-      "starterText": "She",
-      "answer": "She said she felt ill.",
+      "type": "word-rearrange",
+      "instruction": "Câu trực tiếp: \"I feel ill.\" (She) → Viết lại thành câu tường thuật",
+      "words": ["She", "said", "she", "felt", "ill"],
+      "distractors": ["feel", "feels", "I", "that"],
+      "correctSentence": "She said she felt ill",
       "acceptedAnswers": [
-        "She said she felt ill.",
         "She said she felt ill",
+        "She said she felt ill.",
+        "She said that she felt ill",
         "She said that she felt ill."
       ],
-      "hints": ["Change 'I feel' to 'she felt'"],
+      "hints": ["Đổi 'I feel' thành 'she felt'"],
       "points": 10
     },
     {
       "id": 5,
-      "type": "sentence-rewrite",
-      "original": "\"We're going to the zoo.\" (They)",
-      "instruction": "Change to reported speech using 'said'",
-      "starterText": "They",
-      "answer": "They said they were going to the zoo.",
+      "type": "word-rearrange",
+      "instruction": "Câu trực tiếp: \"We're going to the zoo.\" (They) → Viết lại thành câu tường thuật",
+      "words": ["They", "said", "they", "were", "going", "to", "the", "zoo"],
+      "distractors": ["We're", "are", "was", "that"],
+      "correctSentence": "They said they were going to the zoo",
       "acceptedAnswers": [
-        "They said they were going to the zoo.",
         "They said they were going to the zoo",
+        "They said they were going to the zoo.",
+        "They said that they were going to the zoo",
         "They said that they were going to the zoo."
       ],
-      "hints": ["Change 'We're' to 'they were'"],
+      "hints": ["Đổi 'We're' thành 'they were'"],
       "points": 10
     },
     {
       "id": 6,
-      "type": "sentence-rewrite",
-      "original": "\"You have to go to school.\" (Dad / me)",
-      "instruction": "Change to reported speech using 'told'",
-      "starterText": "Dad",
-      "answer": "Dad told me I had to go to school.",
+      "type": "word-rearrange",
+      "instruction": "Câu trực tiếp: \"You have to go to school.\" (Dad / me) → Viết lại thành câu tường thuật",
+      "words": ["Dad", "told", "me", "I", "had", "to", "go", "to", "school"],
+      "distractors": ["said", "have", "You", "that"],
+      "correctSentence": "Dad told me I had to go to school",
       "acceptedAnswers": [
-        "Dad told me I had to go to school.",
         "Dad told me I had to go to school",
+        "Dad told me I had to go to school.",
+        "Dad told me that I had to go to school",
         "Dad told me that I had to go to school."
       ],
-      "hints": ["Use 'told me'", "Change 'You have' to 'I had'"],
+      "hints": ["Dùng 'told me' (có tân ngữ)", "Đổi 'You have' thành 'I had'"],
       "points": 10
     },
     {
       "id": 7,
-      "type": "sentence-rewrite",
-      "original": "\"I'm resting in hospital.\" (Fiona / me)",
-      "instruction": "Change to reported speech using 'told'",
-      "starterText": "Fiona",
-      "answer": "Fiona told me she was resting in hospital.",
+      "type": "word-rearrange",
+      "instruction": "Câu trực tiếp: \"I'm resting in hospital.\" (Fiona / me) → Viết lại thành câu tường thuật",
+      "words": ["Fiona", "told", "me", "she", "was", "resting", "in", "hospital"],
+      "distractors": ["said", "I'm", "am", "that"],
+      "correctSentence": "Fiona told me she was resting in hospital",
       "acceptedAnswers": [
-        "Fiona told me she was resting in hospital.",
         "Fiona told me she was resting in hospital",
+        "Fiona told me she was resting in hospital.",
+        "Fiona told me that she was resting in hospital",
         "Fiona told me that she was resting in hospital."
       ],
-      "hints": ["Use 'told me'", "Change 'I'm' to 'she was'"],
+      "hints": ["Dùng 'told me'", "Đổi 'I'm' thành 'she was'"],
       "points": 10
     },
     {
       "id": 8,
-      "type": "sentence-rewrite",
-      "original": "\"You need to study harder.\" (The teacher / us)",
-      "instruction": "Change to reported speech using 'told'",
-      "starterText": "The teacher",
-      "answer": "The teacher told us we needed to study harder.",
+      "type": "word-rearrange",
+      "instruction": "Câu trực tiếp: \"You need to study harder.\" (The teacher / us) → Viết lại thành câu tường thuật",
+      "words": ["The", "teacher", "told", "us", "we", "needed", "to", "study", "harder"],
+      "distractors": ["said", "need", "You", "that", "had"],
+      "correctSentence": "The teacher told us we needed to study harder",
       "acceptedAnswers": [
-        "The teacher told us we needed to study harder.",
         "The teacher told us we needed to study harder",
-        "The teacher told us that we needed to study harder.",
+        "The teacher told us we needed to study harder.",
+        "The teacher told us that we needed to study harder",
+        "The teacher told us we had to study harder",
         "The teacher told us we had to study harder."
       ],
-      "hints": ["Use 'told us'", "Change 'You need' to 'we needed'"],
+      "hints": ["Dùng 'told us'", "Đổi 'You need' thành 'we needed'"],
       "points": 10
     },
     {
@@ -139,8 +146,8 @@
       "question": "She __________ me she was tired.",
       "options": ["said", "told", "said to", "tell"],
       "correctIndex": 1,
-      "explanation": "Use 'told' when there is an object (me)",
-      "hints": ["With object 'me', use 'told'"],
+      "explanation": "Dùng 'told' khi có tân ngữ (me)",
+      "hints": ["Có tân ngữ 'me' → dùng 'told'"],
       "points": 10
     },
     {
@@ -149,8 +156,8 @@
       "question": "They __________ they were going home.",
       "options": ["said", "told", "said to", "tell"],
       "correctIndex": 0,
-      "explanation": "Use 'said' when there is no object mentioned",
-      "hints": ["No object mentioned, use 'said'"],
+      "explanation": "Dùng 'said' khi không có tân ngữ",
+      "hints": ["Không có tân ngữ → dùng 'said'"],
       "points": 10
     },
     {
@@ -159,8 +166,8 @@
       "question": "He __________ us the story was true.",
       "options": ["said", "told", "said to", "tell"],
       "correctIndex": 1,
-      "explanation": "Use 'told' when there is an object (us)",
-      "hints": ["With object 'us', use 'told'"],
+      "explanation": "Dùng 'told' khi có tân ngữ (us)",
+      "hints": ["Có tân ngữ 'us' → dùng 'told'"],
       "points": 10
     },
     {
@@ -169,384 +176,279 @@
       "question": "The teacher __________ the lesson was difficult.",
       "options": ["said", "told", "said to", "tell"],
       "correctIndex": 0,
-      "explanation": "Use 'said' when there is no object",
-      "hints": ["No object, use 'said'"],
+      "explanation": "Dùng 'said' khi không có tân ngữ",
+      "hints": ["Không có tân ngữ → dùng 'said'"],
       "points": 10
     },
     {
       "id": 13,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "\"I am tired.\" → She said she __________ tired.",
-      "wordHint": "",
-      "answer": "was",
-      "acceptedAnswers": ["was"],
-      "hints": ["Present simple 'am' changes to past simple 'was'"],
+      "options": ["am", "is", "was", "were"],
+      "correctIndex": 2,
+      "explanation": "Present simple 'am' đổi thành past simple 'was'",
+      "hints": ["'am' đổi thành 'was'"],
       "points": 10
     },
     {
       "id": 14,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "\"We are studying.\" → They said they __________ studying.",
-      "wordHint": "",
-      "answer": "were",
-      "acceptedAnswers": ["were"],
-      "hints": ["Present continuous 'are' changes to 'were'"],
+      "options": ["are", "is", "was", "were"],
+      "correctIndex": 3,
+      "explanation": "Present continuous 'are' đổi thành 'were'",
+      "hints": ["'are' đổi thành 'were'"],
       "points": 10
     },
     {
       "id": 15,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "\"I can help you.\" → He said he __________ help me.",
-      "wordHint": "",
-      "answer": "could",
-      "acceptedAnswers": ["could"],
-      "hints": ["'can' changes to 'could'"],
+      "options": ["can", "could", "will", "would"],
+      "correctIndex": 1,
+      "explanation": "'can' đổi thành 'could'",
+      "hints": ["'can' → 'could'"],
       "points": 10
     },
     {
       "id": 16,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "\"I will come tomorrow.\" → She said she __________ come the next day.",
-      "wordHint": "",
-      "answer": "would",
-      "acceptedAnswers": ["would"],
-      "hints": ["'will' changes to 'would'"],
+      "options": ["will", "would", "can", "could"],
+      "correctIndex": 1,
+      "explanation": "'will' đổi thành 'would'",
+      "hints": ["'will' → 'would'"],
       "points": 10
     },
     {
       "id": 17,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "\"I don't like coffee.\" → He said he __________ like coffee.",
-      "wordHint": "",
-      "answer": "didn't",
-      "acceptedAnswers": ["didn't", "did not"],
-      "hints": ["Present simple negative changes to past simple"],
+      "options": ["don't", "doesn't", "didn't", "wasn't"],
+      "correctIndex": 2,
+      "explanation": "Present simple negative đổi thành past simple",
+      "hints": ["'don't' → 'didn't'"],
       "points": 10
     },
     {
       "id": 18,
-      "type": "fill-blank-mixed",
-      "template": "\"I'm happy.\" (Tom said) → Tom said ___1___ was happy.",
-      "blanks": [
-        {
-          "blankId": 1,
-          "hint": "",
-          "answer": "he",
-          "acceptedAnswers": ["he"]
-        }
+      "type": "word-rearrange",
+      "instruction": "\"I'm happy.\" (Tom said) → Viết lại câu tường thuật",
+      "words": ["Tom", "said", "he", "was", "happy"],
+      "distractors": ["I'm", "am", "is", "that"],
+      "correctSentence": "Tom said he was happy",
+      "acceptedAnswers": [
+        "Tom said he was happy",
+        "Tom said he was happy.",
+        "Tom said that he was happy"
       ],
+      "hints": ["Đổi 'I'm' thành 'he was'"],
       "points": 10
     },
     {
       "id": 19,
-      "type": "fill-blank-mixed",
-      "template": "\"I can't find my book.\" (She said) → She said ___1___ couldn't find ___2___ book.",
-      "blanks": [
-        {
-          "blankId": 1,
-          "hint": "",
-          "answer": "she",
-          "acceptedAnswers": ["she"]
-        },
-        {
-          "blankId": 2,
-          "hint": "",
-          "answer": "her",
-          "acceptedAnswers": ["her"]
-        }
+      "type": "word-rearrange",
+      "instruction": "\"I can't find my book.\" (She said) → Viết lại câu tường thuật",
+      "words": ["She", "said", "she", "couldn't", "find", "her", "book"],
+      "distractors": ["I", "can't", "my", "that"],
+      "correctSentence": "She said she couldn't find her book",
+      "acceptedAnswers": [
+        "She said she couldn't find her book",
+        "She said she couldn't find her book.",
+        "She said she could not find her book"
       ],
+      "hints": ["Đổi 'I' → 'she', 'can't' → 'couldn't', 'my' → 'her'"],
       "points": 10
     },
     {
       "id": 20,
-      "type": "fill-blank-mixed",
-      "template": "\"You have to help me.\" (He told me) → He told me ___1___ had to help ___2___.",
-      "blanks": [
-        {
-          "blankId": 1,
-          "hint": "",
-          "answer": "I",
-          "acceptedAnswers": ["I"]
-        },
-        {
-          "blankId": 2,
-          "hint": "",
-          "answer": "him",
-          "acceptedAnswers": ["him"]
-        }
+      "type": "word-rearrange",
+      "instruction": "\"You have to help me.\" (He told me) → Viết lại câu tường thuật",
+      "words": ["He", "told", "me", "I", "had", "to", "help", "him"],
+      "distractors": ["You", "have", "me", "that"],
+      "correctSentence": "He told me I had to help him",
+      "acceptedAnswers": [
+        "He told me I had to help him",
+        "He told me I had to help him.",
+        "He told me that I had to help him"
       ],
+      "hints": ["Đổi 'You' → 'I', 'have' → 'had', 'me' → 'him'"],
       "points": 10
     },
     {
       "id": 21,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "\"I'm going home tomorrow.\" → She said she was going home __________.",
-      "wordHint": "",
-      "answer": "the next day",
-      "acceptedAnswers": ["the next day", "the following day"],
-      "hints": ["'tomorrow' changes to 'the next day'"],
+      "options": ["tomorrow", "yesterday", "the next day", "today"],
+      "correctIndex": 2,
+      "explanation": "'tomorrow' đổi thành 'the next day'",
+      "hints": ["'tomorrow' → 'the next day'"],
       "points": 10
     },
     {
       "id": 22,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "\"I saw him today.\" → He said he had seen him __________.",
-      "wordHint": "",
-      "answer": "that day",
-      "acceptedAnswers": ["that day"],
-      "hints": ["'today' changes to 'that day'"],
+      "options": ["today", "that day", "tomorrow", "yesterday"],
+      "correctIndex": 1,
+      "explanation": "'today' đổi thành 'that day'",
+      "hints": ["'today' → 'that day'"],
       "points": 10
     },
     {
       "id": 23,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "\"We're leaving tonight.\" → They said they were leaving __________.",
-      "wordHint": "",
-      "answer": "that night",
-      "acceptedAnswers": ["that night"],
-      "hints": ["'tonight' changes to 'that night'"],
+      "options": ["tonight", "that night", "tomorrow night", "last night"],
+      "correctIndex": 1,
+      "explanation": "'tonight' đổi thành 'that night'",
+      "hints": ["'tonight' → 'that night'"],
       "points": 10
     },
     {
       "id": 24,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "\"I'm working now.\" → She said she was working __________.",
-      "wordHint": "",
-      "answer": "then",
-      "acceptedAnswers": ["then"],
-      "hints": ["'now' changes to 'then'"],
+      "options": ["now", "then", "today", "yesterday"],
+      "correctIndex": 1,
+      "explanation": "'now' đổi thành 'then'",
+      "hints": ["'now' → 'then'"],
       "points": 10
     },
     {
       "id": 25,
-      "type": "sentence-rewrite",
-      "original": "\"I'm feeling better now.\" (The patient)",
-      "instruction": "Complete the reported speech",
-      "starterText": "The patient said",
-      "answer": "The patient said he was feeling better then.",
+      "type": "word-rearrange",
+      "instruction": "\"I'm feeling better now.\" (The patient) → Viết lại câu tường thuật",
+      "words": ["The", "patient", "said", "he", "was", "feeling", "better", "then"],
+      "distractors": ["I'm", "am", "now", "that"],
+      "correctSentence": "The patient said he was feeling better then",
       "acceptedAnswers": [
-        "The patient said he was feeling better then.",
         "The patient said he was feeling better then",
-        "The patient said she was feeling better then.",
-        "The patient said that he was feeling better then."
+        "The patient said he was feeling better then.",
+        "The patient said she was feeling better then"
       ],
-      "hints": ["Change 'I'm' to 'he/she was'", "Change 'now' to 'then'"],
+      "hints": ["Đổi 'I'm' → 'he was', 'now' → 'then'"],
       "points": 10
     },
     {
       "id": 26,
-      "type": "sentence-rewrite",
-      "original": "\"I can't come to school tomorrow.\" (Tom)",
-      "instruction": "Complete the reported speech using 'told the teacher'",
-      "starterText": "Tom told the teacher",
-      "answer": "Tom told the teacher he couldn't come to school the next day.",
+      "type": "word-rearrange",
+      "instruction": "\"I can't come to school tomorrow.\" (Tom told the teacher) → Viết lại câu tường thuật",
+      "words": ["Tom", "told", "the", "teacher", "he", "couldn't", "come", "to", "school", "the", "next", "day"],
+      "distractors": ["I", "can't", "tomorrow", "that"],
+      "correctSentence": "Tom told the teacher he couldn't come to school the next day",
       "acceptedAnswers": [
-        "Tom told the teacher he couldn't come to school the next day.",
         "Tom told the teacher he couldn't come to school the next day",
-        "Tom told the teacher that he couldn't come to school the next day.",
-        "Tom told the teacher he could not come to school the next day."
+        "Tom told the teacher he couldn't come to school the next day.",
+        "Tom told the teacher he could not come to school the next day"
       ],
-      "hints": ["Use 'told the teacher'", "Change 'can't' to 'couldn't'", "Change 'tomorrow' to 'the next day'"],
+      "hints": ["Dùng 'told the teacher', 'can't' → 'couldn't', 'tomorrow' → 'the next day'"],
       "points": 10
     },
     {
       "id": 27,
-      "type": "sentence-rewrite",
-      "original": "\"We're having a party next week.\" (They)",
-      "instruction": "Complete the reported speech",
-      "starterText": "They said",
-      "answer": "They said they were having a party the next week.",
+      "type": "word-rearrange",
+      "instruction": "\"We're having a party next week.\" (They) → Viết lại câu tường thuật",
+      "words": ["They", "said", "they", "were", "having", "a", "party", "the", "next", "week"],
+      "distractors": ["We're", "are", "next week", "that"],
+      "correctSentence": "They said they were having a party the next week",
       "acceptedAnswers": [
-        "They said they were having a party the next week.",
         "They said they were having a party the next week",
-        "They said they were having a party the following week.",
-        "They said that they were having a party the next week."
+        "They said they were having a party the next week.",
+        "They said they were having a party the following week"
       ],
-      "hints": ["Change 'We're' to 'they were'", "Change 'next week' to 'the next week'"],
+      "hints": ["Đổi 'We're' → 'they were', 'next week' → 'the next week'"],
       "points": 10
     },
     {
       "id": 28,
-      "type": "error-correct",
-      "wrongSentence": "He said me he was tired.",
-      "correctSentence": "He told me he was tired.",
-      "errorWord": "said me",
-      "correction": "told me",
-      "explanation": "Use 'told' (not 'said') when there is an object (me)",
-      "hints": ["Can't say 'said me', use 'told me'"],
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'He said me he was tired.'",
+      "options": [
+        "He told me he was tired",
+        "He said me he was tired",
+        "He say me he was tired",
+        "He tells me he was tired"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dùng 'told' (không phải 'said') khi có tân ngữ (me)",
+      "hints": ["Không dùng 'said me', phải dùng 'told me'"],
       "points": 10
     },
     {
       "id": 29,
-      "type": "error-correct",
-      "wrongSentence": "She told she was happy.",
-      "correctSentence": "She said she was happy.",
-      "errorWord": "told",
-      "correction": "said",
-      "explanation": "'Told' needs an object. Without object, use 'said'",
-      "hints": ["'told' needs an object like 'me/him/her'"],
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'She told she was happy.'",
+      "options": [
+        "She said she was happy",
+        "She told she was happy",
+        "She tell she was happy",
+        "She says she was happy"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Told' cần có tân ngữ. Không có tân ngữ thì dùng 'said'",
+      "hints": ["'told' cần có tân ngữ như 'me/him/her'"],
       "points": 10
     },
     {
       "id": 30,
-      "type": "error-correct",
-      "wrongSentence": "They said they are going home.",
-      "correctSentence": "They said they were going home.",
-      "errorWord": "are",
-      "correction": "were",
-      "explanation": "In reported speech, present tense changes to past tense",
-      "hints": ["Change 'are' to 'were'"],
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'They said they are going home.'",
+      "options": [
+        "They said they were going home",
+        "They said they are going home",
+        "They say they are going home",
+        "They told they were going home"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trong câu tường thuật, present tense đổi thành past tense",
+      "hints": ["Đổi 'are' thành 'were'"],
       "points": 10
     },
     {
       "id": 31,
-      "type": "error-correct",
-      "wrongSentence": "He told me he can swim.",
-      "correctSentence": "He told me he could swim.",
-      "errorWord": "can",
-      "correction": "could",
-      "explanation": "'can' changes to 'could' in reported speech",
-      "hints": ["Change 'can' to 'could'"],
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'He told me he can swim.'",
+      "options": [
+        "He told me he could swim",
+        "He told me he can swim",
+        "He said me he could swim",
+        "He tells me he can swim"
+      ],
+      "correctIndex": 0,
+      "explanation": "'can' đổi thành 'could' trong câu tường thuật",
+      "hints": ["Đổi 'can' thành 'could'"],
       "points": 10
     },
     {
       "id": 32,
-      "type": "error-correct",
-      "wrongSentence": "He said he is feeling better.",
-      "correctSentence": "He said he was feeling better.",
-      "errorWord": "is",
-      "correction": "was",
-      "explanation": "Present continuous 'is feeling' changes to past continuous 'was feeling'",
-      "hints": ["Change 'is' to 'was'"],
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'He said he is feeling better.'",
+      "options": [
+        "He said he was feeling better",
+        "He said he is feeling better",
+        "He says he is feeling better",
+        "He told he was feeling better"
+      ],
+      "correctIndex": 0,
+      "explanation": "Present continuous 'is feeling' đổi thành past continuous 'was feeling'",
+      "hints": ["Đổi 'is' thành 'was'"],
       "points": 10
     },
     {
       "id": 33,
-      "type": "error-correct",
-      "wrongSentence": "She told to me she was busy.",
-      "correctSentence": "She told me she was busy.",
-      "errorWord": "told to me",
-      "correction": "told me",
-      "explanation": "'told' is followed directly by object, no 'to'",
-      "hints": ["Remove 'to' - just say 'told me'"],
-      "points": 10
-    },
-    {
-      "id": 34,
-      "type": "translation",
-      "vietnamese": "Bác sĩ nói tôi cần phải nghỉ ngơi.",
-      "answer": "The doctor said I needed to rest.",
-      "acceptedAnswers": [
-        "The doctor said I needed to rest.",
-        "The doctor said I needed to rest",
-        "The doctor told me I needed to rest.",
-        "The doctor said that I needed to rest.",
-        "The doctor said I had to rest."
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'She told to me she was busy.'",
+      "options": [
+        "She told me she was busy",
+        "She told to me she was busy",
+        "She said to me she was busy",
+        "She tells me she was busy"
       ],
-      "hints": ["Can use 'said' or 'told me'"],
+      "correctIndex": 0,
+      "explanation": "'told' theo sau trực tiếp bởi tân ngữ, không có 'to'",
+      "hints": ["Bỏ 'to' - chỉ nói 'told me'"],
       "points": 10
-    },
-    {
-      "id": 35,
-      "type": "translation",
-      "vietnamese": "Cô ấy bảo tôi rằng cô ấy sẽ đến vào ngày hôm sau.",
-      "answer": "She told me she would come the next day.",
-      "acceptedAnswers": [
-        "She told me she would come the next day.",
-        "She told me she would come the next day",
-        "She told me that she would come the next day.",
-        "She said she would come the next day."
-      ],
-      "hints": ["Use 'told me'", "Change 'will' to 'would'"],
-      "points": 10
-    },
-    {
-      "id": 36,
-      "type": "translation",
-      "vietnamese": "Họ nói họ đang làm bài tập về nhà.",
-      "answer": "They said they were doing their homework.",
-      "acceptedAnswers": [
-        "They said they were doing their homework.",
-        "They said they were doing their homework",
-        "They said that they were doing their homework.",
-        "They said they were doing homework."
-      ],
-      "hints": ["Use 'said'", "Change 'are doing' to 'were doing'"],
-      "points": 10
-    },
-    {
-      "id": 37,
-      "type": "translation",
-      "vietnamese": "Giáo viên bảo chúng tôi phải học chăm chỉ hơn.",
-      "answer": "The teacher told us we had to study harder.",
-      "acceptedAnswers": [
-        "The teacher told us we had to study harder.",
-        "The teacher told us we had to study harder",
-        "The teacher told us that we had to study harder.",
-        "The teacher told us we needed to study harder."
-      ],
-      "hints": ["Use 'told us'", "'have to' becomes 'had to'"],
-      "points": 10
-    },
-    {
-      "id": 38,
-      "type": "dialogue-complete",
-      "title": "Report what Fiona and others said",
-      "lines": [
-        {
-          "speaker": "News",
-          "text": "Fiona said: \"I hurt my head. I'm resting in hospital now.\"",
-          "blank": false
-        },
-        {
-          "speaker": "Reporter",
-          "text": "Fiona Thompson said _____ _____ _____ her head and _____ _____ resting in hospital _____.",
-          "blank": true,
-          "blankId": "b1",
-          "wordHint": "",
-          "answer": "she had hurt, she was, then",
-          "acceptedAnswers": ["she had hurt, she was, then", "she had hurt...she was...then"]
-        },
-        {
-          "speaker": "News",
-          "text": "Fiona's teacher said: \"I looked after her and gave first aid.\"",
-          "blank": false
-        },
-        {
-          "speaker": "Reporter",
-          "text": "Fiona's swimming teacher said _____ _____ looked after her and _____ first aid.",
-          "blank": true,
-          "blankId": "b2",
-          "wordHint": "",
-          "answer": "she had, given",
-          "acceptedAnswers": ["she had, given", "she had...given", "he had, given"]
-        }
-      ],
-      "points": 20
-    },
-    {
-      "id": 39,
-      "type": "open-ended",
-      "title": "Report a conversation",
-      "instruction": "Think about a conversation you had yesterday. Write what 3 different people said to you using reported speech. Use 'said' and 'told' correctly, and remember to change tenses, pronouns, and time words.",
-      "example": "Example: My mum told me I had to finish my homework. My friend said he was going to the cinema. My teacher said we would have a test the next day.",
-      "minSentences": 3,
-      "maxWords": 100,
-      "scored": false,
-      "displayOnly": true,
-      "points": 0
-    },
-    {
-      "id": 40,
-      "type": "open-ended",
-      "title": "Report a dialogue",
-      "instruction": "Imagine you had a conversation with your friend yesterday about weekend plans. First write the direct speech (what you both actually said), then report the conversation using reported speech. Write at least 4 exchanges.",
-      "example": "Direct: Me: 'I'm going to the cinema tomorrow.' Friend: 'Can I come with you?' | Reported: I told my friend I was going to the cinema the next day. My friend asked if he could come with me.",
-      "minSentences": 4,
-      "maxWords": 150,
-      "scored": false,
-      "displayOnly": true,
-      "points": 0
     }
   ]
 }

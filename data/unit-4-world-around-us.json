@@ -13,115 +13,126 @@
   "exercises": [
     {
       "id": 1,
-      "type": "fill-blank",
-      "question": "Mr Smith __________ (drive) home when the storm started.",
-      "wordHint": "(drive)",
-      "answer": "was driving",
-      "acceptedAnswers": ["was driving"],
-      "hints": ["Dùng quá khứ tiếp diễn (past continuous): was/were + V-ing"],
+      "type": "multiple-choice",
+      "question": "Mr Smith __________ home when the storm started.",
+      "options": ["drove", "was driving", "is driving", "drives"],
+      "correctIndex": 1,
+      "explanation": "Dùng quá khứ tiếp diễn (past continuous): was/were + V-ing",
+      "hints": ["(drive) - Hành động đang diễn ra trong quá khứ"],
       "points": 10
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "I __________ (watch) a DVD on my computer when it stopped working.",
-      "wordHint": "(watch)",
-      "answer": "was watching",
-      "acceptedAnswers": ["was watching"],
-      "hints": ["Chủ ngữ 'I' dùng 'was' + V-ing"],
+      "type": "multiple-choice",
+      "question": "I __________ a DVD on my computer when it stopped working.",
+      "options": ["watch", "watched", "was watching", "am watching"],
+      "correctIndex": 2,
+      "explanation": "Chủ ngữ 'I' dùng 'was' + V-ing",
+      "hints": ["(watch) - Quá khứ tiếp diễn"],
       "points": 10
     },
     {
       "id": 3,
-      "type": "fill-blank",
-      "question": "We __________ (travel) on the bus when we saw the new shops.",
-      "wordHint": "(travel)",
-      "answer": "were travelling",
-      "acceptedAnswers": ["were travelling", "were traveling"],
-      "hints": ["Chủ ngữ 'We' dùng 'were' + V-ing"],
+      "type": "multiple-choice",
+      "question": "We __________ on the bus when we saw the new shops.",
+      "options": ["travelled", "were travelling", "are travelling", "travel"],
+      "correctIndex": 1,
+      "explanation": "Chủ ngữ 'We' dùng 'were' + V-ing",
+      "hints": ["(travel) - Hành động đang xảy ra"],
       "points": 10
     },
     {
       "id": 4,
-      "type": "fill-blank",
-      "question": "What __________ you __________ (do) when the phone rang?",
-      "wordHint": "(do)",
-      "answer": "were you doing",
-      "acceptedAnswers": ["were you doing", "were...doing"],
-      "hints": ["Dạng câu hỏi: Were you + V-ing?"],
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu hỏi: What / you / do / when / the phone / rang?",
+      "words": ["What", "were", "you", "doing", "when", "the", "phone", "rang"],
+      "distractors": ["did", "do", "was"],
+      "correctSentence": "What were you doing when the phone rang",
+      "acceptedAnswers": [
+        "What were you doing when the phone rang",
+        "What were you doing when the phone rang?"
+      ],
+      "hints": ["Câu hỏi quá khứ tiếp diễn: Were you + V-ing?"],
       "points": 10
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "We were walking home when we __________ (find) a bag of rubbish.",
-      "wordHint": "(find)",
-      "answer": "found",
-      "acceptedAnswers": ["found"],
-      "hints": ["Dùng quá khứ đơn (past simple) cho hành động ngắn"],
+      "type": "multiple-choice",
+      "question": "We were walking home when we __________ a bag of rubbish.",
+      "options": ["find", "found", "were finding", "are finding"],
+      "correctIndex": 1,
+      "explanation": "Dùng quá khứ đơn (past simple) cho hành động ngắn",
+      "hints": ["(find) - Hành động ngắt quãng"],
       "points": 10
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "I was cycling home when I __________ (see) a new house.",
-      "wordHint": "(see)",
-      "answer": "saw",
-      "acceptedAnswers": ["saw"],
-      "hints": ["Quá khứ đơn của 'see' là động từ bất quy tắc"],
+      "type": "multiple-choice",
+      "question": "I was cycling home when I __________ a new house.",
+      "options": ["see", "saw", "was seeing", "am seeing"],
+      "correctIndex": 1,
+      "explanation": "Quá khứ đơn của 'see' là động từ bất quy tắc",
+      "hints": ["(see) - Động từ bất quy tắc"],
       "points": 10
     },
     {
       "id": 7,
-      "type": "fill-blank",
-      "question": "They __________ (watch) TV when the lights __________ (go) out.",
-      "wordHint": "(watch), (go)",
-      "answer": "were watching, went",
-      "acceptedAnswers": ["were watching, went", "were watching...went"],
-      "hints": ["Chỗ trống đầu: quá khứ tiếp diễn, chỗ trống thứ hai: quá khứ đơn"],
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu: They / watch TV / when / the lights / go out",
+      "words": ["They", "were", "watching", "TV", "when", "the", "lights", "went", "out"],
+      "distractors": ["watch", "go", "was"],
+      "correctSentence": "They were watching TV when the lights went out",
+      "acceptedAnswers": [
+        "They were watching TV when the lights went out",
+        "They were watching TV when the lights went out."
+      ],
+      "hints": ["Hành động dài: quá khứ tiếp diễn, hành động ngắn: quá khứ đơn"],
       "points": 10
     },
     {
       "id": 8,
-      "type": "sentence-build",
-      "prompt": "We / have lunch // someone / knock on the door",
-      "instructions": "Viết câu sử dụng quá khứ tiếp diễn và quá khứ đơn với 'when'",
-      "answer": "We were having lunch when someone knocked on the door.",
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu: We / have lunch // someone / knock on the door",
+      "words": ["We", "were", "having", "lunch", "when", "someone", "knocked", "on", "the", "door"],
+      "distractors": ["have", "knock", "was"],
+      "correctSentence": "We were having lunch when someone knocked on the door",
       "acceptedAnswers": [
-        "We were having lunch when someone knocked on the door.",
         "We were having lunch when someone knocked on the door",
-        "When someone knocked on the door, we were having lunch.",
-        "When someone knocked on the door, we were having lunch"
+        "We were having lunch when someone knocked on the door.",
+        "When someone knocked on the door, we were having lunch",
+        "When someone knocked on the door, we were having lunch."
       ],
-      "hints": ["Dùng 'were having' cho hành động dài", "Dùng 'knocked' cho hành động ngắn"],
+      "hints": ["Dùng 'were having' cho hành động dài"],
       "points": 10
     },
     {
       "id": 9,
-      "type": "sentence-build",
-      "prompt": "She / read a book // her phone / ring",
-      "instructions": "Viết câu sử dụng quá khứ tiếp diễn và quá khứ đơn với 'when'",
-      "answer": "She was reading a book when her phone rang.",
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu: She / read a book // her phone / ring",
+      "words": ["She", "was", "reading", "a", "book", "when", "her", "phone", "rang"],
+      "distractors": ["read", "ring", "were"],
+      "correctSentence": "She was reading a book when her phone rang",
       "acceptedAnswers": [
-        "She was reading a book when her phone rang.",
         "She was reading a book when her phone rang",
-        "When her phone rang, she was reading a book.",
-        "When her phone rang, she was reading a book"
+        "She was reading a book when her phone rang.",
+        "When her phone rang, she was reading a book",
+        "When her phone rang, she was reading a book."
       ],
       "hints": ["Dùng 'was reading' cho hành động dài"],
       "points": 10
     },
     {
       "id": 10,
-      "type": "sentence-build",
-      "prompt": "I / do my homework // the lights / go out",
-      "instructions": "Viết câu sử dụng quá khứ tiếp diễn và quá khứ đơn với 'when'",
-      "answer": "I was doing my homework when the lights went out.",
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu: I / do my homework // the lights / go out",
+      "words": ["I", "was", "doing", "my", "homework", "when", "the", "lights", "went", "out"],
+      "distractors": ["do", "go", "am"],
+      "correctSentence": "I was doing my homework when the lights went out",
       "acceptedAnswers": [
-        "I was doing my homework when the lights went out.",
         "I was doing my homework when the lights went out",
-        "When the lights went out, I was doing my homework.",
-        "When the lights went out, I was doing my homework"
+        "I was doing my homework when the lights went out.",
+        "When the lights went out, I was doing my homework",
+        "When the lights went out, I was doing my homework."
       ],
       "hints": ["Dùng 'was doing' cho hành động đang diễn ra"],
       "points": 10
@@ -158,326 +169,257 @@
     },
     {
       "id": 14,
-      "type": "sentence-build",
-      "prompt": "they / watch TV / when / you / arrive?",
-      "instructions": "Viết câu hỏi và trả lời ngắn",
-      "answer": "Were they watching TV when you arrived? Yes, they were.",
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu hỏi: they / watch TV / when / you / arrive?",
+      "words": ["Were", "they", "watching", "TV", "when", "you", "arrived"],
+      "distractors": ["Did", "watch", "arrive"],
+      "correctSentence": "Were they watching TV when you arrived",
       "acceptedAnswers": [
-        "Were they watching TV when you arrived? Yes, they were.",
-        "Were they watching TV when you arrived? Yes, they were",
-        "Were they watching TV when you arrived?",
-        "Q: Were they watching TV when you arrived? A: Yes, they were."
+        "Were they watching TV when you arrived",
+        "Were they watching TV when you arrived?"
       ],
       "hints": ["Câu hỏi bắt đầu bằng 'Were they...'"],
       "points": 10
     },
     {
       "id": 15,
-      "type": "sentence-build",
-      "prompt": "she / study / when / the phone / ring?",
-      "instructions": "Viết câu hỏi và trả lời ngắn",
-      "answer": "Was she studying when the phone rang? Yes, she was.",
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu hỏi: she / study / when / the phone / ring?",
+      "words": ["Was", "she", "studying", "when", "the", "phone", "rang"],
+      "distractors": ["Did", "study", "ring"],
+      "correctSentence": "Was she studying when the phone rang",
       "acceptedAnswers": [
-        "Was she studying when the phone rang? Yes, she was.",
-        "Was she studying when the phone rang? Yes, she was",
-        "Was she studying when the phone rang?",
-        "Q: Was she studying when the phone rang? A: Yes, she was."
+        "Was she studying when the phone rang",
+        "Was she studying when the phone rang?"
       ],
       "hints": ["Câu hỏi bắt đầu bằng 'Was she...'"],
       "points": 10
     },
     {
       "id": 16,
-      "type": "fill-blank",
-      "question": "The energy bills __________ (be) expensive.",
-      "wordHint": "(be)",
-      "answer": "used to be",
-      "acceptedAnswers": ["used to be"],
-      "hints": ["Dùng 'used to' + động từ nguyên mẫu"],
+      "type": "multiple-choice",
+      "question": "The energy bills __________ expensive.",
+      "options": ["were", "used to be", "are", "will be"],
+      "correctIndex": 1,
+      "explanation": "Dùng 'used to' + động từ nguyên mẫu cho thói quen quá khứ",
+      "hints": ["(be) - Thói quen quá khứ không còn nữa"],
       "points": 10
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "We __________ (spend) a lot of money.",
-      "wordHint": "(spend)",
-      "answer": "used to spend",
-      "acceptedAnswers": ["used to spend"],
-      "hints": ["Used to + dạng nguyên mẫu của động từ"],
+      "type": "multiple-choice",
+      "question": "We __________ a lot of money.",
+      "options": ["spend", "used to spend", "are spending", "will spend"],
+      "correctIndex": 1,
+      "explanation": "Used to + dạng nguyên mẫu của động từ",
+      "hints": ["(spend) - Thói quen quá khứ"],
       "points": 10
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Simon and Alice's family __________ (throw) a lot of rubbish away.",
-      "wordHint": "(throw)",
-      "answer": "used to throw",
-      "acceptedAnswers": ["used to throw"],
-      "hints": ["Thói quen quá khứ: used to + động từ nguyên mẫu"],
+      "type": "multiple-choice",
+      "question": "Simon and Alice's family __________ a lot of rubbish away.",
+      "options": ["throw", "threw", "used to throw", "are throwing"],
+      "correctIndex": 2,
+      "explanation": "Thói quen quá khứ: used to + động từ nguyên mẫu",
+      "hints": ["(throw) - Điều từng làm trong quá khứ"],
       "points": 10
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "The old owner __________ (look after) the garden.",
-      "wordHint": "(look after)",
-      "answer": "didn't use to look after",
-      "acceptedAnswers": ["didn't use to look after", "did not use to look after"],
-      "hints": ["Dạng phủ định: didn't use to + động từ nguyên mẫu"],
+      "type": "multiple-choice",
+      "question": "The old owner __________ the garden.",
+      "options": ["looked after", "didn't use to look after", "doesn't look after", "won't look after"],
+      "correctIndex": 1,
+      "explanation": "Dạng phủ định: didn't use to + động từ nguyên mẫu",
+      "hints": ["(look after) - Phủ định thói quen quá khứ"],
       "points": 10
     },
     {
       "id": 20,
-      "type": "fill-blank",
-      "question": "Mum __________ (go) to a drama club.",
-      "wordHint": "(go)",
-      "answer": "didn't use to go",
-      "acceptedAnswers": ["didn't use to go", "did not use to go"],
-      "hints": ["Phủ định: didn't use to + động từ"],
+      "type": "multiple-choice",
+      "question": "Mum __________ to a drama club.",
+      "options": ["goes", "didn't use to go", "doesn't go", "won't go"],
+      "correctIndex": 1,
+      "explanation": "Phủ định: didn't use to + động từ",
+      "hints": ["(go) - Không làm trong quá khứ"],
       "points": 10
     },
     {
       "id": 21,
-      "type": "fill-blank",
-      "question": "I __________ (like) vegetables when I was young.",
-      "wordHint": "(like)",
-      "answer": "didn't use to like",
-      "acceptedAnswers": ["didn't use to like", "did not use to like"],
-      "hints": ["Thói quen quá khứ ở dạng phủ định"],
+      "type": "multiple-choice",
+      "question": "I __________ vegetables when I was young.",
+      "options": ["like", "didn't use to like", "don't like", "liked"],
+      "correctIndex": 1,
+      "explanation": "Thói quen quá khứ ở dạng phủ định",
+      "hints": ["(like) - Điều không làm khi còn nhỏ"],
       "points": 10
     },
     {
       "id": 22,
-      "type": "sentence-build",
-      "prompt": "they / use a lot of energy?",
-      "instructions": "Viết câu hỏi với 'Did ... use to ...?'",
-      "answer": "Did they use to use a lot of energy?",
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu hỏi: they / use a lot of energy?",
+      "words": ["Did", "they", "use", "to", "use", "a", "lot", "of", "energy"],
+      "distractors": ["used", "are", "do"],
+      "correctSentence": "Did they use to use a lot of energy",
       "acceptedAnswers": [
-        "Did they use to use a lot of energy?",
-        "Did they use to use a lot of energy"
+        "Did they use to use a lot of energy",
+        "Did they use to use a lot of energy?"
       ],
       "hints": ["Câu hỏi: Did + chủ ngữ + use to + động từ?"],
       "points": 10
     },
     {
       "id": 23,
-      "type": "sentence-build",
-      "prompt": "you / like school when you were five?",
-      "instructions": "Viết câu hỏi với 'Did ... use to ...?'",
-      "answer": "Did you use to like school when you were five?",
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu hỏi: you / like school / when you were five?",
+      "words": ["Did", "you", "use", "to", "like", "school", "when", "you", "were", "five"],
+      "distractors": ["used", "did", "do"],
+      "correctSentence": "Did you use to like school when you were five",
       "acceptedAnswers": [
-        "Did you use to like school when you were five?",
-        "Did you use to like school when you were five"
+        "Did you use to like school when you were five",
+        "Did you use to like school when you were five?"
       ],
       "hints": ["Did you use to + động từ nguyên mẫu?"],
       "points": 10
     },
     {
       "id": 24,
-      "type": "sentence-build",
-      "prompt": "people / travel by car 100 years ago?",
-      "instructions": "Viết câu hỏi với 'Did ... use to ...?'",
-      "answer": "Did people use to travel by car 100 years ago?",
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu hỏi: people / travel by car / 100 years ago?",
+      "words": ["Did", "people", "use", "to", "travel", "by", "car", "100", "years", "ago"],
+      "distractors": ["used", "traveled", "do"],
+      "correctSentence": "Did people use to travel by car 100 years ago",
       "acceptedAnswers": [
-        "Did people use to travel by car 100 years ago?",
-        "Did people use to travel by car 100 years ago"
+        "Did people use to travel by car 100 years ago",
+        "Did people use to travel by car 100 years ago?"
       ],
       "hints": ["Câu hỏi về thói quen quá khứ"],
       "points": 10
     },
     {
       "id": 25,
-      "type": "fill-blank-mixed",
-      "template": "I __________ (drink) a lot of fruit juice, but now I drink water.",
-      "blanks": [
-        {
-          "blankId": 1,
-          "hint": "(drink)",
-          "answer": "used to drink",
-          "acceptedAnswers": ["used to drink"]
-        }
-      ],
+      "type": "multiple-choice",
+      "question": "I __________ a lot of fruit juice, but now I drink water.",
+      "options": ["drink", "used to drink", "am drinking", "will drink"],
+      "correctIndex": 1,
+      "explanation": "Thói quen quá khứ không còn nữa",
+      "hints": ["(drink) - Điều từng làm nhưng giờ không còn"],
       "points": 10
     },
     {
       "id": 26,
-      "type": "fill-blank-mixed",
-      "template": "__________ you __________ (tidy) your own room when you were five?",
-      "blanks": [
-        {
-          "blankId": 1,
-          "hint": "",
-          "answer": "Did you use to tidy",
-          "acceptedAnswers": ["Did you use to tidy", "Did...use to tidy"]
-        }
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu hỏi: you / tidy your own room / when you were five?",
+      "words": ["Did", "you", "use", "to", "tidy", "your", "own", "room", "when", "you", "were", "five"],
+      "distractors": ["used", "tidied", "do"],
+      "correctSentence": "Did you use to tidy your own room when you were five",
+      "acceptedAnswers": [
+        "Did you use to tidy your own room when you were five",
+        "Did you use to tidy your own room when you were five?"
       ],
+      "hints": ["Câu hỏi về thói quen lúc nhỏ"],
       "points": 10
     },
     {
       "id": 27,
-      "type": "fill-blank",
-      "question": "People __________ (use) mobile phones 50 years ago.",
-      "wordHint": "(use)",
-      "answer": "didn't use to use",
-      "acceptedAnswers": ["didn't use to use", "did not use to use"],
-      "hints": ["Phủ định: didn't use to + động từ"],
+      "type": "multiple-choice",
+      "question": "People __________ mobile phones 50 years ago.",
+      "options": ["use", "used", "didn't use to use", "don't use"],
+      "correctIndex": 2,
+      "explanation": "Phủ định: didn't use to + động từ",
+      "hints": ["(use) - Điều không tồn tại trong quá khứ"],
       "points": 10
     },
     {
       "id": 28,
-      "type": "error-correct",
-      "wrongSentence": "I was study when you called me.",
-      "correctSentence": "I was studying when you called me.",
-      "errorWord": "was study",
-      "correction": "was studying",
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'I was study when you called me.'",
+      "options": [
+        "I was studying when you called me",
+        "I was study when you called me",
+        "I am studying when you called me",
+        "I were studying when you called me"
+      ],
+      "correctIndex": 0,
       "explanation": "Quá khứ tiếp diễn cần: was/were + V-ing",
       "hints": ["Dạng quá khứ tiếp diễn thiếu -ing"],
       "points": 10
     },
     {
       "id": 29,
-      "type": "error-correct",
-      "wrongSentence": "Did you used to like vegetables?",
-      "correctSentence": "Did you use to like vegetables?",
-      "errorWord": "used to",
-      "correction": "use to",
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'Did you used to like vegetables?'",
+      "options": [
+        "Did you use to like vegetables",
+        "Did you used to like vegetables",
+        "Do you used to like vegetables",
+        "Were you used to like vegetables"
+      ],
+      "correctIndex": 0,
       "explanation": "Trong câu hỏi với 'Did', dùng 'use to' không phải 'used to'",
       "hints": ["Sau 'Did', dùng dạng nguyên mẫu 'use to'"],
       "points": 10
     },
     {
       "id": 30,
-      "type": "error-correct",
-      "wrongSentence": "They were play football when it started raining.",
-      "correctSentence": "They were playing football when it started raining.",
-      "errorWord": "were play",
-      "correction": "were playing",
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'They were play football when it started raining.'",
+      "options": [
+        "They were playing football when it started raining",
+        "They were play football when it started raining",
+        "They are playing football when it started raining",
+        "They was playing football when it started raining"
+      ],
+      "correctIndex": 0,
       "explanation": "Quá khứ tiếp diễn: were + V-ing",
       "hints": ["Thêm -ing vào động từ"],
       "points": 10
     },
     {
       "id": 31,
-      "type": "error-correct",
-      "wrongSentence": "She didn't used to wear glasses.",
-      "correctSentence": "She didn't use to wear glasses.",
-      "errorWord": "didn't used to",
-      "correction": "didn't use to",
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'She didn't used to wear glasses.'",
+      "options": [
+        "She didn't use to wear glasses",
+        "She didn't used to wear glasses",
+        "She doesn't used to wear glasses",
+        "She wasn't used to wear glasses"
+      ],
+      "correctIndex": 0,
       "explanation": "Sau 'didn't', dùng 'use to' không phải 'used to'",
       "hints": ["Dạng phủ định: didn't use to"],
       "points": 10
     },
     {
       "id": 32,
-      "type": "error-correct",
-      "wrongSentence": "What was you doing at 8 o'clock?",
-      "correctSentence": "What were you doing at 8 o'clock?",
-      "errorWord": "was you",
-      "correction": "were you",
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'What was you doing at 8 o'clock?'",
+      "options": [
+        "What were you doing at 8 o'clock",
+        "What was you doing at 8 o'clock",
+        "What are you doing at 8 o'clock",
+        "What did you doing at 8 o'clock"
+      ],
+      "correctIndex": 0,
       "explanation": "Chủ ngữ 'you' dùng 'were' không phải 'was'",
       "hints": ["'You' luôn dùng 'were' trong quá khứ tiếp diễn"],
       "points": 10
     },
     {
       "id": 33,
-      "type": "error-correct",
-      "wrongSentence": "We use to live in Paris.",
-      "correctSentence": "We used to live in Paris.",
-      "errorWord": "use to",
-      "correction": "used to",
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'We use to live in Paris.'",
+      "options": [
+        "We used to live in Paris",
+        "We use to live in Paris",
+        "We are used to live in Paris",
+        "We using to live in Paris"
+      ],
+      "correctIndex": 0,
       "explanation": "Dạng khẳng định: used to (có -d)",
       "hints": ["Khẳng định cần 'used to' có -d"],
       "points": 10
-    },
-    {
-      "id": 34,
-      "type": "translation",
-      "vietnamese": "Tôi đang xem TV thì điện thoại reo.",
-      "answer": "I was watching TV when the phone rang.",
-      "acceptedAnswers": [
-        "I was watching TV when the phone rang.",
-        "I was watching TV when the phone rang",
-        "I was watching television when the phone rang.",
-        "When the phone rang, I was watching TV."
-      ],
-      "hints": ["Dùng quá khứ tiếp diễn + quá khứ đơn với 'when'"],
-      "points": 10
-    },
-    {
-      "id": 35,
-      "type": "translation",
-      "vietnamese": "Họ đã từng sống ở Luân Đôn.",
-      "answer": "They used to live in London.",
-      "acceptedAnswers": [
-        "They used to live in London.",
-        "They used to live in London"
-      ],
-      "hints": ["Dùng 'used to' cho thói quen quá khứ"],
-      "points": 10
-    },
-    {
-      "id": 36,
-      "type": "translation",
-      "vietnamese": "Bạn đang làm gì khi tôi gọi cho bạn?",
-      "answer": "What were you doing when I called you?",
-      "acceptedAnswers": [
-        "What were you doing when I called you?",
-        "What were you doing when I called you",
-        "What were you doing when I called?"
-      ],
-      "hints": ["Câu hỏi với quá khứ tiếp diễn"],
-      "points": 10
-    },
-    {
-      "id": 37,
-      "type": "translation",
-      "vietnamese": "Mẹ tôi không từng đi làm khi tôi còn nhỏ.",
-      "answer": "My mum didn't use to go to work when I was young.",
-      "acceptedAnswers": [
-        "My mum didn't use to go to work when I was young.",
-        "My mum didn't use to go to work when I was young",
-        "My mother didn't use to go to work when I was young.",
-        "My mom didn't use to go to work when I was young."
-      ],
-      "hints": ["Phủ định: didn't use to"],
-      "points": 10
-    },
-    {
-      "id": 38,
-      "type": "translation",
-      "vietnamese": "Bạn có từng chơi bóng đá không?",
-      "answer": "Did you use to play football?",
-      "acceptedAnswers": [
-        "Did you use to play football?",
-        "Did you use to play football",
-        "Did you use to play soccer?"
-      ],
-      "hints": ["Câu hỏi: Did ... use to ...?"],
-      "points": 10
-    },
-    {
-      "id": 39,
-      "type": "open-ended",
-      "title": "Viết về quá khứ của bạn",
-      "instruction": "Trả lời các câu hỏi sau về bản thân bạn sử dụng 'used to' hoặc 'didn't use to': 1) Bạn đã thường làm gì khi 5 tuổi? 2) Bạn có thích trường học không? 3) Món ăn nào bạn không thích?",
-      "example": "Example: I used to play with dolls when I was 5. I didn't use to like school. I didn't use to like vegetables.",
-      "minSentences": 3,
-      "maxWords": 100,
-      "scored": false,
-      "displayOnly": true,
-      "points": 0
-    },
-    {
-      "id": 40,
-      "type": "open-ended",
-      "title": "Viết truyện ngắn",
-      "instruction": "Viết một câu chuyện ngắn (5-7 câu) về điều gì đó đã xảy ra với bạn. Dùng ít nhất 2 câu với quá khứ tiếp diễn + quá khứ đơn với 'when', và ít nhất 1 câu với 'used to'.",
-      "example": "Example: When I was younger, I used to visit my grandparents every weekend. One day, while I was walking to their house, I saw a beautiful bird...",
-      "minSentences": 5,
-      "maxWords": 150,
-      "scored": false,
-      "displayOnly": true,
-      "points": 0
     }
   ]
 }
