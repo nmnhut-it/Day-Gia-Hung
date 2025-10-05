@@ -1007,6 +1007,41 @@ textarea.input {
   margin-bottom: var(--spacing-lg);
 }
 
+.completion__perfect {
+  margin-bottom: var(--spacing-lg);
+}
+
+.perfect-score {
+  background: linear-gradient(135deg, var(--warning-light) 0%, var(--success-light) 100%);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 3px solid var(--warning);
+  box-shadow: 0 8px 16px rgba(245, 158, 11, 0.3);
+}
+
+.perfect-score__icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+  animation: celebrate 1s ease-out infinite;
+}
+
+.perfect-score__title {
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  color: var(--warning);
+  margin-bottom: var(--spacing-sm);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.perfect-score__message {
+  font-size: var(--font-size-lg);
+  color: var(--text-dark);
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .correction-item {
   background: var(--bg-light);
   padding: var(--spacing-md);

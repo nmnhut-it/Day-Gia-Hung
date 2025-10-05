@@ -374,9 +374,26 @@ const GameEngine = {
     completionCard.appendChild(starsContainer);
     completionCard.appendChild(summarySection);
     completionCard.appendChild(historySection);
+
+    // Show corrections or perfect score message
     if (correctionsSection) {
       completionCard.appendChild(correctionsSection);
+    } else {
+      // Perfect score celebration
+      const perfectSection = Utils.createElement('div', { class: 'completion__perfect' });
+      perfectSection.innerHTML = `
+        <div class="perfect-score">
+          <div class="perfect-score__icon">🏆</div>
+          <h3 class="perfect-score__title">HOÀN HẢO!</h3>
+          <p class="perfect-score__message">
+            Xuất sắc! Bạn đã trả lời đúng tất cả ${this.state.totalQuestions} câu hỏi!
+            Tiếp tục phát huy nhé! 💯
+          </p>
+        </div>
+      `;
+      completionCard.appendChild(perfectSection);
     }
+
     completionCard.appendChild(buttonContainer);
 
     container.appendChild(completionCard);

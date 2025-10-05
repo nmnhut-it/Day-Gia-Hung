@@ -33,7 +33,7 @@ const SentenceBuildExercise = {
 
     const submitBtn = Utils.createElement('button', {
       class: 'btn btn--primary'
-    }, 'Submit Answer');
+    }, 'Xong');
 
     submitBtn.onclick = () => {
       const userAnswer = textarea.value.trim();

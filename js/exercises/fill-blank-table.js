@@ -55,7 +55,7 @@ const FillBlankTableExercise = {
 
     const submitBtn = Utils.createElement('button', {
       class: 'btn btn--primary'
-    }, 'Submit Answers');
+    }, 'Xong');
 
     submitBtn.onclick = () => {
       const answers = [];
