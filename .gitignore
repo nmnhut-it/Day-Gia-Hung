@@ -33,3 +33,12 @@ build/
 # Temporary files
 *.tmp
 *.temp
+
+# Exports (generated files, can be regenerated)
+exports/markdown/
+exports/pdf/
+
+# Optional: Uncomment if you want to commit generated files
+# !exports/markdown/*.md
+# !exports/pdf/*.pdf
+global-success-9/*
