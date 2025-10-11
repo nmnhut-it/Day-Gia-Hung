@@ -98,8 +98,8 @@
       "question": "The cat is _______ the table.",
       "wordHint": "dưới",
       "answer": "under",
-      "acceptedAnswers": ["under"],
-      "hints": ["'under' = ở dưới"],
+      "acceptedAnswers": ["under", "on"],
+      "hints": ["'under' = ở dưới", "on = ở trên"],
       "points": 10
     },
     {
@@ -125,7 +125,7 @@
     {
       "id": "g6r1-ex11",
       "type": "multiple-choice",
-      "question": "My sister _______ to school by bus.",
+      "question": "My sister _______ to school by bus every day.",
       "options": ["go", "goes", "going", "is going"],
       "correctIndex": 1,
       "explanation": "'My sister' (số ít) → goes",
