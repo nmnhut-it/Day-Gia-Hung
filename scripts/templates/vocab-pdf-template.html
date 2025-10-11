@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{unitTitle}}</title>
+  <style>
+    /* PDF Export Styles */
+    @page {
+      size: A4;
+      margin: 2cm 1.5cm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 11pt;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Header */
+    .pdf-header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 3px solid #10B981;
+    }
+
+    .pdf-header h1 {
+      font-size: 24pt;
+      color: #10B981;
+      margin-bottom: 8px;
+    }
+
+    .pdf-header .meta {
+      font-size: 9pt;
+      color: #666;
+    }
+
+    /* Section Headings */
+    .section {
+      margin: 25px 0;
+      page-break-inside: avoid;
+    }
+
+    .section-title {
+      font-size: 16pt;
+      font-weight: 700;
+      color: #10B981;
+      margin-bottom: 12px;
+      padding: 8px 12px;
+      background: #D1FAE5;
+      border-left: 5px solid #10B981;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      page-break-inside: avoid;
+    }
+
+    table thead {
+      background: #10B981;
+      color: white;
+    }
+
+    table th {
+      padding: 8px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+
+    table td {
+      padding: 8px;
+      border-bottom: 1px solid #E5E7EB;
+      font-size: 10pt;
+      vertical-align: top;
+    }
+
+    table tbody tr:nth-child(even) {
+      background: #F9FAFB;
+    }
+
+    table tbody tr:hover {
+      background: #F3F4F6;
+    }
+
+    /* Difficulty Badges */
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 9pt;
+      font-weight: 600;
+    }
+
+    .badge-basic {
+      background: #D1FAE5;
+      color: #059669;
+    }
+
+    .badge-intermediate {
+      background: #FEF3C7;
+      color: #D97706;
+    }
+
+    .badge-advanced {
+      background: #FEE2E2;
+      color: #DC2626;
+    }
+
+    /* Pronunciation */
+    .pronunciation {
+      font-style: italic;
+      color: #6B7280;
+      font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', sans-serif;
+    }
+
+    /* Example text */
+    .example {
+      font-style: italic;
+      color: #4B5563;
+    }
+
+    /* Phrase Cards */
+    .phrase-card {
+      background: #F9FAFB;
+      border: 1px solid #E5E7EB;
+      border-left: 4px solid #F59E0B;
+      padding: 12px;
+      margin: 10px 0;
+      page-break-inside: avoid;
+    }
+
+    .phrase-card h3 {
+      font-size: 12pt;
+      color: #1F2937;
+      margin-bottom: 8px;
+    }
+
+    .phrase-card .detail {
+      margin: 4px 0;
+      font-size: 10pt;
+    }
+
+    .phrase-card .detail strong {
+      color: #059669;
+      display: inline-block;
+      min-width: 90px;
+    }
+
+    .phrase-card .structure {
+      background: #FEF3C7;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 9pt;
+    }
+
+    /* Expression List */
+    .expression-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .expression-list li {
+      padding: 8px 12px;
+      margin: 6px 0;
+      background: #F9FAFB;
+      border-left: 3px solid #8B5CF6;
+      page-break-inside: avoid;
+    }
+
+    .expression-list li strong {
+      color: #8B5CF6;
+      font-size: 10.5pt;
+    }
+
+    .expression-list li .vietnamese {
+      color: #3B82F6;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    .pdf-footer {
+      margin-top: 40px;
+      padding-top: 15px;
+      border-top: 2px solid #E5E7EB;
+      text-align: center;
+      font-size: 9pt;
+      color: #6B7280;
+    }
+
+    /* Study Tips Box */
+    .study-tips {
+      background: #DBEAFE;
+      border: 2px solid #3B82F6;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 20px 0;
+    }
+
+    .study-tips h3 {
+      color: #1E40AF;
+      font-size: 12pt;
+      margin-bottom: 8px;
+    }
+
+    .study-tips ul {
+      margin-left: 20px;
+      font-size: 10pt;
+    }
+
+    .study-tips li {
+      margin: 4px 0;
+    }
+
+    /* Page breaks */
+    .page-break {
+      page-break-after: always;
+    }
+
+    /* Strong emphasis */
+    strong {
+      color: #1F2937;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="pdf-header">
+    <h1>{{unitTitle}}</h1>
+    <div class="meta">
+      English Grammar Games - Vocabulary Reference<br>
+      Generated: {{date}}
+    </div>
+  </div>
+
+  {{content}}
+
+  <!-- Study Tips -->
+  <div class="study-tips">
+    <h3>📚 Study Tips</h3>
+    <ul>
+      <li>Review vocabulary before starting each unit exercise</li>
+      <li>Practice pronunciation using the IPA symbols provided</li>
+      <li>Create flashcards for words marked as "Advanced"</li>
+      <li>Use the example sentences to understand proper context</li>
+      <li>Test yourself by covering the Vietnamese translations</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <div class="pdf-footer">
+    <p>English Grammar Games - Vocabulary Reference</p>
+    <p>For educational use only • Not for commercial distribution</p>
+  </div>
+</body>
+</html>

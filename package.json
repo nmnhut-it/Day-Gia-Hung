@@ -1,0 +1,33 @@
+{
+  "name": "english-grammar-games",
+  "version": "1.0.0",
+  "description": "Interactive web-based games for English grammar practice with vocabulary support",
+  "main": "index.html",
+  "scripts": {
+    "vocab:md": "node scripts/vocab-to-markdown.js",
+    "vocab:pdf": "node scripts/vocab-to-pdf.js",
+    "vocab:convert-all": "node scripts/convert-all.js",
+    "vocab:convert-all-md": "node scripts/convert-all.js --format=md",
+    "vocab:convert-all-pdf": "node scripts/convert-all.js --format=pdf"
+  },
+  "keywords": [
+    "english",
+    "grammar",
+    "education",
+    "games",
+    "vocabulary",
+    "learning"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "puppeteer": "^21.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/Day-Gia-Hung.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

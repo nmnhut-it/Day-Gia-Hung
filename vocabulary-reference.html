@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary Reference - English Grammar Games</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <style>
+    /* Print-specific styles */
+    @media print {
+      body {
+        font-size: 11pt;
+        line-height: 1.4;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      .vocab-unit {
+        page-break-after: always;
+      }
+
+      .vocab-section {
+        page-break-inside: avoid;
+      }
+
+      .vocab-table {
+        page-break-inside: avoid;
+      }
+
+      h1, h2, h3 {
+        page-break-after: avoid;
+      }
+    }
+
+    /* Screen styles */
+    @media screen {
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+
+      .page-header {
+        background: var(--primary);
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+      }
+
+      .print-controls {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+      }
+
+      .vocab-unit {
+        background: white;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+    }
+
+    /* Common styles */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+
+    .vocab-table th {
+      background: #4CAF50;
+      color: white;
+      padding: 10px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .vocab-table td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table tr:hover {
+      background: #f9f9f9;
+    }
+
+    .vocab-pronunciation {
+      color: #666;
+      font-style: italic;
+      font-size: 0.9em;
+    }
+
+    .vocab-section {
+      margin: 25px 0;
+    }
+
+    .vocab-section-title {
+      color: #4CAF50;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .difficulty-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.8em;
+      font-weight: 600;
+    }
+
+    .difficulty-basic {
+      background: #E8F5E9;
+      color: #2E7D32;
+    }
+
+    .difficulty-intermediate {
+      background: #FFF3E0;
+      color: #EF6C00;
+    }
+
+    .difficulty-advanced {
+      background: #FCE4EC;
+      color: #C2185B;
+    }
+
+    .btn-print {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn-print:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <!-- Print Controls (hidden when printing) -->
+  <div class="print-controls no-print">
+    <button class="btn-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <!-- Header -->
+  <div class="page-header no-print">
+    <h1>📚 English Grammar Games - Vocabulary Reference</h1>
+    <p>Complete vocabulary guide for all units • Print-friendly format</p>
+  </div>
+
+  <!-- Main Content -->
+  <div id="vocabulary-content">
+    <div class="loading">Loading vocabulary data...</div>
+  </div>
+
+  <script src="js/core/utils.js"></script>
+  <script>
+    // List of all vocabulary files
+    const VOCAB_FILES = [
+      'unit-3-carnival',
+      'unit-4-world-around-us',
+      'unit-5-environment',
+      'unit-6-day-trip',
+      'unit-7-first-aid',
+      'unit-8-our-favourite-food',
+      'unit-9-possibilities',
+      'unit-11-making-a-film',
+      'unit-12-famous-inventions'
+    ];
+
+    /**
+     * Load all vocabulary files and render
+     */
+    async function loadAllVocabulary() {
+      const container = document.getElementById('vocabulary-content');
+      container.innerHTML = '';
+
+      for (const fileId of VOCAB_FILES) {
+        try {
+          const response = await fetch(`data/vocabulary/${fileId}.json`);
+          if (!response.ok) continue;
+
+          const data = await response.json();
+          const unitSection = createUnitSection(data);
+          container.appendChild(unitSection);
+        } catch (error) {
+          console.error(`Error loading ${fileId}:`, error);
+        }
+      }
+    }
+
+    /**
+     * Create unit section HTML
+     */
+    function createUnitSection(data) {
+      const section = document.createElement('div');
+      section.className = 'vocab-unit';
+
+      let html = `<h2>${data.unitTitle}</h2>`;
+
+      const vocab = data.vocabularyData;
+
+      // Grammar Terms
+      if (vocab.grammarTerms && vocab.grammarTerms.length > 0) {
+        html += renderVocabSection('📖 Grammar Terms', vocab.grammarTerms, true);
+      }
+
+      // Difficult Words
+      if (vocab.difficultWords && vocab.difficultWords.length > 0) {
+        html += renderVocabSection('💡 Difficult Words', vocab.difficultWords, true);
+      }
+
+      // Key Phrases
+      if (vocab.keyPhrases && vocab.keyPhrases.length > 0) {
+        html += renderPhrasesSection('🔑 Key Grammar Phrases', vocab.keyPhrases);
+      }
+
+      // Phrasal Verbs
+      if (vocab.phrasalVerbs && vocab.phrasalVerbs.length > 0) {
+        html += renderPhrasalVerbsSection('🚀 Phrasal Verbs', vocab.phrasalVerbs);
+      }
+
+      // Useful Expressions
+      if (vocab.usefulExpressions && vocab.usefulExpressions.length > 0) {
+        html += renderExpressionsSection('💬 Useful Expressions', vocab.usefulExpressions);
+      }
+
+      section.innerHTML = html;
+      return section;
+    }
+
+    /**
+     * Render vocabulary section (words)
+     */
+    function renderVocabSection(title, items, showDifficulty = false) {
+      let html = `
+        <div class="vocab-section">
+          <h3 class="vocab-section-title">${title}</h3>
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th>English</th>
+                <th>Pronunciation</th>
+                <th>Vietnamese</th>
+                <th>Example</th>
+                ${showDifficulty ? '<th>Level</th>' : ''}
+              </tr>
+            </thead>
+            <tbody>
+      `;
+
+      items.forEach(item => {
+        html += `
+          <tr>
+            <td><strong>${item.word}</strong></td>
+            <td class="vocab-pronunciation">${item.pronunciation || ''}</td>
+            <td>${item.vietnamese}</td>
+            <td><em>${item.example}</em></td>
+            ${showDifficulty ? `<td><span class="difficulty-badge difficulty-${item.difficulty || 'basic'}">${item.difficulty || 'basic'}</span></td>` : ''}
+          </tr>
+        `;
+      });
+
+      html += `
+            </tbody>
+          </table>
+        </div>
+      `;
+
+      return html;
+    }
+
+    /**
+     * Render phrases section
+     */
+    function renderPhrasesSection(title, items) {
+      let html = `
+        <div class="vocab-section">
+          <h3 class="vocab-section-title">${title}</h3>
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th>Phrase</th>
+                <th>Vietnamese</th>
+                <th>Structure</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
+
+      items.forEach(item => {
+        html += `
+          <tr>
+            <td><strong>${item.phrase || item.expression}</strong></td>
+            <td>${item.vietnamese}</td>
+            <td>${item.structure || item.usage || ''}</td>
+            <td><em>${item.example}</em></td>
+          </tr>
+        `;
+      });
+
+      html += `
+            </tbody>
+          </table>
+        </div>
+      `;
+
+      return html;
+    }
+
+    /**
+     * Render phrasal verbs section
+     */
+    function renderPhrasalVerbsSection(title, items) {
+      let html = `
+        <div class="vocab-section">
+          <h3 class="vocab-section-title">${title}</h3>
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th>Phrasal Verb</th>
+                <th>Vietnamese</th>
+                <th>Example</th>
+                <th>Synonyms</th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
+
+      items.forEach(item => {
+        html += `
+          <tr>
+            <td><strong>${item.verb}</strong></td>
+            <td>${item.vietnamese}</td>
+            <td><em>${item.example}</em></td>
+            <td>${item.synonyms ? item.synonyms.join(', ') : ''}</td>
+          </tr>
+        `;
+      });
+
+      html += `
+            </tbody>
+          </table>
+        </div>
+      `;
+
+      return html;
+    }
+
+    /**
+     * Render expressions section
+     */
+    function renderExpressionsSection(title, items) {
+      let html = `
+        <div class="vocab-section">
+          <h3 class="vocab-section-title">${title}</h3>
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th>Expression</th>
+                <th>Vietnamese</th>
+                <th>Example</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
+
+      items.forEach(item => {
+        html += `
+          <tr>
+            <td><strong>${item.expression}</strong></td>
+            <td>${item.vietnamese}</td>
+            <td><em>${item.example}</em></td>
+            <td>${item.type || ''}</td>
+          </tr>
+        `;
+      });
+
+      html += `
+            </tbody>
+          </table>
+        </div>
+      `;
+
+      return html;
+    }
+
+    // Load vocabulary when page loads
+    window.addEventListener('DOMContentLoaded', loadAllVocabulary);
+  </script>
+</body>
+</html>

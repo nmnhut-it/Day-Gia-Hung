@@ -184,10 +184,20 @@
       </div>
     </div>
 
-    <!-- Units Section -->
+    <!-- Grade 9 Section -->
     <div style="margin-bottom: var(--spacing-lg);">
-      <h2>Available Units</h2>
-      <p style="color: var(--text-light);">Select a unit to start practicing</p>
+      <h2>📚 Grade 9 - Global Success</h2>
+      <p style="color: var(--text-light);">Practice grammar for Grade 9 students</p>
+    </div>
+
+    <div class="unit-grid" id="grade9-unit-grid">
+      <!-- Grade 9 units will be loaded here dynamically -->
+    </div>
+
+    <!-- Other Units Section -->
+    <div style="margin-bottom: var(--spacing-lg); margin-top: var(--spacing-xxl);">
+      <h2>📖 Other Units</h2>
+      <p style="color: var(--text-light);">Additional grammar practice units</p>
     </div>
 
     <div class="unit-grid" id="unit-grid">
@@ -208,6 +218,105 @@
   <script src="js/core/storage.js"></script>
 
   <script>
+    const GRADE9_UNITS = [
+      {
+        id: 'g9-unit-1-local-community',
+        title: 'Unit 1: Local Community',
+        description: 'Question words before to-infinitives and phrasal verbs',
+        topics: ['Question Words + To-V', 'Phrasal Verbs', 'Local Community'],
+        path: 'pages/g9-unit-1-local-community.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-2-city-life',
+        title: 'Unit 2: City Life',
+        description: 'Double comparatives (the...the...) and phrasal verbs',
+        topics: ['Double Comparatives', 'Phrasal Verbs', 'City Life'],
+        path: 'pages/g9-unit-2-city-life.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-3-healthy-living',
+        title: 'Unit 3: Healthy Living for Teens',
+        description: 'First conditional with modal verbs (can, must, should, might)',
+        topics: ['First Conditional', 'Modal Verbs', 'Healthy Living'],
+        path: 'pages/g9-unit-3-healthy-living.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-4-remembering-the-past',
+        title: 'Unit 4: Remembering the Past',
+        description: 'Past continuous and wish + past simple for unreal wishes',
+        topics: ['Past Continuous', 'Wish + Past Simple', 'Memories'],
+        path: 'pages/g9-unit-4-remembering-the-past.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-5-our-experiences',
+        title: 'Unit 5: Our Experiences',
+        description: 'Present perfect tense with just, already, yet, ever, never',
+        topics: ['Present Perfect', 'For/Since', 'Experiences'],
+        path: 'pages/g9-unit-5-our-experiences.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-6-vietnamese-lifestyle',
+        title: 'Unit 6: Vietnamese Lifestyle: Then and Now',
+        description: 'V-ing and to-infinitive after different verbs',
+        topics: ['V-ing', 'To-Infinitive', 'Lifestyle Changes'],
+        path: 'pages/g9-unit-6-vietnamese-lifestyle.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-7-natural-wonders',
+        title: 'Unit 7: Natural Wonders of the World',
+        description: 'Reported questions with if/whether (yes/no questions)',
+        topics: ['Reported Questions', 'If/Whether', 'Natural Wonders'],
+        path: 'pages/g9-unit-7-natural-wonders.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-8-tourism',
+        title: 'Unit 8: Tourism',
+        description: 'Relative pronouns (which, who, whose)',
+        topics: ['Relative Pronouns', 'Which/Who/Whose', 'Tourism'],
+        path: 'pages/g9-unit-8-tourism.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-9-world-englishes',
+        title: 'Unit 9: World Englishes',
+        description: 'Defining relative clauses (essential information)',
+        topics: ['Defining Relative Clauses', 'That/Which/Who', 'World Englishes'],
+        path: 'pages/g9-unit-9-world-englishes.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-10-planet-earth',
+        title: 'Unit 10: Planet Earth',
+        description: 'Non-defining relative clauses (extra information with commas)',
+        topics: ['Non-defining Clauses', 'Commas', 'Planet Earth'],
+        path: 'pages/g9-unit-10-planet-earth.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-11-electronic-devices',
+        title: 'Unit 11: Electronic Devices',
+        description: 'Suggest and recommend (+ V-ing or + that + S + should + V0)',
+        topics: ['Suggest', 'Recommend', 'Electronic Devices'],
+        path: 'pages/g9-unit-11-electronic-devices.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-12-career-choices',
+        title: 'Unit 12: Career Choices',
+        description: 'Adverbial clauses (concession, result, reason)',
+        topics: ['Although/Though', 'So/Such...that', 'Because/Since/As'],
+        path: 'pages/g9-unit-12-career-choices.html',
+        available: true
+      }
+    ];
+
     const UNITS = [
       {
         id: 'unit-3-carnival',
@@ -309,6 +418,74 @@
       return html;
     }
 
+    function renderGrade9Units() {
+      const grid = document.getElementById('grade9-unit-grid');
+      grid.innerHTML = '';
+
+      GRADE9_UNITS.forEach(unit => {
+        const unitStats = Storage.getUnitStats(unit.id);
+
+        const card = document.createElement('a');
+        card.href = unit.available ? unit.path : '#';
+        card.className = `unit-card ${!unit.available ? 'unit-card--locked' : ''}`;
+
+        if (!unit.available) {
+          card.onclick = (e) => {
+            e.preventDefault();
+            Utils.showToast('This unit is not available yet', 'info');
+          };
+        }
+
+        const badge = document.createElement('div');
+        badge.className = 'unit-card__badge';
+        badge.textContent = unit.available ? 'Grade 9' : 'Coming Soon';
+        badge.style.background = unit.available ? '#2196F3' : 'var(--text-light)';
+
+        const title = document.createElement('h3');
+        title.className = 'unit-card__title';
+        title.textContent = unit.title;
+
+        const description = document.createElement('p');
+        description.className = 'unit-card__description';
+        description.textContent = unit.description;
+
+        const topics = document.createElement('div');
+        topics.style.marginBottom = 'var(--spacing-md)';
+        topics.innerHTML = unit.topics.map(topic =>
+          `<span style="display: inline-block; background: var(--bg-light); padding: 2px 8px; border-radius: var(--radius-sm); font-size: var(--font-size-sm); margin-right: var(--spacing-xs); margin-bottom: var(--spacing-xs);">${topic}</span>`
+        ).join('');
+
+        const stats = document.createElement('div');
+        stats.className = 'unit-card__stats';
+
+        const stars = document.createElement('div');
+        stars.className = 'unit-card__stars';
+        stars.innerHTML = renderStars(unitStats.stars || 0);
+
+        const progress = document.createElement('div');
+        progress.className = 'unit-card__progress';
+        if (unitStats.played) {
+          progress.innerHTML = `
+            <strong>Best Score:</strong> ${unitStats.bestScore}<br>
+            <strong>Attempts:</strong> ${unitStats.attempts}
+          `;
+        } else {
+          progress.textContent = 'Not started yet';
+        }
+
+        stats.appendChild(stars);
+        stats.appendChild(progress);
+
+        card.appendChild(badge);
+        card.appendChild(title);
+        card.appendChild(description);
+        card.appendChild(topics);
+        card.appendChild(stats);
+
+        grid.appendChild(card);
+      });
+    }
+
     function renderUnits() {
       const grid = document.getElementById('unit-grid');
       grid.innerHTML = '';
@@ -381,12 +558,14 @@
       if (confirm('Are you sure you want to clear all your progress? This cannot be undone.')) {
         Storage.clearAll();
         renderOverallStats();
+        renderGrade9Units();
         renderUnits();
         Utils.showToast('All progress cleared', 'info');
       }
     });
 
     renderOverallStats();
+    renderGrade9Units();
     renderUnits();
   </script>
 </body>

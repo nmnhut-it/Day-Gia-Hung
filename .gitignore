@@ -42,3 +42,4 @@ exports/pdf/
 # !exports/markdown/*.md
 # !exports/pdf/*.pdf
 global-success-9/*
+.claude/settings.local.json

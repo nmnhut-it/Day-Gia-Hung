@@ -314,6 +314,148 @@ const Utils = {
       result = result.replace(new RegExp(placeholder, 'g'), value);
     });
     return result;
+  },
+
+  /**
+   * Show tooltip with content
+   * @param {string} content - HTML content for tooltip
+   * @param {HTMLElement} targetElement - Element to attach tooltip to
+   * @param {number} duration - Duration to show tooltip (0 = manual close)
+   */
+  showTooltip(content, targetElement, duration = 0) {
+    // Remove existing tooltips
+    const existing = document.querySelectorAll('.vocabulary-tooltip');
+    existing.forEach(tip => tip.remove());
+
+    // Create tooltip element
+    const tooltip = this.createElement('div', {
+      class: 'vocabulary-tooltip fade-in'
+    });
+    tooltip.innerHTML = content;
+
+    // Position tooltip
+    document.body.appendChild(tooltip);
+
+    const rect = targetElement.getBoundingClientRect();
+    const tooltipRect = tooltip.getBoundingClientRect();
+
+    // Calculate position (try to show below, if no space show above)
+    let top = rect.bottom + window.scrollY + 8;
+    let left = rect.left + window.scrollX + (rect.width / 2) - (tooltipRect.width / 2);
+
+    // Check if tooltip goes off screen
+    if (top + tooltipRect.height > window.innerHeight + window.scrollY) {
+      // Show above instead
+      top = rect.top + window.scrollY - tooltipRect.height - 8;
+      tooltip.classList.add('vocabulary-tooltip--above');
+    }
+
+    // Ensure tooltip doesn't go off left/right edges
+    if (left < 10) left = 10;
+    if (left + tooltipRect.width > window.innerWidth - 10) {
+      left = window.innerWidth - tooltipRect.width - 10;
+    }
+
+    tooltip.style.top = `${top}px`;
+    tooltip.style.left = `${left}px`;
+
+    // Auto-hide if duration is specified
+    if (duration > 0) {
+      setTimeout(() => {
+        this.hideTooltip(tooltip);
+      }, duration);
+    }
+
+    // Add click handler to close
+    const closeBtn = this.createElement('button', {
+      class: 'vocabulary-tooltip-close',
+      type: 'button'
+    }, '✕');
+    closeBtn.onclick = () => this.hideTooltip(tooltip);
+    tooltip.appendChild(closeBtn);
+
+    return tooltip;
+  },
+
+  /**
+   * Hide tooltip with animation
+   * @param {HTMLElement} tooltip - Tooltip element to hide
+   */
+  hideTooltip(tooltip) {
+    tooltip.style.opacity = '0';
+    setTimeout(() => {
+      if (tooltip && tooltip.parentElement) {
+        tooltip.remove();
+      }
+    }, 300);
+  },
+
+  /**
+   * Highlight difficult words in text and make them interactive
+   * @param {string} text - Text to process
+   * @param {Array} difficultWords - Array of difficult words to highlight
+   * @param {Object} vocabularyData - Vocabulary data for tooltips
+   * @returns {string} - HTML with highlighted words
+   */
+  highlightDifficultWords(text, difficultWords, vocabularyData) {
+    if (!difficultWords || difficultWords.length === 0) return text;
+
+    let result = text;
+
+    // Sort by length (longest first) to avoid partial matches
+    const sortedWords = difficultWords.sort((a, b) => b.length - a.length);
+
+    sortedWords.forEach(word => {
+      // Create case-insensitive regex with word boundaries
+      const regex = new RegExp(`\\b(${word})\\b`, 'gi');
+
+      result = result.replace(regex, (match) => {
+        return `<span class="difficult-word" data-word="${match.toLowerCase()}">${match}</span>`;
+      });
+    });
+
+    return result;
+  },
+
+  /**
+   * Initialize difficult word tooltips
+   * @param {HTMLElement} container - Container element
+   * @param {Object} vocabularyData - Vocabulary data
+   */
+  initDifficultWordTooltips(container, vocabularyData) {
+    if (!vocabularyData) return;
+
+    const difficultWordElements = container.querySelectorAll('.difficult-word');
+
+    difficultWordElements.forEach(element => {
+      element.addEventListener('click', (e) => {
+        e.preventDefault();
+        const word = element.dataset.word;
+
+        // Search for word in vocabulary data
+        const allVocab = [
+          ...(vocabularyData.grammarTerms || []),
+          ...(vocabularyData.difficultWords || []),
+        ];
+
+        const found = allVocab.find(item =>
+          item.word && item.word.toLowerCase() === word
+        );
+
+        if (found) {
+          const tooltipContent = `
+            <div class="vocabulary-tooltip-content">
+              <strong>${found.word}</strong>
+              ${found.pronunciation ? `<div class="vocab-pronunciation">${found.pronunciation}</div>` : ''}
+              <div class="vocab-vietnamese">${found.vietnamese}</div>
+              <div class="vocab-definition">${found.definition}</div>
+              <div class="vocab-example"><em>${found.example}</em></div>
+            </div>
+          `;
+          this.showTooltip(tooltipContent, element);
+        }
+      });
+    });
   }
 };
 

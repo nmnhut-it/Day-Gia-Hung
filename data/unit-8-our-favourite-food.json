@@ -13,254 +13,248 @@
   "exercises": [
     {
       "id": 1,
-      "type": "fill-blank",
-      "question": "If we __________ (buy) some biscuits, we'll have something for the party.",
-      "wordHint": "(buy)",
-      "answer": "buy",
-      "acceptedAnswers": ["buy"],
-      "hints": ["In if-clause, use present simple (not will)"],
+      "type": "multiple-choice",
+      "question": "If we __________ some biscuits, we'll have something for the party.",
+      "options": ["will buy", "buy", "buys", "bought"],
+      "correctIndex": 1,
+      "explanation": "Trong mệnh đề if, dùng present simple (không dùng will)",
+      "hints": ["(buy) - Present simple trong mệnh đề if"],
       "points": 10
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "If you __________ (eat) healthy food, you will be strong.",
-      "wordHint": "(eat)",
-      "answer": "eat",
-      "acceptedAnswers": ["eat"],
-      "hints": ["Present simple in if-clause"],
+      "type": "multiple-choice",
+      "question": "If you __________ healthy food, you will be strong.",
+      "options": ["will eat", "eat", "eats", "ate"],
+      "correctIndex": 1,
+      "explanation": "Present simple trong mệnh đề if",
+      "hints": ["(eat) - Không dùng will sau if"],
       "points": 10
     },
     {
       "id": 3,
-      "type": "fill-blank",
-      "question": "If we __________ (go) home now, we'll have time to make a cake.",
-      "wordHint": "(go)",
-      "answer": "go",
-      "acceptedAnswers": ["go"],
-      "hints": ["Use present simple after 'if'"],
+      "type": "multiple-choice",
+      "question": "If we __________ home now, we'll have time to make a cake.",
+      "options": ["will go", "go", "goes", "went"],
+      "correctIndex": 1,
+      "explanation": "Dùng present simple sau 'if'",
+      "hints": ["(go) - Present simple"],
       "points": 10
     },
     {
       "id": 4,
-      "type": "fill-blank",
-      "question": "If you __________ (not eat) well, you won't get all the vitamins.",
-      "wordHint": "(not eat)",
-      "answer": "don't eat",
-      "acceptedAnswers": ["don't eat", "do not eat"],
-      "hints": ["Negative present simple in if-clause"],
+      "type": "multiple-choice",
+      "question": "If you __________ well, you won't get all the vitamins.",
+      "options": ["don't eat", "won't eat", "doesn't eat", "didn't eat"],
+      "correctIndex": 0,
+      "explanation": "Negative present simple trong mệnh đề if",
+      "hints": ["(not eat) - Dùng don't eat"],
       "points": 10
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "If it __________ (rain) tomorrow, we won't go to the park.",
-      "wordHint": "(rain)",
-      "answer": "rains",
-      "acceptedAnswers": ["rains"],
-      "hints": ["Third person singular: add -s"],
+      "type": "multiple-choice",
+      "question": "If it __________ tomorrow, we won't go to the park.",
+      "options": ["rain", "rains", "will rain", "rained"],
+      "correctIndex": 1,
+      "explanation": "Third person singular: thêm -s",
+      "hints": ["(rain) - Ngôi thứ 3 số ít thêm -s"],
       "points": 10
     },
     {
       "id": 6,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "If we take a home-made fruit cake, we __________ have to eat unhealthy food.",
-      "wordHint": "",
-      "answer": "won't",
-      "acceptedAnswers": ["won't", "will not"],
-      "hints": ["Negative result: won't"],
+      "options": ["will", "won't", "don't", "doesn't"],
+      "correctIndex": 1,
+      "explanation": "Mệnh đề chính dùng won't (negative result)",
+      "hints": ["Kết quả phủ định: won't"],
       "points": 10
     },
     {
       "id": 7,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "If you eat healthy food, you __________ be strong and have lots of energy.",
-      "wordHint": "",
-      "answer": "will",
-      "acceptedAnswers": ["will", "'ll"],
-      "hints": ["Positive result: will"],
+      "options": ["won't", "will", "are", "can"],
+      "correctIndex": 1,
+      "explanation": "Mệnh đề chính dùng will (positive result)",
+      "hints": ["Kết quả khẳng định: will"],
       "points": 10
     },
     {
       "id": 8,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "If you don't eat well, you __________ get ill very often.",
-      "wordHint": "",
-      "answer": "will",
-      "acceptedAnswers": ["will", "'ll"],
-      "hints": ["Result with will"],
+      "options": ["won't", "will", "don't", "can't"],
+      "correctIndex": 1,
+      "explanation": "Kết quả với will",
+      "hints": ["Mệnh đề chính dùng will"],
       "points": 10
     },
     {
       "id": 9,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "If you're tired, you __________ do as well at school.",
-      "wordHint": "",
-      "answer": "won't",
-      "acceptedAnswers": ["won't", "will not"],
-      "hints": ["Negative result"],
+      "options": ["will", "won't", "don't", "can't"],
+      "correctIndex": 1,
+      "explanation": "Kết quả phủ định",
+      "hints": ["Negative result: won't"],
       "points": 10
     },
     {
       "id": 10,
-      "type": "fill-blank-mixed",
-      "template": "If I ___1___ (see) John tonight, I ___2___ (tell) him the news.",
-      "blanks": [
-        {
-          "blankId": 1,
-          "hint": "(see)",
-          "answer": "see",
-          "acceptedAnswers": ["see"]
-        },
-        {
-          "blankId": 2,
-          "hint": "(tell)",
-          "answer": "will tell",
-          "acceptedAnswers": ["will tell", "'ll tell"]
-        }
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu: If I / see John tonight / I / tell him the news",
+      "words": ["If", "I", "see", "John", "tonight", "I", "will", "tell", "him", "the", "news"],
+      "distractors": ["saw", "told", "am"],
+      "correctSentence": "If I see John tonight I will tell him the news",
+      "acceptedAnswers": [
+        "If I see John tonight I will tell him the news",
+        "If I see John tonight I will tell him the news.",
+        "If I see John tonight, I will tell him the news",
+        "If I see John tonight, I'll tell him the news"
       ],
+      "hints": ["If + present simple, will + base verb"],
       "points": 10
     },
     {
       "id": 11,
-      "type": "fill-blank-mixed",
-      "template": "If you ___1___ (not study), you ___2___ (not pass) the test.",
-      "blanks": [
-        {
-          "blankId": 1,
-          "hint": "(not study)",
-          "answer": "don't study",
-          "acceptedAnswers": ["don't study", "do not study"]
-        },
-        {
-          "blankId": 2,
-          "hint": "(not pass)",
-          "answer": "won't pass",
-          "acceptedAnswers": ["won't pass", "will not pass"]
-        }
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu: If you / not study / you / not pass the test",
+      "words": ["If", "you", "don't", "study", "you", "won't", "pass", "the", "test"],
+      "distractors": ["will", "not", "didn't"],
+      "correctSentence": "If you don't study you won't pass the test",
+      "acceptedAnswers": [
+        "If you don't study you won't pass the test",
+        "If you don't study you won't pass the test.",
+        "If you don't study, you won't pass the test"
       ],
+      "hints": ["don't study, won't pass"],
       "points": 10
     },
     {
       "id": 12,
-      "type": "fill-blank-mixed",
-      "template": "If it ___1___ (be) sunny tomorrow, we ___2___ (go) to the beach.",
-      "blanks": [
-        {
-          "blankId": 1,
-          "hint": "(be)",
-          "answer": "is",
-          "acceptedAnswers": ["is", "'s"]
-        },
-        {
-          "blankId": 2,
-          "hint": "(go)",
-          "answer": "will go",
-          "acceptedAnswers": ["will go", "'ll go"]
-        }
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu: If it / be sunny tomorrow / we / go to the beach",
+      "words": ["If", "it", "is", "sunny", "tomorrow", "we", "will", "go", "to", "the", "beach"],
+      "distractors": ["was", "are", "went"],
+      "correctSentence": "If it is sunny tomorrow we will go to the beach",
+      "acceptedAnswers": [
+        "If it is sunny tomorrow we will go to the beach",
+        "If it is sunny tomorrow we will go to the beach.",
+        "If it is sunny tomorrow, we will go to the beach",
+        "If it's sunny tomorrow, we'll go to the beach"
       ],
+      "hints": ["is sunny, will go"],
       "points": 10
     },
     {
       "id": 13,
-      "type": "sentence-rewrite",
-      "original": "If we buy some biscuits, we'll have something for the party.",
-      "instruction": "Rewrite changing the order (will-clause first)",
-      "starterText": "We'll have something for the party",
-      "answer": "We'll have something for the party if we buy some biscuits.",
+      "type": "word-rearrange",
+      "instruction": "Đổi thứ tự: If we buy some biscuits, we'll have something for the party → We'll have something...",
+      "words": ["We'll", "have", "something", "for", "the", "party", "if", "we", "buy", "some", "biscuits"],
+      "distractors": ["will", "bought", "had"],
+      "correctSentence": "We'll have something for the party if we buy some biscuits",
       "acceptedAnswers": [
-        "We'll have something for the party if we buy some biscuits.",
         "We'll have something for the party if we buy some biscuits",
-        "We will have something for the party if we buy some biscuits."
+        "We'll have something for the party if we buy some biscuits.",
+        "We will have something for the party if we buy some biscuits"
       ],
-      "hints": ["No comma when will-clause comes first"],
+      "hints": ["Không có dấu phзапятой khi mệnh đề will đứng trước"],
       "points": 10
     },
     {
       "id": 14,
-      "type": "sentence-rewrite",
-      "original": "You will be strong if you eat healthy food.",
-      "instruction": "Rewrite with if-clause first",
-      "starterText": "If you eat healthy food,",
-      "answer": "If you eat healthy food, you will be strong.",
+      "type": "word-rearrange",
+      "instruction": "Đổi thứ tự: You will be strong if you eat healthy food → If you eat...",
+      "words": ["If", "you", "eat", "healthy", "food", "you", "will", "be", "strong"],
+      "distractors": ["ate", "are", "were"],
+      "correctSentence": "If you eat healthy food you will be strong",
       "acceptedAnswers": [
-        "If you eat healthy food, you will be strong.",
+        "If you eat healthy food you will be strong",
+        "If you eat healthy food you will be strong.",
         "If you eat healthy food, you will be strong",
-        "If you eat healthy food, you'll be strong."
+        "If you eat healthy food, you'll be strong"
       ],
-      "hints": ["Use comma when if-clause comes first"],
+      "hints": ["Có dấu phẩy khi mệnh đề if đứng trước"],
       "points": 10
     },
     {
       "id": 15,
-      "type": "sentence-build",
-      "prompt": "you / pass the exam / if / you / study hard?",
-      "instructions": "Write a first conditional question",
-      "answer": "Will you pass the exam if you study hard?",
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu hỏi: you / pass the exam / if / you / study hard?",
+      "words": ["Will", "you", "pass", "the", "exam", "if", "you", "study", "hard"],
+      "distractors": ["Do", "studied", "passed"],
+      "correctSentence": "Will you pass the exam if you study hard",
       "acceptedAnswers": [
-        "Will you pass the exam if you study hard?",
         "Will you pass the exam if you study hard",
-        "If you study hard, will you pass the exam?"
+        "Will you pass the exam if you study hard?",
+        "If you study hard, will you pass the exam?",
+        "If you study hard will you pass the exam"
       ],
       "hints": ["Will + subject + verb + if + present simple?"],
       "points": 10
     },
     {
       "id": 16,
-      "type": "sentence-build",
-      "prompt": "they / come to the party / if / we / invite them?",
-      "instructions": "Write a first conditional question",
-      "answer": "Will they come to the party if we invite them?",
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu hỏi: they / come to the party / if / we / invite them?",
+      "words": ["Will", "they", "come", "to", "the", "party", "if", "we", "invite", "them"],
+      "distractors": ["Do", "invited", "came"],
+      "correctSentence": "Will they come to the party if we invite them",
       "acceptedAnswers": [
-        "Will they come to the party if we invite them?",
         "Will they come to the party if we invite them",
-        "If we invite them, will they come to the party?"
+        "Will they come to the party if we invite them?",
+        "If we invite them, will they come to the party?",
+        "If we invite them will they come to the party"
       ],
-      "hints": ["Question form: Will + they + come"],
+      "hints": ["Câu hỏi: Will + they + come"],
       "points": 10
     },
     {
       "id": 17,
-      "type": "sentence-build",
-      "prompt": "what / you / do / if / it / rain tomorrow?",
-      "instructions": "Write a first conditional question",
-      "answer": "What will you do if it rains tomorrow?",
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp câu hỏi: what / you / do / if / it / rain tomorrow?",
+      "words": ["What", "will", "you", "do", "if", "it", "rains", "tomorrow"],
+      "distractors": ["do", "rain", "did"],
+      "correctSentence": "What will you do if it rains tomorrow",
       "acceptedAnswers": [
-        "What will you do if it rains tomorrow?",
         "What will you do if it rains tomorrow",
-        "If it rains tomorrow, what will you do?"
+        "What will you do if it rains tomorrow?",
+        "If it rains tomorrow, what will you do?",
+        "If it rains tomorrow what will you do"
       ],
       "hints": ["What + will + you + do + if...?"],
       "points": 10
     },
     {
       "id": 18,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "Will you go to sleep if you get tired? → Yes, __________",
-      "wordHint": "",
-      "answer": "I will",
-      "acceptedAnswers": ["I will"],
-      "hints": ["Short answer: Yes, I will (NO contraction)"],
+      "options": ["I will", "I'll", "I do", "I am"],
+      "correctIndex": 0,
+      "explanation": "Câu trả lời ngắn khẳng định: Yes, I will (KHÔNG dùng contraction)",
+      "hints": ["Yes, I will (không viết tắt)"],
       "points": 10
     },
     {
       "id": 19,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "Will they come if we invite them? → No, __________",
-      "wordHint": "",
-      "answer": "they won't",
-      "acceptedAnswers": ["they won't", "they will not"],
-      "hints": ["Negative short answer"],
+      "options": ["they won't", "they don't", "they aren't", "they can't"],
+      "correctIndex": 0,
+      "explanation": "Câu trả lời ngắn phủ định",
+      "hints": ["No, they won't"],
       "points": 10
     },
     {
       "id": 20,
-      "type": "fill-blank",
+      "type": "multiple-choice",
       "question": "Will she be happy if you call her? → Yes, __________",
-      "wordHint": "",
-      "answer": "she will",
-      "acceptedAnswers": ["she will"],
-      "hints": ["Yes, she will (no contraction in affirmative short answers)"],
+      "options": ["she will", "she'll", "she is", "she does"],
+      "correctIndex": 0,
+      "explanation": "Yes, she will (không viết tắt trong câu trả lời ngắn khẳng định)",
+      "hints": ["Yes, she will (no contraction)"],
       "points": 10
     },
     {
@@ -269,8 +263,8 @@
       "question": "If it rains tomorrow, we __________ to the beach.",
       "options": ["go", "will go", "won't go", "goes"],
       "correctIndex": 2,
-      "explanation": "Logical result: if it rains, we won't go to the beach",
-      "hints": ["Rain = won't go to beach"],
+      "explanation": "Hợp lý: nếu mưa, sẽ không đi biển",
+      "hints": ["Mưa = không đi biển"],
       "points": 10
     },
     {
@@ -279,8 +273,8 @@
       "question": "If you __________ hard, you'll pass the exam.",
       "options": ["study", "will study", "studies", "studied"],
       "correctIndex": 0,
-      "explanation": "Use present simple in if-clause, not will",
-      "hints": ["Present simple in if-clause"],
+      "explanation": "Dùng present simple trong mệnh đề if, không dùng will",
+      "hints": ["Present simple trong if-clause"],
       "points": 10
     },
     {
@@ -289,8 +283,8 @@
       "question": "We'll arrive on time if we __________ now.",
       "options": ["will leave", "leave", "left", "leaves"],
       "correctIndex": 1,
-      "explanation": "Present simple after if",
-      "hints": ["No will in if-clause"],
+      "explanation": "Present simple sau if",
+      "hints": ["Không dùng will trong mệnh đề if"],
       "points": 10
     },
     {
@@ -299,229 +293,99 @@
       "question": "__________ you help me if I ask you?",
       "options": ["Do", "Will", "Are", "Can"],
       "correctIndex": 1,
-      "explanation": "First conditional question starts with Will",
-      "hints": ["Question: Will you...?"],
+      "explanation": "Câu hỏi điều kiện loại 1 bắt đầu bằng Will",
+      "hints": ["Câu hỏi: Will you...?"],
       "points": 10
     },
     {
       "id": 25,
-      "type": "error-correct",
-      "wrongSentence": "If you will eat healthy food, you will be strong.",
-      "correctSentence": "If you eat healthy food, you will be strong.",
-      "errorWord": "will eat",
-      "correction": "eat",
-      "explanation": "Don't use will in if-clause, use present simple",
-      "hints": ["Remove 'will' from if-clause"],
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'If you will eat healthy food, you will be strong.'",
+      "options": [
+        "If you eat healthy food, you will be strong",
+        "If you will eat healthy food, you will be strong",
+        "If you ate healthy food, you will be strong",
+        "If you eat healthy food, you are strong"
+      ],
+      "correctIndex": 0,
+      "explanation": "Không dùng will trong mệnh đề if, dùng present simple",
+      "hints": ["Bỏ 'will' khỏi mệnh đề if"],
       "points": 10
     },
     {
       "id": 26,
-      "type": "error-correct",
-      "wrongSentence": "If we go home now, we have time to make a cake.",
-      "correctSentence": "If we go home now, we'll have time to make a cake.",
-      "errorWord": "have",
-      "correction": "will have",
-      "explanation": "Main clause needs will/won't",
-      "hints": ["Main clause needs 'will'"],
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'If we go home now, we have time to make a cake.'",
+      "options": [
+        "If we go home now, we'll have time to make a cake",
+        "If we go home now, we have time to make a cake",
+        "If we will go home now, we have time to make a cake",
+        "If we went home now, we have time to make a cake"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mệnh đề chính cần will/won't",
+      "hints": ["Mệnh đề chính cần 'will'"],
       "points": 10
     },
     {
       "id": 27,
-      "type": "error-correct",
-      "wrongSentence": "If it will rain tomorrow, we won't go out.",
-      "correctSentence": "If it rains tomorrow, we won't go out.",
-      "errorWord": "will rain",
-      "correction": "rains",
-      "explanation": "No will in if-clause",
-      "hints": ["Use present simple 'rains'"],
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'If it will rain tomorrow, we won't go out.'",
+      "options": [
+        "If it rains tomorrow, we won't go out",
+        "If it will rain tomorrow, we won't go out",
+        "If it rained tomorrow, we won't go out",
+        "If it rain tomorrow, we won't go out"
+      ],
+      "correctIndex": 0,
+      "explanation": "Không dùng will trong mệnh đề if",
+      "hints": ["Dùng present simple 'rains'"],
       "points": 10
     },
     {
       "id": 28,
-      "type": "error-correct",
-      "wrongSentence": "If you don't study, you don't pass the exam.",
-      "correctSentence": "If you don't study, you won't pass the exam.",
-      "errorWord": "don't pass",
-      "correction": "won't pass",
-      "explanation": "Main clause needs will/won't for future result",
-      "hints": ["Use 'won't' in main clause"],
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'If you don't study, you don't pass the exam.'",
+      "options": [
+        "If you don't study, you won't pass the exam",
+        "If you don't study, you don't pass the exam",
+        "If you won't study, you don't pass the exam",
+        "If you didn't study, you don't pass the exam"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mệnh đề chính cần will/won't cho kết quả tương lai",
+      "hints": ["Dùng 'won't' trong mệnh đề chính"],
       "points": 10
     },
     {
       "id": 29,
-      "type": "error-correct",
-      "wrongSentence": "We'll miss the bus if we won't hurry.",
-      "correctSentence": "We'll miss the bus if we don't hurry.",
-      "errorWord": "won't hurry",
-      "correction": "don't hurry",
-      "explanation": "If-clause uses present simple negative (don't), not won't",
-      "hints": ["Change 'won't' to 'don't' in if-clause"],
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'We'll miss the bus if we won't hurry.'",
+      "options": [
+        "We'll miss the bus if we don't hurry",
+        "We'll miss the bus if we won't hurry",
+        "We'll miss the bus if we didn't hurry",
+        "We miss the bus if we don't hurry"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mệnh đề if dùng present simple negative (don't), không dùng won't",
+      "hints": ["Đổi 'won't' thành 'don't' trong mệnh đề if"],
       "points": 10
     },
     {
       "id": 30,
-      "type": "error-correct",
-      "wrongSentence": "If you eat well you will be healthy.",
-      "correctSentence": "If you eat well, you will be healthy.",
-      "errorWord": "well you",
-      "correction": "well, you",
-      "explanation": "Need comma after if-clause when it comes first",
-      "hints": ["Add comma after 'well'"],
-      "points": 10
-    },
-    {
-      "id": 31,
-      "type": "translation",
-      "vietnamese": "Nếu bạn ăn thức ăn lành mạnh, bạn sẽ khỏe mạnh.",
-      "answer": "If you eat healthy food, you will be healthy.",
-      "acceptedAnswers": [
-        "If you eat healthy food, you will be healthy.",
-        "If you eat healthy food, you will be healthy",
-        "If you eat healthy food, you'll be healthy."
+      "type": "multiple-choice",
+      "question": "Sửa lỗi: 'If you eat well you will be healthy.' (thiếu dấu câu)",
+      "options": [
+        "If you eat well, you will be healthy",
+        "If you eat well you will be healthy",
+        "If, you eat well you will be healthy",
+        "If you eat, well you will be healthy"
       ],
-      "hints": ["If + present simple, will + base verb"],
+      "correctIndex": 0,
+      "explanation": "Cần dấu phẩy sau mệnh đề if khi nó đứng trước",
+      "hints": ["Thêm dấu phẩy sau 'well'"],
       "points": 10
-    },
-    {
-      "id": 32,
-      "type": "translation",
-      "vietnamese": "Nếu trời mưa, chúng tôi sẽ không đi công viên.",
-      "answer": "If it rains, we won't go to the park.",
-      "acceptedAnswers": [
-        "If it rains, we won't go to the park.",
-        "If it rains, we won't go to the park",
-        "If it rains, we will not go to the park."
-      ],
-      "hints": ["Use 'won't' for negative result"],
-      "points": 10
-    },
-    {
-      "id": 33,
-      "type": "translation",
-      "vietnamese": "Nếu cô ấy học chăm chỉ, cô ấy sẽ đậu kỳ thi.",
-      "answer": "If she studies hard, she will pass the exam.",
-      "acceptedAnswers": [
-        "If she studies hard, she will pass the exam.",
-        "If she studies hard, she will pass the exam",
-        "If she studies hard, she'll pass the exam."
-      ],
-      "hints": ["Third person: studies (add -s)"],
-      "points": 10
-    },
-    {
-      "id": 34,
-      "type": "translation",
-      "vietnamese": "Bạn sẽ đến bữa tiệc nếu tôi mời bạn không?",
-      "answer": "Will you come to the party if I invite you?",
-      "acceptedAnswers": [
-        "Will you come to the party if I invite you?",
-        "Will you come to the party if I invite you",
-        "If I invite you, will you come to the party?"
-      ],
-      "hints": ["Question: Will you...if...?"],
-      "points": 10
-    },
-    {
-      "id": 35,
-      "type": "translation",
-      "vietnamese": "Nếu chúng ta không nhanh lên, chúng ta sẽ trễ.",
-      "answer": "If we don't hurry, we'll be late.",
-      "acceptedAnswers": [
-        "If we don't hurry, we'll be late.",
-        "If we don't hurry, we'll be late",
-        "If we don't hurry, we will be late."
-      ],
-      "hints": ["Negative if-clause: don't hurry"],
-      "points": 10
-    },
-    {
-      "id": 36,
-      "type": "translation",
-      "vietnamese": "Nếu anh ấy ăn quá nhiều, anh ấy sẽ cảm thấy ốm.",
-      "answer": "If he eats too much, he will feel sick.",
-      "acceptedAnswers": [
-        "If he eats too much, he will feel sick.",
-        "If he eats too much, he will feel sick",
-        "If he eats too much, he'll feel sick."
-      ],
-      "hints": ["Third person: eats"],
-      "points": 10
-    },
-    {
-      "id": 37,
-      "type": "dialogue-complete",
-      "title": "Complete the interview with TV chef Anton",
-      "lines": [
-        {
-          "speaker": "Interviewer",
-          "text": "What _____ you _____ (do) if you _____ (get) tired?",
-          "blank": true,
-          "blankId": "b1",
-          "wordHint": "(do), (get)",
-          "answer": "will you do, get",
-          "acceptedAnswers": ["will you do, get", "will...do, get"]
-        },
-        {
-          "speaker": "Anton",
-          "text": "I'll make my TV show as usual!",
-          "blank": false
-        },
-        {
-          "speaker": "Interviewer",
-          "text": "If you _____ (go) shopping in supermarkets, _____ you _____ (find) what you need?",
-          "blank": true,
-          "blankId": "b2",
-          "wordHint": "(go), (find)",
-          "answer": "go, will you find",
-          "acceptedAnswers": ["go, will you find", "go, will...find"]
-        },
-        {
-          "speaker": "Anton",
-          "text": "No, I won't. I'll try to buy fresh, healthy food if I _____ (can) find some farmers.",
-          "blank": true,
-          "blankId": "b3",
-          "wordHint": "(can)",
-          "answer": "can",
-          "acceptedAnswers": ["can"]
-        }
-      ],
-      "points": 20
-    },
-    {
-      "id": 38,
-      "type": "open-ended",
-      "title": "Complete your own sentences",
-      "instruction": "Complete these first conditional sentences with your own ideas: 1) If it's sunny this weekend, ... 2) If I have free time tonight, ... 3) If I study hard, ... 4) If I don't do my homework, ...",
-      "example": "Example: If it's sunny this weekend, I'll go to the park with my friends.",
-      "minSentences": 4,
-      "maxWords": 100,
-      "scored": false,
-      "displayOnly": true,
-      "points": 0
-    },
-    {
-      "id": 39,
-      "type": "open-ended",
-      "title": "Health advice",
-      "instruction": "Write 6 sentences giving health advice using the first conditional. Use prompts like: eat fruit and vegetables, drink water, exercise every day, sleep 8 hours, not eat junk food, not watch too much TV.",
-      "example": "Example: If you eat fruit and vegetables every day, you will be healthy. If you don't sleep enough, you'll be tired.",
-      "minSentences": 6,
-      "maxWords": 150,
-      "scored": false,
-      "displayOnly": true,
-      "points": 0
-    },
-    {
-      "id": 40,
-      "type": "open-ended",
-      "title": "Sports day predictions",
-      "instruction": "Write a paragraph (6-8 sentences) about what will happen at your school sports day next week. Use the first conditional. Think about: What will happen if the weather is good? What will happen if it rains? What will happen if your team wins? What will happen if you practice hard?",
-      "example": "Example: If the weather is good, we will play outside. If it rains, we'll have to stay indoors...",
-      "minSentences": 6,
-      "maxWords": 150,
-      "scored": false,
-      "displayOnly": true,
-      "points": 0
     }
   ]
 }

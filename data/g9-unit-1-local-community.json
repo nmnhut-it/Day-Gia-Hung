@@ -1,0 +1,349 @@
+{
+  "unitId": "g9-unit-1-local-community",
+  "title": "Grade 9 - Unit 1: Local Community",
+  "grammarTopics": ["Question Words Before To-Infinitives", "Phrasal Verbs"],
+  "theory": {
+    "brief": "Unit 1 học về cộng đồng địa phương với 2 chủ điểm ngữ pháp chính: (1) Từ để hỏi + to-V (question word + to-infinitive) dùng để diễn đạt câu hỏi gián tiếp về việc nên làm gì, và (2) Phrasal verbs (cụm động từ) gồm động từ + giới từ/trạng từ tạo thành nghĩa đặc biệt.",
+    "examples": [
+      "I don't know what to do. (Tôi không biết phải làm gì.)",
+      "She asked me where to go. (Cô ấy hỏi tôi nên đi đâu.)",
+      "We look after our grandparents. (Chúng tôi chăm sóc ông bà.)",
+      "They get on with their neighbors. (Họ hòa thuận với hàng xóm.)"
+    ]
+  },
+  "exercises": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "I don't know __________ this traditional craft.",
+      "options": ["how to make", "to make how", "how making", "make how"],
+      "correctIndex": 0,
+      "explanation": "Từ để hỏi + to-V: how to + động từ nguyên thể",
+      "hints": ["Cấu trúc: question word + to + V0"],
+      "points": 10
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "She asked me __________ for help.",
+      "options": ["who contact", "who to contact", "to contact who", "whom contact"],
+      "correctIndex": 1,
+      "explanation": "Question word + to-infinitive: who/whom to contact",
+      "hints": ["who/whom + to + động từ"],
+      "points": 10
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "They haven't decided __________ the community meeting.",
+      "options": ["when to hold", "to hold when", "when holding", "hold when"],
+      "correctIndex": 0,
+      "explanation": "Sau 'decide' dùng question word + to-V",
+      "hints": ["when + to + V0"],
+      "points": 10
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Could you tell me __________ this pottery vase?",
+      "options": ["where buy", "where to buy", "to buy where", "buy where"],
+      "correctIndex": 1,
+      "explanation": "Question word + to-infinitive sau 'tell'",
+      "hints": ["where + to + V0"],
+      "points": 10
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "We are wondering __________ our traditional festival.",
+      "options": ["how preserve", "how to preserve", "to preserve how", "preserving how"],
+      "correctIndex": 1,
+      "explanation": "Sau 'wonder' dùng how + to-V",
+      "hints": ["how + to + động từ nguyên thể"],
+      "points": 10
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "The artisan showed us __________ the clay pot.",
+      "options": ["how shape", "to shape how", "how to shape", "shaping how"],
+      "correctIndex": 2,
+      "explanation": "Show somebody + question word + to-V",
+      "hints": ["how + to + V0"],
+      "points": 10
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "I'm not sure __________ in this traditional costume.",
+      "options": ["what wear", "what to wear", "to wear what", "wear what"],
+      "correctIndex": 1,
+      "explanation": "Question word + to-V: what to wear",
+      "hints": ["what + to + động từ"],
+      "points": 10
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Can you show me __________ to the community center?",
+      "options": ["how get", "how to get", "to get how", "getting how"],
+      "correctIndex": 1,
+      "explanation": "How + to-infinitive để chỉ cách thức",
+      "hints": ["how + to + V0"],
+      "points": 10
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "The children __________ well with each other in the village.",
+      "options": ["get on", "get off", "get up", "get down"],
+      "correctIndex": 0,
+      "explanation": "Get on with = hòa thuận với ai đó",
+      "hints": ["Phrasal verb nghĩa là 'hòa thuận'"],
+      "points": 10
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "My grandmother often __________ my younger sister when my parents are busy.",
+      "options": ["looks up", "looks after", "looks for", "looks at"],
+      "correctIndex": 1,
+      "explanation": "Look after = chăm sóc ai đó",
+      "hints": ["Phrasal verb nghĩa là 'chăm sóc'"],
+      "points": 10
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "We should __________ this tradition for future generations.",
+      "options": ["hand down", "hand up", "hand in", "hand out"],
+      "correctIndex": 0,
+      "explanation": "Hand down = truyền lại (truyền thống, di sản)",
+      "hints": ["Phrasal verb nghĩa là 'truyền lại'"],
+      "points": 10
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "The community project was __________ by local volunteers.",
+      "options": ["set up", "set down", "set off", "set in"],
+      "correctIndex": 0,
+      "explanation": "Set up = thành lập, thiết lập",
+      "hints": ["Phrasal verb nghĩa là 'thành lập'"],
+      "points": 10
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "I'm __________ information about traditional crafts in our area.",
+      "options": ["looking after", "looking for", "looking up", "looking forward"],
+      "correctIndex": 1,
+      "explanation": "Look for = tìm kiếm",
+      "hints": ["Phrasal verb nghĩa là 'tìm kiếm'"],
+      "points": 10
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "The old factory was __________ to build a community park.",
+      "options": ["pulled down", "pulled up", "pulled in", "pulled off"],
+      "correctIndex": 0,
+      "explanation": "Pull down = phá bỏ (tòa nhà)",
+      "hints": ["Phrasal verb nghĩa là 'phá bỏ'"],
+      "points": 10
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "She __________ the word 'artisan' in the dictionary.",
+      "options": ["looked after", "looked for", "looked up", "looked at"],
+      "correctIndex": 2,
+      "explanation": "Look up = tra cứu (từ điển, thông tin)",
+      "hints": ["Phrasal verb nghĩa là 'tra cứu'"],
+      "points": 10
+    },
+    {
+      "id": 16,
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp các từ thành câu hoàn chỉnh",
+      "words": ["I", "don't", "know", "where", "to", "find", "a", "good", "artisan"],
+      "distractors": ["where", "finding", "found"],
+      "correctSentence": "I don't know where to find a good artisan",
+      "acceptedAnswers": [
+        "I don't know where to find a good artisan",
+        "I don't know where to find a good artisan."
+      ],
+      "hints": ["where + to + động từ nguyên thể"],
+      "points": 10
+    },
+    {
+      "id": 17,
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp các từ thành câu hoàn chỉnh",
+      "words": ["She", "asked", "me", "how", "to", "make", "pottery"],
+      "distractors": ["making", "made", "makes"],
+      "correctSentence": "She asked me how to make pottery",
+      "acceptedAnswers": [
+        "She asked me how to make pottery",
+        "She asked me how to make pottery."
+      ],
+      "hints": ["how + to + V0"],
+      "points": 10
+    },
+    {
+      "id": 18,
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp các từ thành câu hoàn chỉnh",
+      "words": ["They", "haven't", "decided", "when", "to", "visit", "the", "craft", "village"],
+      "distractors": ["visiting", "visits", "visited"],
+      "correctSentence": "They haven't decided when to visit the craft village",
+      "acceptedAnswers": [
+        "They haven't decided when to visit the craft village",
+        "They haven't decided when to visit the craft village."
+      ],
+      "hints": ["when + to + động từ"],
+      "points": 10
+    },
+    {
+      "id": 19,
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp các từ thành câu hoàn chỉnh",
+      "words": ["Can", "you", "tell", "me", "what", "to", "do", "next"],
+      "distractors": ["doing", "does", "did"],
+      "correctSentence": "Can you tell me what to do next",
+      "acceptedAnswers": [
+        "Can you tell me what to do next",
+        "Can you tell me what to do next?",
+        "Can you tell me what to do next."
+      ],
+      "hints": ["what + to + V0"],
+      "points": 10
+    },
+    {
+      "id": 20,
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp các từ thành câu hoàn chỉnh",
+      "words": ["We", "get", "on", "well", "with", "our", "neighbors"],
+      "distractors": ["gets", "getting", "got"],
+      "correctSentence": "We get on well with our neighbors",
+      "acceptedAnswers": [
+        "We get on well with our neighbors",
+        "We get on well with our neighbors."
+      ],
+      "hints": ["get on with = hòa thuận với"],
+      "points": 10
+    },
+    {
+      "id": 21,
+      "type": "multiple-choice",
+      "question": "Could you show me __________ to weave this basket?",
+      "options": ["how", "how to", "what", "what to"],
+      "correctIndex": 1,
+      "explanation": "How to + động từ = cách làm gì",
+      "hints": ["Câu hỏi về cách thức"],
+      "points": 10
+    },
+    {
+      "id": 22,
+      "type": "multiple-choice",
+      "question": "The elders __________ their knowledge to the younger generation.",
+      "options": ["pass down", "pass up", "pass by", "pass through"],
+      "correctIndex": 0,
+      "explanation": "Pass down = truyền lại (kiến thức, kỹ năng)",
+      "hints": ["Nghĩa 'truyền lại cho thế hệ sau'"],
+      "points": 10
+    },
+    {
+      "id": 23,
+      "type": "multiple-choice",
+      "question": "We need to __________ ways to preserve our local culture.",
+      "options": ["find out", "find up", "find down", "find off"],
+      "correctIndex": 0,
+      "explanation": "Find out = tìm ra, khám phá",
+      "hints": ["Phrasal verb nghĩa 'tìm ra'"],
+      "points": 10
+    },
+    {
+      "id": 24,
+      "type": "multiple-choice",
+      "question": "The community center __________ activities for teenagers every weekend.",
+      "options": ["puts on", "puts off", "puts up", "puts down"],
+      "correctIndex": 0,
+      "explanation": "Put on = tổ chức (sự kiện, hoạt động)",
+      "hints": ["Nghĩa 'tổ chức hoạt động'"],
+      "points": 10
+    },
+    {
+      "id": 25,
+      "type": "multiple-choice",
+      "question": "I need to __________ the meaning of 'craftsman' in this context.",
+      "options": ["work out", "work on", "work off", "work up"],
+      "correctIndex": 0,
+      "explanation": "Work out = tìm hiểu, hiểu ra",
+      "hints": ["Nghĩa 'hiểu ra, tìm ra nghĩa'"],
+      "points": 10
+    },
+    {
+      "id": 26,
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp các từ thành câu hoàn chỉnh",
+      "words": ["The", "artisan", "showed", "us", "how", "to", "carve", "wood"],
+      "distractors": ["carving", "carved", "carves"],
+      "correctSentence": "The artisan showed us how to carve wood",
+      "acceptedAnswers": [
+        "The artisan showed us how to carve wood",
+        "The artisan showed us how to carve wood."
+      ],
+      "hints": ["show somebody + how to + V0"],
+      "points": 10
+    },
+    {
+      "id": 27,
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp các từ thành câu hoàn chỉnh",
+      "words": ["My", "grandmother", "looks", "after", "the", "children", "every", "day"],
+      "distractors": ["looking", "looked", "look"],
+      "correctSentence": "My grandmother looks after the children every day",
+      "acceptedAnswers": [
+        "My grandmother looks after the children every day",
+        "My grandmother looks after the children every day."
+      ],
+      "hints": ["look after = chăm sóc"],
+      "points": 10
+    },
+    {
+      "id": 28,
+      "type": "word-rearrange",
+      "instruction": "Sắp xếp các từ thành câu hoàn chỉnh",
+      "words": ["They", "set", "up", "a", "new", "workshop", "last", "month"],
+      "distractors": ["setting", "sets", "to set"],
+      "correctSentence": "They set up a new workshop last month",
+      "acceptedAnswers": [
+        "They set up a new workshop last month",
+        "They set up a new workshop last month."
+      ],
+      "hints": ["set up = thành lập"],
+      "points": 10
+    },
+    {
+      "id": 29,
+      "type": "multiple-choice",
+      "question": "We're trying to __________ the best way to promote our local crafts.",
+      "options": ["find out", "look up", "get on", "hand down"],
+      "correctIndex": 0,
+      "explanation": "Find out = tìm ra (giải pháp, cách thức)",
+      "hints": ["Nghĩa 'tìm ra, khám phá'"],
+      "points": 10
+    },
+    {
+      "id": 30,
+      "type": "multiple-choice",
+      "question": "He doesn't know __________ the traditional dance performance.",
+      "options": ["where watch", "where to watch", "to watch where", "watching where"],
+      "correctIndex": 1,
+      "explanation": "Where + to-infinitive",
+      "hints": ["where + to + V0"],
+      "points": 10
+    }
+  ]
+}
