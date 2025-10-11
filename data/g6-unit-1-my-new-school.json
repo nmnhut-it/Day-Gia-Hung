@@ -1,0 +1,282 @@
+{
+  "unitId": "g6-unit-1-my-new-school",
+  "title": "Unit 1: My New School - Present Simple Tense",
+  "studentName": "Tran Gia Hung",
+  "grade": 6,
+  "grammarTopics": [
+    "Present Simple Tense",
+    "School Vocabulary",
+    "Verbs: play, do, have, study",
+    "Adverbs of Frequency"
+  ],
+  "theory": {
+    "brief": "Thì Hiện Tại Đơn (Present Simple) diễn tả sự thật hiển nhiên, thói quen, hành động lặp đi lặp lại. Công thức: I/You/We/They + V0, He/She/It + V-s/es. Phủ định dùng don't/doesn't + V0. Nghi vấn dùng Do/Does + S + V0?",
+    "examples": [
+      "I study English every day. (Tôi học tiếng Anh mỗi ngày.)",
+      "She goes to school by bike. (Cô ấy đi học bằng xe đạp.)",
+      "Do you like music? (Bạn có thích âm nhạc không?)",
+      "They don't play football on Mondays. (Họ không chơi bóng đá vào thứ Hai.)"
+    ]
+  },
+  "exercises": [
+    {
+      "id": "g6u1-ex1",
+      "type": "fill-blank",
+      "question": "Students _______ (wear) their uniforms on Monday.",
+      "wordHint": "(wear)",
+      "answer": "wear",
+      "acceptedAnswers": ["wear"],
+      "hints": ["Chủ từ 'Students' là số nhiều, dùng động từ nguyên mẫu"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex2",
+      "type": "fill-blank",
+      "question": "Vy _______ (have) a new friend, Duy.",
+      "wordHint": "(have)",
+      "answer": "has",
+      "acceptedAnswers": ["has"],
+      "hints": ["Chủ từ 'Vy' là số ít ngôi thứ 3, động từ 'have' biến thành 'has'"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex3",
+      "type": "fill-blank",
+      "question": "- Do Phong, Vy, and Duy _______ (go) to the same school? - Yes, they do.",
+      "wordHint": "(go)",
+      "answer": "go",
+      "acceptedAnswers": ["go"],
+      "hints": ["Sau 'Do' dùng động từ nguyên mẫu"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex4",
+      "type": "fill-blank",
+      "question": "Students always look smart in their _______.",
+      "wordHint": "đồng phục (số nhiều)",
+      "answer": "uniforms",
+      "acceptedAnswers": ["uniforms"],
+      "hints": ["Từ này nghĩa là 'đồng phục' và ở dạng số nhiều"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex5",
+      "type": "fill-blank",
+      "question": "- What _______ (subjects) do you like to study? - I like to study English and history.",
+      "wordHint": "(subjects)",
+      "answer": "subjects",
+      "acceptedAnswers": ["subjects"],
+      "hints": ["Danh từ 'môn học' ở dạng số nhiều"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex6",
+      "type": "fill-blank",
+      "question": "Vy and I often do our _______ (homework) after school.",
+      "wordHint": "(homework)",
+      "answer": "homework",
+      "acceptedAnswers": ["homework"],
+      "hints": ["Homework là danh từ không đếm được, không thêm 's'"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex7",
+      "type": "fill-blank",
+      "question": "Nick plays _______ (football) for the school team.",
+      "wordHint": "(football)",
+      "answer": "football",
+      "acceptedAnswers": ["football", "soccer"],
+      "hints": ["Môn thể thao với quả bóng tròn"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex8",
+      "type": "fill-blank",
+      "question": "Mrs Nguyen teaches all my history _______ (lessons).",
+      "wordHint": "(lessons)",
+      "answer": "lessons",
+      "acceptedAnswers": ["lessons"],
+      "hints": ["'Bài học' ở dạng số nhiều"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex9",
+      "type": "fill-blank",
+      "question": "They are healthy. They do _______ (exercise) every day.",
+      "wordHint": "(exercise)",
+      "answer": "exercise",
+      "acceptedAnswers": ["exercise", "exercises"],
+      "hints": ["Hoạt động thể dục"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex10",
+      "type": "fill-blank",
+      "question": "I study maths, English and _______ (science) on Monday.",
+      "wordHint": "(science)",
+      "answer": "science",
+      "acceptedAnswers": ["science"],
+      "hints": ["Môn học về khoa học"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex11",
+      "type": "fill-blank",
+      "question": "She _______ (study) English every day.",
+      "wordHint": "(study)",
+      "answer": "studies",
+      "acceptedAnswers": ["studies"],
+      "hints": ["Chủ từ 'She' ngôi thứ 3 số ít, thêm '-es' vào động từ kết thúc bằng 'y' → studies"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex12",
+      "type": "fill-blank",
+      "question": "They _______ (do) their homework in the evening.",
+      "wordHint": "(do)",
+      "answer": "do",
+      "acceptedAnswers": ["do"],
+      "hints": ["Chủ từ 'They' số nhiều, dùng động từ nguyên mẫu"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex13",
+      "type": "fill-blank",
+      "question": "He _______ (like) to play football after school.",
+      "wordHint": "(like)",
+      "answer": "likes",
+      "acceptedAnswers": ["likes"],
+      "hints": ["Chủ từ 'He' ngôi thứ 3 số ít, thêm '-s'"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex14",
+      "type": "fill-blank",
+      "question": "The teacher _______ (give) us history lessons on Mondays.",
+      "wordHint": "(give)",
+      "answer": "gives",
+      "acceptedAnswers": ["gives"],
+      "hints": ["Chủ từ 'The teacher' ngôi thứ 3 số ít, thêm '-s'"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex15",
+      "type": "fill-blank",
+      "question": "We _______ (have) science class every Wednesday.",
+      "wordHint": "(have)",
+      "answer": "have",
+      "acceptedAnswers": ["have"],
+      "hints": ["Chủ từ 'We' số nhiều, dùng động từ nguyên mẫu"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex16",
+      "type": "sentence-build",
+      "prompt": "English / she / every day / studies",
+      "instructions": "Sắp xếp các từ thành câu hoàn chỉnh",
+      "answer": "She studies English every day.",
+      "acceptedAnswers": [
+        "She studies English every day.",
+        "She studies English every day"
+      ],
+      "hints": ["Thứ tự: Chủ ngữ + động từ + tân ngữ + trạng từ chỉ thời gian"],
+      "points": 15
+    },
+    {
+      "id": "g6u1-ex17",
+      "type": "sentence-build",
+      "prompt": "their / do / they / homework / evening / in / the",
+      "instructions": "Sắp xếp các từ thành câu hoàn chỉnh",
+      "answer": "They do their homework in the evening.",
+      "acceptedAnswers": [
+        "They do their homework in the evening.",
+        "They do their homework in the evening"
+      ],
+      "hints": ["do their homework = làm bài tập về nhà của họ"],
+      "points": 15
+    },
+    {
+      "id": "g6u1-ex18",
+      "type": "sentence-build",
+      "prompt": "football / he / play / after / school / likes / to",
+      "instructions": "Sắp xếp các từ thành câu hoàn chỉnh",
+      "answer": "He likes to play football after school.",
+      "acceptedAnswers": [
+        "He likes to play football after school.",
+        "He likes to play football after school"
+      ],
+      "hints": ["like to + V = thích làm gì"],
+      "points": 15
+    },
+    {
+      "id": "g6u1-ex19",
+      "type": "fill-blank",
+      "question": "Mai _______ (not have) a ruler.",
+      "wordHint": "(not have)",
+      "answer": "doesn't have",
+      "acceptedAnswers": ["doesn't have", "does not have"],
+      "hints": ["Câu phủ định với chủ từ số ít ngôi thứ 3: doesn't + V0"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex20",
+      "type": "fill-blank",
+      "question": "My father _______ (not go) to bed early.",
+      "wordHint": "(not go)",
+      "answer": "doesn't go",
+      "acceptedAnswers": ["doesn't go", "does not go"],
+      "hints": ["Câu phủ định với chủ từ số ít ngôi thứ 3"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex21",
+      "type": "fill-blank",
+      "question": "I _______ (always) get up at 6.",
+      "wordHint": "(always - luôn luôn)",
+      "answer": "always",
+      "acceptedAnswers": ["always"],
+      "hints": ["Trạng từ tần suất đứng trước động từ thường"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex22",
+      "type": "fill-blank",
+      "question": "He _______ (usually) studies English.",
+      "wordHint": "(usually - thường xuyên)",
+      "answer": "usually",
+      "acceptedAnswers": ["usually"],
+      "hints": ["Trạng từ tần suất đứng trước động từ thường"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex23",
+      "type": "fill-blank",
+      "question": "She _______ (sometimes) studies French.",
+      "wordHint": "(sometimes - thỉnh thoảng)",
+      "answer": "sometimes",
+      "acceptedAnswers": ["sometimes"],
+      "hints": ["Trạng từ tần suất đứng trước động từ thường"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex24",
+      "type": "multiple-choice",
+      "question": "We _______ new subjects for this school year.",
+      "options": ["have", "has", "having", "to have"],
+      "correctIndex": 0,
+      "explanation": "Chủ từ 'We' số nhiều, dùng động từ nguyên mẫu 'have'",
+      "hints": ["Chủ từ là 'We' - số nhiều"],
+      "points": 10
+    },
+    {
+      "id": "g6u1-ex25",
+      "type": "multiple-choice",
+      "question": "Duy _______ to school every day.",
+      "options": ["cycle", "cycles", "cycling", "to cycle"],
+      "correctIndex": 1,
+      "explanation": "Chủ từ 'Duy' là ngôi thứ 3 số ít, thêm '-s' vào động từ",
+      "hints": ["Duy là chủ từ số ít ngôi thứ 3"],
+      "points": 10
+    }
+  ]
+}
