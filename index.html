@@ -194,6 +194,16 @@
       <!-- Grade 9 units will be loaded here dynamically -->
     </div>
 
+    <!-- Grade 11 Exams Section -->
+    <div style="margin-bottom: var(--spacing-lg); margin-top: var(--spacing-xxl);">
+      <h2>📝 Grade 11 - Exams & Tests</h2>
+      <p style="color: var(--text-light);">Midterm and final exams for Grade 11</p>
+    </div>
+
+    <div class="unit-grid" id="grade11-exams-grid">
+      <!-- Grade 11 exams will be loaded here dynamically -->
+    </div>
+
     <!-- Other Units Section -->
     <div style="margin-bottom: var(--spacing-lg); margin-top: var(--spacing-xxl);">
       <h2>📖 Other Units</h2>
@@ -218,6 +228,17 @@
   <script src="js/core/storage.js"></script>
 
   <script>
+    const GRADE11_EXAMS = [
+      {
+        id: 'midterm-1-test-1',
+        title: 'Đề thi giữa kì 1 - Đề số 1',
+        description: 'Comprehensive test covering phonetics, grammar, vocabulary, reading, and writing',
+        topics: ['Present Perfect', 'Present Continuous', 'Phonetics', 'Vocabulary', 'Reading', 'Writing'],
+        path: 'pages/midterm-1-test-1.html',
+        available: true
+      }
+    ];
+
     const GRADE9_UNITS = [
       {
         id: 'g9-unit-1-local-community',
@@ -418,6 +439,74 @@
       return html;
     }
 
+    function renderGrade11Exams() {
+      const grid = document.getElementById('grade11-exams-grid');
+      grid.innerHTML = '';
+
+      GRADE11_EXAMS.forEach(unit => {
+        const unitStats = Storage.getUnitStats(unit.id);
+
+        const card = document.createElement('a');
+        card.href = unit.available ? unit.path : '#';
+        card.className = `unit-card ${!unit.available ? 'unit-card--locked' : ''}`;
+
+        if (!unit.available) {
+          card.onclick = (e) => {
+            e.preventDefault();
+            Utils.showToast('This exam is not available yet', 'info');
+          };
+        }
+
+        const badge = document.createElement('div');
+        badge.className = 'unit-card__badge';
+        badge.textContent = unit.available ? 'Grade 11 Exam' : 'Coming Soon';
+        badge.style.background = unit.available ? '#ff9800' : 'var(--text-light)';
+
+        const title = document.createElement('h3');
+        title.className = 'unit-card__title';
+        title.textContent = unit.title;
+
+        const description = document.createElement('p');
+        description.className = 'unit-card__description';
+        description.textContent = unit.description;
+
+        const topics = document.createElement('div');
+        topics.style.marginBottom = 'var(--spacing-md)';
+        topics.innerHTML = unit.topics.map(topic =>
+          `<span style="display: inline-block; background: var(--bg-light); padding: 2px 8px; border-radius: var(--radius-sm); font-size: var(--font-size-sm); margin-right: var(--spacing-xs); margin-bottom: var(--spacing-xs);">${topic}</span>`
+        ).join('');
+
+        const stats = document.createElement('div');
+        stats.className = 'unit-card__stats';
+
+        const stars = document.createElement('div');
+        stars.className = 'unit-card__stars';
+        stars.innerHTML = renderStars(unitStats.stars || 0);
+
+        const progress = document.createElement('div');
+        progress.className = 'unit-card__progress';
+        if (unitStats.played) {
+          progress.innerHTML = `
+            <strong>Best Score:</strong> ${unitStats.bestScore}<br>
+            <strong>Attempts:</strong> ${unitStats.attempts}
+          `;
+        } else {
+          progress.textContent = 'Not started yet';
+        }
+
+        stats.appendChild(stars);
+        stats.appendChild(progress);
+
+        card.appendChild(badge);
+        card.appendChild(title);
+        card.appendChild(description);
+        card.appendChild(topics);
+        card.appendChild(stats);
+
+        grid.appendChild(card);
+      });
+    }
+
     function renderGrade9Units() {
       const grid = document.getElementById('grade9-unit-grid');
       grid.innerHTML = '';
@@ -559,6 +648,7 @@
         Storage.clearAll();
         renderOverallStats();
         renderGrade9Units();
+        renderGrade11Exams();
         renderUnits();
         Utils.showToast('All progress cleared', 'info');
       }
@@ -566,6 +656,7 @@
 
     renderOverallStats();
     renderGrade9Units();
+    renderGrade11Exams();
     renderUnits();
   </script>
 </body>
