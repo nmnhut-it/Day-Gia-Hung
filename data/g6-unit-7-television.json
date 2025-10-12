@@ -96,7 +96,7 @@
       "wordHint": "and/but/or/so",
       "answer": "and",
       "acceptedAnswers": ["and", "but"],
-      "hints": ["'and' nối hai câu cùng loại, 'but' nối câu đối lập"],
+      "hints": ["Dùng 'and' để thêm thông tin, hoặc 'but' để diễn tả sự tương phản"],
       "points": 10
     },
     {

@@ -43,3 +43,5 @@ exports/pdf/
 # !exports/pdf/*.pdf
 global-success-9/*
 .claude/settings.local.json
+/global-success-6
+/global-success-7

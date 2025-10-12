@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-I have successfully converted Grade 6 English units from markdown to JSON and HTML game pages for student Trần Gia Hưng (Lớp 6).
+I have successfully converted Grade 6 English units from markdown to JSON and HTML game pages for student  (Lớp 6).
 
 ### Completed Files (6 files total):
 
@@ -62,7 +62,7 @@ I have successfully converted Grade 6 English units from markdown to JSON and HT
 ```
 
 ### HTML File Template Structure:
-- Standard game header with student name "Trần Gia Hưng - Lớp 6"
+- Standard game header with student name " - Lớp 6"
 - Teacher name "Nguyễn Minh Nhựt"
 - Collapsible theory panel with grammar explanations in Vietnamese
 - Exercise container for dynamic rendering
@@ -157,7 +157,7 @@ const GRADE6_UNITS = [
 - ✅ Grammar theory is explained in Vietnamese
 - ✅ Each unit has 20-25 exercises covering all grammar points
 - ✅ Exercise types are mobile-friendly (fill-blank, multiple-choice, word-rearrange)
-- ✅ Student name "Trần Gia Hưng - Lớp 6" appears in all HTML files
+- ✅ Student name " - Lớp 6" appears in all HTML files
 - ✅ Teacher name "Nguyễn Minh Nhựt" appears in all HTML files
 
 ## Progress Status:
@@ -195,5 +195,5 @@ To complete the remaining units efficiently:
 ---
 
 **Generated**: 2025-10-11
-**For Student**: Trần Gia Hưng - Lớp 6
+**For Student**:  - Lớp 6
 **Teacher**: Nguyễn Minh Nhựt

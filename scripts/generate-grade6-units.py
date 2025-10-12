@@ -181,7 +181,7 @@ def create_html_template(unit_config):
             </div>
             <div class="game-info__item">
               <span class="game-info__label">Học sinh:</span>
-              <span class="game-info__value">Trần Gia Hưng - Lớp 6</span>
+              <span class="game-info__value">Lớp 6</span>
             </div>
           </div>
         </div>

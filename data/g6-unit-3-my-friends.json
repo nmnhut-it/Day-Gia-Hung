@@ -67,7 +67,7 @@
       "question": "_______ they _______ (listen) to music at the moment?",
       "wordHint": "(listen)",
       "answer": "Are they listening",
-      "acceptedAnswers": ["Are they listening", "Are, listening"],
+      "acceptedAnswers": ["Are they listening"],
       "hints": ["Câu hỏi hiện tại tiếp diễn: Are + chủ từ + V-ing?"],
       "points": 10
     },
@@ -77,7 +77,7 @@
       "question": "What _______ he _______ (do) now?",
       "wordHint": "(do)",
       "answer": "is he doing",
-      "acceptedAnswers": ["is he doing", "is, doing"],
+      "acceptedAnswers": ["is he doing"],
       "hints": ["Câu hỏi có từ hỏi: What + is + chủ từ + V-ing?"],
       "points": 10
     },

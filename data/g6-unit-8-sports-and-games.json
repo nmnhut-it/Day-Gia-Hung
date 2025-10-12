@@ -116,7 +116,7 @@
       "question": "_______ you _______ (watch) the game last night?",
       "wordHint": "Did/watch",
       "answer": "Did watch",
-      "acceptedAnswers": ["Did watch", "Did you watch"],
+      "acceptedAnswers": ["Did watch", "Did you watch", "Did-watch"],
       "hints": ["Câu hỏi: Did + S + V0?"],
       "points": 10
     },
@@ -126,7 +126,7 @@
       "question": "_______ the door, please.",
       "wordHint": "đóng",
       "answer": "Close",
-      "acceptedAnswers": ["Close"],
+      "acceptedAnswers": ["Close", "Open"],
       "hints": ["Câu mệnh lệnh: V0"],
       "points": 10
     },
