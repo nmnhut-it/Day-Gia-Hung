@@ -1,0 +1,1 @@
+1. order: (n) đơn hàng, trật tự, (v) ra lệnh, đặt hàng /ó đơ/

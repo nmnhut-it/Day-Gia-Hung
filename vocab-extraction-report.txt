@@ -1,0 +1,84 @@
+================================================================================
+VOCABULARY EXTRACTION REPORT
+================================================================================
+Date: 2025-10-12T01:48:58.325Z
+Total lesson files processed: 73
+Total vocab files created: 44
+Files without vocabulary: 29
+
+FILES WITHOUT VOCABULARY:
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-01\g7_u01_a-closer-look-2.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-01\g7_u01_communication.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-01\g7_u01_looking-back.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-03\g7_u03_communication.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-03\g7_u03_looking-back.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-04\g7_u04_a-closer-look-1.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-04\g7_u04_a-closer-look-2.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-04\g7_u04_communication.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-04\g7_u04_getting-started.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-04\g7_u04_looking-back.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-04\g7_u04_skills-1.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-05\g7_u05_a-closer-look-1.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-05\g7_u05_a-closer-look-2.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-05\g7_u05_looking-back.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-05\g7_u05_skills-2.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-06\g7_u06_looking-back.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-07\g7_u07_a-closer-look-1.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-07\g7_u07_a-closer-look-2.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-07\g7_u07_looking-back.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-08\g7_u08_a-closer-look-2.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-08\g7_u08_communication.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-08\g7_u08_looking-back.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-09\g7_u09_a-closer-look-2.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-10\g7_u10_a-closer-look-2.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-10\g7_u10_communication.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-10\g7_u10_looking-back.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-11\g7_u11_a-closer-look-2.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-11\g7_u11_looking-back.md
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-12\g7_u12_a-closer-look-2.md
+
+VOCABULARY FILES CREATED:
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-01\g7_u01_a-closer-look-1-vocab.md (6 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-01\g7_u01_getting-started-vocab.md (16 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-01\g7_u01_skills-1-vocab.md (40 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-01\g7_u01_skills-2-vocab.md (24 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-02\g7_u02_a-closer-look-1-vocab.md (14 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-02\g7_u02_a-closer-look-2-vocab.md (29 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-02\g7_u02_communication-vocab.md (26 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-02\g7_u02_getting-started-vocab.md (37 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-02\g7_u02_looking-back-vocab.md (25 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-02\g7_u02_skills-1-vocab.md (17 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-03\g7_u03_a-closer-look-1-vocab.md (21 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-03\g7_u03_a-closer-look-2-vocab.md (20 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-03\g7_u03_getting-started-vocab.md (17 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-03\g7_u03_skills-1-vocab.md (23 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-03\g7_u03_skills-2-vocab.md (12 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-04\g7_u04_skills-2-vocab.md (1 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-05\g7_u05_communication-vocab.md (4 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-05\g7_u05_getting-started-vocab.md (21 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-05\g7_u05_skills-1-vocab.md (20 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-06\g7_u06_a-closer-look-1-vocab.md (14 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-06\g7_u06_getting-started-vocab.md (10 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-06\g7_u06_skills-1-vocab.md (8 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-07\g7_u07_communication-vocab.md (6 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-07\g7_u07_getting-started-vocab.md (14 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-07\g7_u07_skills-1-vocab.md (8 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-07\g7_u07_skills-2-vocab.md (7 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-08\g7_u08_a-closer-look-1-vocab.md (9 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-08\g7_u08_getting-started-vocab.md (30 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-08\g7_u08_skills-1-vocab.md (4 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-08\g7_u08_skills-2-vocab.md (7 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-09\g7_u09_communication-vocab.md (3 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-09\g7_u09_getting-started-vocab.md (19 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-09\g7_u09_skills-1-vocab.md (12 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-10\g7_u10_a-closer-look-1-vocab.md (7 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-10\g7_u10_getting-started-vocab.md (15 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-10\g7_u10_skills-1-vocab.md (9 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-10\g7_u10_skills-2-vocab.md (1 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-11\g7_u11_a-closer-look-1-vocab.md (6 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-11\g7_u11_communication-vocab.md (4 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-11\g7_u11_getting-started-vocab.md (9 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-11\g7_u11_skills-1-vocab.md (11 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-11\g7_u11_skills-2-vocab.md (4 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-12\g7_u12_a-closer-look-1-vocab.md (11 entries)
+  - D:\Gitlab\Day-Gia-Hung\global-success-7\unit-12\g7_u12_getting-started-vocab.md (6 entries)

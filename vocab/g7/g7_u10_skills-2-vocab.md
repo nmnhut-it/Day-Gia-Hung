@@ -1,0 +1,1 @@
+1. warm: (v) làm ấm, (adj) ấm /wɔːm/
