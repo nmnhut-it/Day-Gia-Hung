@@ -1,0 +1,1 @@
+1. I think: (cụm động từ) tôi nghĩ /aɪ θɪŋk/

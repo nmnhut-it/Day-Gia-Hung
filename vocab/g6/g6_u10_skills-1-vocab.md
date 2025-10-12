@@ -1,0 +1,1 @@
+8. helicopter: (n) máy bay trực thăng /ˈhelɪkɒptə/
