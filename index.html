@@ -194,6 +194,16 @@
       <!-- Grade 6 units will be loaded here dynamically -->
     </div>
 
+    <!-- Grade 8 Section -->
+    <div style="margin-bottom: var(--spacing-lg); margin-top: var(--spacing-xxl);">
+      <h2>📚 Grade 8 - Global Success</h2>
+      <p style="color: var(--text-light);">Practice grammar for Grade 8 students</p>
+    </div>
+
+    <div class="unit-grid" id="grade8-unit-grid">
+      <!-- Grade 8 units will be loaded here dynamically -->
+    </div>
+
     <!-- Grade 9 Section -->
     <div style="margin-bottom: var(--spacing-lg); margin-top: var(--spacing-xxl);">
       <h2>📚 Grade 9 - Global Success</h2>
@@ -357,6 +367,17 @@
         description: 'Comprehensive review of Units 7, 8, and 9',
         topics: ['Conjunctions', 'Past Simple', 'Superlatives'],
         path: 'pages/g6-review-3-units-7-9.html',
+        available: true
+      }
+    ];
+
+    const GRADE8_UNITS = [
+      {
+        id: 'g8-review-1-additional-exercise',
+        title: 'Review 1 - Additional Exercises',
+        description: '100 timed grammar exercises - 30 seconds per question ⏱️',
+        topics: ['Verbs + V-ing', 'Comparative Adverbs', 'Compound Sentences', 'Complex Sentences'],
+        path: 'pages/g8-review-1-additional-exercise.html',
         available: true
       }
     ];
@@ -640,6 +661,74 @@
       });
     }
 
+    function renderGrade8Units() {
+      const grid = document.getElementById('grade8-unit-grid');
+      grid.innerHTML = '';
+
+      GRADE8_UNITS.forEach(unit => {
+        const unitStats = Storage.getUnitStats(unit.id);
+
+        const card = document.createElement('a');
+        card.href = unit.available ? unit.path : '#';
+        card.className = `unit-card ${!unit.available ? 'unit-card--locked' : ''}`;
+
+        if (!unit.available) {
+          card.onclick = (e) => {
+            e.preventDefault();
+            Utils.showToast('This unit is not available yet', 'info');
+          };
+        }
+
+        const badge = document.createElement('div');
+        badge.className = 'unit-card__badge';
+        badge.textContent = unit.available ? 'Grade 8 ⏱️' : 'Coming Soon';
+        badge.style.background = unit.available ? '#E91E63' : 'var(--text-light)';
+
+        const title = document.createElement('h3');
+        title.className = 'unit-card__title';
+        title.textContent = unit.title;
+
+        const description = document.createElement('p');
+        description.className = 'unit-card__description';
+        description.textContent = unit.description;
+
+        const topics = document.createElement('div');
+        topics.style.marginBottom = 'var(--spacing-md)';
+        topics.innerHTML = unit.topics.map(topic =>
+          `<span style="display: inline-block; background: var(--bg-light); padding: 2px 8px; border-radius: var(--radius-sm); font-size: var(--font-size-sm); margin-right: var(--spacing-xs); margin-bottom: var(--spacing-xs);">${topic}</span>`
+        ).join('');
+
+        const stats = document.createElement('div');
+        stats.className = 'unit-card__stats';
+
+        const stars = document.createElement('div');
+        stars.className = 'unit-card__stars';
+        stars.innerHTML = renderStars(unitStats.stars || 0);
+
+        const progress = document.createElement('div');
+        progress.className = 'unit-card__progress';
+        if (unitStats.played) {
+          progress.innerHTML = `
+            <strong>Best Score:</strong> ${unitStats.bestScore}<br>
+            <strong>Attempts:</strong> ${unitStats.attempts}
+          `;
+        } else {
+          progress.textContent = 'Not started yet';
+        }
+
+        stats.appendChild(stars);
+        stats.appendChild(progress);
+
+        card.appendChild(badge);
+        card.appendChild(title);
+        card.appendChild(description);
+        card.appendChild(topics);
+        card.appendChild(stats);
+
+        grid.appendChild(card);
+      });
+    }
+
     function renderGrade11Exams() {
       const grid = document.getElementById('grade11-exams-grid');
       grid.innerHTML = '';
@@ -849,6 +938,7 @@
         Storage.clearAll();
         renderOverallStats();
         renderGrade6Units();
+        renderGrade8Units();
         renderGrade9Units();
         renderGrade11Exams();
         renderUnits();
@@ -858,6 +948,7 @@
 
     renderOverallStats();
     renderGrade6Units();
+    renderGrade8Units();
     renderGrade9Units();
     renderGrade11Exams();
     renderUnits();
