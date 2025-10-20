@@ -76,7 +76,7 @@ const SentenceBuildExercise = {
     return textarea ? textarea.value.trim() : '';
   },
 
-  showFeedback(container, isCorrect, question) {
+  showFeedback(container, isCorrect, question, onNext) {
     const textarea = container.querySelector('textarea');
     const actions = container.querySelector('.exercise__actions');
 
@@ -107,6 +107,20 @@ const SentenceBuildExercise = {
 
     const buttons = actions.querySelectorAll('button');
     buttons.forEach(btn => btn.disabled = true);
+
+    if (onNext) {
+      const nextBtn = Utils.createElement('button', {
+        class: 'btn btn--primary btn--large mt-2'
+      }, 'Next Question →');
+      nextBtn.style.width = '100%';
+      nextBtn.style.fontSize = 'var(--font-size-lg)';
+      nextBtn.style.padding = 'var(--spacing-md)';
+
+      nextBtn.onclick = () => onNext();
+
+      feedbackDiv.insertAdjacentElement('afterend', nextBtn);
+      nextBtn.focus();
+    }
   },
 
   reset(container) {

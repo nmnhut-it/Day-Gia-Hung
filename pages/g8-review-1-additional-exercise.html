@@ -341,6 +341,12 @@
       originalHandleAnswer(userAnswer, exercise);
     };
 
+    const originalNextExercise = GameEngine.nextExercise.bind(GameEngine);
+    GameEngine.nextExercise = function() {
+      originalNextExercise();
+      startTimer();
+    };
+
     const originalUpdateUI = GameEngine.updateUI.bind(GameEngine);
     GameEngine.updateUI = function() {
       originalUpdateUI();

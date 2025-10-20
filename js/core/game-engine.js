@@ -163,21 +163,13 @@ const GameEngine = {
     if (isCorrect) {
       const points = this.handleCorrectAnswer(exercise);
       answerRecord.points = points;
-      handler.showFeedback(container, true, exercise);
+      handler.showFeedback(container, true, exercise, () => this.nextExercise());
       Utils.playSound('correct');
-
-      setTimeout(() => {
-        this.nextExercise();
-      }, 1500);
     } else {
       this.handleWrongAnswer();
       answerRecord.points = 0;
-      handler.showFeedback(container, false, exercise);
+      handler.showFeedback(container, false, exercise, () => this.nextExercise());
       Utils.playSound('wrong');
-
-      setTimeout(() => {
-        this.nextExercise();
-      }, 3000);
     }
 
     this.state.answerHistory.push(answerRecord);
