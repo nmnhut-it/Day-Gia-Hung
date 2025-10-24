@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Grammar Games - Interactive Learning Platform</title>
+  <meta name="description" content="Learn English grammar through interactive games and exercises. Practice comparatives, past tense, present perfect, and more!">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="css/shared.css">
+
+  <style>
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--info) 100%);
+      color: var(--text-white);
+      padding: var(--spacing-xxl) var(--spacing-md);
+      text-align: center;
+      margin-bottom: var(--spacing-xxl);
+    }
+
+    .hero__title {
+      font-size: 2.5rem;
+      margin-bottom: var(--spacing-md);
+    }
+
+    .hero__subtitle {
+      font-size: var(--font-size-lg);
+      opacity: 0.9;
+    }
+
+    .unit-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+      margin-bottom: var(--spacing-xxl);
+    }
+
+    @media (min-width: 768px) {
+      .unit-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .unit-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .unit-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-xl);
+      box-shadow: 0 4px 6px var(--shadow-color);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--text-dark);
+      display: block;
+    }
+
+    .unit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 12px var(--shadow-color);
+    }
+
+    .unit-card__badge {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--text-white);
+      padding: var(--spacing-xs) var(--spacing-sm);
+      border-radius: var(--radius-sm);
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      margin-bottom: var(--spacing-md);
+    }
+
+    .unit-card__title {
+      font-size: var(--font-size-xl);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .unit-card__description {
+      color: var(--text-light);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .unit-card__stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: var(--spacing-md);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .unit-card__stars {
+      display: flex;
+      gap: var(--spacing-xs);
+    }
+
+    .unit-card__progress {
+      font-size: var(--font-size-sm);
+      color: var(--text-light);
+    }
+
+    .unit-card--locked {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .unit-card--locked:hover {
+      transform: none;
+    }
+
+    .stats-overview {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-xl);
+      margin-bottom: var(--spacing-xxl);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: var(--spacing-lg);
+      margin-top: var(--spacing-lg);
+    }
+
+    .stat-box {
+      text-align: center;
+    }
+
+    .stat-box__value {
+      font-size: var(--font-size-xxl);
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .stat-box__label {
+      font-size: var(--font-size-sm);
+      color: var(--text-light);
+      margin-top: var(--spacing-xs);
+    }
+
+    .footer {
+      text-align: center;
+      padding: var(--spacing-xl);
+      color: var(--text-light);
+      font-size: var(--font-size-sm);
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <h1 class="hero__title">🎮 English Grammar Games</h1>
+      <p class="hero__subtitle">Learn English grammar through fun, interactive exercises!</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Overall Statistics -->
+    <div class="stats-overview" id="stats-overview">
+      <h2 style="text-align: center; margin-bottom: 0;">Your Progress</h2>
+      <div class="stats-grid" id="stats-grid">
+        <div class="stat-box">
+          <div class="stat-box__value" id="total-units">0</div>
+          <div class="stat-box__label">Units Played</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box__value" id="total-stars">0</div>
+          <div class="stat-box__label">Total Stars</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box__value" id="avg-score">0</div>
+          <div class="stat-box__label">Avg Score</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box__value" id="total-attempts">0</div>
+          <div class="stat-box__label">Total Attempts</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grade 6 Section -->
+    <div style="margin-bottom: var(--spacing-lg);">
+      <h2>📚 Grade 6 - Global Success</h2>
+      <p style="color: var(--text-light);">Practice grammar for Grade 6 student</p>
+    </div>
+
+    <div class="unit-grid" id="grade6-unit-grid">
+      <!-- Grade 6 units will be loaded here dynamically -->
+    </div>
+
+    <!-- Grade 8 Section -->
+    <div style="margin-bottom: var(--spacing-lg); margin-top: var(--spacing-xxl);">
+      <h2>📚 Grade 8 - Global Success</h2>
+      <p style="color: var(--text-light);">Practice grammar for Grade 8 students</p>
+    </div>
+
+    <div class="unit-grid" id="grade8-unit-grid">
+      <!-- Grade 8 units will be loaded here dynamically -->
+    </div>
+
+    <!-- Grade 9 Section -->
+    <div style="margin-bottom: var(--spacing-lg); margin-top: var(--spacing-xxl);">
+      <h2>📚 Grade 9 - Global Success</h2>
+      <p style="color: var(--text-light);">Practice grammar for Grade 9 students</p>
+    </div>
+
+    <div class="unit-grid" id="grade9-unit-grid">
+      <!-- Grade 9 units will be loaded here dynamically -->
+    </div>
+
+    <!-- Grade 11 Exams Section -->
+    <div style="margin-bottom: var(--spacing-lg); margin-top: var(--spacing-xxl);">
+      <h2>📝 Grade 11 - Exams & Tests</h2>
+      <p style="color: var(--text-light);">Midterm and final exams for Grade 11</p>
+    </div>
+
+    <div class="unit-grid" id="grade11-exams-grid">
+      <!-- Grade 11 exams will be loaded here dynamically -->
+    </div>
+
+    <!-- Other Units Section -->
+    <div style="margin-bottom: var(--spacing-lg); margin-top: var(--spacing-xxl);">
+      <h2>📖 Other Units</h2>
+      <p style="color: var(--text-light);">Additional grammar practice units</p>
+    </div>
+
+    <div class="unit-grid" id="unit-grid">
+      <!-- Units will be loaded here dynamically -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>English Grammar Games &copy; 2025 | Built for students to practice English grammar</p>
+    <p style="margin-top: var(--spacing-sm);">
+      <button class="btn btn--small btn--secondary" id="clear-progress-btn">Clear All Progress</button>
+    </p>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="js/core/utils.js"></script>
+  <script src="js/core/storage.js"></script>
+
+  <script>
+    const GRADE6_UNITS = [
+      {
+        id: 'g6-unit-1-my-new-school',
+        title: 'Unit 1: My New School',
+        description: 'Present Simple tense, school vocabulary, and adverbs of frequency',
+        topics: ['Present Simple', 'School Vocabulary', 'Adverbs of Frequency'],
+        path: 'pages/g6-unit-1-my-new-school.html',
+        available: true
+      },
+      {
+        id: 'g6-unit-2-my-house',
+        title: 'Unit 2: My House',
+        description: 'Possessive \'s, There is/are, and prepositions of place',
+        topics: ['Possessive \'s', 'There is/are', 'Prepositions of Place'],
+        path: 'pages/g6-unit-2-my-house.html',
+        available: true
+      },
+      {
+        id: 'g6-unit-3-my-friends',
+        title: 'Unit 3: My Friends',
+        description: 'Present Continuous tense and appearance adjectives',
+        topics: ['Present Continuous', 'Appearance Adjectives', 'Personality'],
+        path: 'pages/g6-unit-3-my-friends.html',
+        available: true
+      },
+      {
+        id: 'g6-unit-4-my-neighbourhood',
+        title: 'Unit 4: My Neighbourhood',
+        description: 'Comparative adjectives and giving directions',
+        topics: ['Comparative Adjectives', 'Directions', 'Places'],
+        path: 'pages/g6-unit-4-my-neighbourhood.html',
+        available: true
+      },
+      {
+        id: 'g6-unit-5-natural-wonders',
+        title: 'Unit 5: Natural Wonders of Viet Nam',
+        description: 'Must/Mustn\'t, countable/uncountable nouns, some/any',
+        topics: ['Must/Mustn\'t', 'Countable Nouns', 'Some/Any'],
+        path: 'pages/g6-unit-5-natural-wonders.html',
+        available: true
+      },
+      {
+        id: 'g6-unit-6-our-tet-holiday',
+        title: 'Unit 6: Our Tet Holiday',
+        description: 'Should/Shouldn\'t, Will/Won\'t for future plans',
+        topics: ['Should/Shouldn\'t', 'Will/Won\'t', 'Tet Traditions'],
+        path: 'pages/g6-unit-6-our-tet-holiday.html',
+        available: true
+      },
+      {
+        id: 'g6-unit-7-television',
+        title: 'Unit 7: Television',
+        description: 'Question words (Wh-questions) and conjunctions',
+        topics: ['Wh-Questions', 'Conjunctions', 'TV Vocabulary'],
+        path: 'pages/g6-unit-7-television.html',
+        available: true
+      },
+      {
+        id: 'g6-unit-8-sports-and-games',
+        title: 'Unit 8: Sports and Games',
+        description: 'Past Simple tense, irregular verbs, and imperatives',
+        topics: ['Past Simple', 'Irregular Verbs', 'Imperatives'],
+        path: 'pages/g6-unit-8-sports-and-games.html',
+        available: true
+      },
+      {
+        id: 'g6-unit-9-cities-of-the-world',
+        title: 'Unit 9: Cities of the World',
+        description: 'Superlative adjectives and Present Perfect (have been to)',
+        topics: ['Superlatives', 'Present Perfect', 'Cities'],
+        path: 'pages/g6-unit-9-cities-of-the-world.html',
+        available: true
+      },
+      {
+        id: 'g6-unit-10-our-houses-in-the-future',
+        title: 'Unit 10: Our Houses in the Future',
+        description: 'Will for predictions and might for possibility',
+        topics: ['Will for Predictions', 'Might', 'Future Technology'],
+        path: 'pages/g6-unit-10-our-houses-in-the-future.html',
+        available: true
+      },
+      {
+        id: 'g6-unit-11-our-greener-world',
+        title: 'Unit 11: Our Greener World',
+        description: 'Conditional Type 1 (If... will) and environmental vocabulary',
+        topics: ['Conditional Type 1', 'If... will', 'Environment'],
+        path: 'pages/g6-unit-11-our-greener-world.html',
+        available: true
+      },
+      {
+        id: 'g6-unit-12-robots',
+        title: 'Unit 12: Robots',
+        description: 'Will be able to, could/couldn\'t for abilities',
+        topics: ['Will be able to', 'Could/Couldn\'t', 'Robots'],
+        path: 'pages/g6-unit-12-robots.html',
+        available: true
+      },
+      {
+        id: 'g6-review-1-units-1-3',
+        title: 'Review 1: Units 1-3',
+        description: 'Comprehensive review of Units 1, 2, and 3',
+        topics: ['Present Simple', 'There is/are', 'Present Continuous'],
+        path: 'pages/g6-review-1-units-1-3.html',
+        available: true
+      },
+      {
+        id: 'g6-review-2-units-4-6',
+        title: 'Review 2: Units 4-6',
+        description: 'Comprehensive review of Units 4, 5, and 6',
+        topics: ['Comparatives', 'Must/Mustn\'t', 'Should/Will'],
+        path: 'pages/g6-review-2-units-4-6.html',
+        available: true
+      },
+      {
+        id: 'g6-review-3-units-7-9',
+        title: 'Review 3: Units 7-9',
+        description: 'Comprehensive review of Units 7, 8, and 9',
+        topics: ['Conjunctions', 'Past Simple', 'Superlatives'],
+        path: 'pages/g6-review-3-units-7-9.html',
+        available: true
+      }
+    ];
+
+    const GRADE8_UNITS = [
+      {
+        id: 'g8-unit-1-2-3-vocab-review',
+        title: 'Units 1-3 Vocabulary Review',
+        description: 'Comprehensive vocabulary review covering leisure activities, daily life, and healthy living',
+        topics: ['Leisure Activities', 'Daily Life', 'Healthy Living', 'Vocabulary'],
+        path: 'pages/g8-unit-1-2-3-vocab-review.html',
+        available: true
+      },
+      {
+        id: 'g8-review-1-additional-exercise',
+        title: 'Review 1 - Additional Exercises',
+        description: '100 timed grammar exercises - 30 seconds per question ⏱️',
+        topics: ['Verbs + V-ing', 'Comparative Adverbs', 'Compound Sentences', 'Complex Sentences'],
+        path: 'pages/g8-review-1-additional-exercise.html',
+        available: true
+      }
+    ];
+
+    const GRADE11_EXAMS = [
+      {
+        id: 'midterm-1-test-1',
+        title: 'Đề thi giữa kì 1 - Đề số 1',
+        description: 'Comprehensive test covering phonetics, grammar, vocabulary, reading, and writing',
+        topics: ['Present Perfect', 'Present Continuous', 'Phonetics', 'Vocabulary', 'Reading', 'Writing'],
+        path: 'pages/midterm-1-test-1.html',
+        available: true
+      }
+    ];
+
+    const GRADE9_UNITS = [
+      {
+        id: 'g9-unit-1-local-community',
+        title: 'Unit 1: Local Community',
+        description: 'Question words before to-infinitives and phrasal verbs',
+        topics: ['Question Words + To-V', 'Phrasal Verbs', 'Local Community'],
+        path: 'pages/g9-unit-1-local-community.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-2-city-life',
+        title: 'Unit 2: City Life',
+        description: 'Double comparatives (the...the...) and phrasal verbs',
+        topics: ['Double Comparatives', 'Phrasal Verbs', 'City Life'],
+        path: 'pages/g9-unit-2-city-life.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-3-healthy-living',
+        title: 'Unit 3: Healthy Living for Teens',
+        description: 'First conditional with modal verbs (can, must, should, might)',
+        topics: ['First Conditional', 'Modal Verbs', 'Healthy Living'],
+        path: 'pages/g9-unit-3-healthy-living.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-4-remembering-the-past',
+        title: 'Unit 4: Remembering the Past',
+        description: 'Past continuous and wish + past simple for unreal wishes',
+        topics: ['Past Continuous', 'Wish + Past Simple', 'Memories'],
+        path: 'pages/g9-unit-4-remembering-the-past.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-5-our-experiences',
+        title: 'Unit 5: Our Experiences',
+        description: 'Present perfect tense with just, already, yet, ever, never',
+        topics: ['Present Perfect', 'For/Since', 'Experiences'],
+        path: 'pages/g9-unit-5-our-experiences.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-6-vietnamese-lifestyle',
+        title: 'Unit 6: Vietnamese Lifestyle: Then and Now',
+        description: 'V-ing and to-infinitive after different verbs',
+        topics: ['V-ing', 'To-Infinitive', 'Lifestyle Changes'],
+        path: 'pages/g9-unit-6-vietnamese-lifestyle.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-7-natural-wonders',
+        title: 'Unit 7: Natural Wonders of the World',
+        description: 'Reported questions with if/whether (yes/no questions)',
+        topics: ['Reported Questions', 'If/Whether', 'Natural Wonders'],
+        path: 'pages/g9-unit-7-natural-wonders.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-8-tourism',
+        title: 'Unit 8: Tourism',
+        description: 'Relative pronouns (which, who, whose)',
+        topics: ['Relative Pronouns', 'Which/Who/Whose', 'Tourism'],
+        path: 'pages/g9-unit-8-tourism.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-9-world-englishes',
+        title: 'Unit 9: World Englishes',
+        description: 'Defining relative clauses (essential information)',
+        topics: ['Defining Relative Clauses', 'That/Which/Who', 'World Englishes'],
+        path: 'pages/g9-unit-9-world-englishes.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-10-planet-earth',
+        title: 'Unit 10: Planet Earth',
+        description: 'Non-defining relative clauses (extra information with commas)',
+        topics: ['Non-defining Clauses', 'Commas', 'Planet Earth'],
+        path: 'pages/g9-unit-10-planet-earth.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-11-electronic-devices',
+        title: 'Unit 11: Electronic Devices',
+        description: 'Suggest and recommend (+ V-ing or + that + S + should + V0)',
+        topics: ['Suggest', 'Recommend', 'Electronic Devices'],
+        path: 'pages/g9-unit-11-electronic-devices.html',
+        available: true
+      },
+      {
+        id: 'g9-unit-12-career-choices',
+        title: 'Unit 12: Career Choices',
+        description: 'Adverbial clauses (concession, result, reason)',
+        topics: ['Although/Though', 'So/Such...that', 'Because/Since/As'],
+        path: 'pages/g9-unit-12-career-choices.html',
+        available: true
+      }
+    ];
+
+    const UNITS = [
+      {
+        id: 'unit-3-carnival',
+        title: 'Unit 3: Carnival',
+        description: 'Comparative and superlative adjectives, too and enough',
+        topics: ['Comparatives', 'Superlatives', 'Too & Enough'],
+        path: 'pages/unit-3-carnival.html',
+        available: true
+      },
+      {
+        id: 'unit-4-world-around-us',
+        title: 'Unit 4: The World Around Us',
+        description: 'Past continuous, past simple, and used to',
+        topics: ['Past Continuous', 'Past Simple', 'Used To'],
+        path: 'pages/unit-4-world-around-us.html',
+        available: true
+      },
+      {
+        id: 'unit-5-environment',
+        title: 'Unit 5: The Environment',
+        description: 'Will and won\'t for predictions, present continuous for future plans',
+        topics: ['Will/Won\'t', 'Future Plans', 'Predictions'],
+        path: 'pages/unit-5-environment.html',
+        available: true
+      },
+      {
+        id: 'unit-6-day-trip',
+        title: 'Unit 6: Day Trip',
+        description: 'Be going to for plans, intentions, and predictions with evidence',
+        topics: ['Be Going To', 'Plans', 'Predictions'],
+        path: 'pages/unit-6-day-trip.html',
+        available: true
+      },
+      {
+        id: 'unit-7-first-aid',
+        title: 'Unit 7: First Aid',
+        description: 'Reported speech with said and told, changing tenses and time words',
+        topics: ['Reported Speech', 'Said vs Told', 'Time Changes'],
+        path: 'pages/unit-7-first-aid.html',
+        available: true
+      },
+      {
+        id: 'unit-8-our-favourite-food',
+        title: 'Unit 8: Our Favourite Food',
+        description: 'First conditional with if-clauses, questions and short answers',
+        topics: ['First Conditional', 'If-clauses', 'Will/Won\'t'],
+        path: 'pages/unit-8-our-favourite-food.html',
+        available: true
+      },
+      {
+        id: 'unit-9-possibilities',
+        title: 'Unit 9: Possibilities',
+        description: 'Modals for possibility (may, might, could) and have to for obligation',
+        topics: ['May/Might/Could', 'Have To', 'Modals'],
+        path: 'pages/unit-9-possibilities.html',
+        available: true
+      },
+      {
+        id: 'unit-10-indefinite-pronouns',
+        title: 'Unit 10: Indefinite Pronouns & Question Tags',
+        description: 'Indefinite pronouns (someone, anyone, nothing) and question tags',
+        topics: ['Indefinite Pronouns', 'Question Tags', 'Someone/Anyone'],
+        path: 'pages/unit-10-indefinite-pronouns.html',
+        available: true
+      },
+      {
+        id: 'unit-11-making-a-film',
+        title: 'Unit 11: Making a Film',
+        description: 'The passive voice (present simple) with by and with',
+        topics: ['Passive Voice', 'By & With', 'Past Participle'],
+        path: 'pages/unit-11-making-a-film.html',
+        available: true
+      },
+      {
+        id: 'unit-12-famous-inventions',
+        title: 'Unit 12: Famous Inventions',
+        description: 'The passive voice in past simple and passive questions',
+        topics: ['Passive Past', 'Was/Were', 'Passive Questions'],
+        path: 'pages/unit-12-famous-inventions.html',
+        available: true
+      }
+      // More units can be added here as they are developed
+    ];
+
+    function renderOverallStats() {
+      const stats = Storage.getOverallStats();
+
+      document.getElementById('total-units').textContent = stats.totalUnits || 0;
+      document.getElementById('total-stars').textContent = stats.totalStars || 0;
+      document.getElementById('avg-score').textContent = stats.averageScore || 0;
+      document.getElementById('total-attempts').textContent = stats.totalAttempts || 0;
+    }
+
+    function renderStars(count) {
+      let html = '';
+      for (let i = 0; i < 3; i++) {
+        html += `<span class="${i < count ? 'star star--filled' : 'star'}">★</span>`;
+      }
+      return html;
+    }
+
+    function renderGrade6Units() {
+      const grid = document.getElementById('grade6-unit-grid');
+      grid.innerHTML = '';
+
+      GRADE6_UNITS.forEach(unit => {
+        const unitStats = Storage.getUnitStats(unit.id);
+
+        const card = document.createElement('a');
+        card.href = unit.available ? unit.path : '#';
+        card.className = `unit-card ${!unit.available ? 'unit-card--locked' : ''}`;
+
+        if (!unit.available) {
+          card.onclick = (e) => {
+            e.preventDefault();
+            Utils.showToast('This unit is not available yet', 'info');
+          };
+        }
+
+        const badge = document.createElement('div');
+        badge.className = 'unit-card__badge';
+        badge.textContent = unit.available ? 'Grade 6' : 'Coming Soon';
+        badge.style.background = unit.available ? '#9C27B0' : 'var(--text-light)';
+
+        const title = document.createElement('h3');
+        title.className = 'unit-card__title';
+        title.textContent = unit.title;
+
+        const description = document.createElement('p');
+        description.className = 'unit-card__description';
+        description.textContent = unit.description;
+
+        const topics = document.createElement('div');
+        topics.style.marginBottom = 'var(--spacing-md)';
+        topics.innerHTML = unit.topics.map(topic =>
+          `<span style="display: inline-block; background: var(--bg-light); padding: 2px 8px; border-radius: var(--radius-sm); font-size: var(--font-size-sm); margin-right: var(--spacing-xs); margin-bottom: var(--spacing-xs);">${topic}</span>`
+        ).join('');
+
+        const stats = document.createElement('div');
+        stats.className = 'unit-card__stats';
+
+        const stars = document.createElement('div');
+        stars.className = 'unit-card__stars';
+        stars.innerHTML = renderStars(unitStats.stars || 0);
+
+        const progress = document.createElement('div');
+        progress.className = 'unit-card__progress';
+        if (unitStats.played) {
+          progress.innerHTML = `
+            <strong>Best Score:</strong> ${unitStats.bestScore}<br>
+            <strong>Attempts:</strong> ${unitStats.attempts}
+          `;
+        } else {
+          progress.textContent = 'Not started yet';
+        }
+
+        stats.appendChild(stars);
+        stats.appendChild(progress);
+
+        card.appendChild(badge);
+        card.appendChild(title);
+        card.appendChild(description);
+        card.appendChild(topics);
+        card.appendChild(stats);
+
+        grid.appendChild(card);
+      });
+    }
+
+    function renderGrade8Units() {
+      const grid = document.getElementById('grade8-unit-grid');
+      grid.innerHTML = '';
+
+      GRADE8_UNITS.forEach(unit => {
+        const unitStats = Storage.getUnitStats(unit.id);
+
+        const card = document.createElement('a');
+        card.href = unit.available ? unit.path : '#';
+        card.className = `unit-card ${!unit.available ? 'unit-card--locked' : ''}`;
+
+        if (!unit.available) {
+          card.onclick = (e) => {
+            e.preventDefault();
+            Utils.showToast('This unit is not available yet', 'info');
+          };
+        }
+
+        const badge = document.createElement('div');
+        badge.className = 'unit-card__badge';
+        badge.textContent = unit.available ? 'Grade 8 ⏱️' : 'Coming Soon';
+        badge.style.background = unit.available ? '#E91E63' : 'var(--text-light)';
+
+        const title = document.createElement('h3');
+        title.className = 'unit-card__title';
+        title.textContent = unit.title;
+
+        const description = document.createElement('p');
+        description.className = 'unit-card__description';
+        description.textContent = unit.description;
+
+        const topics = document.createElement('div');
+        topics.style.marginBottom = 'var(--spacing-md)';
+        topics.innerHTML = unit.topics.map(topic =>
+          `<span style="display: inline-block; background: var(--bg-light); padding: 2px 8px; border-radius: var(--radius-sm); font-size: var(--font-size-sm); margin-right: var(--spacing-xs); margin-bottom: var(--spacing-xs);">${topic}</span>`
+        ).join('');
+
+        const stats = document.createElement('div');
+        stats.className = 'unit-card__stats';
+
+        const stars = document.createElement('div');
+        stars.className = 'unit-card__stars';
+        stars.innerHTML = renderStars(unitStats.stars || 0);
+
+        const progress = document.createElement('div');
+        progress.className = 'unit-card__progress';
+        if (unitStats.played) {
+          progress.innerHTML = `
+            <strong>Best Score:</strong> ${unitStats.bestScore}<br>
+            <strong>Attempts:</strong> ${unitStats.attempts}
+          `;
+        } else {
+          progress.textContent = 'Not started yet';
+        }
+
+        stats.appendChild(stars);
+        stats.appendChild(progress);
+
+        card.appendChild(badge);
+        card.appendChild(title);
+        card.appendChild(description);
+        card.appendChild(topics);
+        card.appendChild(stats);
+
+        grid.appendChild(card);
+      });
+    }
+
+    function renderGrade11Exams() {
+      const grid = document.getElementById('grade11-exams-grid');
+      grid.innerHTML = '';
+
+      GRADE11_EXAMS.forEach(unit => {
+        const unitStats = Storage.getUnitStats(unit.id);
+
+        const card = document.createElement('a');
+        card.href = unit.available ? unit.path : '#';
+        card.className = `unit-card ${!unit.available ? 'unit-card--locked' : ''}`;
+
+        if (!unit.available) {
+          card.onclick = (e) => {
+            e.preventDefault();
+            Utils.showToast('This exam is not available yet', 'info');
+          };
+        }
+
+        const badge = document.createElement('div');
+        badge.className = 'unit-card__badge';
+        badge.textContent = unit.available ? 'Grade 11 Exam' : 'Coming Soon';
+        badge.style.background = unit.available ? '#ff9800' : 'var(--text-light)';
+
+        const title = document.createElement('h3');
+        title.className = 'unit-card__title';
+        title.textContent = unit.title;
+
+        const description = document.createElement('p');
+        description.className = 'unit-card__description';
+        description.textContent = unit.description;
+
+        const topics = document.createElement('div');
+        topics.style.marginBottom = 'var(--spacing-md)';
+        topics.innerHTML = unit.topics.map(topic =>
+          `<span style="display: inline-block; background: var(--bg-light); padding: 2px 8px; border-radius: var(--radius-sm); font-size: var(--font-size-sm); margin-right: var(--spacing-xs); margin-bottom: var(--spacing-xs);">${topic}</span>`
+        ).join('');
+
+        const stats = document.createElement('div');
+        stats.className = 'unit-card__stats';
+
+        const stars = document.createElement('div');
+        stars.className = 'unit-card__stars';
+        stars.innerHTML = renderStars(unitStats.stars || 0);
+
+        const progress = document.createElement('div');
+        progress.className = 'unit-card__progress';
+        if (unitStats.played) {
+          progress.innerHTML = `
+            <strong>Best Score:</strong> ${unitStats.bestScore}<br>
+            <strong>Attempts:</strong> ${unitStats.attempts}
+          `;
+        } else {
+          progress.textContent = 'Not started yet';
+        }
+
+        stats.appendChild(stars);
+        stats.appendChild(progress);
+
+        card.appendChild(badge);
+        card.appendChild(title);
+        card.appendChild(description);
+        card.appendChild(topics);
+        card.appendChild(stats);
+
+        grid.appendChild(card);
+      });
+    }
+
+    function renderGrade9Units() {
+      const grid = document.getElementById('grade9-unit-grid');
+      grid.innerHTML = '';
+
+      GRADE9_UNITS.forEach(unit => {
+        const unitStats = Storage.getUnitStats(unit.id);
+
+        const card = document.createElement('a');
+        card.href = unit.available ? unit.path : '#';
+        card.className = `unit-card ${!unit.available ? 'unit-card--locked' : ''}`;
+
+        if (!unit.available) {
+          card.onclick = (e) => {
+            e.preventDefault();
+            Utils.showToast('This unit is not available yet', 'info');
+          };
+        }
+
+        const badge = document.createElement('div');
+        badge.className = 'unit-card__badge';
+        badge.textContent = unit.available ? 'Grade 9' : 'Coming Soon';
+        badge.style.background = unit.available ? '#2196F3' : 'var(--text-light)';
+
+        const title = document.createElement('h3');
+        title.className = 'unit-card__title';
+        title.textContent = unit.title;
+
+        const description = document.createElement('p');
+        description.className = 'unit-card__description';
+        description.textContent = unit.description;
+
+        const topics = document.createElement('div');
+        topics.style.marginBottom = 'var(--spacing-md)';
+        topics.innerHTML = unit.topics.map(topic =>
+          `<span style="display: inline-block; background: var(--bg-light); padding: 2px 8px; border-radius: var(--radius-sm); font-size: var(--font-size-sm); margin-right: var(--spacing-xs); margin-bottom: var(--spacing-xs);">${topic}</span>`
+        ).join('');
+
+        const stats = document.createElement('div');
+        stats.className = 'unit-card__stats';
+
+        const stars = document.createElement('div');
+        stars.className = 'unit-card__stars';
+        stars.innerHTML = renderStars(unitStats.stars || 0);
+
+        const progress = document.createElement('div');
+        progress.className = 'unit-card__progress';
+        if (unitStats.played) {
+          progress.innerHTML = `
+            <strong>Best Score:</strong> ${unitStats.bestScore}<br>
+            <strong>Attempts:</strong> ${unitStats.attempts}
+          `;
+        } else {
+          progress.textContent = 'Not started yet';
+        }
+
+        stats.appendChild(stars);
+        stats.appendChild(progress);
+
+        card.appendChild(badge);
+        card.appendChild(title);
+        card.appendChild(description);
+        card.appendChild(topics);
+        card.appendChild(stats);
+
+        grid.appendChild(card);
+      });
+    }
+
+    function renderUnits() {
+      const grid = document.getElementById('unit-grid');
+      grid.innerHTML = '';
+
+      UNITS.forEach(unit => {
+        const unitStats = Storage.getUnitStats(unit.id);
+
+        const card = document.createElement('a');
+        card.href = unit.available ? unit.path : '#';
+        card.className = `unit-card ${!unit.available ? 'unit-card--locked' : ''}`;
+
+        if (!unit.available) {
+          card.onclick = (e) => {
+            e.preventDefault();
+            Utils.showToast('This unit is not available yet', 'info');
+          };
+        }
+
+        const badge = document.createElement('div');
+        badge.className = 'unit-card__badge';
+        badge.textContent = unit.available ? 'Available' : 'Coming Soon';
+        badge.style.background = unit.available ? 'var(--primary)' : 'var(--text-light)';
+
+        const title = document.createElement('h3');
+        title.className = 'unit-card__title';
+        title.textContent = unit.title;
+
+        const description = document.createElement('p');
+        description.className = 'unit-card__description';
+        description.textContent = unit.description;
+
+        const topics = document.createElement('div');
+        topics.style.marginBottom = 'var(--spacing-md)';
+        topics.innerHTML = unit.topics.map(topic =>
+          `<span style="display: inline-block; background: var(--bg-light); padding: 2px 8px; border-radius: var(--radius-sm); font-size: var(--font-size-sm); margin-right: var(--spacing-xs); margin-bottom: var(--spacing-xs);">${topic}</span>`
+        ).join('');
+
+        const stats = document.createElement('div');
+        stats.className = 'unit-card__stats';
+
+        const stars = document.createElement('div');
+        stars.className = 'unit-card__stars';
+        stars.innerHTML = renderStars(unitStats.stars || 0);
+
+        const progress = document.createElement('div');
+        progress.className = 'unit-card__progress';
+        if (unitStats.played) {
+          progress.innerHTML = `
+            <strong>Best Score:</strong> ${unitStats.bestScore}<br>
+            <strong>Attempts:</strong> ${unitStats.attempts}
+          `;
+        } else {
+          progress.textContent = 'Not started yet';
+        }
+
+        stats.appendChild(stars);
+        stats.appendChild(progress);
+
+        card.appendChild(badge);
+        card.appendChild(title);
+        card.appendChild(description);
+        card.appendChild(topics);
+        card.appendChild(stats);
+
+        grid.appendChild(card);
+      });
+    }
+
+    document.getElementById('clear-progress-btn').addEventListener('click', () => {
+      if (confirm('Are you sure you want to clear all your progress? This cannot be undone.')) {
+        Storage.clearAll();
+        renderOverallStats();
+        renderGrade6Units();
+        renderGrade8Units();
+        renderGrade9Units();
+        renderGrade11Exams();
+        renderUnits();
+        Utils.showToast('All progress cleared', 'info');
+      }
+    });
+
+    renderOverallStats();
+    renderGrade6Units();
+    renderGrade8Units();
+    renderGrade9Units();
+    renderGrade11Exams();
+    renderUnits();
+  </script>
+</body>
+</html>
