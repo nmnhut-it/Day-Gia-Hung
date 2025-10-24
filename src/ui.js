@@ -24,6 +24,7 @@ export function renderQuiz(state, container, onBackToMenu) {
     <div class="quiz-header">
       <h2>${UI_TEXT.APP_TITLE}</h2>
       <div class="progress">${UI_TEXT.QUESTION_LABEL} ${questionNumber} / ${total}</div>
+      ${renderQuestionNavigator(state)}
     </div>
     <div class="${CSS_CLASSES.QUESTION_CONTAINER}">
       ${renderQuestion(question, state)}
