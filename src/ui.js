@@ -3,6 +3,17 @@
  */
 
 import { QUESTION_TYPES, UI_TEXT, CSS_CLASSES } from './data.js';
+import {
+  playCorrectSound,
+  playWrongSound,
+  playClickSound,
+  playStreakSound,
+  playGameStartSound,
+  playGameOverSound,
+  playTickSound,
+  toggleMute,
+  isSoundMuted
+} from './sound-manager.js';
 
 /**
  * Renders the quiz interface
@@ -22,11 +33,18 @@ export function renderQuiz(state, container, onBackToMenu) {
 
   container.innerHTML = `
     <div class="quiz-header">
-      <h2>${UI_TEXT.APP_TITLE}</h2>
+      <div class="header-top">
+        <h2>${UI_TEXT.APP_TITLE}</h2>
+        <div class="header-controls">
+          ${renderStreakIndicator(state)}
+          ${renderScoreDisplay(state)}
+          ${renderMuteButton()}
+        </div>
+      </div>
       <div class="progress">${UI_TEXT.QUESTION_LABEL} ${questionNumber} / ${total}</div>
       ${renderQuestionNavigator(state)}
     </div>
-    <div class="${CSS_CLASSES.QUESTION_CONTAINER}">
+    <div class="${CSS_CLASSES.QUESTION_CONTAINER}" id="question-container">
       ${renderQuestion(question, state)}
       ${renderAnswerFeedback(state)}
       ${renderExplanationSection(question, state)}
@@ -34,9 +52,164 @@ export function renderQuiz(state, container, onBackToMenu) {
     <div class="quiz-nav">
       ${renderNavigationButtons(state)}
     </div>
+    ${renderGroupMilestoneModal(state)}
   `;
 
   attachEventListeners(state, container);
+}
+
+/**
+ * Renders score display
+ * @param {QuizState} state - Quiz state
+ * @returns {string} HTML string
+ */
+function renderScoreDisplay(state) {
+  const score = state.getTotalScore();
+  return `
+    <div class="score-widget">
+      <span class="score-label">${UI_TEXT.SCORE_LABEL}</span>
+      <span class="score-value" id="score-value">${score}</span>
+    </div>
+  `;
+}
+
+/**
+ * Renders streak indicator
+ * @param {QuizState} state - Quiz state
+ * @returns {string} HTML string
+ */
+function renderStreakIndicator(state) {
+  const streak = state.getCurrentStreak();
+  if (streak === 0) return '';
+
+  return `
+    <div class="streak-indicator ${streak >= 5 ? 'streak-glow' : ''}">
+      <span class="streak-fire">🔥</span>
+      <span class="streak-count">${streak}</span>
+    </div>
+  `;
+}
+
+/**
+ * Renders mute button
+ * @returns {string} HTML string
+ */
+function renderMuteButton() {
+  const isMuted = isSoundMuted();
+  const icon = isMuted ? UI_TEXT.SOUND_OFF : UI_TEXT.SOUND_ON;
+  return `
+    <button class="mute-button" id="mute-button" title="${isMuted ? 'Unmute' : 'Mute'} sounds">
+      ${icon}
+    </button>
+  `;
+}
+
+/**
+ * Renders group milestone celebration modal
+ * @param {QuizState} state - Quiz state
+ * @returns {string} HTML string
+ */
+function renderGroupMilestoneModal(state) {
+  // Modal will be shown dynamically when milestone is reached
+  return '<div class="milestone-modal-overlay" id="milestone-modal" style="display: none;"></div>';
+}
+
+/**
+ * Shows group milestone celebration
+ * @param {Object} groupScore - Group score data
+ * @param {HTMLElement} container - Container element
+ */
+function showGroupMilestone(groupScore, container) {
+  const modalOverlay = container.querySelector('#milestone-modal');
+  if (!modalOverlay) return;
+
+  const title = groupScore.isPerfect ? UI_TEXT.GROUP_MILESTONE_PERFECT : UI_TEXT.GROUP_MILESTONE_TITLE;
+  const emoji = groupScore.isPerfect ? '🎉⭐🎉' : '🎉';
+
+  modalOverlay.innerHTML = `
+    <div class="milestone-card">
+      <div class="milestone-header">${emoji}</div>
+      <h3>${title}</h3>
+      <div class="milestone-subtitle">Questions ${groupScore.startQuestion}-${groupScore.endQuestion} Complete!</div>
+      <div class="milestone-stats">
+        <div class="milestone-stat">
+          <div class="stat-label">Correct</div>
+          <div class="stat-value">${groupScore.correct}/${groupScore.total}</div>
+        </div>
+        <div class="milestone-stat">
+          <div class="stat-label">Points</div>
+          <div class="stat-value">${groupScore.points}</div>
+        </div>
+        ${groupScore.bonus > 0 ? `
+          <div class="milestone-stat bonus">
+            <div class="stat-label">Bonus</div>
+            <div class="stat-value">+${groupScore.bonus}</div>
+          </div>
+        ` : ''}
+      </div>
+      <button class="continue-milestone-btn" id="continue-milestone">${UI_TEXT.CONTINUE_BUTTON} →</button>
+    </div>
+  `;
+
+  modalOverlay.style.display = 'flex';
+
+  // Add confetti effect for perfect score
+  if (groupScore.isPerfect) {
+    createConfetti(modalOverlay);
+  }
+
+  // Close button
+  const continueBtn = modalOverlay.querySelector('#continue-milestone');
+  continueBtn.addEventListener('click', () => {
+    playClickSound();
+    modalOverlay.style.display = 'none';
+  });
+}
+
+/**
+ * Creates simple confetti effect
+ * @param {HTMLElement} container - Container element
+ */
+function createConfetti(container) {
+  const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#f9ca24', '#6c5ce7'];
+  const confettiCount = 30;
+
+  for (let i = 0; i < confettiCount; i++) {
+    const confetti = document.createElement('div');
+    confetti.className = 'confetti';
+    confetti.style.left = `${Math.random() * 100}%`;
+    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    confetti.style.animationDelay = `${Math.random() * 0.5}s`;
+    container.appendChild(confetti);
+
+    setTimeout(() => confetti.remove(), 3000);
+  }
+}
+
+/**
+ * Animates score change
+ * @param {number} points - Points earned
+ * @param {HTMLElement} container - Container element
+ */
+function animateScoreChange(points, container) {
+  if (points === 0) return;
+
+  const questionContainer = container.querySelector('#question-container');
+  if (!questionContainer) return;
+
+  const scoreAnimation = document.createElement('div');
+  scoreAnimation.className = 'score-animation';
+  scoreAnimation.textContent = `+${points}`;
+  questionContainer.appendChild(scoreAnimation);
+
+  setTimeout(() => scoreAnimation.remove(), 1000);
+
+  // Update score number with animation
+  const scoreValue = container.querySelector('#score-value');
+  if (scoreValue) {
+    scoreValue.classList.add('score-bump');
+    setTimeout(() => scoreValue.classList.remove('score-bump'), 300);
+  }
 }
 
 /**
@@ -227,31 +400,35 @@ function renderAnswerFeedback(state) {
 }
 
 /**
- * Renders question navigator with visual progress
+ * Renders question navigator with jump input
  * @param {QuizState} state - Quiz state
  * @returns {string} HTML string
  */
 function renderQuestionNavigator(state) {
   const total = state.getTotalQuestions();
   const currentIndex = state.currentIndex;
-  const answeredQuestions = state.getAnsweredQuestions();
+  const currentQuestion = currentIndex + 1;
+  const answeredCount = state.getAnsweredQuestions().size;
 
-  let html = '<div class="question-navigator"><div class="question-dots">';
-
-  for (let i = 0; i < total; i++) {
-    const isCurrent = i === currentIndex;
-    const isAnswered = answeredQuestions.has(i);
-    const questionNum = i + 1;
-
-    let cssClass = 'question-dot';
-    if (isCurrent) cssClass += ' current';
-    if (isAnswered) cssClass += ' answered';
-
-    html += `<button class="${cssClass}" data-question-index="${i}" title="Question ${questionNum}">${questionNum}</button>`;
-  }
-
-  html += '</div></div>';
-  return html;
+  return `
+    <div class="question-navigator">
+      <div class="progress-summary">
+        <span class="answered-count">${answeredCount} answered</span>
+      </div>
+      <div class="jump-to-question">
+        <label for="jump-input">Jump to:</label>
+        <input
+          type="number"
+          id="jump-input"
+          min="1"
+          max="${total}"
+          placeholder="${currentQuestion}"
+          class="jump-input"
+        />
+        <button class="jump-btn" id="jump-btn">Go</button>
+      </div>
+    </div>
+  `;
 }
 
 /**
@@ -372,15 +549,37 @@ function renderNavigationButtons(state) {
  * @param {Function} onBackToMenu - Callback to return to menu
  */
 function renderResults(state, container, onBackToMenu) {
+  playGameOverSound();
+
   const score = state.calculateScore();
+  const totalScore = state.getTotalScore();
+  const maxStreak = state.getMaxStreak();
+  const groupScores = state.getAllGroupScores();
 
   container.innerHTML = `
     <div class="${CSS_CLASSES.RESULTS_CONTAINER}">
-      <h2>Quiz Complete!</h2>
+      <h2>🎉 Quiz Complete!</h2>
       <div class="${CSS_CLASSES.SCORE_DISPLAY}">
-        <p class="score-big">${score.correct} / ${score.total}</p>
-        <p class="score-percentage">${score.percentage}%</p>
+        <div class="results-main-score">
+          <div class="score-item">
+            <div class="score-label">Accuracy</div>
+            <div class="score-big">${score.correct} / ${score.total}</div>
+            <div class="score-percentage">${score.percentage}%</div>
+          </div>
+          <div class="score-item">
+            <div class="score-label">Total Score</div>
+            <div class="score-big">${totalScore}</div>
+            <div class="score-sublabel">points</div>
+          </div>
+          ${maxStreak > 0 ? `
+            <div class="score-item">
+              <div class="score-label">Max Streak</div>
+              <div class="score-big">🔥 ${maxStreak}</div>
+            </div>
+          ` : ''}
+        </div>
       </div>
+      ${groupScores.length > 0 ? renderGroupScoreBreakdown(groupScores) : ''}
       <div class="results-buttons">
         <button class="${CSS_CLASSES.SUBMIT_BUTTON}" id="retry-btn">
           ${UI_TEXT.RETRY_BUTTON}
@@ -393,11 +592,51 @@ function renderResults(state, container, onBackToMenu) {
   `;
 
   container.querySelector('#retry-btn').addEventListener('click', () => {
+    playClickSound();
     state.reset();
+    playGameStartSound();
     renderQuiz(state, container, onBackToMenu);
   });
 
-  container.querySelector('#menu-btn').addEventListener('click', onBackToMenu);
+  container.querySelector('#menu-btn').addEventListener('click', () => {
+    playClickSound();
+    onBackToMenu();
+  });
+}
+
+/**
+ * Renders group score breakdown table
+ * @param {Array<Object>} groupScores - Array of group score objects
+ * @returns {string} HTML string
+ */
+function renderGroupScoreBreakdown(groupScores) {
+  const rows = groupScores.map(group => `
+    <tr class="${group.isPerfect ? 'perfect-group' : ''}">
+      <td>${group.startQuestion}-${group.endQuestion}</td>
+      <td>${group.correct}/${group.total}</td>
+      <td>${group.points}${group.bonus > 0 ? ` <span class="bonus-points">+${group.bonus}</span>` : ''}</td>
+      <td>${group.isPerfect ? '⭐' : ''}</td>
+    </tr>
+  `).join('');
+
+  return `
+    <div class="group-score-breakdown">
+      <h3>Group Performance</h3>
+      <table class="score-table">
+        <thead>
+          <tr>
+            <th>Questions</th>
+            <th>Correct</th>
+            <th>Points</th>
+            <th>Perfect</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows}
+        </tbody>
+      </table>
+    </div>
+  `;
 }
 
 /**
@@ -460,10 +699,20 @@ function updateNavigationButtons(state, container) {
 function attachEventListeners(state, container) {
   const question = state.getCurrentQuestion();
 
+  // Mute button
+  const muteButton = container.querySelector('#mute-button');
+  if (muteButton) {
+    muteButton.addEventListener('click', () => {
+      toggleMute();
+      renderQuiz(state, container, state.onBackToMenu);
+    });
+  }
+
   // Option buttons (multiple choice)
   const optionButtons = container.querySelectorAll(`.${CSS_CLASSES.OPTION_BUTTON}`);
   optionButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
+      playClickSound();
       const answer = e.target.dataset.answer;
       state.setAnswer(answer);
 
@@ -515,8 +764,44 @@ function attachEventListeners(state, container) {
   const checkBtn = container.querySelector('#check-btn');
   if (checkBtn && !checkBtn.classList.contains(CSS_CLASSES.NAV_DISABLED)) {
     checkBtn.addEventListener('click', () => {
+      playClickSound();
+
+      const isCorrect = state.isCurrentAnswerCorrect();
+      const scoreInfo = state.updateScore(isCorrect);
+
       state.checkCurrentAnswer();
+
+      // Play appropriate sound
+      if (isCorrect) {
+        playCorrectSound();
+
+        // Play streak sound on milestones
+        if (scoreInfo.currentStreak === 5 || scoreInfo.currentStreak === 10) {
+          setTimeout(() => playStreakSound(), 300);
+        }
+      } else {
+        playWrongSound();
+      }
+
+      // Animate score change
+      if (scoreInfo.pointsEarned > 0) {
+        setTimeout(() => {
+          animateScoreChange(scoreInfo.pointsEarned, container);
+        }, 100);
+      }
+
       renderQuiz(state, container, state.onBackToMenu);
+
+      // Check for group milestone
+      setTimeout(() => {
+        const groupMilestone = state.checkGroupMilestone();
+        if (groupMilestone) {
+          showGroupMilestone(groupMilestone, container);
+          if (groupMilestone.isPerfect) {
+            playStreakSound();
+          }
+        }
+      }, 500);
     });
   }
 
@@ -524,8 +809,40 @@ function attachEventListeners(state, container) {
   const confirmBtn = container.querySelector('#confirm-btn');
   if (confirmBtn) {
     confirmBtn.addEventListener('click', () => {
+      playClickSound();
       state.confirmWrongAnswer();
       renderQuiz(state, container, state.onBackToMenu);
+    });
+  }
+
+  // Jump to question functionality
+  const jumpInput = container.querySelector('#jump-input');
+  const jumpBtn = container.querySelector('#jump-btn');
+
+  if (jumpInput && jumpBtn) {
+    const handleJump = () => {
+      const targetQuestion = parseInt(jumpInput.value);
+      const total = state.getTotalQuestions();
+
+      if (targetQuestion >= 1 && targetQuestion <= total) {
+        playTickSound();
+        state.goToQuestion(targetQuestion - 1); // Convert to 0-based index
+        renderQuiz(state, container, state.onBackToMenu);
+      } else {
+        jumpInput.value = '';
+        jumpInput.placeholder = 'Invalid';
+        setTimeout(() => {
+          jumpInput.placeholder = state.currentIndex + 1;
+        }, 1000);
+      }
+    };
+
+    jumpBtn.addEventListener('click', handleJump);
+
+    jumpInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        handleJump();
+      }
     });
   }
 
@@ -536,6 +853,7 @@ function attachEventListeners(state, container) {
 
   if (prevBtn && !prevBtn.classList.contains(CSS_CLASSES.NAV_DISABLED)) {
     prevBtn.addEventListener('click', () => {
+      playTickSound();
       state.goToPrevious();
       renderQuiz(state, container, state.onBackToMenu);
     });
@@ -543,6 +861,7 @@ function attachEventListeners(state, container) {
 
   if (nextBtn) {
     nextBtn.addEventListener('click', async () => {
+      playTickSound();
       await state.goToNext();
       renderQuiz(state, container, state.onBackToMenu);
     });
@@ -550,6 +869,7 @@ function attachEventListeners(state, container) {
 
   if (submitBtn) {
     submitBtn.addEventListener('click', () => {
+      playClickSound();
       state.submit();
       renderQuiz(state, container, state.onBackToMenu);
     });

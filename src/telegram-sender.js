@@ -48,9 +48,11 @@ export async function sendPhotoToTelegram(photoBlob, caption) {
  * @param {number} questionNumber - Current question number
  * @param {string} testSetName - Name of test set
  * @param {Object} progressScore - Progress score object with correct, answered, total, percentage
+ * @param {string} questionRange - Question range completed (e.g., "1-20")
+ * @param {Object} scoreData - Score data with totalScore, currentStreak, maxStreak
  * @returns {string} Formatted caption
  */
-export function formatPhotoCaption(questionNumber, testSetName = 'Unknown', progressScore = null) {
+export function formatPhotoCaption(questionNumber, testSetName = 'Unknown', progressScore = null, questionRange = null, scoreData = null) {
   const timestamp = new Date().toLocaleString('vi-VN', {
     timeZone: 'Asia/Ho_Chi_Minh',
     year: 'numeric',
@@ -62,11 +64,26 @@ export function formatPhotoCaption(questionNumber, testSetName = 'Unknown', prog
   });
 
   let caption = `📸 IOE Quiz Progress\n` +
-                `📝 Test: ${testSetName}\n` +
-                `❓ Question: ${questionNumber}\n`;
+                `📝 Test: ${testSetName}\n`;
+
+  if (questionRange) {
+    caption += `📋 Questions: ${questionRange}\n`;
+  }
+
+  caption += `❓ Current: Question ${questionNumber}\n`;
 
   if (progressScore) {
-    caption += `📊 Score: ${progressScore.correct}/${progressScore.answered} correct (${progressScore.percentage}%)\n`;
+    caption += `📊 Accuracy: ${progressScore.correct}/${progressScore.answered} correct (${progressScore.percentage}%)\n`;
+  }
+
+  if (scoreData) {
+    caption += `🎯 Total Score: ${scoreData.totalScore} pts\n`;
+    if (scoreData.currentStreak > 0) {
+      caption += `🔥 Current Streak: ${scoreData.currentStreak}\n`;
+    }
+    if (scoreData.maxStreak > 0) {
+      caption += `⭐ Max Streak: ${scoreData.maxStreak}\n`;
+    }
   }
 
   caption += `🕒 Time: ${timestamp}\n` +

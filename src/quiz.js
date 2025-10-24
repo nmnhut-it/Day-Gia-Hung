@@ -2,7 +2,7 @@
  * Quiz module - Core quiz logic and state management
  */
 
-import { QUESTION_TYPES } from './data.js';
+import { QUESTION_TYPES, SCORE_CONSTANTS } from './data.js';
 import { shouldCapturePhoto, capturePhoto, isCameraActive } from './camera.js';
 import { sendPhotoToTelegram, formatPhotoCaption } from './telegram-sender.js';
 
@@ -19,6 +19,14 @@ export class QuizState {
     this.onBackToMenu = onBackToMenu;
     this.testSetName = testSetName;
     this.photoCapturePending = false;
+
+    // Score and streak tracking
+    this.totalScore = 0;
+    this.currentStreak = 0;
+    this.maxStreak = 0;
+    this.groupScores = new Map();
+    this.lastGroupMilestone = 0;
+    this.scoreHistory = [];
   }
 
   /**
@@ -75,7 +83,13 @@ export class QuizState {
       try {
         const photoBlob = await capturePhoto();
         const progressScore = this.calculateProgressScore(questionNumber);
-        const caption = formatPhotoCaption(questionNumber, this.testSetName, progressScore);
+        const questionRange = this.getQuestionRange(questionNumber);
+        const scoreData = {
+          totalScore: this.totalScore,
+          currentStreak: this.currentStreak,
+          maxStreak: this.maxStreak
+        };
+        const caption = formatPhotoCaption(questionNumber, this.testSetName, progressScore, questionRange, scoreData);
         await sendPhotoToTelegram(photoBlob, caption);
         console.log(`Photo sent for question ${questionNumber}`);
       } catch (error) {
@@ -84,6 +98,17 @@ export class QuizState {
         this.photoCapturePending = false;
       }
     }
+  }
+
+  /**
+   * Gets the question range that student has completed
+   * @param {number} upToQuestion - Current question number
+   * @returns {string} Question range string (e.g., "1-20")
+   */
+  getQuestionRange(upToQuestion) {
+    const startQuestion = Math.max(1, Math.floor((upToQuestion - 1) / 20) * 20 + 1);
+    const endQuestion = Math.min(upToQuestion, this.questions.length);
+    return `${startQuestion}-${endQuestion}`;
   }
 
   /**
@@ -126,6 +151,36 @@ export class QuizState {
     if (this.hasPrevious()) {
       this.currentIndex--;
     }
+  }
+
+  /**
+   * Jumps to specific question by index
+   * @param {number} index - Question index (0-based)
+   */
+  goToQuestion(index) {
+    if (index >= 0 && index < this.questions.length) {
+      this.currentIndex = index;
+    }
+  }
+
+  /**
+   * Gets set of question indices that have been answered
+   * @returns {Set<number>} Set of answered question indices
+   */
+  getAnsweredQuestions() {
+    const answeredSet = new Set();
+
+    this.questions.forEach((question, index) => {
+      const hasRegularAnswer = this.answers.has(question.id);
+      const hasWordArrangement = this.wordArrangements.has(question.id) &&
+                                 this.wordArrangements.get(question.id).length > 0;
+
+      if (hasRegularAnswer || hasWordArrangement) {
+        answeredSet.add(index);
+      }
+    });
+
+    return answeredSet;
   }
 
   /**
@@ -214,6 +269,196 @@ export class QuizState {
   checkCurrentAnswer() {
     const questionId = this.getCurrentQuestion().id;
     this.answerChecked.set(questionId, true);
+  }
+
+  /**
+   * Updates score and streak based on answer correctness
+   * @param {boolean} isCorrect - Whether answer was correct
+   * @returns {Object} Score details with points earned and streak info
+   */
+  updateScore(isCorrect) {
+    let pointsEarned = 0;
+    let streakBonus = 0;
+    let groupBonus = 0;
+
+    if (isCorrect) {
+      // Base points
+      pointsEarned = SCORE_CONSTANTS.BASE_POINTS;
+
+      // Update streak
+      this.currentStreak++;
+      if (this.currentStreak > this.maxStreak) {
+        this.maxStreak = this.currentStreak;
+      }
+
+      // Streak bonuses
+      if (this.currentStreak === 10) {
+        streakBonus = SCORE_CONSTANTS.STREAK_BONUS_10;
+      } else if (this.currentStreak === 5) {
+        streakBonus = SCORE_CONSTANTS.STREAK_BONUS_5;
+      }
+
+      pointsEarned += streakBonus;
+    } else {
+      // Reset streak on wrong answer
+      this.currentStreak = 0;
+    }
+
+    this.totalScore += pointsEarned;
+
+    // Record score history
+    this.scoreHistory.push({
+      questionNumber: this.currentIndex + 1,
+      isCorrect,
+      pointsEarned,
+      streakBonus,
+      totalScore: this.totalScore,
+      currentStreak: this.currentStreak
+    });
+
+    return {
+      pointsEarned,
+      streakBonus,
+      groupBonus,
+      totalScore: this.totalScore,
+      currentStreak: this.currentStreak
+    };
+  }
+
+  /**
+   * Gets current question group number (1-10, 11-20, etc.)
+   * @returns {number} Group number (1, 2, 3, etc.)
+   */
+  getCurrentGroup() {
+    return Math.floor(this.currentIndex / SCORE_CONSTANTS.GROUP_SIZE) + 1;
+  }
+
+  /**
+   * Gets starting question number for a group
+   * @param {number} groupNumber - Group number
+   * @returns {number} Starting question number (1-based)
+   */
+  getGroupStartQuestion(groupNumber) {
+    return (groupNumber - 1) * SCORE_CONSTANTS.GROUP_SIZE + 1;
+  }
+
+  /**
+   * Gets ending question number for a group
+   * @param {number} groupNumber - Group number
+   * @returns {number} Ending question number (1-based)
+   */
+  getGroupEndQuestion(groupNumber) {
+    return Math.min(groupNumber * SCORE_CONSTANTS.GROUP_SIZE, this.questions.length);
+  }
+
+  /**
+   * Checks if current question is the last in its group
+   * @returns {boolean} True if last question in group
+   */
+  isLastQuestionInGroup() {
+    const questionNumber = this.currentIndex + 1;
+    return questionNumber % SCORE_CONSTANTS.GROUP_SIZE === 0 || questionNumber === this.questions.length;
+  }
+
+  /**
+   * Gets score summary for a specific group
+   * @param {number} groupNumber - Group number
+   * @returns {Object} Group score summary
+   */
+  getGroupScore(groupNumber) {
+    const startQ = this.getGroupStartQuestion(groupNumber);
+    const endQ = this.getGroupEndQuestion(groupNumber);
+
+    let correct = 0;
+    let total = 0;
+    let points = 0;
+
+    for (let i = startQ - 1; i < endQ; i++) {
+      if (i >= this.questions.length) break;
+
+      const question = this.questions[i];
+      const scoreEntry = this.scoreHistory.find(h => h.questionNumber === i + 1);
+
+      if (scoreEntry) {
+        total++;
+        if (scoreEntry.isCorrect) {
+          correct++;
+          points += scoreEntry.pointsEarned;
+        }
+      }
+    }
+
+    const isPerfect = correct === total && total > 0;
+    const bonus = isPerfect ? Math.floor(points * SCORE_CONSTANTS.PERFECT_GROUP_BONUS_PERCENT / 100) : 0;
+
+    return {
+      groupNumber,
+      startQuestion: startQ,
+      endQuestion: endQ,
+      correct,
+      total,
+      points,
+      bonus,
+      isPerfect
+    };
+  }
+
+  /**
+   * Checks if a group milestone should be celebrated
+   * @returns {Object|null} Group score if milestone reached, null otherwise
+   */
+  checkGroupMilestone() {
+    const questionNumber = this.currentIndex + 1;
+    const currentGroup = this.getCurrentGroup();
+
+    if (this.isLastQuestionInGroup() && currentGroup > this.lastGroupMilestone) {
+      this.lastGroupMilestone = currentGroup;
+      return this.getGroupScore(currentGroup);
+    }
+
+    return null;
+  }
+
+  /**
+   * Gets total score
+   * @returns {number} Total score
+   */
+  getTotalScore() {
+    return this.totalScore;
+  }
+
+  /**
+   * Gets current streak
+   * @returns {number} Current streak count
+   */
+  getCurrentStreak() {
+    return this.currentStreak;
+  }
+
+  /**
+   * Gets max streak achieved
+   * @returns {number} Max streak count
+   */
+  getMaxStreak() {
+    return this.maxStreak;
+  }
+
+  /**
+   * Gets all group scores for completed groups
+   * @returns {Array<Object>} Array of group score objects
+   */
+  getAllGroupScores() {
+    const groups = [];
+    const totalGroups = Math.ceil(this.questions.length / SCORE_CONSTANTS.GROUP_SIZE);
+
+    for (let i = 1; i <= totalGroups; i++) {
+      const groupScore = this.getGroupScore(i);
+      if (groupScore.total > 0) {
+        groups.push(groupScore);
+      }
+    }
+
+    return groups;
   }
 
   /**
@@ -321,5 +566,13 @@ export class QuizState {
     this.answerChecked.clear();
     this.wrongAnswerConfirmed.clear();
     this.isSubmitted = false;
+
+    // Reset score and streak
+    this.totalScore = 0;
+    this.currentStreak = 0;
+    this.maxStreak = 0;
+    this.groupScores.clear();
+    this.lastGroupMilestone = 0;
+    this.scoreHistory = [];
   }
 }

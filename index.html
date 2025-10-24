@@ -19,10 +19,14 @@
     import { QuizState } from './src/quiz.js';
     import { renderQuiz, renderTestSetMenu, showLoading, showError } from './src/ui.js';
     import { initCamera, setupCameraElements } from './src/camera.js';
+    import { initSoundSystem, playGameStartSound } from './src/sound-manager.js';
 
     let setsIndex = null;
     let cameraInitialized = false;
     const container = document.getElementById('app');
+
+    // Initialize sound system on page load
+    initSoundSystem();
 
     /**
      * Shows test set selection menu
@@ -68,6 +72,7 @@
     function startQuiz(testSet, setInfo) {
       const testSetName = `Set ${setInfo.setNumber}`;
       const state = new QuizState(testSet.questions, showTestSetMenu, testSetName);
+      playGameStartSound();
       renderQuiz(state, container, showTestSetMenu);
     }
 

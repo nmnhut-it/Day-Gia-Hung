@@ -23,11 +23,26 @@ export const UI_TEXT = {
   CORRECT_FEEDBACK: '✅ Correct!',
   WRONG_FEEDBACK: '❌ Wrong!',
   SCORE_LABEL: 'Score:',
+  STREAK_LABEL: 'Streak:',
   QUESTION_LABEL: 'Question',
   YOUR_ANSWER_LABEL: 'Your answer:',
   CORRECT_ANSWER_LABEL: 'Correct answer:',
   LOADING: 'Loading questions...',
-  ERROR_LOADING: 'Error loading questions. Please refresh the page.'
+  ERROR_LOADING: 'Error loading questions. Please refresh the page.',
+  SOUND_ON: '🔊',
+  SOUND_OFF: '🔇',
+  GROUP_MILESTONE_TITLE: '🎉 Great Job!',
+  GROUP_MILESTONE_PERFECT: '⭐ Perfect Score!',
+  CONTINUE_BUTTON: 'Continue'
+};
+
+export const SCORE_CONSTANTS = {
+  BASE_POINTS: 10,
+  STREAK_BONUS_5: 10,
+  STREAK_BONUS_10: 20,
+  PERFECT_GROUP_BONUS_PERCENT: 10,
+  GROUP_SIZE: 10,
+  COMBO_MULTIPLIER: 1.5
 };
 
 export const CSS_CLASSES = {
