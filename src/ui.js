@@ -227,6 +227,34 @@ function renderAnswerFeedback(state) {
 }
 
 /**
+ * Renders question navigator with visual progress
+ * @param {QuizState} state - Quiz state
+ * @returns {string} HTML string
+ */
+function renderQuestionNavigator(state) {
+  const total = state.getTotalQuestions();
+  const currentIndex = state.currentIndex;
+  const answeredQuestions = state.getAnsweredQuestions();
+
+  let html = '<div class="question-navigator"><div class="question-dots">';
+
+  for (let i = 0; i < total; i++) {
+    const isCurrent = i === currentIndex;
+    const isAnswered = answeredQuestions.has(i);
+    const questionNum = i + 1;
+
+    let cssClass = 'question-dot';
+    if (isCurrent) cssClass += ' current';
+    if (isAnswered) cssClass += ' answered';
+
+    html += `<button class="${cssClass}" data-question-index="${i}" title="Question ${questionNum}">${questionNum}</button>`;
+  }
+
+  html += '</div></div>';
+  return html;
+}
+
+/**
  * Renders explanation section with toggle button
  * @param {Object} question - Question object
  * @param {QuizState} state - Quiz state
@@ -246,7 +274,7 @@ function renderExplanationSection(question, state) {
 
   const renderedExplanation = isVisible && typeof marked !== 'undefined'
     ? marked.parse(question.explanation)
-    : question.explanation;
+    : sanitizeHtml(question.explanation);
 
   return `
     <div class="explanation-section">
@@ -260,6 +288,22 @@ function renderExplanationSection(question, state) {
       ` : ''}
     </div>
   `;
+}
+
+/**
+ * Sanitizes HTML to prevent over-escaping
+ * @param {string} text - Text to sanitize
+ * @returns {string} Sanitized text
+ */
+function sanitizeHtml(text) {
+  if (!text) return '';
+
+  // Fix over-escaped characters
+  return text
+    .replace(/\\-/g, '-')
+    .replace(/\\'/g, "'")
+    .replace(/\\"/g, '"')
+    .replace(/\\\\/g, '\\');
 }
 
 /**
