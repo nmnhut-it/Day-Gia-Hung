@@ -640,6 +640,52 @@ function renderGroupScoreBreakdown(groupScores) {
 }
 
 /**
+ * Handles check answer logic with sound and scoring
+ * @param {QuizState} state - Quiz state
+ * @param {HTMLElement} container - Container element
+ */
+function handleCheckAnswer(state, container) {
+  playClickSound();
+
+  const isCorrect = state.isCurrentAnswerCorrect();
+  const scoreInfo = state.updateScore(isCorrect);
+
+  state.checkCurrentAnswer();
+
+  // Play appropriate sound
+  if (isCorrect) {
+    playCorrectSound();
+
+    // Play streak sound on milestones
+    if (scoreInfo.currentStreak === 5 || scoreInfo.currentStreak === 10) {
+      setTimeout(() => playStreakSound(), 300);
+    }
+  } else {
+    playWrongSound();
+  }
+
+  // Animate score change
+  if (scoreInfo.pointsEarned > 0) {
+    setTimeout(() => {
+      animateScoreChange(scoreInfo.pointsEarned, container);
+    }, 100);
+  }
+
+  renderQuiz(state, container, state.onBackToMenu);
+
+  // Check for group milestone
+  setTimeout(() => {
+    const groupMilestone = state.checkGroupMilestone();
+    if (groupMilestone) {
+      showGroupMilestone(groupMilestone, container);
+      if (groupMilestone.isPerfect) {
+        playStreakSound();
+      }
+    }
+  }, 500);
+}
+
+/**
  * Updates only navigation buttons without full re-render
  * @param {QuizState} state - Quiz state
  * @param {HTMLElement} container - Container element
@@ -653,14 +699,14 @@ function updateNavigationButtons(state, container) {
   const checkBtn = container.querySelector('#check-btn');
   if (checkBtn && !checkBtn.classList.contains(CSS_CLASSES.NAV_DISABLED)) {
     checkBtn.addEventListener('click', () => {
-      state.checkCurrentAnswer();
-      renderQuiz(state, container, state.onBackToMenu);
+      handleCheckAnswer(state, container);
     });
   }
 
   const confirmBtn = container.querySelector('#confirm-btn');
   if (confirmBtn) {
     confirmBtn.addEventListener('click', () => {
+      playClickSound();
       state.confirmWrongAnswer();
       renderQuiz(state, container, state.onBackToMenu);
     });
@@ -669,6 +715,7 @@ function updateNavigationButtons(state, container) {
   const nextBtn = container.querySelector('#next-btn');
   if (nextBtn) {
     nextBtn.addEventListener('click', async () => {
+      playTickSound();
       await state.goToNext();
       renderQuiz(state, container, state.onBackToMenu);
     });
@@ -677,6 +724,7 @@ function updateNavigationButtons(state, container) {
   const submitBtn = container.querySelector('#submit-btn');
   if (submitBtn) {
     submitBtn.addEventListener('click', () => {
+      playClickSound();
       state.submit();
       renderQuiz(state, container, state.onBackToMenu);
     });
@@ -685,6 +733,7 @@ function updateNavigationButtons(state, container) {
   const prevBtn = container.querySelector('#prev-btn');
   if (prevBtn && !prevBtn.classList.contains(CSS_CLASSES.NAV_DISABLED)) {
     prevBtn.addEventListener('click', () => {
+      playTickSound();
       state.goToPrevious();
       renderQuiz(state, container, state.onBackToMenu);
     });
@@ -764,44 +813,7 @@ function attachEventListeners(state, container) {
   const checkBtn = container.querySelector('#check-btn');
   if (checkBtn && !checkBtn.classList.contains(CSS_CLASSES.NAV_DISABLED)) {
     checkBtn.addEventListener('click', () => {
-      playClickSound();
-
-      const isCorrect = state.isCurrentAnswerCorrect();
-      const scoreInfo = state.updateScore(isCorrect);
-
-      state.checkCurrentAnswer();
-
-      // Play appropriate sound
-      if (isCorrect) {
-        playCorrectSound();
-
-        // Play streak sound on milestones
-        if (scoreInfo.currentStreak === 5 || scoreInfo.currentStreak === 10) {
-          setTimeout(() => playStreakSound(), 300);
-        }
-      } else {
-        playWrongSound();
-      }
-
-      // Animate score change
-      if (scoreInfo.pointsEarned > 0) {
-        setTimeout(() => {
-          animateScoreChange(scoreInfo.pointsEarned, container);
-        }, 100);
-      }
-
-      renderQuiz(state, container, state.onBackToMenu);
-
-      // Check for group milestone
-      setTimeout(() => {
-        const groupMilestone = state.checkGroupMilestone();
-        if (groupMilestone) {
-          showGroupMilestone(groupMilestone, container);
-          if (groupMilestone.isPerfect) {
-            playStreakSound();
-          }
-        }
-      }, 500);
+      handleCheckAnswer(state, container);
     });
   }
 
