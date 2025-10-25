@@ -17,10 +17,16 @@
   <script type="module">
     import { loadSetsIndex, loadTestSet } from './src/data-k9.js';
     import { QuizState } from './src/quiz.js';
-    import { renderQuiz, renderTestSetMenu, showLoading, showError } from './src/ui.js';
+    import { renderQuiz, renderTestSetMenu, showLoading, showError } from './src/ui-k9.js';
+    import { initCamera, setupCameraElements } from './src/camera.js';
+    import { initSoundSystem, playGameStartSound } from './src/sound-manager.js';
 
     let setsIndex = null;
+    let cameraInitialized = false;
     const container = document.getElementById('app');
+
+    // Initialize sound system on page load
+    initSoundSystem();
 
     /**
      * Shows test set selection menu
@@ -36,8 +42,22 @@
     async function selectAndLoadSet(setInfo) {
       try {
         showLoading(container);
+
+        // Initialize camera on first quiz start
+        if (!cameraInitialized) {
+          try {
+            await initCamera();
+            setupCameraElements();
+            cameraInitialized = true;
+            console.log('Camera initialized successfully');
+          } catch (cameraError) {
+            console.warn('Camera initialization failed:', cameraError);
+            alert('Camera access denied. Photos will not be captured during the quiz.');
+          }
+        }
+
         const testSet = await loadTestSet(setInfo.setNumber);
-        startQuiz(testSet);
+        startQuiz(testSet, setInfo);
       } catch (error) {
         console.error('Failed to load test set:', error);
         showError(container, error);
@@ -47,9 +67,12 @@
     /**
      * Starts quiz with loaded test set
      * @param {Object} testSet - Complete test set data
+     * @param {Object} setInfo - Set info from index
      */
-    function startQuiz(testSet) {
-      const state = new QuizState(testSet.questions, showTestSetMenu);
+    function startQuiz(testSet, setInfo) {
+      const testSetName = `Set ${setInfo.setNumber}`;
+      const state = new QuizState(testSet.questions, showTestSetMenu, testSetName);
+      playGameStartSound();
       renderQuiz(state, container, showTestSetMenu);
     }
 
