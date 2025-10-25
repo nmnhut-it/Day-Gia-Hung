@@ -415,7 +415,7 @@
         "hospital",
         "library"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "library",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: library**\n\n**Lý do:**\n- Câu nói về mượn sách (borrow books)\n- Thư viện (library) là nơi mượn sách\n\n**Các đáp án khác:**\n- post office: bưu điện (gửi thư)\n- café: quán cà phê (uống nước)\n- hospital: bệnh viện (khám bệnh)\n\n**Dịch nghĩa:** Bạn có thể mượn sách từ thư viện.\n\n**Ghi nhớ:** library = thư viện, borrow = mượn"
     },
     {
@@ -517,8 +517,8 @@
         "on",
         "ø"
       ],
-      "correctAnswer": "Chọn ý: D",
-      "explanation": "**Giải thích:**\n\n**Đáp án đúng: ø (không dùng giới từ)**\n\n**Lý do:**\n- Với địa chỉ cụ thể có số nhà, ta không dùng giới từ\n- Chỉ nói: It's 201, Tran Hung Dao Street\n\n**Dịch nghĩa:** Địa chỉ của bạn là gì? - Số 201, đường Trần Hưng Đạo.\n\n**Ghi nhớ:** Số nhà + tên đường không cần giới từ"
+      "correctAnswer": "ø",
+      "explanation": "**Giải thích:**\n\n**Đáp án đúng: ø (không dùng giới từ)**\n\n**Lý do:**\nCâu hỏi địa chỉ chứ không phải hỏi sống ở đâu.\n\n**Dịch nghĩa:** Địa chỉ của bạn là gì? - Số 201, đường Trần Hưng Đạo.\n\n"
     },
     {
       "id": 60,
@@ -530,7 +530,7 @@
         "summer",
         "sugar"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "sugar",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: sugar**\n\n**Lý do:**\n- Các từ còn lại có âm 'u' phát âm là /ʌ/ (giống 'a' ngắn)\n- Từ 'sugar' có âm 'u' phát âm là /ʊ/ (giống 'u' trong 'book')\n\n**Phát âm:**\n- sun /sʌn/, son /sʌn/, summer /ˈsʌmə/ - âm /ʌ/\n- sugar /ˈʃʊɡə/ - âm /ʊ/\n\n**Ghi nhớ:** sugar có cách phát âm đặc biệt /ˈʃʊɡə/"
     },
     {
@@ -652,7 +652,7 @@
         "a green",
         "green"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "green",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: green**\n\n**Lý do:**\n- Câu hỏi 'Is this...?' cần tính từ, không cần 'a'\n- Màu sắc là tính từ, không có mạo từ phía trước\n- Câu trả lời xác nhận 'it is green' (nó màu xanh lá)\n\n**Dịch nghĩa:** Cái này có phải màu xanh lá không? - Đúng vậy. Nó màu xanh lá.\n\n**Ghi nhớ:** Tên màu là tính từ: green, blue, red (không có 'a')"
     },
     {
@@ -694,10 +694,10 @@
       "question": "Listen and tick:",
       "mediaUrl": "https://res.ioe.vn/edu/EOlympic/ExamData/ImageExam/2013/11/20/635205575546548174_Audio.mp3",
       "options": [
-        "He’ll be an engineer\\.",
-        "He’ll be an astronaut\\.",
-        "He’ll be a waiter\\.",
-        "He’ll be an architect\\."
+        "He’ll be an engineer.",
+        "He’ll be an astronaut.",
+        "He’ll be a waiter.",
+        "He’ll be an architect."
       ],
       "correctAnswer": "He’ll be an engineer.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: He'll be an engineer.**\n\n**Lý do:**\n- Nghe file âm thanh để xác định nghề nghiệp\n- 'He'll be' = He will be (anh ấy sẽ là)\n- engineer = kỹ sư\n\n**Dịch nghĩa:** Anh ấy sẽ là một kỹ sư.\n\n**Ghi nhớ:** will be = sẽ là (nói về nghề nghiệp tương lai)"
@@ -729,10 +729,10 @@
       "question": "Listen and tick:",
       "mediaUrl": "https://res.ioe.vn/edu/EOlympic/ExamData/ImageExam/2013/11/20/635205613132630190_Audio.mp3",
       "options": [
-        "Linh lives in a small college\\.",
-        "Linh lives and works in a small village\\.",
-        "Linh lives and works in a small city\\.",
-        "Linh lives and watches in a small country\\."
+        "Linh lives in a small college.",
+        "Linh lives and works in a small village.",
+        "Linh lives and works in a small city.",
+        "Linh lives and watches in a small country."
       ],
       "correctAnswer": "Linh lives and works in a small village.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: Linh lives and works in a small village.**\n\n**Lý do:**\n- Nghe file âm thanh để xác định\n- live and work = sống và làm việc\n- village = ngôi làng\n\n**Dịch nghĩa:** Linh sống và làm việc ở một ngôi làng nhỏ.\n\n**Ghi nhớ:** village = làng, city = thành phố, town = thị trấn"
@@ -908,12 +908,12 @@
       "question": "Listen and tick:",
       "mediaUrl": "https://res.ioe.vn/edu/EOlympic/ExamData/ImageExam/2013/11/20/635205577212007099_Audio.mp3",
       "options": [
-        "After school, Jane plays badminton with her brother\\.",
-        "After school, Jane plays volleyball with her father\\.",
-        "After school, Jane plays in the garden with her brother\\.",
-        "After school, Jane plays badminton with her father\\."
+        "After school, Jane plays badminton with her brother.",
+        "After school, Jane plays volleyball with her father.",
+        "After school, Jane plays in the garden with her brother.",
+        "After school, Jane plays badminton with her father."
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "After school, Jane plays badminton with her father.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: After school, Jane plays badminton with her father.**\n\n**Lý do:**\n- Câu hỏi yêu cầu nghe audio và chọn câu đúng\n- Đáp án D: \"After school, Jane plays badminton with her father.\" (Sau giờ học, Jane chơi cầu lông với bố)\n\n**Dịch nghĩa:** Sau giờ học, Jane chơi cầu lông với bố.\n\n**Ghi nhớ:** after school = sau giờ học, play badminton = chơi cầu lông"
     },
     {
@@ -1070,10 +1070,10 @@
       "question": "What colours are the flowers?",
       "mediaUrl": "https://res.ioe.vn/edu/EOlympic/ExamData/ImageExam/2016/11/29/636160301435710578_Audio.mp3",
       "options": [
-        "Pink and white\\.",
-        "Purple and white\\.",
-        "Pink and yellow\\.",
-        "Red and pink\\."
+        "Pink and white.",
+        "Purple and white.",
+        "Pink and yellow.",
+        "Red and pink."
       ],
       "correctAnswer": "Pink and white.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: Pink and white.**\n\n**Lý do:**\n- Câu hỏi về màu sắc của hoa\n- Cần nghe audio để chọn đáp án đúng\n- Đáp án A: Pink and white (Hồng và trắng)\n\n**Dịch nghĩa:** Những bông hoa có màu gì? - Hồng và trắng.\n\n**Ghi nhớ:** pink = màu hồng, white = màu trắng"
@@ -1101,7 +1101,7 @@
         "from / to",
         "at/at"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "at/at",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: at/at**\n\n**Lý do:**\n- Dùng giới từ 'at' với giờ cụ thể\n- at seven = lúc 7 giờ\n- at half past seven = lúc 7 giờ rưỡi\n- Cả hai chỗ trống đều dùng 'at'\n\n**Dịch nghĩa:** Các tiết học bắt đầu lúc 7 giờ và kết thúc lúc 7 giờ rưỡi.\n\n**Ghi nhớ:** at + giờ cụ thể (at 7, at 8:30, at half past seven)"
     },
     {
@@ -1128,7 +1128,7 @@
         "did",
         "will"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "will",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: will**\n\n**Lý do:**\n- Câu trả lời \"We'll do exercise\" = We will do (tương lai)\n- Câu hỏi cũng phải dùng 'will' để phù hợp\n- What will we do? = Chúng ta sẽ làm gì?\n\n**Các đáp án khác:**\n- are: hiện tại tiếp diễn\n- do: hiện tại đơn\n- did: quá khứ đơn\n\n**Dịch nghĩa:** Chúng ta sẽ làm gì vào buổi sáng? - Chúng ta sẽ tập thể dục rồi đi học.\n\n**Ghi nhớ:** will + V = sẽ làm gì (tương lai đơn)"
     },
     {
@@ -1234,7 +1234,7 @@
         "he short",
         "he is not"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "he is not",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: he is not**\n\n**Lý do:**\n- Câu hỏi: Is he...? (Anh ấy có... không?)\n- Câu trả lời phủ định: No, he is not (Không, anh ấy không phải)\n- Có thể viết tắt: he isn't\n\n**Các đáp án khác:**\n- he is: câu trả lời khẳng định (mâu thuẫn với 'No')\n- isn't not: sai ngữ pháp\n- he short: thiếu động từ 'is'\n\n**Dịch nghĩa:** Anh ấy 10 tuổi à? - Không, anh ấy không phải.\n\n**Ghi nhớ:** No, he is not = No, he isn't"
     },
     {
@@ -1310,7 +1310,7 @@
         "cook",
         "floor"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "floor",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: floor**\n\n**Lý do:**\n- Các từ còn lại có âm 'oo' phát âm là /ʊ/ (ngắn)\n- Từ 'floor' có âm 'oo' phát âm là /ɔː/ (dài)\n\n**Phát âm:**\n- look /lʊk/, book /bʊk/, cook /kʊk/ - âm /ʊ/\n- floor /flɔː/ - âm /ɔː/\n\n**Ghi nhớ:** 'floor', 'door' có âm 'oo' phát âm /ɔː/"
     },
     {
@@ -1350,7 +1350,7 @@
         "of",
         "about"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "about",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: about**\n\n**Lý do:**\n- Cấu trúc: be excited/happy about something = vui mừng/phấn khích về điều gì\n- excited and happy about the good news = vui mừng về tin tốt\n\n**Các đáp án khác:**\n- on: không dùng với 'excited'\n- at: không dùng với 'excited'\n- of: không phù hợp\n\n**Dịch nghĩa:** Anna rất phấn khích và vui mừng về tin tốt lành.\n\n**Ghi nhớ:** be excited about = phấn khích về"
     },
     {
@@ -1433,7 +1433,7 @@
         "for",
         "with"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "with",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: with**\n\n**Lý do:**\n- Cấu trúc: What's the matter with you? = Bạn bị sao thế?\n- 'with' là giới từ đi với 'matter'\n- Dùng để hỏi về vấn đề, bệnh tật\n\n**Dịch nghĩa:** Bạn bị sao thế?\n\n**Ghi nhớ:** What's the matter/wrong with you? = Bạn bị gì?"
     },
     {
@@ -1474,7 +1474,7 @@
         "rarely",
         "always"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "always",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: always**\n\n**Lý do:**\n- Câu nói 'I love fruits' (Tôi yêu trái cây) nên phải luôn ăn\n- 'always' = luôn luôn (100%)\n- never/seldom/rarely = không bao giờ/hiếm khi (không phù hợp)\n\n**Dịch nghĩa:** Tôi yêu trái cây. Tôi luôn ăn trái cây sau bữa tối.\n\n**Ghi nhớ:** Trạng từ tần suất: always > usually > often > sometimes > rarely > never"
     },
     {
@@ -1594,10 +1594,10 @@
       "question": "Listen and tick",
       "mediaUrl": "https://res.ioe.vn/edu/EOlympic/ExamData/Thi%20Th%E1%BB%AD/Thi_trai_nghiem_2021/Lop5/tracnghiem/tn-58.mp3",
       "options": [
-        "It's the most exciting event in London every year\\.",
-        "It's the most exciting event in London every month\\.",
-        "It's the most exciting event in London every week\\.",
-        "It's the most exciting event in London every day\\."
+        "It's the most exciting event in London every year.",
+        "It's the most exciting event in London every month.",
+        "It's the most exciting event in London every week.",
+        "It's the most exciting event in London every day."
       ],
       "correctAnswer": "It's the most exciting event in London every year.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: It's the most exciting event in London every year.**\n\n**Lý do:**\n- Câu nói về sự kiện thú vị nhất ở London\n- 'the most exciting' = thú vị nhất (so sánh nhất)\n- 'every year' = mỗi năm, hàng năm\n- Có file âm thanh để nghe và chọn đáp án đúng\n\n**Dịch nghĩa:** Đó là sự kiện thú vị nhất ở London mỗi năm.\n\n**Ghi nhớ:** the most + adj = nhất, every year/month/week/day"
@@ -1659,7 +1659,7 @@
         "listening to music",
         "playing sports"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "playing sports",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: playing sports**\n\n**Lý do:**\n- Câu có file âm thanh để nghe\n- Nội dung: cô gái thích chơi thể thao\n- like + V-ing = thích làm gì\n\n**Dịch nghĩa:** Cô gái thích chơi thể thao.\n\n**Ghi nhớ:** like + V-ing = thích làm gì, play sports = chơi thể thao"
     },
     {
@@ -1705,7 +1705,7 @@
         "Where is your school?",
         "How do you go to school?"
       ],
-      "correctAnswer": "Chọn ý: D",
+      "correctAnswer": "How do you go to school?",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: How do you go to school?**\n\n**Lý do:**\n- Câu trả lời 'I walk' = tôi đi bộ (chỉ phương tiện)\n- Hỏi phương tiện dùng 'How do you go...?'\n- How = bằng cách nào, như thế nào\n\n**Các câu hỏi khác:**\n- Is your school far...? → Yes/No\n- How far...? → khoảng cách (2km, 3km...)\n- Where...? → địa điểm\n\n**Dịch nghĩa:** Bạn đi đến trường bằng cách nào? - Tôi đi bộ.\n\n**Ghi nhớ:** How do you go? = đi bằng gì?, I walk = tôi đi bộ"
     },
     {
@@ -1777,10 +1777,10 @@
       "question": "Listen and tick:",
       "mediaUrl": "https://res.ioe.vn/edu/EOlympic/ExamData/ImageExam/2013/11/19/635204702237364326_Audio.mp3",
       "options": [
-        "Someday I will go out and talk to space\\.",
-        "Someday I will go out and walk in space\\.",
-        "Someday I will go out and work in space\\.",
-        "Someday I will go out and watch in space\\."
+        "Someday I will go out and talk to space.",
+        "Someday I will go out and walk in space.",
+        "Someday I will go out and work in space.",
+        "Someday I will go out and watch in space."
       ],
       "correctAnswer": "Someday I will go out and walk in space.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: Someday I will go out and walk in space.**\n\n**Lý do:**\n- Câu có file âm thanh để nghe\n- Nội dung: Một ngày nào đó tôi sẽ ra ngoài và đi bộ trong không gian\n- 'walk in space' = đi bộ ngoài không gian (phi hành gia)\n\n**Dịch nghĩa:** Một ngày nào đó tôi sẽ ra ngoài và đi bộ trong không gian.\n\n**Ghi nhớ:** someday = một ngày nào đó, walk in space = đi bộ ngoài không gian"
@@ -1828,9 +1828,9 @@
     {
       "id": 199,
       "type": "multiple-choice",
-      "question": "’’There are32 students in my class’’ means ’’…’’.",
+      "question": "’’There are 32 students in my class’’ means ’’…’’.",
       "options": [
-        "My class gets32 students\\.",
+        "My class gets32 students.",
         "My class have32 students",
         "My class has32 students",
         "32 students are in the classroom"
