@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IOE K9 Quiz</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="watermark-background">Nguyen Minh Nhut</div>
+  <div id="app"></div>
+  <footer class="app-watermark">
+    <span>Created by Nguyen Minh Nhut</span>
+  </footer>
+
+  <script type="module">
+    import { loadSetsIndex, loadTestSet } from './src/data-k9.js';
+    import { QuizState } from './src/quiz.js';
+    import { renderQuiz, renderTestSetMenu, showLoading, showError } from './src/ui.js';
+
+    let setsIndex = null;
+    const container = document.getElementById('app');
+
+    /**
+     * Shows test set selection menu
+     */
+    function showTestSetMenu() {
+      renderTestSetMenu(setsIndex.sets, container, selectAndLoadSet);
+    }
+
+    /**
+     * Loads and starts a test set
+     * @param {Object} setInfo - Set info from index
+     */
+    async function selectAndLoadSet(setInfo) {
+      try {
+        showLoading(container);
+        const testSet = await loadTestSet(setInfo.setNumber);
+        startQuiz(testSet);
+      } catch (error) {
+        console.error('Failed to load test set:', error);
+        showError(container, error);
+      }
+    }
+
+    /**
+     * Starts quiz with loaded test set
+     * @param {Object} testSet - Complete test set data
+     */
+    function startQuiz(testSet) {
+      const state = new QuizState(testSet.questions, showTestSetMenu);
+      renderQuiz(state, container, showTestSetMenu);
+    }
+
+    /**
+     * Main application initialization
+     */
+    async function initApp() {
+      try {
+        showLoading(container);
+        setsIndex = await loadSetsIndex();
+        showTestSetMenu();
+      } catch (error) {
+        console.error('Failed to initialize quiz:', error);
+        showError(container, error);
+      }
+    }
+
+    initApp();
+  </script>
+</body>
+</html>
