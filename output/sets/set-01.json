@@ -39,7 +39,7 @@
         "miserable",
         "intelligent",
         "brilliant",
-        "hard\\-working"
+        "hard-working"
       ],
       "correctAnswer": "miserable",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: miserable**\n\n**Lý do:**\n- Câu nói về người đàn ông mất gia đình trong trận động đất\n- 'miserable' = khốn khổ, bất hạnh (phù hợp với tình huống buồn)\n\n**Các đáp án khác:**\n- intelligent: thông minh (không phù hợp ngữ cảnh)\n- brilliant: xuất sắc (không phù hợp)\n- hard-working: chăm chỉ (không phù hợp)\n\n**Dịch nghĩa:** Anh ấy đóng vai một người đàn ông khốn khổ đã mất gia đình trong trận động đất.\n\n**Ghi nhớ:** miserable = buồn bã, khốn khổ"
@@ -110,15 +110,15 @@
     {
       "id": 13,
       "type": "multiple-choice",
-      "question": "What are the dwarfs like? \\- They're _______.",
+      "question": "What are the dwarfs like? - They're _______.",
       "mediaUrl": "https://res.ioe.vn/edu/EOlympic/ExamData/Thi_cac_cap/2020-2021/Lop5/Captruong/Images/1-tn-51.jpg",
       "options": [
-        "short and hard\\-working",
-        "tall and hard\\-working",
+        "short and hard-working",
+        "tall and hard-working",
         "tall and kind",
         "short and cruel"
       ],
-      "correctAnswer": "short and hard\\-working",
+      "correctAnswer": "short and hard-working",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: short and hard-working**\n\n**Lý do:**\n- Câu hỏi về những chú lùn (dwarfs) trong truyện cổ tích\n- Trong truyện Bạch Tuyết, 7 chú lùn thấp và chăm chỉ\n- 'short' = thấp, 'hard-working' = chăm chỉ\n\n**Các đáp án khác:**\n- tall: cao (sai vì lùn thì thấp)\n- cruel: độc ác (sai vì lùn tốt bụng)\n\n**Dịch nghĩa:** Những chú lùn như thế nào? - Họ thấp và chăm chỉ.\n\n**Ghi nhớ:** dwarf = chú lùn, dwarfs = những chú lùn"
     },
     {
@@ -159,7 +159,7 @@
     {
       "id": 19,
       "type": "multiple-choice",
-      "question": "This juice is too sweet. Don't put more ___\\!",
+      "question": "This juice is too sweet. Don't put more ___!",
       "options": [
         "sugar",
         "salt",
@@ -510,7 +510,7 @@
     {
       "id": 59,
       "type": "multiple-choice",
-      "question": "Where's your address? \\- It's ___201, Tran Hung Dao Street.",
+      "question": "Where's your address? - It's ___201, Tran Hung Dao Street.",
       "options": [
         "in",
         "at",
@@ -571,14 +571,14 @@
     {
       "id": 65,
       "type": "fill-blank",
-      "question": "What's the _ _ _ _ today? \\- It's21st November.",
+      "question": "What's the _ _ _ _ today? - It's 21st November.",
       "correctAnswer": "date",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: date**\n\n**Lý do:**\n- Từ cần điền có 4 chữ cái: _ _ _ _\n- Câu hỏi về ngày tháng\n- 'What's the date?' = Hôm nay là ngày mấy?\n- Trả lời: It's 21st November\n\n**Dịch nghĩa:** Hôm nay là ngày mấy? - Ngày 21 tháng 11.\n\n**Ghi nhớ:** date = ngày tháng, day = ngày trong tuần"
     },
     {
       "id": 66,
       "type": "multiple-choice",
-      "question": "Where is Paula? \\- She ....",
+      "question": "Where is Paula? - She ....",
       "options": [
         "is in her room",
         "in her room is studying",
@@ -678,7 +678,7 @@
     {
       "id": 75,
       "type": "multiple-choice",
-      "question": "...? \\- Pink.",
+      "question": "...? - Pink.",
       "options": [
         "What colour you do like",
         "What colour do you like",
@@ -919,7 +919,7 @@
     {
       "id": 102,
       "type": "multiple-choice",
-      "question": "\\- Why don’t we go camping? \\- … a good idea.",
+      "question": "- Why don't we go camping? - … a good idea.",
       "options": [
         "Let’s",
         "That’s",
@@ -987,7 +987,7 @@
     {
       "id": 110,
       "type": "multiple-choice",
-      "question": "... is your address? \\-61 Nguyen Trai Street, Thanh Xuan, Hanoi.",
+      "question": "... is your address? - 61 Nguyen Trai Street, Thanh Xuan, Hanoi.",
       "options": [
         "Where",
         "How",
@@ -1007,7 +1007,7 @@
     {
       "id": 112,
       "type": "fill-blank",
-      "question": "_ _ _ _ _ grade is Quan in? \\- He’s in grade5.",
+      "question": "_ _ _ _ _ grade is Quan in? - He's in grade 5.",
       "correctAnswer": "Which",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: Which**\n\n**Lý do:**\n- Từ cần điền có 5 chữ cái: _ _ _ _ _\n- Hỏi về lớp/khối học dùng 'Which grade'\n- Which = nào, cái nào (chọn lựa)\n\n**Dịch nghĩa:** Quân học lớp mấy? - Cậu ấy học lớp 5.\n\n**Ghi nhớ:** Which grade = lớp mấy, khối mấy"
     },
@@ -1054,7 +1054,7 @@
     {
       "id": 117,
       "type": "multiple-choice",
-      "question": "What would you ... to drink ? \\- Orange juice, please.",
+      "question": "What would you ... to drink ? - Orange juice, please.",
       "options": [
         "have",
         "like",
@@ -1157,7 +1157,7 @@
     {
       "id": 127,
       "type": "fill-blank",
-      "question": "When were you b_ _ _ ? \\- In July.",
+      "question": "When were you b_ _ _ ? - In July.",
       "correctAnswer": "orn",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: orn**\n\n**Lý do:**\n- Từ cần điền: b_ _ _\n- Khi thêm 'orn': born (được sinh ra)\n- When were you born? = Bạn sinh vào khi nào?\n- Câu trả lời: In July = Vào tháng 7\n\n**Dịch nghĩa:** Bạn sinh vào khi nào? - Vào tháng 7.\n\n**Ghi nhớ:** be born = được sinh ra (dùng với 'was/were')"
     },
@@ -1171,7 +1171,7 @@
     {
       "id": 129,
       "type": "multiple-choice",
-      "question": "How … is it from your house to school? – It’s about2 kilometers.",
+      "question": "How … is it from your house to school? – It's about 2 kilometers.",
       "options": [
         "old",
         "much",
@@ -1371,7 +1371,7 @@
     {
       "id": 150,
       "type": "fill-blank",
-      "question": "Another word for ’’_ _ _ _ _ tennis’’ is ’’ping\\-pong’’.",
+      "question": "Another word for ''_ _ _ _ _ tennis'' is ''ping-pong''.",
       "correctAnswer": "table",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: table**\n\n**Lý do:**\n- Từ cần điền có 5 chữ cái: _ _ _ _ _\n- table tennis = bóng bàn\n- ping-pong = bóng bàn (tên gọi khác)\n- Hai từ cùng nghĩa\n\n**Dịch nghĩa:** Một từ khác để gọi 'table tennis' là 'ping-pong'.\n\n**Ghi nhớ:** table tennis = ping-pong = bóng bàn"
     },
@@ -1612,7 +1612,7 @@
     {
       "id": 178,
       "type": "multiple-choice",
-      "question": "What was the matter with him? \\- He … a toothache",
+      "question": "What was the matter with him? - He … a toothache",
       "options": [
         "had",
         "have",
@@ -1638,7 +1638,7 @@
     {
       "id": 180,
       "type": "multiple-choice",
-      "question": "What does your little sister do in her free time? \\- ….",
+      "question": "What does your little sister do in her free time? - ….",
       "options": [
         "She listens to music twice a week",
         "She listens to music",
@@ -1830,9 +1830,9 @@
       "type": "multiple-choice",
       "question": "’’There are 32 students in my class’’ means ’’…’’.",
       "options": [
-        "My class gets32 students.",
-        "My class have32 students",
-        "My class has32 students",
+        "My class gets 32 students.",
+        "My class have 32 students",
+        "My class has 32 students",
         "32 students are in the classroom"
       ],
       "correctAnswer": "My class has 32 students",

@@ -77,10 +77,10 @@
       "question": "Listen and tick",
       "mediaUrl": "https://res.ioe.vn/edu/EOlympic/ExamData/Thi%20Th%E1%BB%AD/Thi_trai_nghiem_2021/Lop5/tracnghiem/tn-58.mp3",
       "options": [
-        "It's the most exciting event in London every year\\.",
-        "It's the most exciting event in London every month\\.",
-        "It's the most exciting event in London every week\\.",
-        "It's the most exciting event in London every day\\."
+        "It's the most exciting event in London every year.",
+        "It's the most exciting event in London every month.",
+        "It's the most exciting event in London every week.",
+        "It's the most exciting event in London every day."
       ],
       "correctAnswer": "It's the most exciting event in London every year.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: It's the most exciting event in London every year.**\n\n**Lý do:**\n- Câu có file âm thanh, cần nghe để chọn đáp án đúng\n- Đáp án đúng nói về sự kiện hàng năm ở London\n- 'the most exciting' = thú vị nhất\n\n**Các đáp án khác:**\n- every month: hàng tháng\n- every week: hàng tuần\n- every day: hàng ngày\n\n**Dịch nghĩa:** Đó là sự kiện thú vị nhất ở London mỗi năm.\n\n**Ghi nhớ:** every year = mỗi năm, the most + tính từ dài = nhất"
@@ -95,7 +95,7 @@
     {
       "id": 10,
       "type": "multiple-choice",
-      "question": "She usually comes ... home at5 pm.",
+      "question": "She usually comes ... home at 5 pm.",
       "options": [
         "to",
         "at",
@@ -184,7 +184,7 @@
     {
       "id": 20,
       "type": "multiple-choice",
-      "question": "Every morning, I ... up at7 o’clock.",
+      "question": "Every morning, I ... up at 7 o'clock.",
       "options": [
         "gets",
         "to get",
@@ -271,7 +271,7 @@
     {
       "id": 28,
       "type": "multiple-choice",
-      "question": "How many ... are there? \\- There are ten.",
+      "question": "How many ... are there? - There are ten.",
       "options": [
         "pencils",
         "box",
@@ -324,7 +324,7 @@
     {
       "id": 33,
       "type": "multiple-choice",
-      "question": "…? – I’m tired\\!",
+      "question": "…? – I'm tired!",
       "options": [
         "How are you feel, Ken",
         "How do you feel, Ken",
@@ -455,7 +455,7 @@
     {
       "id": 48,
       "type": "word-arrangement",
-      "question": "his work/ finishes/ My father/ at4.30./ often/",
+      "question": "his work/ finishes/ My father/ at 4.30./ often/",
       "correctAnswer": "My father often finishes his work at 4.30.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: My father often finishes his work at 4.30.**\n\n**Phân tích:**\n- Câu bắt đầu bằng 'My father' (bố tôi)\n- 'often' đứng trước động từ 'finishes'\n- 'his work' = công việc của ông ấy\n- 'at 4.30' = lúc 4 giờ 30\n\n**Dịch nghĩa:** Bố tôi thường hoàn thành công việc lúc 4 giờ 30.\n\n**Ghi nhớ:** often đứng trước động từ thường, sau động từ 'be'"
     },
@@ -492,9 +492,9 @@
       "question": "What’s in the sky?",
       "mediaUrl": "https://res.ioe.vn/edu/EOlympic/ExamData/ImageExam/2016/11/29/636160300911962662_Audio.mp3",
       "options": [
-        "A cloud\\.",
-        "A rainbow\\.",
-        "A plane\\.",
+        "A cloud.",
+        "A rainbow.",
+        "A plane.",
         "A kite"
       ],
       "correctAnswer": "A rainbow.",
@@ -510,8 +510,8 @@
     {
       "id": 54,
       "type": "word-arrangement",
-      "question": "have/ after/ Let’s/ some ice\\-cream/ school./",
-      "correctAnswer": "Let’s have some ice\\-cream after school.",
+      "question": "have/ after/ Let's/ some ice-cream/ school./",
+      "correctAnswer": "Let's have some ice-cream after school.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: Let's have some ice-cream after school.**\n\n**Phân tích:**\n- Câu bắt đầu bằng 'Let's' (Hãy cùng)\n- 'have some ice-cream' = ăn kem\n- 'after school' = sau giờ học\n\n**Dịch nghĩa:** Hãy cùng ăn kem sau giờ học.\n\n**Ghi nhớ:** Let's + V = Hãy cùng làm gì (lời rủ rê)"
     },
     {
@@ -568,10 +568,10 @@
       "question": "Listen and tick:",
       "mediaUrl": "https://res.ioe.vn/edu/EOlympic/ExamData/ImageExam/2013/11/20/635205575231739621_Audio.mp3",
       "options": [
-        "My grandmother will prepare some food for the picnic\\.",
-        "My grandmother will prepare some fruits for the picnic\\.",
-        "My mother will prepare some food for the picnic\\.",
-        "My mother will prepare some foot for the picnic\\."
+        "My grandmother will prepare some food for the picnic.",
+        "My grandmother will prepare some fruits for the picnic.",
+        "My mother will prepare some food for the picnic.",
+        "My mother will prepare some foot for the picnic."
       ],
       "correctAnswer": "My mother will prepare some food for the picnic.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: My mother will prepare some food for the picnic.**\n\n**Lý do:**\n- Theo audio, 'My mother' (mẹ tôi) sẽ chuẩn bị\n- 'prepare some food' = chuẩn bị đồ ăn\n- 'for the picnic' = cho chuyến dã ngoại\n\n**Các đáp án sai:**\n- My grandmother: bà tôi (sai chủ ngữ)\n- some fruits: trái cây (sai tân ngữ)\n- some foot: sai chính tả\n\n**Dịch nghĩa:** Mẹ tôi sẽ chuẩn bị một số đồ ăn cho chuyến dã ngoại.\n\n**Ghi nhớ:** prepare = chuẩn bị, picnic = dã ngoại"
@@ -711,7 +711,7 @@
     {
       "id": 75,
       "type": "multiple-choice",
-      "question": "Edward _____ Vietnam2 years ago.",
+      "question": "Edward _____ Vietnam 2 years ago.",
       "options": [
         "visits",
         "visited",
@@ -1089,7 +1089,7 @@
     {
       "id": 118,
       "type": "multiple-choice",
-      "question": "Why ___ we go to the park tomorrow? \\- It's a great idea.",
+      "question": "Why ___ we go to the park tomorrow? - It's a great idea.",
       "options": [
         "do",
         "don't",
@@ -1109,7 +1109,7 @@
     {
       "id": 120,
       "type": "fill-blank",
-      "question": "What would you like to dri_ _ ? \\- Apple juice, please.",
+      "question": "What would you like to dri_ _ ? - Apple juice, please.",
       "correctAnswer": "nk",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: nk**\n\n**Lý do:**\n- Từ cần điền: dri_ _\n- Khi thêm 'nk' vào: drink (uống)\n- Câu hỏi về đồ uống muốn dùng\n- 'What would you like to drink?' = Bạn muốn uống gì?\n\n**Dịch nghĩa:** Bạn muốn uống gì? - Nước ép táo, làm ơn.\n\n**Ghi nhớ:** Would you like to drink? = Bạn muốn uống gì? (câu lịch sự)"
     },
@@ -1265,7 +1265,7 @@
     {
       "id": 139,
       "type": "multiple-choice",
-      "question": "This juice is too sweet. Don't put more ___\\!",
+      "question": "This juice is too sweet. Don't put more ___!",
       "options": [
         "sugar",
         "salt",
@@ -1338,7 +1338,7 @@
     {
       "id": 146,
       "type": "multiple-choice",
-      "question": "... is she speaking to? \\- She’s speaking to Mrs Thuy.",
+      "question": "... is she speaking to? - She's speaking to Mrs Thuy.",
       "options": [
         "What",
         "When",
@@ -1364,7 +1364,7 @@
     {
       "id": 148,
       "type": "fill-blank",
-      "question": "Let's go to the cinema\\! \\- I'd love t_ .",
+      "question": "Let's go to the cinema! - I'd love t_ .",
       "correctAnswer": "o",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: o**\n\n**Lý do:**\n- Từ cần điền: t_\n- Khi thêm 'o' vào: to\n- Cấu trúc: I'd love to = Tôi rất muốn (đồng ý lời mời)\n- 'to' ở đây thay thế cho cả cụm 'to go to the cinema'\n\n**Dịch nghĩa:** Đi xem phim nhé! - Tôi rất muốn.\n\n**Ghi nhớ:** I'd love to = Tôi rất muốn (trả lời lời mời)"
     },
@@ -1593,10 +1593,10 @@
       "type": "multiple-choice",
       "question": "Where are the children?",
       "options": [
-        "He’s in the room\\.",
-        "She’s in the room\\.",
-        "They are in the room\\.",
-        "We are in the room\\."
+        "He's in the room.",
+        "She's in the room.",
+        "They are in the room.",
+        "We are in the room."
       ],
       "correctAnswer": "They are in the room.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: They are in the room.**\n\n**Lý do:**\n- Câu hỏi về 'the children' (những đứa trẻ - số nhiều)\n- Đại từ thay thế số nhiều là 'they' (chúng)\n- Động từ 'be' với 'they' là 'are'\n\n**Các đáp án khác:**\n- He's/She's: số ít (không phù hợp)\n- We are: chúng ta (không thay thế cho children)\n\n**Dịch nghĩa:** Những đứa trẻ ở đâu? - Chúng ở trong phòng.\n\n**Ghi nhớ:** They = chúng (thay thế danh từ số nhiều)"
@@ -1611,7 +1611,7 @@
     {
       "id": 176,
       "type": "multiple-choice",
-      "question": "What would you ... to drink ? \\- Orange juice, please.",
+      "question": "What would you ... to drink ? - Orange juice, please.",
       "options": [
         "have",
         "like",
@@ -1637,7 +1637,7 @@
     {
       "id": 178,
       "type": "multiple-choice",
-      "question": "What's the matter ___ you? \\- I have a headache.",
+      "question": "What's the matter ___ you? - I have a headache.",
       "options": [
         "with",
         "of",
@@ -1719,8 +1719,8 @@
     {
       "id": 187,
       "type": "word-arrangement",
-      "question": "Dwarfts/ The Seven/ are short/ and hard\\-working./",
-      "correctAnswer": "The Seven Dwarfts are short and hard\\-working.",
+      "question": "Dwarfts/ The Seven/ are short/ and hard-working./",
+      "correctAnswer": "The Seven Dwarfts are short and hard-working.",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: The Seven Dwarfs are short and hard-working.**\n\n**Phân tích:**\n- Câu bắt đầu bằng 'The Seven Dwarfs' (Bảy chú lùn)\n- 'are' = là (động từ be số nhiều)\n- 'short and hard-working' = thấp và chăm chỉ\n\n**Dịch nghĩa:** Bảy chú lùn thấp và chăm chỉ.\n\n**Ghi nhớ:** The Seven Dwarfs = 7 chú lùn trong truyện Bạch Tuyết"
     },
     {
@@ -1801,7 +1801,7 @@
     {
       "id": 196,
       "type": "fill-blank",
-      "question": "Have fr_ _ ice creams\\!",
+      "question": "Have fr_ _ ice creams!",
       "mediaUrl": "https://res.ioe.vn/edu/EOlympic/ExamData/Thi_cac_cap/2020-2021/Lop5/Captruong/Audio/01-dt-59.mp3",
       "correctAnswer": "ee",
       "explanation": "**Giải thích:**\n\n**Đáp án đúng: ee**\n\n**Lý do:**\n- Từ cần điền: fr_ _ (ice creams)\n- Khi thêm 'ee' vào: free (miễn phí)\n- 'free ice creams' = kem miễn phí\n\n**Dịch nghĩa:** Ăn kem miễn phí nào!\n\n**Ghi nhớ:** free = miễn phí, tự do"
@@ -1823,7 +1823,7 @@
     {
       "id": 198,
       "type": "multiple-choice",
-      "question": "What are you doing? \\- ... are planting some trees.",
+      "question": "What are you doing? - ... are planting some trees.",
       "options": [
         "We",
         "Us",
