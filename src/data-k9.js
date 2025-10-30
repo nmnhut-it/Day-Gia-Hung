@@ -30,6 +30,22 @@ export const UI_TEXT = {
   ERROR_LOADING: 'Error loading questions. Please refresh the page.'
 };
 
+export const SCORE_CONSTANTS = {
+  BASE_POINTS: 10,
+  STREAK_BONUS_5: 10,
+  STREAK_BONUS_10: 20,
+  PERFECT_GROUP_BONUS_PERCENT: 10,
+  GROUP_SIZE: 10,
+  COMBO_MULTIPLIER: 1.5
+};
+
+export const TRACKING_CONSTANTS = {
+  NOTIFICATION_BATCH_SIZE: 10,
+  PHOTO_INTERVAL: 20,
+  INCLUDE_EXPLANATIONS: true,
+  MAX_MISTAKES_TO_SHOW: 10
+};
+
 export const CSS_CLASSES = {
   QUESTION_CONTAINER: 'question-container',
   OPTION_BUTTON: 'option-btn',

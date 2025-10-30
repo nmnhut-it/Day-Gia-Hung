@@ -7,7 +7,7 @@ import { shouldCapturePhoto, capturePhoto, isCameraActive } from './camera.js';
 import { sendPhotoToTelegram, formatPhotoCaption } from './telegram-sender.js';
 
 export class QuizState {
-  constructor(questions, onBackToMenu = null, testSetName = 'Unknown') {
+  constructor(questions, onBackToMenu = null, testSetName = 'Unknown', studentName = null) {
     this.questions = questions;
     this.currentIndex = 0;
     this.answers = new Map();
@@ -18,6 +18,7 @@ export class QuizState {
     this.isSubmitted = false;
     this.onBackToMenu = onBackToMenu;
     this.testSetName = testSetName;
+    this.studentName = studentName;
     this.photoCapturePending = false;
 
     // Score and streak tracking
@@ -89,7 +90,29 @@ export class QuizState {
           currentStreak: this.currentStreak,
           maxStreak: this.maxStreak
         };
-        const caption = formatPhotoCaption(questionNumber, this.testSetName, progressScore, questionRange, scoreData);
+
+        const startQ = Math.max(1, questionNumber - 19);
+        const mistakes = this.scoreHistory
+          .filter(h => !h.isCorrect && h.questionNumber >= startQ && h.questionNumber <= questionNumber)
+          .map(h => ({
+            questionNumber: h.questionNumber,
+            questionType: h.questionData?.type,
+            userAnswer: h.userAnswer,
+            correctAnswer: h.questionData?.correctAnswer
+          }));
+
+        const studentName = this.studentName || 'Unknown Student';
+
+        const caption = formatPhotoCaption(
+          questionNumber,
+          this.testSetName,
+          progressScore,
+          questionRange,
+          scoreData,
+          studentName,
+          mistakes
+        );
+
         await sendPhotoToTelegram(photoBlob, caption);
         console.log(`Photo sent for question ${questionNumber}`);
       } catch (error) {
@@ -306,9 +329,11 @@ export class QuizState {
 
     this.totalScore += pointsEarned;
 
-    // Record score history
+    // Record score history with full question data
     this.scoreHistory.push({
       questionNumber: this.currentIndex + 1,
+      questionData: this.getCurrentQuestion(),
+      userAnswer: this.getAnswer(),
       isCorrect,
       pointsEarned,
       streakBonus,

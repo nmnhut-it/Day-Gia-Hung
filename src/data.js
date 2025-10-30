@@ -45,6 +45,13 @@ export const SCORE_CONSTANTS = {
   COMBO_MULTIPLIER: 1.5
 };
 
+export const TRACKING_CONSTANTS = {
+  NOTIFICATION_BATCH_SIZE: 10,
+  PHOTO_INTERVAL: 20,
+  INCLUDE_EXPLANATIONS: true,
+  MAX_MISTAKES_TO_SHOW: 10
+};
+
 export const CSS_CLASSES = {
   QUESTION_CONTAINER: 'question-container',
   OPTION_BUTTON: 'option-btn',
