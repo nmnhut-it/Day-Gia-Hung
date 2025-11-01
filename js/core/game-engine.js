@@ -217,11 +217,32 @@ const GameEngine = {
     const isCorrect = handler.validate(userAnswer, exercise);
     const container = document.getElementById('exercise-container');
 
+    // Get correct answer and question text based on exercise type
+    let correctAnswer = '';
+    let questionText = '';
+
+    if (exercise.type === 'multiple-choice') {
+      correctAnswer = exercise.options?.[exercise.correctIndex];
+      questionText = exercise.question;
+    } else if (exercise.type === 'vocabulary-match') {
+      correctAnswer = exercise.pairs?.map(p => `${p.english} = ${p.vietnamese}`).join(', ');
+      questionText = `Match vocabulary pairs (${exercise.pairs?.length || 0} pairs)`;
+    } else if (exercise.type === 'word-rearrange') {
+      correctAnswer = exercise.correctSentence || exercise.answer;
+      questionText = `Arrange: ${exercise.correctSentence}`;
+    } else if (exercise.type === 'fill-blank') {
+      correctAnswer = exercise.answer;
+      questionText = exercise.question;
+    } else {
+      correctAnswer = exercise.answer || '';
+      questionText = exercise.question || exercise.title || `Câu ${exercise.id}`;
+    }
+
     const answerRecord = {
       questionId: exercise.id,
-      questionText: exercise.question || exercise.title || `Câu ${exercise.id}`,
+      questionText: questionText,
       userAnswer: userAnswer,
-      correctAnswer: exercise.answer || exercise.options?.[exercise.correctIndex],
+      correctAnswer: correctAnswer,
       isCorrect: isCorrect,
       exercise: exercise,
       timeSpent: Date.now() - this.questionStartTime,

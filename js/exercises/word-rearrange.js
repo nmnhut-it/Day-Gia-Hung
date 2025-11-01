@@ -42,7 +42,8 @@ const WordRearrangeExercise = {
     });
 
     // Combine all words and shuffle
-    const allWords = [...question.words];
+    const sourceWords = question.shuffledWords || question.words || [];
+    const allWords = [...sourceWords];
     if (question.distractors && question.distractors.length > 0) {
       allWords.push(...question.distractors);
     }

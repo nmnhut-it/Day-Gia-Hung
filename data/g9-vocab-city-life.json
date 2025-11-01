@@ -647,7 +647,7 @@
     {
       "id": 60,
       "type": "word-rearrange",
-      "shuffledWords": ["to", "Need", "we", "distractions", "minimise", "while", "studying"],
+      "shuffledWords": ["We", "need", "to", "minimise", "distractions", "while", "studying"],
       "correctSentence": "We need to minimise distractions while studying",
       "acceptedAnswers": ["We need to minimise distractions while studying", "We need to minimise distractions while studying.", "We need to minimize distractions while studying", "We need to minimize distractions while studying."],
       "hints": ["Start with 'We need to'"],
