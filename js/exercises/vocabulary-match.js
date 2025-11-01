@@ -222,6 +222,6 @@ const VocabularyMatchExercise = {
 };
 
 // Auto-register with GameEngine if available
-if (typeof window !== 'undefined' && window.GameEngine) {
-  window.GameEngine.registerExerciseType('vocabulary-match', VocabularyMatchExercise);
+if (typeof GameEngine !== 'undefined') {
+  GameEngine.registerExerciseHandler('vocabulary-match', VocabularyMatchExercise);
 }
