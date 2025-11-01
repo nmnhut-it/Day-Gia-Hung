@@ -10,62 +10,86 @@ const VocabularyMatchExercise = {
    * Creates draggable/clickable interface for matching words with definitions
    */
   render(question, container, callbacks) {
+    container.innerHTML = '';
+
     const { pairs, hints } = question;
 
     // Shuffle Vietnamese options to make it challenging
     const shuffledVietnamese = this._shuffleArray([...pairs]);
 
-    const html = `
-      <div class="vocabulary-match-container">
-        <div class="match-instructions">
-          <p>Match each English word with its Vietnamese meaning</p>
-        </div>
+    const exerciseCard = Utils.createElement('div', { class: 'card exercise' });
 
-        <div class="matching-area">
-          <div class="english-column">
-            <h4>English</h4>
-            ${pairs.map((pair, index) => `
-              <div class="match-item english-item" data-index="${index}" data-word="${pair.english}">
-                <span class="match-number">${index + 1}.</span>
-                <span class="match-text">${pair.english}</span>
-                <select class="match-select" data-index="${index}">
-                  <option value="">-- Select --</option>
-                  ${shuffledVietnamese.map((p, i) => `
-                    <option value="${p.vietnamese}">${p.vietnamese}</option>
-                  `).join('')}
-                </select>
-              </div>
-            `).join('')}
-          </div>
-        </div>
+    const exerciseNum = Utils.createElement('span', {
+      class: 'exercise__number'
+    }, `Exercise ${question.id}`);
 
-        <div class="match-feedback" style="display: none;"></div>
+    const instructions = Utils.createElement('div', {
+      class: 'exercise__instructions'
+    }, 'Match each English word with its Vietnamese meaning');
 
-        <div class="exercise-actions">
-          <button class="btn-hint" data-action="hint">
-            <span class="icon">💡</span> Hint
-          </button>
-          <button class="btn-submit" data-action="submit">
-            <span class="icon">✓</span> Submit Answer
-          </button>
-        </div>
-      </div>
-    `;
+    // Create matching area
+    const matchingArea = Utils.createElement('div', { class: 'matching-area' });
 
-    container.innerHTML = html;
+    pairs.forEach((pair, index) => {
+      const matchItem = Utils.createElement('div', { class: 'match-item' });
+      matchItem.dataset.index = index;
+      matchItem.dataset.word = pair.english;
 
-    // Attach event listeners
-    const submitBtn = container.querySelector('[data-action="submit"]');
-    const hintBtn = container.querySelector('[data-action="hint"]');
+      const matchLabel = Utils.createElement('label', { class: 'match-label' });
+      matchLabel.innerHTML = `<span class="match-number">${index + 1}.</span> <strong>${pair.english}</strong>`;
 
-    submitBtn.addEventListener('click', () => {
+      const select = Utils.createElement('select', { class: 'input match-select' });
+      select.dataset.index = index;
+
+      const defaultOption = Utils.createElement('option', { value: '' }, '-- Chọn nghĩa tiếng Việt --');
+      select.appendChild(defaultOption);
+
+      shuffledVietnamese.forEach(p => {
+        const option = Utils.createElement('option', { value: p.vietnamese }, p.vietnamese);
+        select.appendChild(option);
+      });
+
+      matchItem.appendChild(matchLabel);
+      matchItem.appendChild(select);
+      matchingArea.appendChild(matchItem);
+    });
+
+    const actions = Utils.createElement('div', { class: 'exercise__actions' });
+
+    const submitBtn = Utils.createElement('button', {
+      class: 'btn btn--primary'
+    }, 'Nộp bài');
+
+    submitBtn.onclick = () => {
       const userAnswer = this.getUserAnswer(container);
-      callbacks.onAnswer(userAnswer);
-    });
 
-    hintBtn.addEventListener('click', () => {
-      callbacks.onHint();
-    });
+      // Check if all matches are selected
+      const allSelected = userAnswer.every(item => item.vietnamese !== '');
+      if (!allSelected) {
+        Utils.showToast('Vui lòng hoàn thành tất cả các cặp', 'error');
+        return;
+      }
+
+      callbacks.onAnswer(userAnswer);
+    };
+
+    const hintBtn = Utils.createElement('button', {
+      class: 'btn btn--secondary btn--small'
+    }, '💡 Gợi ý');
+
+    hintBtn.onclick = () => callbacks.onHint();
+
+    actions.appendChild(submitBtn);
+    if (question.hints && question.hints.length > 0) {
+      actions.appendChild(hintBtn);
+    }
+
+    exerciseCard.appendChild(exerciseNum);
+    exerciseCard.appendChild(instructions);
+    exerciseCard.appendChild(matchingArea);
+    exerciseCard.appendChild(actions);
+
+    container.appendChild(exerciseCard);
   },
 
   /**
@@ -120,27 +144,36 @@ const VocabularyMatchExercise = {
    * Show visual feedback for correct/incorrect matches
    * Highlights correct matches in green, wrong ones in red
    */
-  showFeedback(container, isCorrect, question, nextCallback) {
-    const feedbackDiv = container.querySelector('.match-feedback');
+  showFeedback(container, isCorrect, question) {
+    const actions = container.querySelector('.exercise__actions');
     const { pairs } = question;
     const userAnswer = this.getUserAnswer(container);
 
+    // Disable selects after submission
+    const selects = container.querySelectorAll('.match-select');
+    selects.forEach(select => {
+      select.disabled = true;
+    });
+
+    const feedbackDiv = Utils.createElement('div', {
+      class: isCorrect ? 'feedback feedback--success' : 'feedback feedback--error'
+    });
+
     if (isCorrect) {
-      feedbackDiv.className = 'match-feedback correct-answer';
-      feedbackDiv.innerHTML = '<p><strong>✓ Correct!</strong> All matches are perfect!</p>';
-      feedbackDiv.style.display = 'block';
+      feedbackDiv.innerHTML = `
+        <span class="feedback__icon">✓</span>
+        <span>Đúng rồi! Tất cả các cặp đều chính xác!</span>
+      `;
 
       // Highlight all as correct
-      const items = container.querySelectorAll('.english-item');
+      const items = container.querySelectorAll('.match-item');
       items.forEach(item => {
         item.classList.add('correct');
       });
     } else {
-      feedbackDiv.className = 'match-feedback wrong-answer';
-
       // Show which matches are wrong
       let wrongCount = 0;
-      const items = container.querySelectorAll('.english-item');
+      const items = container.querySelectorAll('.match-item');
 
       items.forEach((item, index) => {
         const correctVietnamese = pairs[index].vietnamese;
@@ -155,36 +188,22 @@ const VocabularyMatchExercise = {
       });
 
       feedbackDiv.innerHTML = `
-        <p><strong>✗ Incorrect!</strong></p>
-        <p>You have ${wrongCount} wrong match${wrongCount > 1 ? 'es' : ''}.</p>
-        <div class="correct-answers">
-          <p><strong>Correct matches:</strong></p>
-          ${pairs.map(pair => `
-            <p>${pair.english} = ${pair.vietnamese}</p>
-          `).join('')}
+        <span class="feedback__icon">✗</span>
+        <div>
+          <div>Chưa đúng. Bạn có ${wrongCount} cặp sai.</div>
+          <div class="feedback__correct-answer mt-1">
+            <strong>Đáp án đúng:</strong><br>
+            ${pairs.map(pair => `${pair.english} = ${pair.vietnamese}`).join('<br>')}
+          </div>
         </div>
       `;
-      feedbackDiv.style.display = 'block';
     }
 
-    // Disable selects after submission
-    const selects = container.querySelectorAll('.match-select');
-    selects.forEach(select => {
-      select.disabled = true;
-    });
+    actions.insertAdjacentElement('afterend', feedbackDiv);
 
     // Disable action buttons
-    const buttons = container.querySelectorAll('.exercise-actions button');
+    const buttons = actions.querySelectorAll('button');
     buttons.forEach(btn => btn.disabled = true);
-
-    // Add Next button
-    if (nextCallback) {
-      const nextBtn = document.createElement('button');
-      nextBtn.className = 'btn btn--primary mt-2';
-      nextBtn.textContent = 'Câu tiếp theo →';
-      nextBtn.onclick = nextCallback;
-      feedbackDiv.appendChild(nextBtn);
-    }
   },
 
   /**
@@ -198,14 +217,18 @@ const VocabularyMatchExercise = {
       select.disabled = false;
     });
 
-    const items = container.querySelectorAll('.english-item');
+    const items = container.querySelectorAll('.match-item');
     items.forEach(item => {
       item.classList.remove('correct', 'wrong');
     });
 
-    const feedbackDiv = container.querySelector('.match-feedback');
-    feedbackDiv.style.display = 'none';
-    feedbackDiv.innerHTML = '';
+    const feedback = container.querySelector('.feedback');
+    if (feedback) {
+      feedback.remove();
+    }
+
+    const buttons = container.querySelectorAll('button');
+    buttons.forEach(btn => btn.disabled = false);
   },
 
   /**

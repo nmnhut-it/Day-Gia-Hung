@@ -207,7 +207,7 @@ const WordRearrangeExercise = {
    * @param {Object} question - Question data
    * @param {Function} onNext - Callback to advance to next question
    */
-  showFeedback(container, isCorrect, question, onNext) {
+  showFeedback(container, isCorrect, question) {
     const actions = container.querySelector('.exercise__actions');
     const answerArea = container.querySelector('.word-arrange__answer-area');
 
@@ -242,20 +242,6 @@ const WordRearrangeExercise = {
 
     const buttons = actions.querySelectorAll('button');
     buttons.forEach(btn => btn.disabled = true);
-
-    if (onNext) {
-      const nextBtn = Utils.createElement('button', {
-        class: 'btn btn--primary btn--large mt-2'
-      }, 'Next Question →');
-      nextBtn.style.width = '100%';
-      nextBtn.style.fontSize = 'var(--font-size-lg)';
-      nextBtn.style.padding = 'var(--spacing-md)';
-
-      nextBtn.onclick = () => onNext();
-
-      feedbackDiv.insertAdjacentElement('afterend', nextBtn);
-      nextBtn.focus();
-    }
   },
 
   /**

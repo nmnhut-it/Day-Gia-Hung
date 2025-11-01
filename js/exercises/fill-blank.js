@@ -110,7 +110,7 @@ const FillBlankExercise = {
    * @param {boolean} isCorrect - Whether answer was correct
    * @param {Object} question - Question data
    */
-  showFeedback(container, isCorrect, question, nextCallback) {
+  showFeedback(container, isCorrect, question) {
     const input = container.querySelector('input[type="text"]');
     const actions = container.querySelector('.exercise__actions');
 
@@ -144,16 +144,6 @@ const FillBlankExercise = {
 
     const buttons = actions.querySelectorAll('button');
     buttons.forEach(btn => btn.disabled = true);
-
-    // Add Next button
-    if (nextCallback) {
-      const nextBtn = Utils.createElement('button', {
-        class: 'btn btn--primary mt-2'
-      }, 'Câu tiếp theo →');
-
-      nextBtn.onclick = nextCallback;
-      feedbackDiv.appendChild(nextBtn);
-    }
   },
 
   /**

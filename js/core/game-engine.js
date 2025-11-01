@@ -121,6 +121,74 @@ const GameEngine = {
     };
 
     handler.render(exercise, container, callbacks);
+
+    // Add navigation controls after rendering
+    this.addNavigationControls(container);
+  },
+
+  /**
+   * Add navigation controls (Previous/Next buttons) to exercise
+   * @param {HTMLElement} container - Exercise container
+   */
+  addNavigationControls(container) {
+    const existingNav = container.querySelector('.exercise-navigation');
+    if (existingNav) {
+      existingNav.remove();
+    }
+
+    const navDiv = Utils.createElement('div', { class: 'exercise-navigation' });
+
+    const currentIndex = this.state.currentExerciseIndex;
+    const totalExercises = this.state.unitData.exercises.length;
+
+    // Previous button
+    if (currentIndex > 0) {
+      const prevBtn = Utils.createElement('button', {
+        class: 'btn btn--secondary',
+        id: 'nav-prev-btn'
+      }, '← Câu trước');
+
+      prevBtn.onclick = () => this.previousExercise();
+      navDiv.appendChild(prevBtn);
+    }
+
+    // Question indicator
+    const indicator = Utils.createElement('span', {
+      class: 'exercise-navigation__indicator'
+    }, `Câu ${currentIndex + 1} / ${totalExercises}`);
+    navDiv.appendChild(indicator);
+
+    // Next button (always show, but may be disabled)
+    const nextBtn = Utils.createElement('button', {
+      class: 'btn btn--primary',
+      id: 'nav-next-btn'
+    }, 'Câu tiếp theo →');
+
+    nextBtn.dataset.answered = 'false';
+    nextBtn.disabled = true;
+    nextBtn.title = 'Vui lòng trả lời câu hỏi trước';
+
+    nextBtn.onclick = () => {
+      if (nextBtn.dataset.answered === 'true') {
+        this.nextExercise();
+      }
+    };
+
+    navDiv.appendChild(nextBtn);
+
+    container.appendChild(navDiv);
+  },
+
+  /**
+   * Enable the next button after answer is submitted
+   */
+  enableNextButton() {
+    const nextBtn = document.getElementById('nav-next-btn');
+    if (nextBtn) {
+      nextBtn.disabled = false;
+      nextBtn.dataset.answered = 'true';
+      nextBtn.title = '';
+    }
   },
 
   /**
@@ -163,17 +231,20 @@ const GameEngine = {
     if (isCorrect) {
       const points = this.handleCorrectAnswer(exercise);
       answerRecord.points = points;
-      handler.showFeedback(container, true, exercise, () => this.nextExercise());
+      handler.showFeedback(container, true, exercise);
       Utils.playSound('correct');
     } else {
       this.handleWrongAnswer();
       answerRecord.points = 0;
-      handler.showFeedback(container, false, exercise, () => this.nextExercise());
+      handler.showFeedback(container, false, exercise);
       Utils.playSound('wrong');
     }
 
     this.state.answerHistory.push(answerRecord);
     this.updateUI();
+
+    // Enable next button after answer is submitted
+    this.enableNextButton();
   },
 
   /**
@@ -231,6 +302,17 @@ const GameEngine = {
     this.state.hintsUsed++;
     this.state.score = Math.max(0, this.state.score - this.HINT_PENALTY);
     this.updateUI();
+  },
+
+  /**
+   * Move to previous exercise
+   */
+  previousExercise() {
+    if (this.state.currentExerciseIndex > 0) {
+      this.state.currentExerciseIndex--;
+      this.renderCurrentExercise();
+      this.updateUI();
+    }
   },
 
   /**

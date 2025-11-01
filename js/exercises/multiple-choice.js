@@ -91,7 +91,7 @@ const MultipleChoiceExercise = {
     return selected ? parseInt(selected.value) : null;
   },
 
-  showFeedback(container, isCorrect, question, nextCallback) {
+  showFeedback(container, isCorrect, question) {
     const actions = container.querySelector('.exercise__actions');
     const inputs = container.querySelectorAll('input[type="radio"]');
 
@@ -122,16 +122,6 @@ const MultipleChoiceExercise = {
 
     const buttons = actions.querySelectorAll('button');
     buttons.forEach(btn => btn.disabled = true);
-
-    // Add Next button
-    if (nextCallback) {
-      const nextBtn = Utils.createElement('button', {
-        class: 'btn btn--primary mt-2'
-      }, 'Câu tiếp theo →');
-
-      nextBtn.onclick = nextCallback;
-      feedbackDiv.appendChild(nextBtn);
-    }
   },
 
   reset(container) {
