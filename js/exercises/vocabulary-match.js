@@ -120,7 +120,7 @@ const VocabularyMatchExercise = {
    * Show visual feedback for correct/incorrect matches
    * Highlights correct matches in green, wrong ones in red
    */
-  showFeedback(container, isCorrect, question) {
+  showFeedback(container, isCorrect, question, nextCallback) {
     const feedbackDiv = container.querySelector('.match-feedback');
     const { pairs } = question;
     const userAnswer = this.getUserAnswer(container);
@@ -172,6 +172,19 @@ const VocabularyMatchExercise = {
     selects.forEach(select => {
       select.disabled = true;
     });
+
+    // Disable action buttons
+    const buttons = container.querySelectorAll('.exercise-actions button');
+    buttons.forEach(btn => btn.disabled = true);
+
+    // Add Next button
+    if (nextCallback) {
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'btn btn--primary mt-2';
+      nextBtn.textContent = 'Câu tiếp theo →';
+      nextBtn.onclick = nextCallback;
+      feedbackDiv.appendChild(nextBtn);
+    }
   },
 
   /**
